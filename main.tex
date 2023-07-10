@@ -1,47 +1,47 @@
 \documentclass[12pt,a4paper]{report} %Formato y formas principales
 \usepackage[spanish]{babel} %Establecer idioma
 \usepackage{graphicx} %Para añadir imágenes
-\usepackage{caption}
-\DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
-\captionsetup[figure]{format=boldformat}
 \usepackage{fancyhdr} %Para establecer mi propio encabezado y pie de página
-\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry} % Mis márgenes
-\setlength{\headheight}{14.0pt} %Ajusta el tamaño del encabezado
-\setlength{\parindent}{0pt}
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm,headsep=1cm]{geometry} % Mis márgenes
+%\setlength{\headheight}{14.0pt} %Ajusta el tamaño del encabezado
+\setlength{\parindent}{0pt} %Ajusta la sangría a 0 para que no haya
 \usepackage{amsmath} %Para ecuaciones
-%\usepackage{refcheck} %Para que aparezca el nombre que le doy a la ecuación
+%\usepackage{refcheck} %Para que aparezca el nombre que le doy a la referencia
 \usepackage{comment} %Para comentar varias lineas
-\usepackage{lipsum}
+\usepackage{lipsum} %Para hacer textos de ejemplo para pruebas
 
-\usepackage{hyperref}
+\usepackage{caption} %Para crear mi formato "boldformat" que pone lo primero en negrita
+\DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
+\captionsetup[figure]{format=boldformat} %Le asigno el formato al de las figuras
+
+\usepackage{hyperref} %Para que haya hipervínculos
 \hypersetup{
-	colorlinks=true,
+	colorlinks=true, %Para que los hipervínculos sean de color y no con caja roja
 	linkcolor=black,
 	urlcolor=black,
 	citecolor=black,
 }
 
-\makeatletter
+\makeatletter %Mi propio comando para establecer las referencias de figuras y ecuaciones
 \newcommand{\figureref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Figura~\ref*{#1}}}}}
 \newcommand{\equationref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Ecuación~\ref*{#1}}}}}
 \makeatother
 
 \usepackage{makeidx} %Para hacer el indice
 \makeindex
-\usepackage{tocloft} %Para que tenga línea de puntos el índice
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\usepackage{tocloft} %Para configurar el índice
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} %Línea puntos índice
+\setlength{\cftbeforetoctitleskip}{-1cm} % Ajusta el margen superior del índice
 
-%\begin{comment}
 \usepackage[T1]{fontenc} %Para cambiar la letra y el tamaño
 \usepackage[scaled]{uarial}
 \renewcommand*\familydefault{\sfdefault}
-%\end{comment}
 
 
 \usepackage{titlesec} %Para cambiar mi formato de chapter
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\LARGE}
-\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+\titlespacing*{\chapter}{0pt}{-1.5cm}{40pt}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -92,7 +92,7 @@
 	\null
 	\thispagestyle{empty}
 	\newpage
-	
+
 \begin{center}
 	\LARGE\textbf{Resumen}
 \end{center}
@@ -119,7 +119,6 @@
 \tableofcontents
 	\chapter{Introducción}
 	Contenido del capítulo de introducción. Contenido del capítulo 1.
-
 	
 	\chapter{Descripción del Circuito}
 	El circuito que se ha estudiado es un oscilador con resistencia negativa al que se le ha añadido un componente muy interesante y que está siendo muy estudiado en estos últimos tiempos, el memristor, ver \figureref{fig:-RLCM}.
