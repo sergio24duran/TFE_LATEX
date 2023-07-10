@@ -1,7 +1,47 @@
-\documentclass{article}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage[margin=3.5cm]{geometry} % Margen de 2cm en todos los lados
+\documentclass[12pt,a4paper]{report} %Formato y formas principales
+\usepackage[spanish]{babel} %Establecer idioma
+\usepackage{graphicx} %Para añadir imágenes
+\usepackage{caption}
+\DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
+\captionsetup[figure]{format=boldformat}
+\usepackage{fancyhdr} %Para establecer mi propio encabezado y pie de página
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry} % Mis márgenes
+\setlength{\headheight}{14.0pt} %Ajusta el tamaño del encabezado
+\setlength{\parindent}{0pt}
+\usepackage{amsmath} %Para ecuaciones
+%\usepackage{refcheck} %Para que aparezca el nombre que le doy a la ecuación
+\usepackage{comment} %Para comentar varias lineas
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+}
+
+\makeatletter
+\newcommand{\figureref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Figura~\ref*{#1}}}}}
+\newcommand{\equationref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Ecuación~\ref*{#1}}}}}
+\makeatother
+
+\usepackage{makeidx} %Para hacer el indice
+\makeindex
+\usepackage{tocloft} %Para que tenga línea de puntos el índice
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+%\begin{comment}
+\usepackage[T1]{fontenc} %Para cambiar la letra y el tamaño
+\usepackage[scaled]{uarial}
+\renewcommand*\familydefault{\sfdefault}
+%\end{comment}
+
+
+\usepackage{titlesec} %Para cambiar mi formato de chapter
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\LARGE}
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -15,7 +55,7 @@
 	\begin{titlepage}
 		\centering
 		\hspace*{-1.5cm}\begin{tabular}{@{}l@{}}
-			\includegraphics[width=3cm]{a.png} % Logo 1 (esquina superior izquierda)
+			\includegraphics[width=3cm]{b.png} % Logo 1 (esquina superior izquierda)
 		\end{tabular}
 		\hfill
 		\begin{tabular}{c}
@@ -24,41 +64,142 @@
 		\end{tabular}%
 		\hfill
 		\begin{tabular}{@{}r@{}}
-			\includegraphics[width=3cm]{b.png} % Logo 2 (esquina superior derecha)
+			\includegraphics[width=3cm]{a.png} % Logo 2 (esquina superior derecha)
 		\end{tabular}\hspace*{-1.5cm}
 		
 		\vspace{1.5cm}
 		
 		\begin{center}
-			\Large\textmd{Trabajo Fin de Grado} \\ [0.5cm] % Título 
+			\Large\textmd{Trabajo Fin de Grado} \\ [0.2cm] % Título 
 			\Large\textmd{Ingeniería Electrónica Industrial}
 		\end{center}
 		
 		\vspace{2cm}
 		
 		\begin{center}
-			\LARGE\textsl{La caracterización integral de las semiaplicaciones de Poincaré y su aplicación a circuitos electrónicos: \\El Memristor}
+			\LARGE\textsl{La caracterización integral de las semiaplicaciones de Poincaré y su aplicación a circuitos electrónicos: El Memristor}
 		\end{center}
 		
-		\vspace{6cm}
+		\vspace{7cm}
 		
 		\raggedright
 		\large\textbf{Autor:} Sergio R. Durán Martín \\ [0.5cm]
-		\large\textbf{Tutor:} Victoriano Carmona Centeno \\ [0.5cm]
+		\large\textbf{Tutor:} Dr. Victoriano Carmona Centeno \\ [0.5cm]
 		\large\textbf{Departamento:} Matemática Aplicada II
 	\end{titlepage}
 	
+	\clearpage
+	\null
+	\thispagestyle{empty}
 	\newpage
-	\section{introduccion}
-	hola mundo prueba script prueba branch
+	
+\begin{center}
+	\LARGE\textbf{Resumen}
+\end{center}
+\begin{minipage}{\textwidth}
+	\lipsum[1]
+	
+	\vspace{0.5cm}
+	\noindent \textbf{Palabras clave:} robótica educativa, robot modular, STM32, FreeRTOS, interfaz gráfica, impresión 3D.
+\end{minipage}
+
+\vspace{1cm}
+
+\begin{center}
+	\LARGE\textbf{Abstract}
+\end{center}
+\begin{minipage}{\textwidth}
+	\lipsum[2]
+	
+	\vspace{0.5cm}
+	\noindent \textbf{Keywords:} educational robotics, modular robot, STM32, FreeRTOS, graphic interface, 3D printing.
+\end{minipage}
+\newpage
+	
+\tableofcontents
+	\chapter{Introducción}
+	Contenido del capítulo de introducción. Contenido del capítulo 1.
+
+	
+	\chapter{Descripción del Circuito}
+	El circuito que se ha estudiado es un oscilador con resistencia negativa al que se le ha añadido un componente muy interesante y que está siendo muy estudiado en estos últimos tiempos, el memristor, ver \figureref{fig:-RLCM}.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\textwidth]{-RLCM.png}
+		\caption{Oscilador RLC con R negativa y Memristor}
+		\label{fig:-RLCM}
+	\end{figure}
+	
+	Como se puede ver no existe una fuente de señal en el circuito y esto se debe a que el análisis hecho busca encontrar una oscilación periódica tan solo proporcionando condiciones iniciales a la bobina y el condensador, esto gracias al comportamiento de la resistencia negativa y del memristor.
+	\newpage
+	\section{Resistencia negativa}
+	esto es texto de la siguiente hoja
+	\newpage
+	\section{Memristor}
+	esto es texto de la siguiente hoja
+	\newpage
+	\section{Variables de estado}
+	esto es texto de la siguiente hoja
+	\newpage
+	\section{Superficies invariantes}
+	esto es texto de la siguiente hoja
+	
+	\chapter{Sistemas Lineales a Trozos Bizonales}
+	Contenido del capítulo 3.
+	\newpage
+	\section{Sistemas lineales planos}
+	esto es texto de la siguiente hoja
+	\newpage
+	\section{Sistemas lineales a trozos bizonales}
+	esto es texto de la siguiente hoja
+	
+	\chapter{Semiaplicaciones de Poincaré}
+	Contenido del capítulo 4.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\chapter{Bifurcación Foco-Centro-Ciclo Límite}
+	Contenido del capítulo 5.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\chapter{Oscilación Peródica en el circuito}
+	Contenido del capítulo 6.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\chapter{TÍTULO CAPÍTULO 7}
+	Contenido del capítulo 7.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\chapter{TÍTULO CAPÍTULO 8}
+	Contenido del capítulo 8.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\chapter*{Conclusiones}
+	Contenido del capítulo de conclusiones.
+	\newpage
+	esto es texto de la siguiente hoja
+	
+	\begin{comment}
+	\chapter{Introducción}
+	\begin{equation}
+		\label{EcuLambda}
+		y^2=3
+	\end{equation}
+	hola mundo prueba script prueba branch de funcion $f$ \eqref{EcuLambda} en $[2\pi]$
 	\newpage
 	holaaa
 	\newpage
 	asldkakdlkad prueba python para commit cambio
 	\newpage
-	\subsection{intro.1}
+	\section{introa}
 	holaaa
 	\newpage
-	\section{alpha}
-	segundo cambio tercera prueba python siguiente prueba
+	\subsection{introb}
+	segundo cambio tercera prueba python siguiente prueba para ver fuente
+	\end{comment}
 \end{document}
