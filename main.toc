@@ -2,14 +2,14 @@
 \contentsline {chapter}{\numberline {1}Introducción}{4}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Descripción del Circuito}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Resistencia negativa}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Memristor}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Variables de estado}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Superficies invariantes}{9}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos Bizonales}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sistemas lineales planos}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{12}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{19}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{21}{chapter.8}%
+\contentsline {section}{\numberline {2.2}Memristor}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Variables de estado}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Superficies invariantes}{10}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos Bizonales}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sistemas lineales planos}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{18}{chapter.6}%
+\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{20}{chapter.7}%
+\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{22}{chapter.8}%

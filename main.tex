@@ -4,8 +4,10 @@
 \usepackage{fancyhdr} %Para establecer mi propio encabezado y pie de página
 \usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm,headsep=1cm]{geometry} % Mis márgenes
 %\setlength{\headheight}{14.0pt} %Ajusta el tamaño del encabezado
+%\linespread{1.5} % Espaciado de 1.5 (1 es el espaciado estándar)
 \setlength{\parindent}{0pt} %Ajusta la sangría a 0 para que no haya
-\usepackage{amsmath} %Para ecuaciones
+\usepackage{amsmath} %Para ecuaciones\usepackage{amsmath}
+\usepackage{multicol}
 %\usepackage{refcheck} %Para que aparezca el nombre que le doy a la referencia
 \usepackage{comment} %Para comentar varias lineas
 \usepackage{lipsum} %Para hacer textos de ejemplo para pruebas
@@ -130,10 +132,79 @@
 		\label{fig:-RLCM}
 	\end{figure}
 	
-	Como se puede ver no existe una fuente de señal en el circuito y esto se debe a que el análisis hecho busca encontrar una oscilación periódica tan solo proporcionando condiciones iniciales a la bobina y el condensador, esto gracias al comportamiento de la resistencia negativa y del memristor.
+	Como se puede ver no existe una fuente de señal en el circuito y esto se debe a que el análisis hecho busca encontrar una oscilación periódica tan solo proporcionando condiciones iniciales a la bobina y el condensador, esto gracias al comportamiento de la resistencia negativa y del memristor los cuales se especifican mas adelante.\\[0.5cm]
+	La forma de imponer las condiciones iniciales serían las clásicas, usando fuentes de intensidad en serie y tensión en paralelo con interruptores que se abren en $t\,=\,0(s)$ para la bobina y el condensador respectivamente. Esta parte no se va a detallar más en profundidad puesto que en este trabajo no hay implementación real del circuito, los motivos se detallan en el CAPITULO X.
 	\newpage
 	\section{Resistencia negativa}
-	esto es texto de la siguiente hoja
+	Uno de los componentes del circuito es la resistencia negativa la cual se puede construir con lo que se llama un \emph{Convertidor de Impedancia Negativa (NIC)}. Un NIC es un circuito activo, es decir, en lugar de disipar energía como una resistencia convencional, puede proporcionar energía a un circuito, ver \figureref{fig:NIC}. En términos prácticos, un NIC puede ser utilizado para compensar la resistencia de carga de un sistema, mejorar la eficiencia de la transferencia de energía o realizar otras funciones específicas en circuitos eléctricos o electrónicos. En los circuitos osciladores, el NIC desempeña un papel importante en el mantenimiento, estabilización, frecuencia y calidad de la oscilación.
+	 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.65\textwidth]{NIC_B.jpg}
+		\caption{Convertidor de Impedancia Negativa de -1000 Ohmios}
+		\label{fig:NIC}
+	\end{figure}
+	
+	\newpage
+	
+	Una de las maneras de realizarlo es usando un amplificador operacional y 3 resistencias en la configuración que se ve en la \figureref{fig:NIC} de esta manera si elegimos $R_2=R_3$ la resistencia $R_1$ es la que determinaría el valor de resistencia negativa, esta es la demostración:
+	
+	\begin{center}
+	\begin{multicols}{2}
+		\centering
+		\includegraphics[width=\columnwidth]{demotracion_NIC.png}
+		\captionof{figure}{Parámetros circuito NIC }
+		\label{fig:Param_NIC}
+	
+		\columnbreak
+		
+		Consideraciones para el cálculo del circuito de la \figureref{fig:Param_NIC} con Amplificadores Operacionales:\\
+		\begin{equation}
+			V_+\,=\,V_-
+			\label{eq:NIC1}
+		\end{equation}
+		\begin{equation}
+			I_+\,=\,I_-\,=\,0\,(A)
+			\label{eq:NIC2}
+		\end{equation}
+	\end{multicols}
+	\end{center}
+	
+	Teniendo en cuenta la \equationref{eq:NIC1} se puede ver que la tensión $V_S$ cae sobre $R_1$ y se puede relacionar con $V_O$ mediante un divisor de tensión:
+	
+	\begin{equation}
+		V_S\,=\,V_O\,\frac{R_1}{R_1 + R_2}\:\longrightarrow\:V_O\,=\,V_S\,\frac{R_1 + R_2}{R_1}
+		\label{eq:NIC3}
+	\end{equation}\smallskip
+	
+	Teniendo en cuenta la \equationref{eq:NIC2} se puede ver que la intensidad $I(V_S)$ es la misma que pasa por la $R_3$, por ello se puede deducir:
+	
+	\begin{equation}
+		I(V_S)\,=\,\frac{V_S - V_O}{R_3}
+		\label{eq:NIC4}
+	\end{equation}\smallskip
+	
+	Sustituyendo la \equationref{eq:NIC3} en \equationref{eq:NIC4} y trabajando la expresión se llega a:
+	
+	\begin{equation}
+		I(V_S)\,=V_S\,\frac{-R_2}{R_1 \cdot R_3}
+		\label{eq:NIC5}
+	\end{equation}\smallskip
+	
+	Si dividimos $V_S$ entre $I(V_S)$ (\equationref{eq:NIC5}) para obtener la impedancia de entrada:
+	
+	\begin{equation}
+		\frac{V_S}{I(V_S)}\,=\,Z_{IN}\,=\,\frac{V_S}{V_S\,\frac{-R_2}{R_1 \cdot R_3}}\,=\,-R_1\,\frac{R_3}{R_2}
+		\label{eq:NIC6}
+	\end{equation}\smallskip
+	
+	Si elegimos $R_3\,=\,R_2$ en la \equationref{eq:NIC6} obtenemos:
+	
+	\begin{equation}
+		Z_{IN}\,=\,-R_1
+		\label{eq:NIC7}
+	\end{equation}\smallskip
+	
 	\newpage
 	\section{Memristor}
 	esto es texto de la siguiente hoja
