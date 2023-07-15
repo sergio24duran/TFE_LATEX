@@ -11,6 +11,7 @@
 %\usepackage{refcheck} %Para que aparezca el nombre que le doy a la referencia
 \usepackage{comment} %Para comentar varias lineas
 \usepackage{lipsum} %Para hacer textos de ejemplo para pruebas
+\usepackage{bm} % Agrega esta línea en el preámbulo del documento
 
 \usepackage{caption} %Para crear mi formato "boldformat" que pone lo primero en negrita
 \DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
@@ -19,14 +20,14 @@
 \usepackage{hyperref} %Para que haya hipervínculos
 \hypersetup{
 	colorlinks=true, %Para que los hipervínculos sean de color y no con caja roja
-	linkcolor=black,
+	linkcolor=blue,
 	urlcolor=black,
-	citecolor=black,
+	citecolor=blue,
 }
 
 \makeatletter %Mi propio comando para establecer las referencias de figuras y ecuaciones
-\newcommand{\figureref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Figura~\ref*{#1}}}}}
-\newcommand{\equationref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Ecuación~\ref*{#1}}}}}
+\newcommand{\fref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Fig.~\ref*{#1}}}}}
+\newcommand{\eref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{(\ref*{#1})}}}}
 \makeatother
 
 \usepackage{makeidx} %Para hacer el indice
@@ -123,7 +124,7 @@
 	Contenido del capítulo de introducción. Contenido del capítulo 1.
 	
 	\chapter{Descripción del Circuito}
-	El circuito que se ha estudiado es un oscilador con resistencia negativa al que se le ha añadido un componente muy interesante y que está siendo muy estudiado en estos últimos tiempos, el memristor, ver \figureref{fig:-RLCM}.
+	El circuito que se ha estudiado es un oscilador con resistencia negativa al que se le ha añadido un componente muy interesante y que está siendo muy estudiado en estos últimos tiempos, el memristor, ver \fref{fig:-RLCM}.
 	
 	\begin{figure}[h]
 		\centering
@@ -136,7 +137,7 @@
 	La forma de imponer las condiciones iniciales serían las clásicas, usando fuentes de intensidad en serie y tensión en paralelo con interruptores que se abren en $t\,=\,0(s)$ para la bobina y el condensador respectivamente. Esta parte no se va a detallar más en profundidad puesto que en este trabajo no hay implementación real del circuito, los motivos se detallan en el CAPITULO X.
 	\newpage
 	\section{Resistencia negativa}
-	Uno de los componentes del circuito es la resistencia negativa la cual se puede construir con lo que se llama un \emph{Convertidor de Impedancia Negativa (NIC)}. Un NIC es un circuito activo, es decir, en lugar de disipar energía como una resistencia convencional, puede proporcionar energía a un circuito, ver \figureref{fig:NIC}. En términos prácticos, un NIC puede ser utilizado para compensar la resistencia de carga de un sistema, mejorar la eficiencia de la transferencia de energía o realizar otras funciones específicas en circuitos eléctricos o electrónicos. En los circuitos osciladores, el NIC desempeña un papel importante en el mantenimiento, estabilización, frecuencia y calidad de la oscilación.
+	Uno de los componentes del circuito es la resistencia negativa la cual se puede construir con lo que se llama un \emph{Convertidor de Impedancia Negativa (NIC)}. Un NIC es un circuito activo, es decir, en lugar de disipar energía como una resistencia convencional, puede proporcionar energía a un circuito, ver \fref{fig:NIC}. En términos prácticos, un NIC puede ser utilizado para compensar la resistencia de carga de un sistema, mejorar la eficiencia de la transferencia de energía o realizar otras funciones específicas en circuitos eléctricos o electrónicos. En los circuitos osciladores, el NIC desempeña un papel importante en el mantenimiento, estabilización, frecuencia y calidad de la oscilación.
 	 
 	\begin{figure}[h]
 		\centering
@@ -147,7 +148,7 @@
 	
 	\newpage
 	
-	Una de las maneras de realizarlo es usando un amplificador operacional y 3 resistencias en la configuración que se ve en la \figureref{fig:NIC} de esta manera si elegimos $R_2=R_3$ la resistencia $R_1$ es la que determinaría el valor de resistencia negativa, esta es la demostración:
+	Una de las maneras de realizarlo es usando un amplificador operacional y 3 resistencias en la configuración que se ve en la \fref{fig:NIC} de esta manera si elegimos $R_2=R_3$ la resistencia $R_1$ es la que determinaría el valor de resistencia negativa, esta es la demostración:
 	
 	\begin{center}
 	\begin{multicols}{2}
@@ -158,7 +159,7 @@
 	
 		\columnbreak
 		
-		Consideraciones para el cálculo del circuito de la \figureref{fig:Param_NIC} con Amplificadores Operacionales:\\
+		Consideraciones para el cálculo del circuito de la \fref{fig:Param_NIC} con Amplificadores Operacionales:\\
 		\begin{equation}
 			V_+\,=\,V_-
 			\label{eq:NIC1}
@@ -170,35 +171,35 @@
 	\end{multicols}
 	\end{center}
 	
-	Teniendo en cuenta la \equationref{eq:NIC1} se puede ver que la tensión $V_S$ cae sobre $R_1$ y se puede relacionar con $V_O$ mediante un divisor de tensión:
+	Teniendo en cuenta la ecuación \eref{eq:NIC1} se puede ver que la tensión $V_S$ cae sobre $R_1$ y se puede relacionar con $V_O$ mediante un divisor de tensión:
 	
 	\begin{equation}
 		V_S\,=\,V_O\,\frac{R_1}{R_1 + R_2}\:\longrightarrow\:V_O\,=\,V_S\,\frac{R_1 + R_2}{R_1}
 		\label{eq:NIC3}
 	\end{equation}\smallskip
 	
-	Teniendo en cuenta la \equationref{eq:NIC2} se puede ver que la intensidad $I(V_S)$ es la misma que pasa por la $R_3$, por ello se puede deducir:
+	Teniendo en cuenta la ecuación \eref{eq:NIC2} se puede ver que la intensidad $I(V_S)$ es la misma que pasa por la $R_3$, por ello se puede deducir:
 	
 	\begin{equation}
 		I(V_S)\,=\,\frac{V_S - V_O}{R_3}
 		\label{eq:NIC4}
 	\end{equation}\smallskip
 	
-	Sustituyendo la \equationref{eq:NIC3} en \equationref{eq:NIC4} y trabajando la expresión se llega a:
+	Sustituyendo la ecuación \eref{eq:NIC3} en \eref{eq:NIC4} y trabajando la expresión se llega a:
 	
 	\begin{equation}
-		I(V_S)\,=V_S\,\frac{-R_2}{R_1 \cdot R_3}
+		I(V_S)\,=V_S\,\frac{-R_2}{R_1 \, R_3}
 		\label{eq:NIC5}
 	\end{equation}\smallskip
 	
-	Si dividimos $V_S$ entre $I(V_S)$ (\equationref{eq:NIC5}) para obtener la impedancia de entrada:
+	Si dividimos $V_S$ entre $I(V_S)$ (ecuación \eref{eq:NIC5}) para obtener la impedancia de entrada:
 	
 	\begin{equation}
-		\frac{V_S}{I(V_S)}\,=\,Z_{IN}\,=\,\frac{V_S}{V_S\,\frac{-R_2}{R_1 \cdot R_3}}\,=\,-R_1\,\frac{R_3}{R_2}
+		\frac{V_S}{I(V_S)}\,=\,Z_{IN}\,=\,\frac{V_S}{V_S\,\frac{-R_2}{R_1 \, R_3}}\,=\,-R_1\,\frac{R_3}{R_2}
 		\label{eq:NIC6}
 	\end{equation}\smallskip
 	
-	Si elegimos $R_3\,=\,R_2$ en la \equationref{eq:NIC6} obtenemos:
+	Si elegimos $R_3\,=\,R_2$ en la ecuación \eref{eq:NIC6} obtenemos:
 	
 	\begin{equation}
 		Z_{IN}\,=\,-R_1
@@ -207,7 +208,130 @@
 	
 	\newpage
 	\section{Memristor}
-	esto es texto de la siguiente hoja
+	El componente más interesante de este circuito es el Memristor, teorizado por el científico Leon Chua en 1971 \cite{chuamissing1971}, este elemento trata de llenar el vacío que existía en las relaciones entre las cuatro variables básicas en teoría de circuitos: voltaje \textbf{\textit{v}}, intensidad \textbf{\textit{i}}, carga eléctrica \textbf{\textit{q}} y flujo magnético \textit{$\bm{\varphi}$}. En concreto el memristor relaciona la carga eléctrica con el flujo magnético de la siguiente manera \cite{chuaoscillator2008}:
+	
+	\begin{equation}
+		\varphi\,=\,\varphi(q) \qquad q\,=\,q(\varphi)
+		\label{eq:flujocarga}
+	\end{equation}\smallskip
+	
+	Sabiendo la relacion del voltaje y la intensidad respecto a la carga y al flujo en el tiempo:
+
+	\begin{equation}
+		v(t)\,=\,\frac{d\varphi}{dt} \qquad i(t)\,=\,\frac{dq}{dt}
+		\label{eq:dvdi}
+	\end{equation}
+			
+	\begin{equation}
+		\varphi(t)\,=\,\int_{-\infty}^{t}v(\tau)d\tau \qquad q(t)\,=\,\int_{-\infty}^{t}i(\tau)d\tau
+		\label{eq:flujocargaintegral}
+	\end{equation}\smallskip
+	
+	Derivando la ecuación \eref{eq:flujocarga} respecto al tiempo aplicando la regla de la cadena:
+	
+	\begin{equation}
+		\frac{d\varphi}{dt}\,=\,\frac{d\varphi(q)\,dq}{dq\,dt} \qquad \frac{dq}{dt}\,=\,\frac{dq(\varphi)\,d\varphi}{d\varphi\,dt}
+		\label{eq:vym}
+	\end{equation}\smallskip
+	
+	Sustituyendo las relación de la ecuación \eref{eq:dvdi} en la ecuación \eref{eq:vym}:
+	
+	\begin{equation}
+		v(t)\,=\,\frac{d\varphi(q)}{dq}i(t) \qquad i(t)\,=\,\frac{dq(\varphi)}{d\varphi}v(t)
+		\label{eq:vym2}
+	\end{equation}\smallskip
+	
+	Los dos parámetros que quedan en la ecuación \eref{eq:vym2} son los que se denominan \textbf{\textit{Memristancia M(q)}} y \textbf{\textit{Memductancia W($\bm{\varphi}$)}}: 
+	
+	\begin{equation}
+		M(q)\,=\,\frac{d\varphi(q)}{dq} \qquad W(\varphi)\,=\,\frac{dq(\varphi)}{d\varphi}
+		\label{eq:myw}
+	\end{equation}\smallskip
+	
+	Finalmente se presentan dos tipos de expresiones:
+	
+	\begin{equation}
+		\textit{Memristor controlado por carga} \, \rightarrow \, v(t)\,=\,M(q)\,i(t)
+		\label{eq:cc}
+	\end{equation}\smallskip
+	\begin{equation}
+		\textit{Memristor controlado por flujo} \, \rightarrow \, i(t)\,=\,W(\varphi)\,v(t)
+		\label{eq:fc}
+	\end{equation}\smallskip
+	\textbf{{\color{red}ESTO IRA EN LA ZONA DEL INICIO DE ANALISIS DEL CIRCUITO}}
+	Y en \cite{chuaoscillator2008} se asume que el comportamiento del memristor se puede aproximar por una ecuacion linear a trozos monótonamente creciente:
+	
+	\begin{equation}
+		\varphi(q)\,=\,bq+0.5(a-b)(|q+1|-|q-1|)
+		\label{eq:fq}
+	\end{equation}\smallskip
+	o
+	\begin{equation}
+		q(\varphi)\,=\,d\varphi+0.5(c-d)(|\varphi+1|-|\varphi-1|)
+		\label{eq:qf}
+	\end{equation}\smallskip
+	
+	\newpage
+	
+	El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP fabricaron un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch} no sería hastaa 2008 que se percataron de la similitud de funcionaminto con el memristor de Vhua. La construccion es secilla, se trata dos capas, una de dioxidod e titanio puro y otra de dioxido d titanio deficiente de atomos de oxigeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{mem1.png}
+		\caption{Costruccion del memristor de HP. Referencia: \cite{williams}}
+		\label{fig:mem1}
+	\end{figure}
+	
+	El oxido de titanio tiene una serie de caracteristicas que lo hacen un material muy interesante en esta aplicacion:
+	\begin{enumerate}
+		\item Resistencia variable: La resistencia electrica del oxido de titanio puede cambiar en repuesta de a la aplicacion de una corriente o un campo electrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos limites de operacion.
+		\item No volatilidad: El óxido de titanio puede mantener su estado de resistencia incluso cuando se retira la corriente eléctrica que lo atraviesa. Esto significa que puede retener información y mantener su estado de resistencia sin requerir energía continua.
+		\item Cambios rápidos de resistencia:  Esta propiedad permite operaciones de escritura y lectura rápidas en el memristor, lo que es crucial para su uso en aplicaciones de almacenamiento y procesamiento de datos.
+		\item Baja potencia y tamaño compacto
+	\end{enumerate}
+	\newpage
+	
+	La formula que se propone en \cite{HP} para modelar el comportamiento de este dispositivo es:
+	
+	\begin{equation}
+		v(t)\,=\,\left(R_{ON}\,\frac{w(t)}{D}+R_{OFF}\left(1-\frac{w(t)}{D}\right)\right)i(t)
+		\label{eq:hp1}
+	\end{equation}
+	
+	\begin{equation}
+		\frac{dw(t)}{dt}\,=\,\mu_V\,\frac{R_{ON}}{D}\,q(t)
+		\label{eq:hp2}
+	\end{equation}\smallskip
+	
+	Integrando la ecuación \eref{eq:hp2} e insertandola en \eref{eq:hp1} teniendo en cuenta que el valor de resistencia  $R_{ON} \ll R_{OFF}$: 
+	
+	\begin{equation}
+		w(t)\,=\,\mu_V\,\frac{R_{ON}}{D}\,i(t)
+		\label{eq:hp3}
+	\end{equation}\smallskip
+	\begin{equation}
+		M(q)\,=\,R_{OFF}\,\left(1-\,\frac{\mu_V\,R_{ON}}{D^2}\,q(t)\right)
+		\label{eq:hp4}
+	\end{equation}\smallskip
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{schmem.png}
+		\caption{Esquema del memristor de HP. Referencia: \cite{2021}}
+		\label{fig:2021}
+	\end{figure}\smallskip
+	
+	Los parámetros que aparecen en las ecuaciones anteriores y que describen el funcionamiento del componente son:
+	
+	\begin{enumerate}
+		\item $R_{ON}$: Resistencia en el estado ON, valor mínimo. Es constante.
+		\item $R_{OFF}$: Resistencia en el estado OFF, valor máximo. Es constante.
+		\item $\mu_V$: Mobilidad iónica de arrastre promedio. Es constante.
+		\item $w$: Ancho de la zona dopada, no es constante, depende de la excitación.
+		\item $D$: Ancho total de la lamina de oxido de titanio. Es constante.
+	\end{enumerate}
+	
+	El funcionamiento es el siguiente, cuando un voltaje positivo se aplica al electrodo superior las vacantes de $O_2$ de la zona dopada se repelen y viajan hacia la zona de oxido de titanio puro (que actuaba de dielectrico), haciendo asi que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de $O_2$ viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.	
 	\newpage
 	\section{Variables de estado}
 	esto es texto de la siguiente hoja
@@ -252,7 +376,25 @@
 	\chapter*{Conclusiones}
 	Contenido del capítulo de conclusiones.
 	\newpage
-	esto es texto de la siguiente hoja
+	
+	\chapter*{Bibliografía}
+	
+	\begin{thebibliography}{99}
+		\bibitem{chuamissing1971} CHUA, L. O. Memristor – The missing circuit element. IEEE
+		Transactions on Circuit Theory, 1971, vol. CT-18, no. 5, p. 507 to
+		519. DOI: 10.1109/TCT.1971.1083337.
+		
+		\bibitem{chuaoscillator2008} Itoh, Makoto \& Chua, Leon. (2008). Memristor oscillators. I. J. Bifurcation and Chaos. 18. 3183-3206. 10.1142/S0218127408022354. 
+		
+		\bibitem{HP} Strukov DB, Snider GS, Stewart DR, Williams RS. The missing memristor found. Nature. 2008 May 1;453(7191):80-3. doi: 10.1038/nature06932. Erratum in: Nature. 2009 Jun 25;459(7250):1154. PMID: 18451858.
+		
+		\bibitem{williams} R. S. Williams, "How We Found The Missing Memristor," in IEEE Spectrum, vol. 45, no. 12, pp. 28-35, Dec. 2008, doi: 10.1109/MSPEC.2008.4687366.
+		
+		\bibitem{2021} Xiaoyue, Ji \& Dong, Zhekang \& Zhou, Guangdong \& Lai, Chun Sing \& Yan, Yunfeng \& Qi, Donglian. (2021). Memristive System Based Image Processing Technology: A Review and Perspective. Electronics. 10. 3176. 10.3390/electronics10243176. 
+		
+	\end{thebibliography}
+	
+	\newpage
 	
 	\begin{comment}
 	\chapter{Introducción}
