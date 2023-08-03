@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  15 JUL 2023 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  3 AUG 2023 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,40 +507,40 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen185
 \titlewidthfirst=\dimen186
 )
-LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 56
+LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 57
 .
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/arial\t1ua1.fd
 File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 )
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 56.
+(Font)              scaled to size 11.39996pt on input line 57.
  (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -609,7 +609,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 57.
  (main.out)
 (main.out)
 \@outlinefile=\write5
@@ -618,27 +618,27 @@ Package hyperref Info: Link coloring ON on input line 56.
 <b.png, id=59, 657.45625pt x 602.25pt>
 File: b.png Graphic file (type png)
 <use b.png>
-Package pdftex.def Info: b.png  used on input line 61.
+Package pdftex.def Info: b.png  used on input line 62.
 (pdftex.def)             Requested size: 85.35826pt x 78.18497pt.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 65.
+(Font)              scaled to size 19.70294pt on input line 66.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 19.70294pt on input line 65.
+(Font)              scaled to size 19.70294pt on input line 66.
 <a.png, id=61, 208.1376pt x 190.7928pt>
 File: a.png Graphic file (type png)
 <use a.png>
-Package pdftex.def Info: a.png  used on input line 70.
+Package pdftex.def Info: a.png  used on input line 71.
 (pdftex.def)             Requested size: 85.35826pt x 78.24591pt.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 76.
+(Font)              scaled to size 16.41594pt on input line 77.
 LaTeX Font Info:    Font shape `T1/ua1/m/sl' in size <20.74> not available
-(Font)              Font shape `T1/ua1/m/it' tried instead on input line 83.
+(Font)              Font shape `T1/ua1/m/it' tried instead on input line 84.
 LaTeX Font Info:    Font shape `T1/ua1/m/it' will be
-(Font)              scaled to size 19.70294pt on input line 83.
+(Font)              scaled to size 19.70294pt on input line 84.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 89.
+(Font)              scaled to size 13.67995pt on input line 90.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 89.
+(Font)              scaled to size 13.67995pt on input line 90.
  [1
 
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program 
@@ -647,12 +647,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 	\newpage
+l.98 	\newpage
                [1
 
 ]
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 106.
+(Font)              scaled to size 11.39996pt on input line 107.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -664,9 +664,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 122.
+(Font)              scaled to size 23.63593pt on input line 123.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 122.
+(Font)              scaled to size 23.63593pt on input line 123.
  (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -681,24 +681,24 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/ua1/m/it' will be
-(Font)              scaled to size 11.39996pt on input line 127.
+(Font)              scaled to size 11.39996pt on input line 128.
 <-RLCM.png, id=102, 731.73375pt x 411.78844pt>
 File: -RLCM.png Graphic file (type png)
 <use -RLCM.png>
-Package pdftex.def Info: -RLCM.png  used on input line 131.
+Package pdftex.def Info: -RLCM.png  used on input line 132.
 (pdftex.def)             Requested size: 298.75264pt x 168.12431pt.
 [5
 
  <./-RLCM.png>]
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 139.
+(Font)              scaled to size 16.41594pt on input line 140.
 <NIC_B.jpg, id=112, 682.55pt x 1197.47375pt>
 File: NIC_B.jpg Graphic file (type jpg)
 <use NIC_B.jpg>
-Package pdftex.def Info: NIC_B.jpg  used on input line 144.
+Package pdftex.def Info: NIC_B.jpg  used on input line 145.
 (pdftex.def)             Requested size: 277.41176pt x 486.69177pt.
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -712,16 +712,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <demotracion_NIC.png, id=120, 642.90187pt x 443.40656pt>
 File: demotracion_NIC.png Graphic file (type png)
 <use demotracion_NIC.png>
-Package pdftex.def Info: demotracion_NIC.png  used on input line 156.
+Package pdftex.def Info: demotracion_NIC.png  used on input line 157.
 (pdftex.def)             Requested size: 208.39568pt x 143.72653pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 157.
+(caption)                particular \caption on input line 158.
 See the caption package documentation for explanation.
 
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.6139pt, for example:
@@ -732,13 +732,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7 <./demotracion_NIC.png>]
 LaTeX Font Info:    Font shape `T1/ua1/b/it' will be
-(Font)              scaled to size 11.39996pt on input line 211.
+(Font)              scaled to size 11.39996pt on input line 212.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 254.
+(Font)              scaled to size 7.59998pt on input line 255.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 254.
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
+(Font)              scaled to size 5.69998pt on input line 255.
+LaTeX Info: Redefining \. on input line 265.
+LaTeX Info: Redefining \% on input line 265.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -749,13 +749,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [8]
-<mem1.png, id=173, 274.02374pt x 283.0575pt>
+<mem1.png, id=170, 274.02374pt x 283.0575pt>
 File: mem1.png Graphic file (type png)
 <use mem1.png>
-Package pdftex.def Info: mem1.png  used on input line 280.
+Package pdftex.def Info: mem1.png  used on input line 271.
 (pdftex.def)             Requested size: 256.07741pt x 264.54079pt.
-LaTeX Info: Redefining \. on input line 292.
-LaTeX Info: Redefining \% on input line 292.
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -766,13 +766,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [9 <./mem1.png>]
-<schmem.png, id=190, 853.1875pt x 308.15125pt>
+<schmem.png, id=187, 853.1875pt x 308.15125pt>
 File: schmem.png Graphic file (type png)
 <use schmem.png>
-Package pdftex.def Info: schmem.png  used on input line 319.
+Package pdftex.def Info: schmem.png  used on input line 310.
 (pdftex.def)             Requested size: 426.79135pt x 154.15047pt.
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -783,18 +783,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [10 <./schmem.png>]
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.6139pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.6139pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
-
-[11]
+<iv_chua.png, id=208, 853.1875pt x 428.60126pt>
+File: iv_chua.png Graphic file (type png)
+<use iv_chua.png>
+Package pdftex.def Info: iv_chua.png  used on input line 330.
+(pdftex.def)             Requested size: 341.43437pt x 171.52248pt.
+<iv_hp.png, id=211, 304.88907pt x 301.125pt>
+File: iv_hp.png Graphic file (type png)
+<use iv_hp.png>
+Package pdftex.def Info: iv_hp.png  used on input line 337.
+(pdftex.def)             Requested size: 213.39568pt x 210.76767pt.
 LaTeX Info: Redefining \. on input line 342.
 LaTeX Info: Redefining \% on input line 342.
 
@@ -806,13 +804,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[12]
-Cap\'{\i }tulo 3.
-[13
+[11 <./iv_chua.png> <./iv_hp.png>]
+<circuito.png, id=223, 651.93562pt x 371.88937pt>
+File: circuito.png Graphic file (type png)
+<use circuito.png>
+Package pdftex.def Info: circuito.png  used on input line 349.
+(pdftex.def)             Requested size: 341.43437pt x 194.77385pt.
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
 
-]
-LaTeX Info: Redefining \. on input line 347.
-LaTeX Info: Redefining \% on input line 347.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[12 <./circuito.png>]
+LaTeX Info: Redefining \. on input line 445.
+LaTeX Info: Redefining \% on input line 445.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[13]
+LaTeX Info: Redefining \. on input line 449.
+LaTeX Info: Redefining \% on input line 449.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -823,8 +846,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [14]
-LaTeX Info: Redefining \. on input line 351.
-LaTeX Info: Redefining \% on input line 351.
+Cap\'{\i }tulo 3.
+[15
+
+]
+LaTeX Info: Redefining \. on input line 454.
+LaTeX Info: Redefining \% on input line 454.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -834,13 +861,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[15]
-Cap\'{\i }tulo 4.
-[16
-
-]
-LaTeX Info: Redefining \. on input line 356.
-LaTeX Info: Redefining \% on input line 356.
+[16]
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -851,12 +874,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [17]
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 4.
 [18
 
 ]
-LaTeX Info: Redefining \. on input line 361.
-LaTeX Info: Redefining \% on input line 361.
+LaTeX Info: Redefining \. on input line 463.
+LaTeX Info: Redefining \% on input line 463.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -867,12 +890,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [19]
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 5.
 [20
 
 ]
-LaTeX Info: Redefining \. on input line 366.
-LaTeX Info: Redefining \% on input line 366.
+LaTeX Info: Redefining \. on input line 468.
+LaTeX Info: Redefining \% on input line 468.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -883,12 +906,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [21]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [22
 
 ]
-LaTeX Info: Redefining \. on input line 371.
-LaTeX Info: Redefining \% on input line 371.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -899,12 +922,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [23]
-Cap\'{\i }tulo 8.
+Cap\'{\i }tulo 7.
 [24
 
 ]
-LaTeX Info: Redefining \. on input line 376.
-LaTeX Info: Redefining \% on input line 376.
+LaTeX Info: Redefining \. on input line 478.
+LaTeX Info: Redefining \% on input line 478.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -914,23 +937,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[25] [26
-
-] [27
+[25]
+Cap\'{\i }tulo 8.
+[26
 
 ]
-Underfull \hbox (badness 2418) in paragraph at lines 383--386
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[27] [28
+
+]
+Underfull \hbox (badness 2418) in paragraph at lines 489--492
 []\T1/ua1/m/n/12 CHUA, L. O. Mem-ris-tor ^^U The mis-sing cir-cuit ele-ment. IE
 EE Transac-
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 383--386
+Underfull \hbox (badness 1769) in paragraph at lines 489--492
 \T1/ua1/m/n/12 tions on Cir-cuit Theory, 1971, vol. CT-18, no. 5, p. 507 to 519
 . DOI:
  []
 
-[28
+[29
 
 ] Excluding 'comment' comment. (main.aux
 LaTeX Info: Redefining \. on input line 22.
@@ -944,28 +981,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6C84FCA7C454B7168D5C565B1D09E15E;2465.
  ) 
 Here is how much of TeX's memory you used:
- 14298 strings out of 476037
- 228417 string characters out of 5789655
- 1865763 words of memory out of 5000000
- 34740 multiletter control sequences out of 15000+600000
+ 14362 strings out of 476037
+ 229428 string characters out of 5789655
+ 1866763 words of memory out of 5000000
+ 34792 multiletter control sequences out of 15000+600000
  612764 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,12n,93p,751b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Roaming
-/MiKTeX/fonts/type1/urw/arial/ua1b8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKT
-eX/fonts/type1/urw/arial/ua1bi8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/f
-onts/type1/urw/arial/ua1r8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/
-type1/urw/arial/ua1ri8a.pfb>
-Output written on main.pdf (29 pages, 825264 bytes).
+ 79i,12n,93p,987b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextr
+a/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/
+urw/arial/ua1b8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/a
+rial/ua1bi8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial
+/ua1r8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1r
+i8a.pfb>
+Output written on main.pdf (30 pages, 919114 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

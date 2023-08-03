@@ -50,7 +50,8 @@
 \fancyhf{}
 \fancyhead[L]{\fontsize{12}{14}\selectfont\leftmark}  % Número de página a 
 \fancyhead[R]{\fontsize{12}{14}\selectfont\thepage}  % Número de página 
-\fancyfoot[R]{\fontsize{12}{14}\selectfont Sevilla, Julio de 2023}  % 
+\fancyfoot[R]{\fontsize{12}{14}\selectfont Sevilla, Julio de 2023}  
+
 
 
 \begin{document}
@@ -258,22 +259,12 @@
 		\textit{Memristor controlado por flujo} \, \rightarrow \, i(t)\,=\,W(\varphi)\,v(t)
 		\label{eq:fc}
 	\end{equation}\smallskip
-	\textbf{{\color{red}ESTO IRA EN LA ZONA DEL INICIO DE ANALISIS DEL CIRCUITO}}
-	Y en \cite{chuaoscillator2008} se asume que el comportamiento del memristor se puede aproximar por una ecuacion linear a trozos monótonamente creciente:
+
 	
-	\begin{equation}
-		\varphi(q)\,=\,bq+0.5(a-b)(|q+1|-|q-1|)
-		\label{eq:fq}
-	\end{equation}\smallskip
-	o
-	\begin{equation}
-		q(\varphi)\,=\,d\varphi+0.5(c-d)(|\varphi+1|-|\varphi-1|)
-		\label{eq:qf}
-	\end{equation}\smallskip
 	
 	\newpage
 	
-	El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP fabricaron un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch} no sería hastaa 2008 que se percataron de la similitud de funcionaminto con el memristor de Vhua. La construccion es secilla, se trata dos capas, una de dioxidod e titanio puro y otra de dioxido d titanio deficiente de atomos de oxigeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}
+	El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP fabricaron un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch} no sería hasta 2008 que se percataron de la similitud de funcionaminto con el memristor de Chua. La construccion es secilla, se trata de dos capas, una de dioxido de titanio puro y otra de dioxido de titanio deficiente de atomos de oxigeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}
 	
 	\begin{figure}[h]
 		\centering
@@ -284,7 +275,7 @@
 	
 	El oxido de titanio tiene una serie de caracteristicas que lo hacen un material muy interesante en esta aplicacion:
 	\begin{enumerate}
-		\item Resistencia variable: La resistencia electrica del oxido de titanio puede cambiar en repuesta de a la aplicacion de una corriente o un campo electrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos limites de operacion.
+		\item Resistencia variable: La resistencia electrica del oxido de titanio puede cambiar en repuesta de la aplicacion de una corriente o un campo electrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos limites de operacion.
 		\item No volatilidad: El óxido de titanio puede mantener su estado de resistencia incluso cuando se retira la corriente eléctrica que lo atraviesa. Esto significa que puede retener información y mantener su estado de resistencia sin requerir energía continua.
 		\item Cambios rápidos de resistencia:  Esta propiedad permite operaciones de escritura y lectura rápidas en el memristor, lo que es crucial para su uso en aplicaciones de almacenamiento y procesamiento de datos.
 		\item Baja potencia y tamaño compacto
@@ -330,11 +321,127 @@
 		\item $w$: Ancho de la zona dopada, no es constante, depende de la excitación.
 		\item $D$: Ancho total de la lamina de oxido de titanio. Es constante.
 	\end{enumerate}
-	
-	El funcionamiento es el siguiente, cuando un voltaje positivo se aplica al electrodo superior las vacantes de $O_2$ de la zona dopada se repelen y viajan hacia la zona de oxido de titanio puro (que actuaba de dielectrico), haciendo asi que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de $O_2$ viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.	
 	\newpage
+	
+	El funcionamiento es el siguiente, entre los dos electrodos de platino tenemos una capa de dióxido de titanio puro $TiO_2$ que actúa como dieléctrico y otra de dióxido de titanio con vacantes de oxígeno $TiO_{2-x}$ que actúa como conductor ya que en estas vacantes están cargadas positivamente (ver \fref{fig:mem1}), ya que al faltar atomos de oxígeno se están perdiendo también sus electrones de valencia asociados, generando así que el compuesto necesite atraer electrones a dichas vacantes para así mantenerse electricamente estable.Cuando un voltaje positivo se aplica al electrodo superior las vacantes de oxígeno de la zona dopada se repelen y viajan hacia la zona de oxido de titanio puro, haciendo asi que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de oxígeno viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{iv_chua.png}
+		\caption{Gráfica Tensión-Intensidad del Memristor de Chua ideal para una señal de entrada senoidal con varias frecuencias. Como se puede ver conforme aumenta la frecuencia la gráfica se parece más a la de una resistencia tradicional. \\ Referencia: \cite{outsiders}}
+		\label{fig:iv_chua}
+	\end{figure}\smallskip
+	
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{iv_hp.png}
+		\caption{Gráfica Tensión-Intensidad del Memristor de HP. Referencia: \cite{HP}}
+		\label{fig:iv_hp}
+	\end{figure}\smallskip
+	
+	\newpage
+	
 	\section{Variables de estado}
-	esto es texto de la siguiente hoja
+	En este trabajo hemos hecho un análisis matemático de la bifurcación del circuito oscilador haciendo uso de técnicas de análisis de reciente estudio, pero primero hay que presentar el circuito y transformar sus ecuaciones eléctricas hasta llegar a una forma matemática con la que poder trabajar, por ello empecemos analizando el circuito.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{circuito.png}
+		\caption{Parámetros del circuito}
+		\label{fig:circuito}
+	\end{figure}\smallskip
+	
+	Aplicanco las leyes de Kirchoff a nuestro circuito, \fref{fig:circuito}, se puede ver que:
+	
+	\begin{equation}
+		i_{LR}\,=\,i_M+i_C
+		\label{eq:kir1}
+	\end{equation}
+	\begin{equation}
+		v_R\,=\,v_L+v_1
+		\label{eq:kir2}
+	\end{equation}
+	
+	Reordenando las anteriores ecuaciones:
+	
+	\begin{equation}
+		i_C\,=\,i_{LR}-i_M
+		\label{eq:kir11}
+	\end{equation}
+	\begin{equation}
+		v_L\,=\,v_R-v_1
+		\label{eq:kir22}
+	\end{equation}
+	
+	Recordando la relación entre la carga y el flujo con la intensidad y la tensión de las ecuaciones \eref{eq:dvdi}, la ecuación del memristor controlado por flujo \eref{eq:fc} y aplicándolo a \eref{eq:kir11} y \eref{eq:kir22} obtenemos:
+	
+	
+	\begin{eqnarray}
+		C\,\frac{dv_1}{dt}\,&=&\,i_{LR}-W(\varphi)\,v_1 \label{eq:kir111} \\ [2mm]
+		L\,\frac{di_{LR}}{dt}\,&=&\,R\,i_{LR}-v_1 \label{eq:kir222} \\ [2mm]
+		\frac{d\varphi}{dt}\,&=&\,v_1 \label{eq:kir333}
+	\end{eqnarray}\smallskip
+	
+	Como se pueden ver las variables de estado elegidas son la intensidad en la resistencia y la bobina \bm{$i_{LR}$}, la tensión en el condensador y el memristor \bm{$v_1$} y el flujo en el memristor \bm{$\varphi$}
+	\newpage
+	Reordenando las ecuaciones anteriores \eref{eq:kir111}, \eref{eq:kir222} y \eref{eq:kir333} tenemos:
+	
+	\begin{eqnarray}
+		\frac{dv_1}{dt}\,&=&\,\frac{i_{LR}}{C}-W(\varphi)\,\frac{v_1}{C} \label{eq:sis1} \\ [2mm]
+		\frac{di_{LR}}{dt}\,&=&\,\frac{R}{L}\,i_{LR}-\frac{v_1}{L} \label{eq:sis2} \\ [2mm]
+		\frac{d\varphi}{dt}\,&=&\,v_1 \label{eq:sis3}
+	\end{eqnarray}\smallskip
+	
+	Haciendo algunos cambios a las tres anteriores ecuaciones para luego poder trabajar con las ecuaciones obtenemos el siguiente sistema:
+    
+	\begin{equation}
+		\label{eq:sistema}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\frac{dx}{dt} &= \alpha (y - W(z)x) \\
+				\frac{dy}{dt} &= -\xi x + \beta y \\
+				\frac{dz}{dt} &= x
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	Donde tenemos:
+	\begin{equation*}
+		x\,=\,v_1 \qquad y\,=\,i_{LR} \qquad z\,=\,\varphi \qquad \& \qquad \alpha\,=\,\frac{1}{C} \qquad \beta\,=\,\frac{R}{L} \qquad \xi\,=\,\frac{1}{L}
+	\end{equation*}
+	
+	Pero del sistema \eref{eq:sistema} aun tenemos que definir $W(z)$. En \cite{chuaoscillator2008} se asume que el comportamiento del memristor se puede aproximar por una ecuacion linear a trozos monótonamente creciente:
+	
+	\begin{equation}
+		q(\varphi)\,=\,b\varphi+0.5(a-b)(|\varphi+1|-|\varphi-1|)
+		\label{eq:qf}
+	\end{equation}
+    \begin{center}
+    	$\forall\quad a,b,c,d> 0$
+    \end{center}
+    
+    Escribiendo \eref{eq:qf} con la variable \bm{$z$} y derivandola (recordando la ecuación \eref{eq:myw}) para obtener $W(z)$:
+    
+    \begin{equation}
+    	q(z)\,=\,bz+0.5(a-b)(|z+1|-|z-1|)
+    	\label{eq:qfz}
+    \end{equation}
+    
+    \begin{equation}
+    	W(z)\,=\,\frac{dq(z)}{dz}\,=\,
+    		\label{eq:wz}
+    		\scalebox{1}{$\displaystyle
+    			\left\{
+    			\begin{aligned}
+    				a, \quad   |z| < 1\\
+    				b, \quad   |z| > 1
+    			\end{aligned}
+    			\right.
+    			$}
+    \end{equation}
+    
+	Ya tenemos las ecuaciones necesarias para empezar el análisis pero primero veremos en los siguientes capitulos que técnicas estaremos usando para ello.
 	\newpage
 	\section{Superficies invariantes}
 	esto es texto de la siguiente hoja
@@ -377,7 +484,6 @@
 	Contenido del capítulo de conclusiones.
 	\newpage
 	
-	\chapter*{Bibliografía}
 	
 	\begin{thebibliography}{99}
 		\bibitem{chuamissing1971} CHUA, L. O. Memristor – The missing circuit element. IEEE
@@ -391,6 +497,8 @@
 		\bibitem{williams} R. S. Williams, "How We Found The Missing Memristor," in IEEE Spectrum, vol. 45, no. 12, pp. 28-35, Dec. 2008, doi: 10.1109/MSPEC.2008.4687366.
 		
 		\bibitem{2021} Xiaoyue, Ji \& Dong, Zhekang \& Zhou, Guangdong \& Lai, Chun Sing \& Yan, Yunfeng \& Qi, Donglian. (2021). Memristive System Based Image Processing Technology: A Review and Perspective. Electronics. 10. 3176. 10.3390/electronics10243176. 
+		
+		\bibitem{outsiders} Caravelli, F. \& Carbajal, Juan. (2018). Memristors for the Curious Outsiders. 10.31224/osf.io/c4qr9. 
 		
 	\end{thebibliography}
 	
