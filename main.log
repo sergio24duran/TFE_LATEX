@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  3 AUG 2023 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  6 AUG 2023 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,31 +182,72 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Program Files\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count280
+\calc@Cskip=\skip64
+)
+(C:\Program Files\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count281
+\l_MT_multwidth_dim=\dimen163
+\origjot=\skip65
+\l_MT_shortvdotswithinadjustabove_dim=\dimen164
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen165
+\l_MT_above_intertext_sep=\dimen166
+\l_MT_below_intertext_sep=\dimen167
+\l_MT_above_shortintertext_sep=\dimen168
+\l_MT_below_shortintertext_sep=\dimen169
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen170
+)
 (C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count278
-\mult@box=\box53
-\multicol@leftmargin=\dimen161
-\c@unbalance=\count279
-\c@collectmore=\count280
-\doublecol@number=\count281
-\multicoltolerance=\count282
-\multicolpretolerance=\count283
-\full@width=\dimen162
-\page@free=\dimen163
-\premulticols=\dimen164
-\postmulticols=\dimen165
-\multicolsep=\skip62
-\multicolbaselineskip=\skip63
-\partial@page=\box54
-\last@line=\box55
-\mc@boxedresult=\box56
-\maxbalancingoverflow=\dimen166
-\mult@rightbox=\box57
-\mult@grightbox=\box58
-\mult@firstbox=\box59
-\mult@gfirstbox=\box60
-\@tempa=\box61
+\c@tracingmulticols=\count282
+\mult@box=\box54
+\multicol@leftmargin=\dimen171
+\c@unbalance=\count283
+\c@collectmore=\count284
+\doublecol@number=\count285
+\multicoltolerance=\count286
+\multicolpretolerance=\count287
+\full@width=\dimen172
+\page@free=\dimen173
+\premulticols=\dimen174
+\postmulticols=\dimen175
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box55
+\last@line=\box56
+\mc@boxedresult=\box57
+\maxbalancingoverflow=\dimen176
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@firstbox=\box60
+\mult@gfirstbox=\box61
 \@tempa=\box62
 \@tempa=\box63
 \@tempa=\box64
@@ -242,15 +283,16 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box94
 \@tempa=\box95
 \@tempa=\box96
-\c@minrows=\count284
-\c@columnbadness=\count285
-\c@finalcolumnbadness=\count286
-\last@try=\dimen167
-\multicolovershoot=\dimen168
-\multicolundershoot=\dimen169
-\mult@nat@firstbox=\box97
-\colbreak@box=\box98
-\mc@col@check@num=\count287
+\@tempa=\box97
+\c@minrows=\count288
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
+\last@try=\dimen177
+\multicolovershoot=\dimen178
+\multicolundershoot=\dimen179
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count291
 )
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
@@ -263,42 +305,56 @@ Package: expl3 2023-06-16 L3 programming layer (loader)
 
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
-\l__pdf_internal_box=\box99
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box100
 ))
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count289
-\l__lipsum_a_int=\count290
-\l__lipsum_b_int=\count291
+\g__lipsum_par_int=\count293
+\l__lipsum_a_int=\count294
+\l__lipsum_b_int=\count295
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup4
-\symboldletters=\mathgroup5
-\symboldsymbols=\mathgroup6
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
+(C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip68
+\enit@outerparindent=\dimen180
+\enit@toks=\toks25
+\enit@inbox=\box101
+\enit@count@id=\count296
+\enitdp@description=\count297
+)
+\c@theorem=\count298
+\c@definicion=\count299
+
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen170
-\captionmargin=\dimen171
-\caption@leftmargin=\dimen172
-\caption@rightmargin=\dimen173
-\caption@width=\dimen174
-\caption@indent=\dimen175
-\caption@parindent=\dimen176
-\caption@hangindent=\dimen177
+\caption@tempdima=\dimen181
+\captionmargin=\dimen182
+\caption@leftmargin=\dimen183
+\caption@rightmargin=\dimen184
+\caption@width=\dimen185
+\caption@indent=\dimen186
+\caption@parindent=\dimen187
+\caption@hangindent=\dimen188
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count292
-\c@continuedfloat=\count293
+\c@caption@flags=\count300
+\c@continuedfloat=\count301
 )
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
@@ -348,15 +404,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count294
+\c@section@level=\count302
 )
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count295
+\etb@tempcnta=\count303
 )
-\@linkdim=\dimen178
-\Hy@linkcounter=\count296
-\Hy@pagecounter=\count297
+\@linkdim=\dimen189
+\Hy@linkcounter=\count304
+\Hy@pagecounter=\count305
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
@@ -366,7 +422,7 @@ Now handling font encoding PD1 ...
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count298
+\Hy@SavedSpaceFactor=\count306
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
@@ -380,14 +436,14 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count299
+\c@Hy@tempcnt=\count307
 
 (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4772.
-\XeTeXLinkMargin=\dimen179
+\XeTeXLinkMargin=\dimen190
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -396,9 +452,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count300
-\Field@Width=\dimen180
-\Fld@charsize=\dimen181
+\Fld@menulength=\count308
+\Field@Width=\dimen191
+\Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6051.
 Package hyperref Info: Link nesting OFF on input line 6056.
 Package hyperref Info: Hyper index ON on input line 6059.
@@ -410,9 +466,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count301
-\c@Item=\count302
-\c@Hfootnote=\count303
+\Hy@abspage=\count309
+\c@Item=\count310
+\c@Hfootnote=\count311
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -424,8 +480,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count304
-\c@bookmark@seq@number=\count305
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilechec
 k.sty
@@ -438,9 +494,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip64
+\Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
  (C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
@@ -452,42 +508,42 @@ Writing index file main.idx
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip65
-\cftbeforetoctitleskip=\skip66
-\cftaftertoctitleskip=\skip67
-\cftbeforepartskip=\skip68
-\cftpartnumwidth=\skip69
-\cftpartindent=\skip70
-\cftbeforechapskip=\skip71
-\cftchapindent=\skip72
-\cftchapnumwidth=\skip73
-\cftbeforesecskip=\skip74
-\cftsecindent=\skip75
-\cftsecnumwidth=\skip76
-\cftbeforesubsecskip=\skip77
-\cftsubsecindent=\skip78
-\cftsubsecnumwidth=\skip79
-\cftbeforesubsubsecskip=\skip80
-\cftsubsubsecindent=\skip81
-\cftsubsubsecnumwidth=\skip82
-\cftbeforeparaskip=\skip83
-\cftparaindent=\skip84
-\cftparanumwidth=\skip85
-\cftbeforesubparaskip=\skip86
-\cftsubparaindent=\skip87
-\cftsubparanumwidth=\skip88
-\cftbeforeloftitleskip=\skip89
-\cftafterloftitleskip=\skip90
-\cftbeforefigskip=\skip91
-\cftfigindent=\skip92
-\cftfignumwidth=\skip93
-\c@lofdepth=\count306
-\c@lotdepth=\count307
-\cftbeforelottitleskip=\skip94
-\cftafterlottitleskip=\skip95
-\cftbeforetabskip=\skip96
-\cfttabindent=\skip97
-\cfttabnumwidth=\skip98
+\cftparskip=\skip70
+\cftbeforetoctitleskip=\skip71
+\cftaftertoctitleskip=\skip72
+\cftbeforepartskip=\skip73
+\cftpartnumwidth=\skip74
+\cftpartindent=\skip75
+\cftbeforechapskip=\skip76
+\cftchapindent=\skip77
+\cftchapnumwidth=\skip78
+\cftbeforesecskip=\skip79
+\cftsecindent=\skip80
+\cftsecnumwidth=\skip81
+\cftbeforesubsecskip=\skip82
+\cftsubsecindent=\skip83
+\cftsubsecnumwidth=\skip84
+\cftbeforesubsubsecskip=\skip85
+\cftsubsubsecindent=\skip86
+\cftsubsubsecnumwidth=\skip87
+\cftbeforeparaskip=\skip88
+\cftparaindent=\skip89
+\cftparanumwidth=\skip90
+\cftbeforesubparaskip=\skip91
+\cftsubparaindent=\skip92
+\cftsubparanumwidth=\skip93
+\cftbeforeloftitleskip=\skip94
+\cftafterloftitleskip=\skip95
+\cftbeforefigskip=\skip96
+\cftfigindent=\skip97
+\cftfignumwidth=\skip98
+\c@lofdepth=\count314
+\c@lotdepth=\count315
+\cftbeforelottitleskip=\skip99
+\cftafterlottitleskip=\skip100
+\cftbeforetabskip=\skip101
+\cfttabindent=\skip102
+\cfttabnumwidth=\skip103
 )
 (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -497,64 +553,64 @@ Package: uarial 2006/03/21 1.0 (WaS)
 )
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box100
-\beforetitleunit=\skip99
-\aftertitleunit=\skip100
-\ttl@plus=\dimen182
-\ttl@minus=\dimen183
-\ttl@toksa=\toks25
-\titlewidth=\dimen184
-\titlewidthlast=\dimen185
-\titlewidthfirst=\dimen186
+\ttl@box=\box102
+\beforetitleunit=\skip104
+\aftertitleunit=\skip105
+\ttl@plus=\dimen193
+\ttl@minus=\dimen194
+\ttl@toksa=\toks26
+\titlewidth=\dimen195
+\titlewidthlast=\dimen196
+\titlewidthfirst=\dimen197
 )
-LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 57
+LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 63
 .
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/arial\t1ua1.fd
 File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 )
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 57.
+(Font)              scaled to size 11.39996pt on input line 63.
  (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen187
-\scratchbox=\box101
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen188
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count316
+\scratchdimen=\dimen198
+\scratchbox=\box103
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen199
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks28
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -609,36 +665,47 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 63.
  (main.out)
 (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 <b.png, id=59, 657.45625pt x 602.25pt>
 File: b.png Graphic file (type png)
 <use b.png>
-Package pdftex.def Info: b.png  used on input line 62.
+Package pdftex.def Info: b.png  used on input line 68.
 (pdftex.def)             Requested size: 85.35826pt x 78.18497pt.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 66.
+(Font)              scaled to size 19.70294pt on input line 72.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 19.70294pt on input line 66.
+(Font)              scaled to size 19.70294pt on input line 72.
 <a.png, id=61, 208.1376pt x 190.7928pt>
 File: a.png Graphic file (type png)
 <use a.png>
-Package pdftex.def Info: a.png  used on input line 71.
+Package pdftex.def Info: a.png  used on input line 77.
 (pdftex.def)             Requested size: 85.35826pt x 78.24591pt.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 77.
+(Font)              scaled to size 16.41594pt on input line 83.
 LaTeX Font Info:    Font shape `T1/ua1/m/sl' in size <20.74> not available
-(Font)              Font shape `T1/ua1/m/it' tried instead on input line 84.
+(Font)              Font shape `T1/ua1/m/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ua1/m/it' will be
-(Font)              scaled to size 19.70294pt on input line 84.
+(Font)              scaled to size 19.70294pt on input line 90.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 90.
+(Font)              scaled to size 13.67995pt on input line 96.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 90.
+(Font)              scaled to size 13.67995pt on input line 96.
  [1
 
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program 
@@ -647,12 +714,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 	\newpage
-               [1
+l.104 	\newpage
+                [1
 
 ]
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 107.
+(Font)              scaled to size 11.39996pt on input line 113.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -664,9 +731,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 123.
+(Font)              scaled to size 23.63593pt on input line 129.
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 123.
+(Font)              scaled to size 23.63593pt on input line 129.
  (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -681,24 +748,24 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/ua1/m/it' will be
-(Font)              scaled to size 11.39996pt on input line 128.
+(Font)              scaled to size 11.39996pt on input line 134.
 <-RLCM.png, id=102, 731.73375pt x 411.78844pt>
 File: -RLCM.png Graphic file (type png)
 <use -RLCM.png>
-Package pdftex.def Info: -RLCM.png  used on input line 132.
+Package pdftex.def Info: -RLCM.png  used on input line 138.
 (pdftex.def)             Requested size: 298.75264pt x 168.12431pt.
 [5
 
  <./-RLCM.png>]
 LaTeX Font Info:    Font shape `T1/ua1/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 140.
+(Font)              scaled to size 16.41594pt on input line 146.
 <NIC_B.jpg, id=112, 682.55pt x 1197.47375pt>
 File: NIC_B.jpg Graphic file (type jpg)
 <use NIC_B.jpg>
-Package pdftex.def Info: NIC_B.jpg  used on input line 145.
+Package pdftex.def Info: NIC_B.jpg  used on input line 151.
 (pdftex.def)             Requested size: 277.41176pt x 486.69177pt.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -712,16 +779,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <demotracion_NIC.png, id=120, 642.90187pt x 443.40656pt>
 File: demotracion_NIC.png Graphic file (type png)
 <use demotracion_NIC.png>
-Package pdftex.def Info: demotracion_NIC.png  used on input line 157.
+Package pdftex.def Info: demotracion_NIC.png  used on input line 163.
 (pdftex.def)             Requested size: 208.39568pt x 143.72653pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 158.
+(caption)                particular \caption on input line 164.
 See the caption package documentation for explanation.
 
-LaTeX Info: Redefining \. on input line 210.
-LaTeX Info: Redefining \% on input line 210.
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.6139pt, for example:
@@ -732,13 +799,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7 <./demotracion_NIC.png>]
 LaTeX Font Info:    Font shape `T1/ua1/b/it' will be
-(Font)              scaled to size 11.39996pt on input line 212.
+(Font)              scaled to size 11.39996pt on input line 218.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 255.
+(Font)              scaled to size 7.59998pt on input line 261.
 LaTeX Font Info:    Font shape `T1/ua1/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 255.
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
+(Font)              scaled to size 5.69998pt on input line 261.
+LaTeX Info: Redefining \. on input line 271.
+LaTeX Info: Redefining \% on input line 271.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -752,10 +819,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <mem1.png, id=170, 274.02374pt x 283.0575pt>
 File: mem1.png Graphic file (type png)
 <use mem1.png>
-Package pdftex.def Info: mem1.png  used on input line 271.
+Package pdftex.def Info: mem1.png  used on input line 277.
 (pdftex.def)             Requested size: 256.07741pt x 264.54079pt.
-LaTeX Info: Redefining \. on input line 283.
-LaTeX Info: Redefining \% on input line 283.
+LaTeX Info: Redefining \. on input line 289.
+LaTeX Info: Redefining \% on input line 289.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -769,10 +836,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <schmem.png, id=187, 853.1875pt x 308.15125pt>
 File: schmem.png Graphic file (type png)
 <use schmem.png>
-Package pdftex.def Info: schmem.png  used on input line 310.
+Package pdftex.def Info: schmem.png  used on input line 316.
 (pdftex.def)             Requested size: 426.79135pt x 154.15047pt.
-LaTeX Info: Redefining \. on input line 324.
-LaTeX Info: Redefining \% on input line 324.
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -786,15 +853,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <iv_chua.png, id=208, 853.1875pt x 428.60126pt>
 File: iv_chua.png Graphic file (type png)
 <use iv_chua.png>
-Package pdftex.def Info: iv_chua.png  used on input line 330.
+Package pdftex.def Info: iv_chua.png  used on input line 336.
 (pdftex.def)             Requested size: 341.43437pt x 171.52248pt.
 <iv_hp.png, id=211, 304.88907pt x 301.125pt>
 File: iv_hp.png Graphic file (type png)
 <use iv_hp.png>
-Package pdftex.def Info: iv_hp.png  used on input line 337.
+Package pdftex.def Info: iv_hp.png  used on input line 343.
 (pdftex.def)             Requested size: 213.39568pt x 210.76767pt.
-LaTeX Info: Redefining \. on input line 342.
-LaTeX Info: Redefining \% on input line 342.
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -808,10 +875,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <circuito.png, id=223, 651.93562pt x 371.88937pt>
 File: circuito.png Graphic file (type png)
 <use circuito.png>
-Package pdftex.def Info: circuito.png  used on input line 349.
+Package pdftex.def Info: circuito.png  used on input line 355.
 (pdftex.def)             Requested size: 341.43437pt x 194.77385pt.
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -822,8 +889,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [12 <./circuito.png>]
-LaTeX Info: Redefining \. on input line 445.
-LaTeX Info: Redefining \% on input line 445.
+LaTeX Info: Redefining \. on input line 451.
+LaTeX Info: Redefining \% on input line 451.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -834,8 +901,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [13]
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
+LaTeX Info: Redefining \. on input line 457.
+LaTeX Info: Redefining \% on input line 457.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -850,8 +917,8 @@ Cap\'{\i }tulo 3.
 [15
 
 ]
-LaTeX Info: Redefining \. on input line 454.
-LaTeX Info: Redefining \% on input line 454.
+LaTeX Info: Redefining \. on input line 547.
+LaTeX Info: Redefining \% on input line 547.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -862,8 +929,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [16]
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 616.
+LaTeX Info: Redefining \% on input line 616.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -874,12 +941,104 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [17]
+LaTeX Info: Redefining \. on input line 688.
+LaTeX Info: Redefining \% on input line 688.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[18]
+LaTeX Font Info:    Trying to load font information for TS1+ua1 on input line 6
+90.
+ (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/arial\ts1ua1.fd
+File: ts1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for TS1/ua1.
+)
+LaTeX Font Info:    Font shape `TS1/ua1/m/n' will be
+(Font)              scaled to size 16.41594pt on input line 690.
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+<estable.png, id=306, 821.31844pt x 362.10281pt>
+File: estable.png Graphic file (type png)
+<use estable.png>
+Package pdftex.def Info: estable.png  used on input line 700.
+(pdftex.def)             Requested size: 426.79135pt x 188.16193pt.
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[19 <./estable.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
+
+<inestable.png, id=316, 817.55438pt x 361.35pt>
+File: inestable.png Graphic file (type png)
+<use inestable.png>
+Package pdftex.def Info: inestable.png  used on input line 728.
+(pdftex.def)             Requested size: 426.79135pt x 188.64192pt.
+LaTeX Info: Redefining \. on input line 744.
+LaTeX Info: Redefining \% on input line 744.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[20 <./inestable.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
+
+<centro.png, id=324, 819.06pt x 360.59718pt>
+File: centro.png Graphic file (type png)
+<use centro.png>
+Package pdftex.def Info: centro.png  used on input line 756.
+(pdftex.def)             Requested size: 426.79135pt x 187.90227pt.
+LaTeX Info: Redefining \. on input line 772.
+LaTeX Info: Redefining \% on input line 772.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[21 <./centro.png>]
+LaTeX Info: Redefining \. on input line 776.
+LaTeX Info: Redefining \% on input line 776.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[22]
 Cap\'{\i }tulo 4.
-[18
+[23
 
 ]
-LaTeX Info: Redefining \. on input line 463.
-LaTeX Info: Redefining \% on input line 463.
+LaTeX Info: Redefining \. on input line 781.
+LaTeX Info: Redefining \% on input line 781.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -889,13 +1048,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[19]
+[24]
 Cap\'{\i }tulo 5.
-[20
+[25
 
 ]
-LaTeX Info: Redefining \. on input line 468.
-LaTeX Info: Redefining \% on input line 468.
+LaTeX Info: Redefining \. on input line 786.
+LaTeX Info: Redefining \% on input line 786.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -905,13 +1064,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[21]
+[26]
 Cap\'{\i }tulo 6.
-[22
+[27
 
 ]
-LaTeX Info: Redefining \. on input line 473.
-LaTeX Info: Redefining \% on input line 473.
+LaTeX Info: Redefining \. on input line 791.
+LaTeX Info: Redefining \% on input line 791.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -921,13 +1080,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[23]
+[28]
 Cap\'{\i }tulo 7.
-[24
+[29
 
 ]
-LaTeX Info: Redefining \. on input line 478.
-LaTeX Info: Redefining \% on input line 478.
+LaTeX Info: Redefining \. on input line 796.
+LaTeX Info: Redefining \% on input line 796.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -937,13 +1096,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[25]
+[30]
 Cap\'{\i }tulo 8.
-[26
+[31
 
 ]
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
+LaTeX Info: Redefining \. on input line 801.
+LaTeX Info: Redefining \% on input line 801.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -953,21 +1112,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[27] [28
+[32] [33
 
 ]
-Underfull \hbox (badness 2418) in paragraph at lines 489--492
+Underfull \hbox (badness 2418) in paragraph at lines 807--810
 []\T1/ua1/m/n/12 CHUA, L. O. Mem-ris-tor ^^U The mis-sing cir-cuit ele-ment. IE
 EE Transac-
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 489--492
+Underfull \hbox (badness 1769) in paragraph at lines 807--810
 \T1/ua1/m/n/12 tions on Cir-cuit Theory, 1971, vol. CT-18, no. 5, p. 507 to 519
 . DOI:
  []
 
-[29
+[34
 
 ] Excluding 'comment' comment. (main.aux
 LaTeX Info: Redefining \. on input line 22.
@@ -981,30 +1140,32 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6C84FCA7C454B7168D5C565B1D09E15E;2465.
  ) 
 Here is how much of TeX's memory you used:
- 14362 strings out of 476037
- 229428 string characters out of 5789655
- 1866763 words of memory out of 5000000
- 34792 multiletter control sequences out of 15000+600000
- 612764 words of font info for 84 fonts, out of 8000000 for 9000
+ 15957 strings out of 476037
+ 254306 string characters out of 5789655
+ 1868763 words of memory out of 5000000
+ 36327 multiletter control sequences out of 15000+600000
+ 614316 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,12n,93p,987b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextr
-a/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/
-urw/arial/ua1b8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/a
-rial/ua1bi8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial
-/ua1r8a.pfb><C:/Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1r
-i8a.pfb>
-Output written on main.pdf (30 pages, 919114 bytes).
+ 79i,19n,93p,987b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/
+Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1b8a.pfb><C:/Users
+/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1bi8a.pfb><C:/Users/Usu
+ario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1r8a.pfb><C:/Users/Usuario/
+AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1ri8a.pfb>
+Output written on main.pdf (35 pages, 1142945 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

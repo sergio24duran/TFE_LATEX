@@ -7,9 +7,9 @@
 \contentsline {section}{\numberline {2.4}Superficies invariantes}{14}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos Bizonales}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Sistemas lineales planos}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{17}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{18}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{20}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{22}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{24}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{26}{chapter.8}%
+\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{22}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{31}{chapter.8}%

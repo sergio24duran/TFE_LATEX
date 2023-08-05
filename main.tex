@@ -7,11 +7,17 @@
 %\linespread{1.5} % Espaciado de 1.5 (1 es el espaciado estándar)
 \setlength{\parindent}{0pt} %Ajusta la sangría a 0 para que no haya
 \usepackage{amsmath} %Para ecuaciones\usepackage{amsmath}
+\usepackage{amssymb} % Paquete para cargar la fuente \mathbb
+\usepackage{mathtools}
 \usepackage{multicol}
 %\usepackage{refcheck} %Para que aparezca el nombre que le doy a la referencia
 \usepackage{comment} %Para comentar varias lineas
 \usepackage{lipsum} %Para hacer textos de ejemplo para pruebas
 \usepackage{bm} % Agrega esta línea en el preámbulo del documento
+\usepackage{enumitem}
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{definicion}{Definición} % Declaración del nuevo entorno "definicion"
 
 \usepackage{caption} %Para crear mi formato "boldformat" que pone lo primero en negrita
 \DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
@@ -444,13 +450,325 @@
 	Ya tenemos las ecuaciones necesarias para empezar el análisis pero primero veremos en los siguientes capitulos que técnicas estaremos usando para ello.
 	\newpage
 	\section{Superficies invariantes}
-	esto es texto de la siguiente hoja
+	Como se ve en \eref{eq:sistema} el nuestro es un sistema dinámico en el tiempo definido por 3 ecuaciones diferenciales y tres incognitas $x, y, z$.
+	
+	
 	
 	\chapter{Sistemas Lineales a Trozos Bizonales}
 	Contenido del capítulo 3.
 	\newpage
 	\section{Sistemas lineales planos}
-	esto es texto de la siguiente hoja
+	En esta sección vamos a analizar los sistema de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circutio de esta forma.
+	
+	\begin{equation}
+		\label{eq:edo2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\dot{x}\,=\,\frac{dx}{dt}\,=\,a_{11}x(t)+a_{12}y(t)+b_1 \\
+				\dot{y}\,=\,\frac{dy}{dt}\,=\,a_{21}x(t)+a_{22}y(t)+b_2
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Escribiendo el sistema \eref{eq:edo2} en forma matricial:
+	
+	\begin{equation}
+		\label{eq:matrxedo2}
+		\scalebox{1.2}{$\displaystyle
+		\begin{pmatrix}
+			\dot{x}\\
+			\dot{y}\\
+		\end{pmatrix} =
+		\begin{pmatrix}
+			a_{11} & a_{12}\\
+		    a_{21} & a_{22}\\
+		\end{pmatrix} 
+		\begin{pmatrix}
+			x\\
+			y\\
+		\end{pmatrix} + 
+		\begin{pmatrix}
+			b_1\\
+			b_2\\
+		\end{pmatrix}
+		$}
+	\end{equation} \smallskip
+	
+	Ecribiendo el sistyema \eref{eq:matrxedo2} de forma mas simplificada:
+	
+	\begin{equation}
+		\dot{X}\,=\,AX+B
+	\end{equation}\smallskip
+	
+	Cuando $B=\vec{0}$ el sistema se dice homogéneo. Por el contrario cuando $B\neq\vec{0}$ el sistema se dice no homogéneo. Esto es importante saberlo pues los métodos para solucionar estos tipos de sistemas no son las mismos.
+	
+	Tambien hay que tener en cuenta las condiciones iniciales del sistema:
+	
+	\begin{equation}
+		\label{eq:ci}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				x(0)=x_0 \\
+			    y(0)=y_0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Escribiendo el sistema \eref{eq:ci} en forma matricial:
+	
+	\begin{equation}
+		\label{cimat}
+		X(t_0)=\begin{pmatrix}
+			x(0)\\y(0)
+		\end{pmatrix}=\begin{pmatrix}
+		x_0\\y_0
+		\end{pmatrix}=X_0
+	\end{equation}\smallskip
+	
+	Al conjunto del sistema y a sus condiciones iniciales se les denomina \\ \textbf{\textit{Problema de Valor Inicial (PVI)}}: 
+	
+	\begin{equation}
+	\label{eq:pvi}
+	\scalebox{1.2}{$\displaystyle
+		\left\{
+		\begin{aligned}
+			\dot{X}&=AX+B &\rightarrow& \textit{Sistema Diferencial (S.D.)}\\
+			X(t_0)&=X_0 &\rightarrow& \textit{Condiciones Iniciales (C.I.)}
+		\end{aligned}
+		\right.
+		$}
+    \end{equation}\smallskip
+	
+	Lo primero y más importante que se debe hacer con este tipo de problemas es comprobar la existencia y unicidad de sus soluciones.
+	\newpage
+	\begin{theorem}\label{thm:interesante}
+		Existencia y unicidad \\[2mm]
+		\textit{Sean $A$ y $B$ continuas en un intervalo $I\subseteq  \mathbb{R}$, que continene el punto $X(t_0)$ entonces el P.V.I. tiene una única solución definida en dicho intervalo $I$ para cualquier vector $X_0 \in \mathbb{R}^2$}. Además, si el P.V.I. tiene coeficientes constantes en $A$ y $B$ la solución esta definida en $\mathbb{R}$.
+	\end{theorem}
+	\vspace{4mm}
+	
+	Las soluciones del sistema son el conjunto de puntos \eref{eq:puntos} para cada instante de tiempo que forman una curva en el plano de fases $xy$.
+	\begin{equation}
+		\label{eq:puntos}
+		X(t)=\begin{pmatrix}
+			x(t) \\ y(t)
+		\end{pmatrix}
+	\end{equation}\smallskip
+	
+	Ahora lo lógico sería hablar de como resolver este tipo de problemas ya que es nuetsro objetivo, pero no lo vamos a hacer ya que nosotros no usaremos el método tradicional de autovalores y autovectores para ello, vamos a utilizar otra técnica de reciente estudio con la que no hará falta esto, la veremos mas adelante.\\[0.5cm]
+	Por último veamos como obtener y analizar los puntos de equilibrio del Sistema Lienal Plano. Primero escribamos el sistema \eref{eq:edo2} de otra forma para ver los siguientes puntos mejor:
+	\begin{equation}
+		\label{eq:sv}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\dot{x}\,=\,\frac{dx}{dt}\,=S(x,y) \\
+				\dot{y}\,=\,\frac{dy}{dt}\,=V(x,y)
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	\begin{definicion}
+		Los puntos $(\overline{x},\overline{y})$ que anulan simultaneamente las funciones $S$ y $V$ del sistema \eref{eq:matrxedo2} se denominan Puntos de Equilibrio o Críticos del sistema:
+	\end{definicion}
+
+	\begin{eqnarray}
+		\label{eq:crit}
+			\begin{pmatrix}
+				0\\
+				0\\
+			\end{pmatrix} =
+			&\begin{pmatrix}
+				a_{11} & a_{12}\\
+				a_{21} & a_{22}\\
+			\end{pmatrix}&
+			\begin{pmatrix}
+				\overline{x}\\
+				\overline{y}\\
+			\end{pmatrix} + 
+			\begin{pmatrix}
+				b_1\\
+				b_2\\
+			\end{pmatrix}\nonumber \\[4mm]
+			&\begin{pmatrix}
+			a_{11} & a_{12}\\
+			a_{21} & a_{22}\\
+			\end{pmatrix}&
+			\begin{pmatrix}
+			\overline{x}\\
+			\overline{y}\\
+			\end{pmatrix} = 
+			\begin{pmatrix}
+			-b_1\\
+			-b_2\\
+			\end{pmatrix} \nonumber \\[4mm]
+			&A\,\overline{X}=-b
+	\end{eqnarray}\smallskip
+	
+	Si el $det(A)\neq0$ \eref{eq:crit} el sistema posee un único punto de equilibrio, este punto se dice solucion constante del sistema.
+    \\[0.5cm]
+    Veamos esto más en profundiad, primero tenemos que saber que el sistema que tenemos \eref{eq:sv} se denomina \textit{\textbf{Autónomo}} ya que la variable independiente $\bm{t}$ no aparece de manera explícita en los segundos términos.
+    \newpage
+    Ahora lo primero que haremos es una translación del punto de equilibrio para que esté en el origen $\begin{pmatrix} 0 \\ 0
+    \end{pmatrix}$ en caso de no estarlo:
+    
+	\begin{equation}
+		\label{eq:trans}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\tilde{X}=x-\overline{x} \\
+				\tilde{Y}=y-\overline{y}
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Por lo que ahora tenemos:
+	
+	\begin{equation}
+		\label{eq:trans2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\frac{d\tilde{X}}{dt}\,=S(\tilde{X}-\overline{x},\tilde{Y}-\overline{x}) \\
+				\frac{d\tilde{Y}}{dt}\,=V(\tilde{X}-\overline{x},\tilde{Y}-\overline{x})
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	Donde el punto $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$ es el punto de equilibrio. \\[0.5cm]
+	Lo que verermos a continuacion es la disposicion de las soluciones al rededor del punto de equilibrio y la estabilidiad o no del mismo. Considerando el sistema autónomo lineal con punto de equilibrio en el origen que hemos obtenido tras el cambio de variable:
+	
+	\begin{eqnarray}
+		\label{eq:trans3}
+			\begin{pmatrix}
+				\dot{x}\\
+				\dot{y}\\
+			\end{pmatrix} =
+			&\underbrace{\begin{pmatrix}
+				a_{11} & a_{12}\\
+				a_{21} & a_{22}\\
+			\end{pmatrix}}&
+			\begin{pmatrix}
+				x\\
+				y\\
+			\end{pmatrix} \nonumber \\[1mm]
+			&A&
+	\end{eqnarray} \smallskip
+	
+	Como vemos con el cambio de variable no se ha modificado la matriz $A$ que es la que nos dirá todo respecto a la estabilidad del punto crítico, veremos los tres casos que se estudian en este trabajo: Foco Asintóticamente Estable, Foco Asintóticamente Inestable y Centro. Pero hay muchos mas y, por supuesto, combinaciones de de todos ellos, lo cual complica el problema en gran medida.\\[0.5cm]
+	Para saber la estabilidad de los puntos debemos estudiar el polinomio caracteristico de la matriz $A$:
+	
+	\begin{equation}
+		A=\begin{pmatrix}
+			a_{11} & a_{12}\\
+			a_{21} & a_{22}\\
+		\end{pmatrix}\rightarrow\left\{
+		\begin{aligned}
+		det(A )&= a_{11}a_{22}-a_{12}a_{21} \\
+		tr(A) &= a_{11}+a_{22}
+	    \end{aligned}
+		\right.
+	\end{equation}\smallskip
+	
+	\begin{eqnarray}
+		\begin{aligned}
+		P_A(\lambda)=&\lambda^2-tr(A)\lambda+det(A) \nonumber \\[1mm]
+		&\lambda^2-tr(A)\lambda+det(A)=0 \nonumber \\[1mm]
+		\textit{Autovalores}\rightarrow \quad &\lambda=\frac{tr(A)\pm \sqrt{tr(A)^2-4\,det(A)}}{2}
+	    \end{aligned}
+	\end{eqnarray}
+	
+	\newpage
+
+	{\Large\textbullet\quad Foco Asintóticamente Estable}\\[0.5cm]
+	
+	Las curvas solucion tienden al punto crítico. Este caso se da para: 
+	\begin{itemize}
+		\item $\bm{tr(A)<0}$
+		\item $\bm{tr(A)^2-4\,det(A)<0}$
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{estable.png}
+		\caption{Foco Asintóticamente Estable visto en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+		\label{fig:estable}
+	\end{figure}\smallskip
+	
+	La matriz $A$ del la \fref{fig:estable} es 
+	$\begin{pmatrix*}[r]
+		-1 & 1 \\
+		-1 & -1
+	\end{pmatrix*}$
+	
+	\begin{align*}
+		&\bullet\quad tr(A)=-2<0 \\[2mm]
+		&\bullet\quad tr(A)^2-4\,det(A)=4-4(2)<0
+	\end{align*}
+	
+	\newpage
+	
+	{\Large\textbullet\quad Foco Asintóticamente Inestable}\\[0.5cm]
+	
+	Las curvas solucion tienden al alejarse del punto crítico. Este caso se da para: 
+	\begin{itemize}
+		\item $\bm{tr(A)>0}$
+		\item $\bm{tr(A)^2-4\,det(A)<0}$
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{inestable.png}
+		\caption{Foco Asintóticamente Inestable visto en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+		\label{fig:inestable}
+	\end{figure}\smallskip
+	
+	La matriz $A$ del la \fref{fig:inestable} es 
+	 $\begin{pmatrix*}[r]
+		 1 & 1 \\
+		-1 & 1
+	 \end{pmatrix*}$
+	
+	\begin{align*}
+		&\bullet\quad tr(A)=2>0 \\[2mm]
+		&\bullet\quad tr(A)^2-4\,det(A)=4-4(2)<0
+	\end{align*}
+	
+	\newpage
+	
+    {\Large\textbullet\quad Centro}\\[0.5cm]
+    
+    Las curvas solucion son concéntricas al punto crítico. Este caso se da para: 
+    \begin{itemize}
+    	\item $\bm{tr(A)=0}$
+    	\item $\bm{tr(A)^2-4\,det(A)<0}$
+    \end{itemize}
+    
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[width=1\textwidth]{centro.png}
+    	\caption{Centro en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+    	\label{fig:centro}
+    \end{figure}\smallskip
+    
+    La matriz $A$ del la \fref{fig:centro} es 
+    $\begin{pmatrix*}[r]
+    	1 & 2 \\
+    	-1 & -1
+    \end{pmatrix*}$
+    
+    \begin{align*}
+    	&\bullet\quad tr(A)=1-1=0 \\[2mm]
+    	&\bullet\quad tr(A)^2-4\,det(A)=0-4(1)<0
+    \end{align*}
+	
 	\newpage
 	\section{Sistemas lineales a trozos bizonales}
 	esto es texto de la siguiente hoja
@@ -499,6 +817,8 @@
 		\bibitem{2021} Xiaoyue, Ji \& Dong, Zhekang \& Zhou, Guangdong \& Lai, Chun Sing \& Yan, Yunfeng \& Qi, Donglian. (2021). Memristive System Based Image Processing Technology: A Review and Perspective. Electronics. 10. 3176. 10.3390/electronics10243176. 
 		
 		\bibitem{outsiders} Caravelli, F. \& Carbajal, Juan. (2018). Memristors for the Curious Outsiders. 10.31224/osf.io/c4qr9. 
+		
+		\bibitem{teruel} Llibre, Jaume \& Teruel, Antonio. (2014). Introduction to the Qualitative Theory of Differential Systems: Planar, Symmetric and Continuous Piecewise Linear Systems. 10.1007/978-3-0348-0657-2. 
 		
 	\end{thebibliography}
 	
