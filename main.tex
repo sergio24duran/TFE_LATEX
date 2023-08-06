@@ -454,8 +454,8 @@
 	
 	
 	
-	\chapter{Sistemas Lineales a Trozos Bizonales}
-	Contenido del capítulo 3.
+	\chapter{Sistemas Lineales a Trozos}
+	En este capítulo haremos un repaso de sistemas diferenciales lineales puesto que como hemos visto en el sistema \eref{eq:sistema} hemos reducido nuestro circuito a un sistema de este tipo. Lo que necesitamos ahora es encontrar la o las soluciones de nuestro sistema y estudiar su estabiliad, la base que necesitamos para ello lo veremos en este capítulo.
 	\newpage
 	\section{Sistemas lineales planos}
 	En esta sección vamos a analizar los sistema de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circutio de esta forma.
@@ -496,7 +496,7 @@
 		$}
 	\end{equation} \smallskip
 	
-	Ecribiendo el sistyema \eref{eq:matrxedo2} de forma mas simplificada:
+	Ecribiendo el sistema \eref{eq:matrxedo2} de forma mas simplificada:
 	
 	\begin{equation}
 		\dot{X}\,=\,AX+B
@@ -536,8 +536,8 @@
 	\scalebox{1.2}{$\displaystyle
 		\left\{
 		\begin{aligned}
-			\dot{X}&=AX+B &\rightarrow& \textit{Sistema Diferencial (S.D.)}\\
-			X(t_0)&=X_0 &\rightarrow& \textit{Condiciones Iniciales (C.I.)}
+			&\dot{X}=AX+B &\rightarrow& \textit{Sistema Diferencial (S.D.)}\\
+			&X(t_0)=X_0 &\rightarrow& \textit{Condiciones Iniciales (C.I.)}
 		\end{aligned}
 		\right.
 		$}
@@ -547,7 +547,7 @@
 	\newpage
 	\begin{theorem}\label{thm:interesante}
 		Existencia y unicidad \\[2mm]
-		\textit{Sean $A$ y $B$ continuas en un intervalo $I\subseteq  \mathbb{R}$, que continene el punto $X(t_0)$ entonces el P.V.I. tiene una única solución definida en dicho intervalo $I$ para cualquier vector $X_0 \in \mathbb{R}^2$}. Además, si el P.V.I. tiene coeficientes constantes en $A$ y $B$ la solución esta definida en $\mathbb{R}$.
+		\textit{Sean $A$ y $B$ continuas en un intervalo $I\subseteq  \mathbb{R}$, que continene el punto $X(t_0)$ entonces el P.V.I. tiene una única solución definida en dicho intervalo $I$ para cualquier vector $X_0 \in \mathbb{R}^2$}. Además, si el P.V.I. tiene coeficientes constantes en $A$ y $B$ la solución está definida en $\mathbb{R}$.
 	\end{theorem}
 	\vspace{4mm}
 	
@@ -560,7 +560,7 @@
 	\end{equation}\smallskip
 	
 	Ahora lo lógico sería hablar de como resolver este tipo de problemas ya que es nuetsro objetivo, pero no lo vamos a hacer ya que nosotros no usaremos el método tradicional de autovalores y autovectores para ello, vamos a utilizar otra técnica de reciente estudio con la que no hará falta esto, la veremos mas adelante.\\[0.5cm]
-	Por último veamos como obtener y analizar los puntos de equilibrio del Sistema Lienal Plano. Primero escribamos el sistema \eref{eq:edo2} de otra forma para ver los siguientes puntos mejor:
+	Por último veamos como obtener y analizar los puntos de equilibrio del Sistema Lienal Plano. Primero escribamos el sistema \eref{eq:edo2} de otra forma para ver los siguientes apartados mejor:
 	\begin{equation}
 		\label{eq:sv}
 		\scalebox{1.2}{$\displaystyle
@@ -614,7 +614,7 @@
     \\[0.5cm]
     Veamos esto más en profundiad, primero tenemos que saber que el sistema que tenemos \eref{eq:sv} se denomina \textit{\textbf{Autónomo}} ya que la variable independiente $\bm{t}$ no aparece de manera explícita en los segundos términos.
     \newpage
-    Ahora lo primero que haremos es una translación del punto de equilibrio para que esté en el origen $\begin{pmatrix} 0 \\ 0
+    Ahora lo que haremos es una translación del punto de equilibrio para que esté en el origen $\begin{pmatrix} 0 \\ 0
     \end{pmatrix}$ en caso de no estarlo:
     
 	\begin{equation}
@@ -662,7 +662,7 @@
 			&A&
 	\end{eqnarray} \smallskip
 	
-	Como vemos con el cambio de variable no se ha modificado la matriz $A$ que es la que nos dirá todo respecto a la estabilidad del punto crítico, veremos los tres casos que se estudian en este trabajo: Foco Asintóticamente Estable, Foco Asintóticamente Inestable y Centro. Pero hay muchos mas y, por supuesto, combinaciones de de todos ellos, lo cual complica el problema en gran medida.\\[0.5cm]
+	Como vemos con el cambio de variable no se ha modificado la matriz $A$ que es la que nos dirá todo respecto a la estabilidad del punto crítico, veremos los tres casos que se estudian en este trabajo: Foco Asintóticamente Estable, Foco Asintóticamente Inestable y Centro. Pero hay muchos mas y, por supuesto, combinaciones de todos ellos, lo cual complica estos problemas en gran medida.\\[0.5cm]
 	Para saber la estabilidad de los puntos debemos estudiar el polinomio caracteristico de la matriz $A$:
 	
 	\begin{equation}
@@ -698,7 +698,7 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{estable.png}
-		\caption{Foco Asintóticamente Estable visto en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+		\caption{Foco Asintóticamente Estable visto en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
 		\label{fig:estable}
 	\end{figure}\smallskip
 	
@@ -726,7 +726,7 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{inestable.png}
-		\caption{Foco Asintóticamente Inestable visto en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+		\caption{Foco Asintóticamente Inestable visto en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
 		\label{fig:inestable}
 	\end{figure}\smallskip
 	
@@ -754,7 +754,7 @@
     \begin{figure}[h]
     	\centering
     	\includegraphics[width=1\textwidth]{centro.png}
-    	\caption{Centro en el plano de fases xy (izquierda) y la variacion de x e y en el tiempo (derecha).}
+    	\caption{Centro en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
     	\label{fig:centro}
     \end{figure}\smallskip
     
@@ -771,7 +771,192 @@
 	
 	\newpage
 	\section{Sistemas lineales a trozos bizonales}
-	esto es texto de la siguiente hoja
+	En esta sección vamos a ver como estudiar los sistemas continuos dinámicos lineales a trozos de dos zonas y veremos sus propiedades de cara a la obtención de una órbita periódica y estudiar su amplitud y periodo.\\[0.5cm] También veremos como utilizar las formas canónicas para reducir el número de parámetros que influyen en el sistema y como apoyarnos en dichas formas canónicas y las propiedades que nos portan a la hora de estudiar la oscilacion periódica de nuestro circuito.
+	
+	\begin{definicion}
+		Un sistema dinámico continuo lineal a trozos plano con dos zonas es un sistema de ecuaciones diferenciales con la siguiente forma:
+	\end{definicion}
+	
+	\begin{equation}
+		\frac{dx}{dt}=\dot{x}=S(x)=
+		\label{eq:biz1}
+		\scalebox{1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+			 A_1x+b_1\quad si \quad x^T\cdotp w+\delta \leq 0 \\
+			 A_2x+b_2\quad si \quad x^T\cdotp w+\delta < 0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	Donde $x=(x_1,x_2)^T\in \mathbb{R}^2$, las matrices $A_1$ y $A_2$ son reales de orden $2$, además\\ $b_1$, $b_2$, $w$ $\in \mathbb{R}^2$ con $w\neq\vec{0}$ y $\delta \in \mathbb{R}$ y se satisface la condicioón de continuidad
+	
+	\begin{equation}
+		A_1x+b_1=A_2x+b_2 
+	\end{equation}\smallskip
+	
+	Sobre la recta de separación de las dos zonas:\quad $x^T\cdotp w+\delta = 0$ \\[0.5cm]
+	
+	para cada $x^0 \in \mathbb{R}^2$, el problema de valores iniciales \eref{eq:pvi2} tiene una solución única $X(t)$ definida para todo $t$ real.
+	
+	\begin{equation}
+		\label{eq:pvi2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				&\dot{x}=S(x)\\
+				&x(0)=x^0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	 A continuación veremos la forma canónica mas común para los sistemas bizonales que coloca la recta separación en el ejde de ordenadas $x_1=0$.
+	
+	\begin{definicion}
+		Todo sistema dinámico continuo lineal a trozos plano con dos zonas puede escribirse de la siguiente forma:
+	
+	\begin{equation}
+		\dot{x}=S(x)=
+		\label{eq:lien}
+		\scalebox{1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				B_1x+c\quad si \quad x_1 \leq 0 \\
+				B_2x+c\quad si \quad x_1 < 0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Con $x=(x_1,x_2)^T, c\in \mathbb{R}^2$ y las matrices $B_1$, $B_2$ comparten sus dos últimas columnas por continuidad, esto es:
+	\begin{equation}
+		B_1-B_2=(B_1-B_2)e_1e_1^T
+	\end{equation}
+	Con $e_1=(1,0)^T$ el primer vector de la base canónica.
+    \end{definicion}
+	\newpage
+	
+	\textbf{Demostración}: Basta con realizar una simetría par que el vector $w$, normal a la recta de separación $x^T\cdotp w+\delta=0$, se transforme en el vector $e_1=(1,0)^T$, se puede hacer usando matrices de Householder. Por último solo queda por hacer una translación parq que la nueva recta de separación (ahora vertical) pase por el origen. Ahora el sistema tiene la forma:
+	
+	\begin{equation}
+		\dot{x}=S(x)=
+		\label{eq:lien2}
+		\scalebox{1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				B_1x+c_1\quad si \quad x_1 \leq 0 \\
+				B_2x+c_2\quad si \quad x_1 < 0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Con $B_1$ y $B_2$ matrices de orden 2 y $c_1, c_2 \in \mathbb{R}^2$. Nuevamente por continuidad se debe satisfacer:
+	
+	\begin{equation}
+		\label{eq:b1b2}
+		B_1x+c_1=B_2x+c_2 \qquad si \quad x_1=0
+	\end{equation}\smallskip
+	
+	Como el $(0,0)^T$ está en la recta de separación $x_1=0$, sustituyendo en \eref{eq:b1b2} se tiene que $c_1=c_2$ por lo que:
+	
+	\begin{equation}
+		B_1x=B_2x \qquad si \quad x_1=0
+	\end{equation}\smallskip
+	
+	Como el vector $(0,1)^T$ está sobre la recta de separación $x_1=0$, se tiene por tanto que las dos últimas columnas de $B_1$ y $B_2$ son iguales, y además no olvidemos que  antes hemos visto que $c_1=c_2=c$.
+	\\ [0.5cm]
+	Se ha reducido bastante el número de parámetros, ahora tenemos 8, 6 de ellos vieneden de las matrices $B_1$ y $B_2$ y 2 de $c$. Para seguir reduciendo parámetros tengamos en cuenta que estamos buscando oscilaciones y que no aparecerán en sistemas unidimensionales por lo que el primer término de las segundas columnas de las matrices $B_1$ y $B_2$ no puede ser nulo. Mediante el cambio de variable oportuno lo convertiremos en $(-1)$ aquí lo vemos, en primer lugar escribimos el sistema \eref{eq:lien2} de la siguiente manera:
+	
+	\begin{equation}
+		\dot{x}=
+		\label{eq:lie-1}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					b_{11}^1 & b_{12} \\
+					b_{21}^1 & b_{22}
+				\end{pmatrix*}x+\begin{pmatrix*}[r]
+				c_1 \\ c_2
+				\end{pmatrix*} \quad si \quad x_1 \leq 0 \\
+				\begin{pmatrix*}[r]
+					b_{11}^2 & b_{12} \\
+					b_{21}^2 & b_{22}
+				\end{pmatrix*}x+\begin{pmatrix*}[r]
+					c_1 \\ c_2
+				\end{pmatrix*} \quad si \quad x_1 < 0
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Y le aplicamos el cambio de variable (recordando que $b_{12}\neq0$): 
+	
+	\begin{equation}
+		\label{eq:cambio}
+		y_2=-b_{12}\,x_2-c_1\quad \rightarrow \quad x_2=\frac{-y_2-c_1}{b_{12}}
+	\end{equation}\smallskip
+	\newpage
+	Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-1} aplicando el cambio de variable \eref{eq:cambio}:
+	
+	\begin{equation}
+		\label{eq:q1}
+	\begin{aligned}
+		\dot{x}_1&=b_{11}^1x_1+b_{12}x_2+c-1=b_{11}^1x_1+b_{12}\left(\frac{-y_2-c_1}{b_{12}}\right)+c_1=b_{11}^1x_1-y_2 \nonumber \\[2mm]
+		\dot{y}_2&=-b_{12}\dot{x}_2=-b_{12}\left(b_{21}^1x_1+b_{22}x_2+c_2\right)\nonumber \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}\left(-b_{12}x_2\right)-b_{12}c_2 \nonumber \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}\left(y_2+c_1\right)-b_{12}c_2 \nonumber \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}y_2+b_{22}c_1-b_{12}c_2
+	\end{aligned}
+	\end{equation}\smallskip
+	
+	De forma análoga para $x_1>0$:
+	\begin{equation}
+		\label{eq:q2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+			&\dot{x}_1=b_{11}^2x_1-y_2 \\[2mm]
+			&\dot{y}_2=-b_{12}b_{21}^2x_1+b_{22}y_2+b_{22}c_1-b_{12}c_2
+		\end{aligned}
+		\right.
+		$}
+	\end{equation}\smallskip
+	
+	Por tanto aplicando lo anterior al sistema \eref{eq:lie-1} y tomando \\ $c_{11}^i=b_{11}^i \: ; \: c_{121}^i=-b_{12}b_{21}^i \: ; \: c_{22}=b_{22} \: ; \: d_2=b_{22}$
+	 
+	
+	
+	\begin{theorem}\label{t2}
+		Cuando las primeras componentes de las segundas columnas de las matrices $B_1$ y $B_2$ no son nulas, existe un cambio de variable que transforma el sistema \eref{eq:biz1} en la forma canónica de Liénard, sin modificar la traza y el determinanate de la matriz característica ya que son invariates algebraicos:
+	\end{theorem}
+	
+	\begin{equation}
+		\dot{x}=
+		\label{eq:lienard}
+		\scalebox{1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					t & -1\\
+					d & 0
+				\end{pmatrix*}x+\begin{pmatrix}
+				0\\a
+				\end{pmatrix} \quad si \quad x_1\leq 0 \\
+				\begin{pmatrix*}[r]
+					T & -1\\
+					D & 0
+				\end{pmatrix*}x+\begin{pmatrix}
+					0\\a
+				\end{pmatrix} \quad si \quad x_1 > 0
+			\end{aligned}
+			\right. \qquad\quad a \in \left\{-1,0,1\right\}
+			$}
+	\end{equation}\smallskip
+	
+	El requerimiento sobre las matrices del Teorema \ref{t2} implica la observabilidad del sistema desde el punto de vista de teoría de control
 	
 	\chapter{Semiaplicaciones de Poincaré}
 	Contenido del capítulo 4.

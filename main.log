@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  6 AUG 2023 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  6 AUG 2023 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,7 +965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 690--691
 
  []
 
-<estable.png, id=306, 821.31844pt x 362.10281pt>
+<estable.png, id=307, 821.31844pt x 362.10281pt>
 File: estable.png Graphic file (type png)
 <use estable.png>
 Package pdftex.def Info: estable.png  used on input line 700.
@@ -985,7 +985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 718--719
 
  []
 
-<inestable.png, id=316, 817.55438pt x 361.35pt>
+<inestable.png, id=317, 817.55438pt x 361.35pt>
 File: inestable.png Graphic file (type png)
 <use inestable.png>
 Package pdftex.def Info: inestable.png  used on input line 728.
@@ -1005,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 746--747
 
  []
 
-<centro.png, id=324, 819.06pt x 360.59718pt>
+<centro.png, id=325, 819.06pt x 360.59718pt>
 File: centro.png Graphic file (type png)
 <use centro.png>
 Package pdftex.def Info: centro.png  used on input line 756.
@@ -1021,9 +1021,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [21 <./centro.png>]
-LaTeX Info: Redefining \. on input line 776.
-LaTeX Info: Redefining \% on input line 776.
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
 
+ []
+
+LaTeX Info: Redefining \. on input line 838.
+LaTeX Info: Redefining \% on input line 838.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.6139pt, for example:
@@ -1033,12 +1036,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [22]
-Cap\'{\i }tulo 4.
-[23
-
-]
-LaTeX Info: Redefining \. on input line 781.
-LaTeX Info: Redefining \% on input line 781.
+LaTeX Info: Redefining \. on input line 901.
+LaTeX Info: Redefining \% on input line 901.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1048,13 +1047,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[24]
-Cap\'{\i }tulo 5.
+[23]
+LaTeX Info: Redefining \. on input line 961.
+LaTeX Info: Redefining \% on input line 961.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.961 	\chapter
+               {Semiaplicaciones de Poincaré}]
+Cap\'{\i }tulo 4.
 [25
 
 ]
-LaTeX Info: Redefining \. on input line 786.
-LaTeX Info: Redefining \% on input line 786.
+LaTeX Info: Redefining \. on input line 966.
+LaTeX Info: Redefining \% on input line 966.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1065,12 +1082,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [26]
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 5.
 [27
 
 ]
-LaTeX Info: Redefining \. on input line 791.
-LaTeX Info: Redefining \% on input line 791.
+LaTeX Info: Redefining \. on input line 971.
+LaTeX Info: Redefining \% on input line 971.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1081,12 +1098,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [28]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [29
 
 ]
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1097,12 +1114,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
 [30]
-Cap\'{\i }tulo 8.
+Cap\'{\i }tulo 7.
 [31
 
 ]
-LaTeX Info: Redefining \. on input line 801.
-LaTeX Info: Redefining \% on input line 801.
+LaTeX Info: Redefining \. on input line 981.
+LaTeX Info: Redefining \% on input line 981.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1112,21 +1129,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
 
-[32] [33
+[32]
+Cap\'{\i }tulo 8.
+[33
 
 ]
-Underfull \hbox (badness 2418) in paragraph at lines 807--810
+LaTeX Info: Redefining \. on input line 986.
+LaTeX Info: Redefining \% on input line 986.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.6139pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.6139pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.6139pt}.
+
+[34] [35
+
+]
+Underfull \hbox (badness 2418) in paragraph at lines 992--995
 []\T1/ua1/m/n/12 CHUA, L. O. Mem-ris-tor ^^U The mis-sing cir-cuit ele-ment. IE
 EE Transac-
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 807--810
+Underfull \hbox (badness 1769) in paragraph at lines 992--995
 \T1/ua1/m/n/12 tions on Cir-cuit Theory, 1971, vol. CT-18, no. 5, p. 507 to 519
 . DOI:
  []
 
-[34
+[36
 
 ] Excluding 'comment' comment. (main.aux
 LaTeX Info: Redefining \. on input line 22.
@@ -1137,13 +1170,13 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-16>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6C84FCA7C454B7168D5C565B1D09E15E;2465.
+(rerunfilecheck)             Checksum: 5D62C366C0C6F5B160B87003A4F40541;2412.
  ) 
 Here is how much of TeX's memory you used:
- 15957 strings out of 476037
- 254306 string characters out of 5789655
+ 15985 strings out of 476037
+ 254634 string characters out of 5789655
  1868763 words of memory out of 5000000
- 36327 multiletter control sequences out of 15000+600000
+ 36338 multiletter control sequences out of 15000+600000
  614316 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,19n,93p,987b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1163,9 +1196,9 @@ Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1b8a.pfb><C:/Users
 /Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1bi8a.pfb><C:/Users/Usu
 ario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1r8a.pfb><C:/Users/Usuario/
 AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1ri8a.pfb>
-Output written on main.pdf (35 pages, 1142945 bytes).
+Output written on main.pdf (37 pages, 1157815 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

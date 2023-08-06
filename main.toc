@@ -5,11 +5,11 @@
 \contentsline {section}{\numberline {2.2}Memristor}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Variables de estado}{12}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Superficies invariantes}{14}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos Bizonales}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Sistemas lineales planos}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{22}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{23}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{25}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{27}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{29}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{31}{chapter.8}%
+\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{25}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{31}{chapter.7}%
+\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{33}{chapter.8}%
