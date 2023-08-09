@@ -15,6 +15,7 @@
 \usepackage{lipsum} %Para hacer textos de ejemplo para pruebas
 \usepackage{bm} % Agrega esta línea en el preámbulo del documento
 \usepackage{enumitem}
+\usepackage{xcolor}
 
 \newtheorem{theorem}{Teorema}
 \newtheorem{definicion}{Definición} % Declaración del nuevo entorno "definicion"
@@ -222,7 +223,7 @@
 		\label{eq:flujocarga}
 	\end{equation}\smallskip
 	
-	Sabiendo la relacion del voltaje y la intensidad respecto a la carga y al flujo en el tiempo:
+	Sabiendo la relación del voltaje y la intensidad respecto a la carga y al flujo en el tiempo:
 
 	\begin{equation}
 		v(t)\,=\,\frac{d\varphi}{dt} \qquad i(t)\,=\,\frac{dq}{dt}
@@ -270,7 +271,7 @@
 	
 	\newpage
 	
-	El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP fabricaron un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch} no sería hasta 2008 que se percataron de la similitud de funcionaminto con el memristor de Chua. La construccion es secilla, se trata de dos capas, una de dioxido de titanio puro y otra de dioxido de titanio deficiente de atomos de oxigeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}
+	El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP se fabricó un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch}, no sería hasta 2008 que se percataron de la similitud de funcionaminto con el memristor de Chua. La construcción es secilla, se trata de dos capas, una de dioxido de titanio puro y otra de dioxido de titanio deficiente de átomos de oxígeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}
 	
 	\begin{figure}[h]
 		\centering
@@ -279,9 +280,9 @@
 		\label{fig:mem1}
 	\end{figure}
 	
-	El oxido de titanio tiene una serie de caracteristicas que lo hacen un material muy interesante en esta aplicacion:
+	El óxido de titanio tiene una serie de características que lo hacen un material muy interesante en esta aplicación:
 	\begin{enumerate}
-		\item Resistencia variable: La resistencia electrica del oxido de titanio puede cambiar en repuesta de la aplicacion de una corriente o un campo electrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos limites de operacion.
+		\item Resistencia variable: La resistencia eléctrica del óxido de titanio puede cambiar en repuesta de la aplicación de una corriente o un campo eléctrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos límites de operación.
 		\item No volatilidad: El óxido de titanio puede mantener su estado de resistencia incluso cuando se retira la corriente eléctrica que lo atraviesa. Esto significa que puede retener información y mantener su estado de resistencia sin requerir energía continua.
 		\item Cambios rápidos de resistencia:  Esta propiedad permite operaciones de escritura y lectura rápidas en el memristor, lo que es crucial para su uso en aplicaciones de almacenamiento y procesamiento de datos.
 		\item Baja potencia y tamaño compacto
@@ -300,7 +301,7 @@
 		\label{eq:hp2}
 	\end{equation}\smallskip
 	
-	Integrando la ecuación \eref{eq:hp2} e insertandola en \eref{eq:hp1} teniendo en cuenta que el valor de resistencia  $R_{ON} \ll R_{OFF}$: 
+	Integrando la ecuación \eref{eq:hp2} e insertándola en \eref{eq:hp1} teniendo en cuenta que el valor de resistencia  $R_{ON} \ll R_{OFF}$: 
 	
 	\begin{equation}
 		w(t)\,=\,\mu_V\,\frac{R_{ON}}{D}\,i(t)
@@ -329,7 +330,7 @@
 	\end{enumerate}
 	\newpage
 	
-	El funcionamiento es el siguiente, entre los dos electrodos de platino tenemos una capa de dióxido de titanio puro $TiO_2$ que actúa como dieléctrico y otra de dióxido de titanio con vacantes de oxígeno $TiO_{2-x}$ que actúa como conductor ya que en estas vacantes están cargadas positivamente (ver \fref{fig:mem1}), ya que al faltar atomos de oxígeno se están perdiendo también sus electrones de valencia asociados, generando así que el compuesto necesite atraer electrones a dichas vacantes para así mantenerse electricamente estable.Cuando un voltaje positivo se aplica al electrodo superior las vacantes de oxígeno de la zona dopada se repelen y viajan hacia la zona de oxido de titanio puro, haciendo asi que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de oxígeno viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.
+	El funcionamiento es el siguiente, entre los dos electrodos de platino tenemos una capa de dióxido de titanio puro $TiO_2$ que actúa como dieléctrico y otra de dióxido de titanio con vacantes de oxígeno $TiO_{2-x}$ que actúa como conductor ya que en estas vacantes están cargadas positivamente (ver \fref{fig:mem1}), ya que al faltar átomos de oxígeno se están perdiendo también sus electrones de valencia asociados, generando así que el compuesto necesite atraer electrones a dichas vacantes para así mantenerse eléctricamente estable.Cuando un voltaje positivo se aplica al electrodo superior las vacantes de oxígeno de la zona dopada se repelen y viajan hacia la zona de óxido de titanio puro, haciendo así que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de oxígeno viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.
 	
 	\begin{figure}[h]
 		\centering
@@ -450,7 +451,7 @@
 	Ya tenemos las ecuaciones necesarias para empezar el análisis pero primero veremos en los siguientes capitulos que técnicas estaremos usando para ello.
 	\newpage
 	\section{Superficies invariantes}
-	Como se ve en \eref{eq:sistema} el nuestro es un sistema dinámico en el tiempo definido por 3 ecuaciones diferenciales y tres incognitas $x, y, z$.
+	Como se ve en \eref{eq:sistema} el nuestro es un sistema dinámico en el tiempo definido por 3 ecuaciones diferenciales y tres incognitas $x, y, z$. Estas 3 incógnitas forman una superficie, un plano, donde se alojan las curvas solución de nuestro sistema. A esta superficie la llamaremos invariante cuando no se vea afectada por el comportameinto del sistema dinámico que la define. 
 	
 	
 	
@@ -458,7 +459,7 @@
 	En este capítulo haremos un repaso de sistemas diferenciales lineales puesto que como hemos visto en el sistema \eref{eq:sistema} hemos reducido nuestro circuito a un sistema de este tipo. Lo que necesitamos ahora es encontrar la o las soluciones de nuestro sistema y estudiar su estabiliad, la base que necesitamos para ello lo veremos en este capítulo.
 	\newpage
 	\section{Sistemas lineales planos}
-	En esta sección vamos a analizar los sistema de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circutio de esta forma.
+	En esta sección vamos a analizar los sistema de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circuito de esta forma.
 	
 	\begin{equation}
 		\label{eq:edo2}
@@ -771,7 +772,13 @@
 	
 	\newpage
 	\section{Sistemas lineales a trozos bizonales}
-	En esta sección vamos a ver como estudiar los sistemas continuos dinámicos lineales a trozos de dos zonas y veremos sus propiedades de cara a la obtención de una órbita periódica y estudiar su amplitud y periodo.\\[0.5cm] También veremos como utilizar las formas canónicas para reducir el número de parámetros que influyen en el sistema y como apoyarnos en dichas formas canónicas y las propiedades que nos portan a la hora de estudiar la oscilacion periódica de nuestro circuito.
+	En esta sección vamos a ver como estudiar los sistemas continuos dinámicos lineales a trozos de dos zonas y veremos sus propiedades de cara a la obtención de una órbita periódica y estudiar su amplitud y periodo.\\[0.5cm] También veremos como utilizar las formas canónicas para reducir el número de parámetros que influyen en el sistema y como apoyarnos en dichas formas canónicas y las propiedades que nos portan a la hora de estudiar la oscilacion periódica de nuestro circuito.\\[0.5cm]
+	Antes que nada hay que definir lo que es un sistema dinámico continuo:
+	
+	\begin{definicion}
+		Un sistema dinámico es un conjunto de ecuaciones de cambio que describen la evolución temporal de algún fenómeno, que puede ser de cualquier naturaleza (eléctrico, económico, cinegético...), de manera que el estado presente del sistema viene determinado por los estados anteriores. El estado del sistema queda descrito por sus variables de estado. Cuando la evolución se estudia considerando el tiempo como una variable 
+		continua, decimos que el sistema es continuo y para analizar este tipo de sistemas la regla determinista que lo gobierna es su sistema de ecuaciones diferenciales.
+	\end{definicion}
 	
 	\begin{definicion}
 		Un sistema dinámico continuo lineal a trozos plano con dos zonas es un sistema de ecuaciones diferenciales con la siguiente forma:
@@ -789,7 +796,7 @@
 			\right.
 			$}
 	\end{equation}\smallskip
-	Donde $x=(x_1,x_2)^T\in \mathbb{R}^2$, las matrices $A_1$ y $A_2$ son reales de orden $2$, además\\ $b_1$, $b_2$, $w$ $\in \mathbb{R}^2$ con $w\neq\vec{0}$ y $\delta \in \mathbb{R}$ y se satisface la condicioón de continuidad
+	Donde $x=(x_1,x_2)^T\in \mathbb{R}^2$, las matrices $A_1$ y $A_2$ son reales de orden $2$, además\\ $b_1$, $b_2$, $w$ $\in \mathbb{R}^2$ con $w\neq\vec{0}$ y $\delta \in \mathbb{R}$ y se satisface la condición de continuidad
 	
 	\begin{equation}
 		A_1x+b_1=A_2x+b_2 
@@ -797,7 +804,9 @@
 	
 	Sobre la recta de separación de las dos zonas:\quad $x^T\cdotp w+\delta = 0$ \\[0.5cm]
 	
-	para cada $x^0 \in \mathbb{R}^2$, el problema de valores iniciales \eref{eq:pvi2} tiene una solución única $X(t)$ definida para todo $t$ real.
+	\textbf{\textcolor{red}{EXISTENCIA Y UNICICDAD DE SISTEMA 3.14}}
+
+	Para cada $x^0 \in \mathbb{R}^2$, el problema de valores iniciales \eref{eq:pvi2} tiene una solución única $x(t)$ definida para todo $t$ real.
 	
 	\begin{equation}
 		\label{eq:pvi2}
@@ -811,7 +820,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	 A continuación veremos la forma canónica mas común para los sistemas bizonales que coloca la recta separación en el ejde de ordenadas $x_1=0$.
+	 A continuación veremos la forma canónica mas común para los sistemas bizonales que coloca la recta separación en el eje de ordenadas $x_1=0$.
 	
 	\begin{definicion}
 		Todo sistema dinámico continuo lineal a trozos plano con dos zonas puede escribirse de la siguiente forma:
@@ -828,25 +837,30 @@
 			\right.
 			$}
 	\end{equation}\smallskip
+	\textbf{\textcolor{red}{$S(x)$? pero yo tengo dos variables x1 y x2, es $S(x_1,x_2)$? }}
 	
 	Con $x=(x_1,x_2)^T, c\in \mathbb{R}^2$ y las matrices $B_1$, $B_2$ comparten sus dos últimas columnas por continuidad, esto es:
 	\begin{equation}
-		B_1-B_2=(B_1-B_2)e_1e_1^T
-	\end{equation}
-	Con $e_1=(1,0)^T$ el primer vector de la base canónica.
-    \end{definicion}
-	\newpage
+		B_1-B_2 = \left(B_1-B_2\right)e_1e_1^T 
+	\end{equation}\smallskip
 	
-	\textbf{Demostración}: Basta con realizar una simetría par que el vector $w$, normal a la recta de separación $x^T\cdotp w+\delta=0$, se transforme en el vector $e_1=(1,0)^T$, se puede hacer usando matrices de Householder. Por último solo queda por hacer una translación parq que la nueva recta de separación (ahora vertical) pase por el origen. Ahora el sistema tiene la forma:
+	\textbf{\textcolor{red}{multiplicado los e?}}
+	
+	Siendo $e_1=(1,0)^T$ el primer vector de la base canónica $\mathbb{R}^2$. Además, por continuidad también, se puede ver que $c_1=c_2=c$.
+    \end{definicion}\smallskip
+
+	
+	\textbf{Demostración}: Basta con realizar una simetría para que el vector $w$ normal a la recta $x^T\cdotp w+\delta=0$, se transforme en el vector $e_1=(1,0)^T$ se puede hacer usando matrices de Householder \cite{docvic}. Por último con una translación hacemos que la nueva recta de separación $x_1=0$ (ahora vertical) pase por el origen. Por lo que el sistema queda con la forma:
+	\textbf{\textcolor{red}{y que pasa con $\delta$? por que la recta se llama $x_1$, la puedo llamar solo x? menos lio con $\dot{x}_1$. Pero $x^T$ y $w$ son vectores? no entiendo la recta. x=0 no es un plano en lugar de una recta?}}
 	
 	\begin{equation}
-		\dot{x}=S(x)=
+		\dot{x}=
 		\label{eq:lien2}
 		\scalebox{1}{$\displaystyle
 			\left\{
 			\begin{aligned}
-				B_1x+c_1\quad si \quad x_1 \leq 0 \\
-				B_2x+c_2\quad si \quad x_1 < 0
+			B_1x+c_1\quad si \quad x_1 \leq 0 \\
+			B_2x+c_2\quad si \quad x_1 < 0
 			\end{aligned}
 			\right.
 			$}
@@ -859,7 +873,7 @@
 		B_1x+c_1=B_2x+c_2 \qquad si \quad x_1=0
 	\end{equation}\smallskip
 	
-	Como el $(0,0)^T$ está en la recta de separación $x_1=0$, sustituyendo en \eref{eq:b1b2} se tiene que $c_1=c_2$ por lo que:
+	Como el punto $(0,0)^T$ está en la recta de separación $x_1=0$, sustituyendo en \eref{eq:b1b2} se tiene que $c_1=c_2$ por lo que:
 	
 	\begin{equation}
 		B_1x=B_2x \qquad si \quad x_1=0
@@ -867,10 +881,12 @@
 	
 	Como el vector $(0,1)^T$ está sobre la recta de separación $x_1=0$, se tiene por tanto que las dos últimas columnas de $B_1$ y $B_2$ son iguales, y además no olvidemos que  antes hemos visto que $c_1=c_2=c$.
 	\\ [0.5cm]
-	Se ha reducido bastante el número de parámetros, ahora tenemos 8, 6 de ellos vieneden de las matrices $B_1$ y $B_2$ y 2 de $c$. Para seguir reduciendo parámetros tengamos en cuenta que estamos buscando oscilaciones y que no aparecerán en sistemas unidimensionales por lo que el primer término de las segundas columnas de las matrices $B_1$ y $B_2$ no puede ser nulo. Mediante el cambio de variable oportuno lo convertiremos en $(-1)$ aquí lo vemos, en primer lugar escribimos el sistema \eref{eq:lien2} de la siguiente manera:
+	Se ha reducido bastante el número de parámetros, ahora tenemos 8, 6 de ellos vienen de las matrices $B_1$ y $B_2$ y 2 de $c$. Para seguir reduciendo parámetros tengamos en cuenta que estamos buscando oscilaciones y que no aparecerán en sistemas unidimensionales por lo que el primer término de las segundas columnas de las matrices $B_1$ y $B_2$ no puede ser nulo. Mediante el cambio de variable oportuno lo convertiremos en $(-1)$ aquí lo vemos, en primer lugar escribimos el sistema \eref{eq:lien2} de la siguiente manera:
 	
 	\begin{equation}
-		\dot{x}=
+		\begin{pmatrix*}[r]
+			\dot{x}_1 \\ \dot{x}_2
+		\end{pmatrix*}=
 		\label{eq:lie-1}
 		\scalebox{1.2}{$\displaystyle
 			\left\{
@@ -878,13 +894,17 @@
 				\begin{pmatrix*}[r]
 					b_{11}^1 & b_{12} \\
 					b_{21}^1 & b_{22}
-				\end{pmatrix*}x+\begin{pmatrix*}[r]
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix*}[r]
 				c_1 \\ c_2
 				\end{pmatrix*} \quad si \quad x_1 \leq 0 \\
 				\begin{pmatrix*}[r]
 					b_{11}^2 & b_{12} \\
 					b_{21}^2 & b_{22}
-				\end{pmatrix*}x+\begin{pmatrix*}[r]
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix*}[r]
 					c_1 \\ c_2
 				\end{pmatrix*} \quad si \quad x_1 < 0
 			\end{aligned}
@@ -896,70 +916,392 @@
 	
 	\begin{equation}
 		\label{eq:cambio}
-		y_2=-b_{12}\,x_2-c_1\quad \rightarrow \quad x_2=\frac{-y_2-c_1}{b_{12}}
+		X_2=-b_{12}\,x_2-c_1\quad \rightarrow \quad x_2=\frac{-X_2-c_1}{b_{12}}
 	\end{equation}\smallskip
-	\newpage
+
 	Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-1} aplicando el cambio de variable \eref{eq:cambio}:
 	
 	\begin{equation}
 		\label{eq:q1}
 	\begin{aligned}
-		\dot{x}_1&=b_{11}^1x_1+b_{12}x_2+c-1=b_{11}^1x_1+b_{12}\left(\frac{-y_2-c_1}{b_{12}}\right)+c_1=b_{11}^1x_1-y_2 \nonumber \\[2mm]
-		\dot{y}_2&=-b_{12}\dot{x}_2=-b_{12}\left(b_{21}^1x_1+b_{22}x_2+c_2\right)\nonumber \\[2mm]
-		&=-b_{12}b_{21}^1x_1+b_{22}\left(-b_{12}x_2\right)-b_{12}c_2 \nonumber \\[2mm]
-		&=-b_{12}b_{21}^1x_1+b_{22}\left(y_2+c_1\right)-b_{12}c_2 \nonumber \\[2mm]
-		&=-b_{12}b_{21}^1x_1+b_{22}y_2+b_{22}c_1-b_{12}c_2
+		\dot{x}_1&=b_{11}^1x_1+b_{12}x_2+c-1=b_{11}^1x_1+b_{12}\left(\frac{-X_2-c_1}{b_{12}}\right)+c_1=b_{11}^1x_1-X_2 \\[2mm]
+		\dot{X}_2&=-b_{12}\dot{x}_2=-b_{12}\left(b_{21}^1x_1+b_{22}x_2+c_2\right) \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}\left(-b_{12}x_2\right)-b_{12}c_2  \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}\left(X_2+c_1\right)-b_{12}c_2 \\[2mm]
+		&=-b_{12}b_{21}^1x_1+b_{22}X_2+b_{22}c_1-b_{12}c_2
 	\end{aligned}
 	\end{equation}\smallskip
 	
-	De forma análoga para $x_1>0$:
+	
+	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-1}:
 	\begin{equation}
 		\label{eq:q2}
 		\scalebox{1.2}{$\displaystyle
 			\left\{
 			\begin{aligned}
-			&\dot{x}_1=b_{11}^2x_1-y_2 \\[2mm]
-			&\dot{y}_2=-b_{12}b_{21}^2x_1+b_{22}y_2+b_{22}c_1-b_{12}c_2
+			&\dot{x}_1=b_{11}^2x_1-X_2 \\[2mm]
+			&\dot{X}_2=-b_{12}b_{21}^2x_1+b_{22}X_2+b_{22}c_1-b_{12}c_2
 		\end{aligned}
 		\right.
 		$}
 	\end{equation}\smallskip
 	
-	Por tanto aplicando lo anterior al sistema \eref{eq:lie-1} y tomando \\ $c_{11}^i=b_{11}^i \: ; \: c_{121}^i=-b_{12}b_{21}^i \: ; \: c_{22}=b_{22} \: ; \: d_2=b_{22}$
-	 
+	Sustituyendo \eref{eq:q1} y \eref{eq:q2} en el sistema \eref{eq:lie-1}, tomando $c_{11}^i=b_{11}^i \: ; \: c_{21}^i=-b_{12}b_{21}^i \: ; \: \\ c_{22}=b_{22} \: ; \: d_2=b_{22}c_1-b_{12}c_2$ y renombrando $X_2$ como $x_2$:
+	
+	\begin{equation}
+		\begin{pmatrix*}[r]
+			\dot{x}_1 \\ \dot{x}_2
+		\end{pmatrix*}=
+		\label{eq:lie-12}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					c_{11}^1 & -1 \\
+					c_{21}^1 & c_{22}
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ d_2
+				\end{pmatrix*} \quad si \quad x_1 \leq 0 \\
+				\begin{pmatrix*}[r]
+					c_{11}^2 & -1 \\
+					c_{21}^2 & c_{22}
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ d_2
+				\end{pmatrix*} \quad si \quad x_1 < 0
+			\end{aligned}
+			\right.
+			$} 
+	\end{equation}\smallskip
+	
+	Hemos conseguido eliminar otros dos parámetros del sistema, además solo hemos realizado cambios lineales por lo que las matrices características son semejantes, es decir, no hemos variado las características del sistema. Lo que nos queda es ya pasar a la famosa forma canónica de Liénard:
 	
 	
 	\begin{theorem}\label{t2}
-		Cuando las primeras componentes de las segundas columnas de las matrices $B_1$ y $B_2$ no son nulas, existe un cambio de variable que transforma el sistema \eref{eq:biz1} en la forma canónica de Liénard, sin modificar la traza y el determinanate de la matriz característica ya que son invariates algebraicos:
+		Existe un cambio de variable que transforma el sistema \eref{eq:lie-12} en la forma canónica de Liénard, sin modificar la traza y el determinanate de la matriz característica del sistema ya que son invariates algebraicos:
 	\end{theorem}
 	
 	\begin{equation}
-		\dot{x}=
+		\begin{pmatrix*}[r]
+			\dot{x}_1 \\ \dot{x}_2
+		\end{pmatrix*}=
 		\label{eq:lienard}
-		\scalebox{1}{$\displaystyle
+		\scalebox{1.2}{$\displaystyle
 			\left\{
 			\begin{aligned}
 				\begin{pmatrix*}[r]
 					t & -1\\
 					d & 0
-				\end{pmatrix*}x+\begin{pmatrix}
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix}
 				0\\a
 				\end{pmatrix} \quad si \quad x_1\leq 0 \\
 				\begin{pmatrix*}[r]
 					T & -1\\
 					D & 0
-				\end{pmatrix*}x+\begin{pmatrix}
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1\\x_2
+				\end{pmatrix*}+\begin{pmatrix}
 					0\\a
 				\end{pmatrix} \quad si \quad x_1 > 0
 			\end{aligned}
-			\right. \qquad\quad a \in \left\{-1,0,1\right\}
+			\right. \qquad con\quad a \in \left\{-1,0,1\right\}
+			$}
+	\end{equation}\smallskip
+
+	
+	\textbf{Demostración}: Usando el siguiente cambio de variable:
+	
+	\begin{equation}
+		\label{eq:cambioo}
+		X_2=c_{22}x_1+x_2\quad \rightarrow \quad x_2=X_2-c_{22}x_1
+	\end{equation}\smallskip
+	
+	Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-12} aplicando el cambio de variable \eref{eq:cambioo}:
+	
+		\begin{equation}
+		\label{eq:cambio2}
+		\begin{aligned}
+			\dot{x}_1&=c_{11}^1x_1-x_2=c_{11}^1x_1-(X_2-c_{22}x_1)=x_1(c_{11}^1+c_{22})-X_2 \\[2mm]
+			\dot{X}_2&=c_{22}\dot{x}_1+\dot{x}_2=c_{22}(c_{11}^1x_1-x_2)+(c_{21}^1x_1+c_{22}x_2+d_2) \\[2mm]
+			&=c_{22}c_{11}^1x_1-c_{22}x_2+c_{21}^1x_1+c_{22}x_2+d_2 \\[2mm]
+			&=x_1(c_{22}c_{11}^1+c_{21})+d_2
+		\end{aligned}
+		\end{equation}\smallskip
+	
+	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	\begin{equation}
+		\label{eq:cambio22}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				&\dot{x}_1=x_1(c_{11}^2+c_{22})-X_2 \\[2mm]
+				&\dot{X}_2=x_1(c_{22}c_{11}^2+c_{21}^2)+d_2
+			\end{aligned}
+			\right.
 			$}
 	\end{equation}\smallskip
 	
-	El requerimiento sobre las matrices del Teorema \ref{t2} implica la observabilidad del sistema desde el punto de vista de teoría de control
+	Sustituyendo \eref{eq:cambio2} y \eref{eq:cambio22} en el sistema \eref{eq:lie-12}, tomando $t=c_{11}^1+c_{22} \: ; \:\\ d=c_{22}c_{11}^1+c_{21}^1 \: ; \:  T=c_{11}^2+c_{22} \: ; \: D=c_{22}c_{11}^2+c_{21}^2$ y renombrando $X_2$ como $x_2$:
+	
+	\begin{equation}
+		\begin{pmatrix*}[r]
+			\dot{x}_1 \\ \dot{x}_2
+		\end{pmatrix*}=
+		\label{eq:lienard2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					t & -1\\
+					d & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1 \\ x_2
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\d_2
+				\end{pmatrix} \quad si \quad x_1\leq 0 \\
+				\begin{pmatrix*}[r]
+					T & -1\\
+					D & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+				x_1 \\ x_2
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\d_2
+				\end{pmatrix} \quad si \quad x_1 > 0
+			\end{aligned}
+			\right. 
+			$}
+	\end{equation}\smallskip
+
+	Siendo $t,d,T,D$ las respectivas trazas $(t,T)$ y determinantes $(d,D)$ de las matrices caracteristicas de cada uno de los sitemas a la derecha y a la izquierda de la recta de separación $x_1=0$, que como ya hemos visto, no hemos modificado sus propiedades pues todos los cambios aplicados han sido lineales.\\[0.5cm]
+
+	Por último vamos a ajustar $d_2$. Si $d_2=0$ entonces el sistema ya sería igual que \eref{eq:lienard} pero con el parámetro $a=0$. Si $d_2\neq0$ hay que aplicar el siguiente cambio:
+	
+	\begin{equation}
+		\label{eq:cambiod2}
+		X_1=\frac{x_1}{|d_2|} \qquad X_2=\frac{x_2}{|d_2|}
+	\end{equation}\smallskip
+	
+	Por lo que $X_1$ tiene el mismo sigo que $x_1$ y la recta de separación sería $X_1=0$ \textbf{\textcolor{red}{No entiendo lo del signo}}.\\[0.5cm]
+	Para el caso $X_1\leq 0$ del sistema \eref{eq:lienard2} aplicando el cambio de variable \eref{eq:cambiod2}:
+	
+	\begin{equation}
+		\label{eq:q3}
+		\begin{aligned}
+			&\dot{X}_1=\frac{\dot{x}_1}{|d_2|}=\frac{tx_1-x_2}{|d_2|}=t\frac{x_1}{|d_2|}-\frac{x_2}{|d_2|}=tX_1-X_2\\[2mm]
+			&\dot{X}_2=\frac{\dot{x}_2}{|d_2|}=\frac{dx_1-0+d_2}{|d_2|}=d\frac{x_1}{|d_2|}+\frac{d_2}{|d_2|}=dX_1+\frac{d_2}{|d_2|}\\[2mm]
+		\end{aligned}
+	\end{equation}\smallskip
+	
+	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	\begin{equation}
+		\label{eq:q4}
+		\scalebox{1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				&\dot{X}_1=TX_1-X_2 \\[2mm]
+				&\dot{X}_2=DX_1+\frac{d_2}{|d_2|}
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
+	
+	Démonos cuenta que cuando dividimos $d_2$ entre su valor absoluto lo que estamos obteniendo es $-1,1,0$ dependiendo de si $d_2$ es negativo, positivo o cero, por lo que usaremos la funcion signo \textit{sgn}:
+	
+	\begin{equation}
+		\label{eq:sgn}
+		sgn(d_2)=\left\{
+		\begin{aligned}
+		1 \qquad si  \quad d_2>0 \\
+		0 \qquad si  \quad d_2=0 \\
+		-1 \qquad si \quad d_2<0 
+    	\end{aligned}
+		\right.
+	\end{equation}\smallskip
+	
+	Sustituyendo \eref{eq:q3} y \eref{eq:q4} en el sistema \eref{eq:lienard2}, tomando $a=sgn(d_2)$ y renombrando $X_1$ como $x_1$ y $X_2$ como $x_2$:
+	
+	
+	\begin{equation}
+		\begin{pmatrix*}[r]
+			\dot{x}_1 \\ \dot{x}_2
+		\end{pmatrix*}=
+		\label{eq:lienardfinal}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					t & -1\\
+					d & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+					x_1 \\ x_2
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\a
+				\end{pmatrix} \quad si \quad x_1\leq 0 \\
+				\begin{pmatrix*}[r]
+					T & -1\\
+					D & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+					x_1 \\ x_2
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\a
+				\end{pmatrix} \quad si \quad x_1 > 0
+			\end{aligned}
+			\right. 
+			$}
+	\end{equation}\smallskip
+	
+	Para ubicar de una manera más gráfica lo que tenemos en \eref{eq:lienardfinal}:
+	\begin{equation}
+		\label{eq:lienardfinalgr}
+		\begin{aligned}
+			\begin{pmatrix*}[r]
+				\dot{x}_1\\ \dot{x}_2
+			\end{pmatrix*}= \begin{pmatrix*}[r]
+				t & -1 \\ d & 0
+			\end{pmatrix*} \begin{pmatrix*}[r]
+				x_1 \\ x_2
+			\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ a
+			\end{pmatrix*} \qquad 
+			&\rule[-40pt]{1.5pt}{80pt} \qquad 
+			\begin{pmatrix*}[r]
+				\dot{x}_1\\ \dot{x}_2
+			\end{pmatrix*}= \begin{pmatrix*}[r]
+				T & -1 \\ D & 0
+			\end{pmatrix*} \begin{pmatrix*}[r]
+				x_1 \\ x_2
+			\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ a
+			\end{pmatrix*} \\ x_1=&\;\;0
+		\end{aligned}
+	\end{equation}\smallskip
+	
+	Podemos darnos cuenta de que las ecuaciones corresponden a las dos zonas izquierda y derecha de la recta de separación $x_1=0$ así que vamos a hacer unos cambios de nombres a las variables del sistema \eref{eq:lienardfinal} simplemente para que los nombres sean un poco mas descriptivos. Finalmente el sistema en la forma canónica de Liènard nos queda de la siguiente manera:
+	
+	\begin{equation}
+		\begin{pmatrix*}[r]
+			\dot{x} \\ \dot{y}
+		\end{pmatrix*}=
+		\label{eq:lienardrl}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\begin{pmatrix*}[r]
+					T_L & -1\\
+					D_L & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+					x \\ y
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\a
+				\end{pmatrix} \quad si \quad x_1\leq 0 \\
+				\begin{pmatrix*}[r]
+					T_R & -1\\
+					D_R & 0
+				\end{pmatrix*}\begin{pmatrix*}[r]
+					x \\ y
+				\end{pmatrix*}+\begin{pmatrix}
+					0\\a
+				\end{pmatrix} \quad si \quad x_1 > 0
+			\end{aligned}
+			\right. 
+			$}
+	\end{equation}\smallskip
+	
+	De una manera más gráfica sería:
+	
+	\begin{equation}
+		\label{eq:lienardrlgr}
+		\begin{aligned}
+			\begin{pmatrix*}[r]
+				\dot{x}\\ \dot{y}
+			\end{pmatrix*}= \begin{pmatrix*}[r]
+				T_L & -1 \\ D_L & 0
+			\end{pmatrix*} \begin{pmatrix*}[r]
+				x \\ y
+			\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ a
+			\end{pmatrix*} \qquad 
+			&\rule[-40pt]{1.5pt}{80pt} \qquad 
+			\begin{pmatrix*}[r]
+				\dot{x}\\ \dot{y}
+			\end{pmatrix*}= \begin{pmatrix*}[r]
+				T_R & -1 \\ D_R & 0
+			\end{pmatrix*} \begin{pmatrix*}[r]
+				x \\ y
+			\end{pmatrix*}+\begin{pmatrix*}[c]
+				0 \\ a
+			\end{pmatrix*} \\ x_1=&\;\;0
+		\end{aligned}
+	\end{equation}\smallskip
+	
+	\newpage
 	
 	\chapter{Semiaplicaciones de Poincaré}
-	Contenido del capítulo 4.
+	En el estudio de sistemas dinámicos, la aplicación de Poincaré es muy útil. Básicamente se trata de delimitar una superficie (llamada sección de Poincaré), en el espacio de fases de nuestro sistema, de tal manera que las curvas solución de nuestro sistema transpasen dicha sección para poder estudiar así el comportamiento de las trayectorias. Lo interesante de este método es que lo que nos interesa son los puntos de intersección con la sección de Poincaré, no estudiamos la trayectoria, lo cual simplifica mucho el estudio sobre todo en sistemas caóticos.\\[0.5cm]
+	En concreto se denomina \textit{\textbf{Aplicación de Poincaré}} cuando se produce una órbita periódica en alguna superficie invariante de nuestro sistema, esto quiere decir, que la curva solucion corta la sección de Poincaré en un punto $y_0$, viaja por la zona izquierda de la forma que sea, corta de nuevo la sección de Poincaré en $y_1$, viaja por la zona derecha de la forma que sea nuevamente y por último vuleve a cortar a la sección de Poincaré en el punto $y_0$ cerrandose así la órbita, ver \fref{fig:aplipoincarerandom}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\textwidth]{aplipoincarerandom.jpg}
+		\caption{Órbita periódica que corta una sección de poincaré en dos puntos $y_0$, $y_1$}
+		\label{fig:aplicpoincarerandom}
+	\end{figure}\smallskip
+	\newpage
+	
+	
+	En este trabajo hablaremos de la \textit{\textbf{Semi-Aplicación de Poincarè}}, es muy simple, tan solo analizaremos una de las dos mitades de la orbita. Tendremos un punto de corte en $y_0$ y buscaremos el siguiente punto de corte $y_1$. La semiaplicación es muy útil en sistemas que presentan simetría en el tiempo, ya que las dos partes de la órbita son iguales. No es nuestro caso, nosotros usaremos la semi-aplicación por un motivo específico, veámoslo.\\[0.5cm]
+	En primer lugar veamos que sistema es el que tenemos. Nosotros estamos estudiando un sistema lineal continuo a trozos bizonal, esto es:
+	
+    \begin{equation}
+    	\label{eq:sisttroz}
+    	\begin{aligned}
+    	\begin{pmatrix*}[r]
+    		\dot{x}\\ \dot{y}
+    	\end{pmatrix*}=A_L\begin{pmatrix*}[r]
+    	x \\ y
+    	\end{pmatrix*}+a_L \qquad 
+    		&\rule[-40pt]{1.5pt}{80pt} \qquad 
+    		\begin{pmatrix*}[r]
+    			\dot{x}\\ \dot{y}
+    		\end{pmatrix*}=A_R\begin{pmatrix*}[r]
+    			x \\ y
+    		\end{pmatrix*}+a_R \\ x=&-1
+    	\end{aligned}
+    \end{equation}\smallskip
+    
+    Siendo $A_L$, $A_R$ $\in \mathbb{R}^2$ y $a_L$, $a_R$ $\in \mathbb{R}$. A partir de ahora los subíndices \textit{R} y \textit{L} harán referencia a la zona derecha e izquierda del plano de separación que por perspectiva se verá como una línea vertical. Como ya hemos dicho anteriormente, las dos últimas columnas de $A_L$ y $A_R$ son iguales y $a_R=a_L=a$ por continuidad, por lo que podemos escribir el sistema \eref{eq:sisttroz} en forma canónica de Lienard:
+    
+        \begin{equation}
+    	\label{eq:sisttrozlie}
+    	\begin{aligned}
+    		\begin{pmatrix*}[r]
+    			\dot{x}\\ \dot{y}
+    		\end{pmatrix*}= \begin{pmatrix*}[r]
+    		T_L & -1 \\ D_L & 0
+    		\end{pmatrix*} \begin{pmatrix*}[r]
+    			x \\ y
+    		\end{pmatrix*}+\begin{pmatrix*}[r]
+    		0 \\ a
+    		\end{pmatrix*} \qquad 
+    		&\rule[-40pt]{1.5pt}{80pt} \qquad 
+    		\begin{pmatrix*}[r]
+    			\dot{x}\\ \dot{y}
+    		\end{pmatrix*}= \begin{pmatrix*}[r]
+    		T_L & -1 \\ D_L & 0
+    		\end{pmatrix*} \begin{pmatrix*}[r]
+    			x \\ y
+    		\end{pmatrix*}+\begin{pmatrix*}[r]
+    		0 \\ a
+    		\end{pmatrix*} \\ x=&-1
+    	\end{aligned}
+    \end{equation}\smallskip
+
+	
 	\newpage
 	esto es texto de la siguiente hoja
 	
@@ -1004,6 +1346,8 @@
 		\bibitem{outsiders} Caravelli, F. \& Carbajal, Juan. (2018). Memristors for the Curious Outsiders. 10.31224/osf.io/c4qr9. 
 		
 		\bibitem{teruel} Llibre, Jaume \& Teruel, Antonio. (2014). Introduction to the Qualitative Theory of Differential Systems: Planar, Symmetric and Continuous Piecewise Linear Systems. 10.1007/978-3-0348-0657-2. 
+		
+		\bibitem{docvic} Carmona, V.Bifurcaciones en Sistemas Dinámicos Lineales a Trozos. Tesis Doctoral. Universisdad de Sevilla, 2002.
 		
 	\end{thebibliography}
 	

@@ -8,8 +8,8 @@
 \contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Sistemas lineales planos}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{22}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{25}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{31}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{33}{chapter.8}%
+\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{28}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{35}{chapter.7}%
+\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{37}{chapter.8}%
