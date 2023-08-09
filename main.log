@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  9 AUG 2023 20:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  9 AUG 2023 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1112,15 +1112,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27]
 Cap\'{\i }tulo 4.
-
-LaTeX Warning: Hyper reference `fig:aplipoincarerandom' on page 28 undefined on
- input line 1246.
-
-
-LaTeX Warning: Reference `fig:aplipoincarerandom' on page 28 undefined on input
- line 1246.
-
-<aplipoincarerandom.jpg, id=415, 1204.5pt x 891.33pt>
+<aplipoincarerandom.jpg, id=416, 1204.5pt x 891.33pt>
 File: aplipoincarerandom.jpg Graphic file (type jpg)
 <use aplipoincarerandom.jpg>
 Package pdftex.def Info: aplipoincarerandom.jpg  used on input line 1250.
@@ -1239,18 +1231,14 @@ LaTeX Info: Redefining \% on input line 22.
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-16>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5D62C366C0C6F5B160B87003A4F40541;2412.
  ) 
 Here is how much of TeX's memory you used:
- 16432 strings out of 476037
- 259805 string characters out of 5789655
+ 16431 strings out of 476037
+ 259780 string characters out of 5789655
  1878763 words of memory out of 5000000
- 36759 multiletter control sequences out of 15000+600000
+ 36758 multiletter control sequences out of 15000+600000
  614316 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,19n,93p,991b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1270,9 +1258,9 @@ Users/Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1b8a.pfb><C:/Users
 /Usuario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1bi8a.pfb><C:/Users/Usu
 ario/AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1r8a.pfb><C:/Users/Usuario/
 AppData/Roaming/MiKTeX/fonts/type1/urw/arial/ua1ri8a.pfb>
-Output written on main.pdf (41 pages, 1321277 bytes).
+Output written on main.pdf (41 pages, 1321469 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
+ 591 PDF objects out of 1000 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)
  183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
