@@ -4,7 +4,7 @@ kL=2;   kR=0;   % kL,R en funcion del signo de aL,R
 TL=0.3; TR=-0.5;% Condiciones para que exista oscilacion
 DL=1;   DR=1;   % Condiciones para que exista oscilacion
 
-Punto_Inicial = [3.66942 -6.87734];
+Punto_Inicial = [3.63636 -6.80511];
 
 funcion = @(Y) fsolvepoinca(kL,kR,aL,aR,TL,TR,DL,DR,Y);
 

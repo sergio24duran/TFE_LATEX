@@ -8,6 +8,7 @@
 %\setlength{\parindent}{0pt} %Ajusta la sangría a 0 para que no haya
 \usepackage{amsmath} %Para ecuaciones\usepackage{amsmath}
 \usepackage{amssymb} % Paquete para cargar la fuente \mathbb
+\usepackage{amsthm}
 \usepackage{mathtools}
 \usepackage{multicol}
 %\usepackage{refcheck} %Para que aparezca el nombre que le doy a la referencia
@@ -21,6 +22,7 @@
 
 \newtheorem{theorem}{Teorema}[chapter]
 \newtheorem{definicion}{Definición}[chapter] % Declaración del nuevo entorno "definicion"
+
 
 \usepackage{caption} %Para crear mi formato "boldformat" que pone lo primero en negrita
 \DeclareCaptionFormat{boldformat}{\textbf{#1} #2 #3}
@@ -37,6 +39,7 @@
 \makeatletter %Mi propio comando para establecer las referencias de figuras y ecuaciones
 \newcommand{\fref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{Fig.~\ref*{#1}}}}}
 \newcommand{\eref}[1]{\hyperref[#1]{\textcolor{blue}{\textit{(\ref*{#1})}}}}
+\newcommand{\tr}{\operatorname{\textrm{tr}}}
 \makeatother
 
 \usepackage{makeidx} %Para hacer el indice
@@ -504,69 +507,69 @@
 	\newpage
 	\section{Superficies invariantes}
 	\label{sec:2.4}
-	\noindent Lo que en teoría de bifurcaciones se denomina \textit{Superficie} o \textit{Plano} es un espacio topológico de dimensión $n$, en un sistema dinámico, cuyas propiedades de dicha superficie se mantienen inalteradas bajo la evolución de sistema. Es decir, es una región del espacio de fase donde las trayectorias de las soluciones del sistema permanecen contenidas, siempre que no aparezcan bifurcaciones de escape, pero no será nuestro caso. En este trabajo nos interesa estudiar los planos invariantes del sistema \eref{eq:sistema} ya que será donde aparecerá la órbita periódica que estamos buscando en nuestro circuito.
+	\noindent A continuación definimos el concepto de superficie invariante para un sistema dinámico tridimensional. Más adelante veremos que el sistema \eref{eq:sistema} posee unas determinadas superficies invariantes. 
 	
 	\begin{definicion}
-		Considerando el sistema diferencial:
+		Consideremos, el sistema diferencial:
 		
 		\begin{equation}
+			\label{eq:sergio}
 			\frac{dX}{dt}=F(X),\qquad X\in \mathbb{R}^3
 		\end{equation}\smallskip
-		Se dice que la superficie $S\subset \mathbb{R}^3$ es una superficie invariante, del sistema si la solución del sistema diferencial $X(t)$ con condición inicial $X(0)=X_0\; \in \; S$ satisface que $X(t) \in S$ para todo $t$.
-	\end{definicion}
+		Se dice que una superficie $S\subset \mathbb{R}^3$ es una superficie invariante para el sistema \eref{eq:sergio} si la solución del sistema diferencial $X(t)$ con condición inicial $X(0)=X_0 \; \in S$ satisface que $X(t) \in S$ para todo $t$ y para todo $X_0 \in S$.
+	\end{definicion}\smallskip
+	
+	A modo de ejemplo, en la \fref{fig:esfera} hemos representado una esfera invariante con varias órbitas de un sistema contenida en ella
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{esfera.jpg}
-		\caption{Una esfera (que es una superficie $S\subset \mathbb{R}^3$) con una órbita solución, $X(t)$ con condición inicial $X(0)=X_0$, contenida en ella.}
+		\caption{Esfera con dos órbitas solución $X_1(t)$, $X_2(t)$ con condiciones iniciales $X_1(0)=X_{0_1}$ y $X_2(0)=X_{0_2}$, contenidas en ella.}
 		\label{fig:esfera}
 	\end{figure}\smallskip
 	\newpage
 	
-	Como se demuestra en el teorema 1 de \cite{ponce} existe un conjunto de superficies invariantes para nuestro sistema \eref{eq:sistema}, se enunciará dicho teorema en este trabajo ya que nos será muy importante tenerlo presente.
-	
-	\begin{theorem}
+	Desde el Teorema 1 de \cite{ponce}, sabemos que existe un conjunto de superficies invariantes para el sistema \eref{eq:sistema}. La descripción de estas superficies invariantes se detalla en el siguiente resultado. Se enunciará dicho teorema en este trabajo ya que nos será muy importante tenerlo presente.
+
+	\begin{theorem}[Teorema 1 de \cite{ponce}]
 		\label{teorema1}
-		Considerando el sistema \eref{eq:sistema} con la función lineal a trozos $q$ \eref{eq:qf} y la función $W(z)$ (posiblemente discontinua) \eref{eq:wz}. Para cualquier $h \in \mathbb{R}$, el conjunto:
+		Consideremos el sistema \eref{eq:sistema} con la función lineal a trozos $q$, dada en \eref{eq:qf}, y la función $W(z)$, dada en \eref{eq:wz}, siendo esta la derivada de dicha función $q$. Para cualquier $h \in \mathbb{R}$, el conjunto:
 		
 		\begin{equation}
 			\label{eq:sh}
 			S_h=\left\{(x,y,z)\in \mathbb{R}^3\: : \: H(x,y,z)=h \right\}
-		\end{equation}\smallskip
-		
-		\noindent es una superficiente invariante para el sistema, y se calcula con la siguiente expresión:
+		\end{equation}
+		donde
 		\begin{equation}
 			\label{eq:hecuation}
 			H(x,y,z)=-a_{22}x+a_{12}y-a_{12}a_{21}z+a_{11}a_{22}q(z).
 		\end{equation}\smallskip
 		
-		\noindent Además, el sistema tiene una familia infinita de superficies invariantes en todo $\mathbb{R}^3$, y la dinámica de los mismos es fundamentalmente bidimensional.
-		
-		\vspace{0.5cm}\noindent \textbf{Demostración:} Para cualquier solución $(\overline{x}(t),\overline{y}(t),\overline{z}(t))$ del sistema \eref{eq:sistema}, tenemos la función $h(t)=H(\overline{x}(t),\overline{y}(t),\overline{z}(t))$. Si derivamos $h(t)$ y sustituimos las ecuaciones de las tres incógnitas:\textit{\textcolor{red}{REPASAR AL ECUACIÓN, ESTA BIEN HECHA LA DERIVACIÓN? SE VA TODO Y QUEDA 0? MIRAR ARTICULO PONCE}}
-		
-		\begin{equation}
-				h'=-a_{22}(a_{11}W(z)+a_{12}y)+a_{12}(a_{21}x+a_{22}y)+(a_{11}a_{22}W(z)-a_{12}a_{21})x=0.
-		\end{equation}\smallskip
-
-		\noindent por lo que $h$ es constante a lo largo de toda la órbita y por lo tanto invariante a la dinámica del sistema.
+		\noindent es una superficiente invariante para el sistema \eref{eq:sistema}.
 	\end{theorem}
+		
+		\vspace{0.5cm}\noindent El sistema \eref{eq:sistema} tiene una familia infinita de superficies invariantes en todo $\mathbb{R}^3$, y la dinámica de los mismos es fundamentalmente bidimensional.
 	
-	Como se ha dicho en el teorema anterior la dinamica de estas superficies se puede reducir a un comportamiento bidimensional, esto se demuestra en el teorema 2 de \cite{ponce}, nuevamente lo enunciaremos pues nos interesa tenerlO presente. Lo que se hace en este teorema es mediante el cambio de variable adecuado transformar nuestro sistema de tres variables en uno de dos variable.
+	\vspace{0.5cm}Como se deduce del Teorema \ref{teorema1} la dinámica del sistema tridimensional \eref{eq:sistema} se puede reducir, aplicando un cambio de variable adecuado, al estudio de un sistema bidimensional.
+	
+	\vspace{0.5cm}\noindent En este trabajo es necesario incluir la prueba de ello porque los cambios de variable nos permitirán obtener la solución periódica en el circuito.
 	
 	\newpage
 	
-	\begin{theorem}
-		Considerando el sistema \eref{eq:sistema}, la función $W(z)$ \eref{eq:wz} con $a\neq b$ y tomando la hipótesis $a_{22}=\frac{R}{L}\neq 0$, la dinámica del sistema \eref{eq:sistema} es topologicamente equivalente a la dinamica del sistema lineal a trozos de dimensión 2
+	\begin{theorem}[Teorema 2 de \cite{ponce}]
+		Consideremos el sistema \eref{eq:sistema}, con la función $W(z)$ dada en \eref{eq:wz}, y supongamos que $a_{22}\neq 0$. La dinámica del sistema \eref{eq:sistema} es equivalente a la dinámica del sistema lineal a trozos bidimensional
 		
 		\begin{equation}
 			\label{eq:sis2ec}
+			\left\{
 			\begin{gathered}
 				\dot{\tilde{x}}=F(\tilde{x})-\tilde{y}, \\[2mm]
 				\dot{\tilde{y}}=g(\tilde{x})-h,
 			\end{gathered}
+			\right.
 		\end{equation}
 		
-		con
+		donde
 		
 		\begin{equation}
 			\label{eq:f1}
@@ -592,24 +595,29 @@
 			\right.
 		\end{equation}\smallskip
 		
-		\vspace{0.5cm}\noindent \textbf{Demostración:} Cuando $a_{22}\neq0$ en el sistema \eref{eq:sistema} podemos solucionar la ecuación $H(x,y,z)=h$ \eref{eq:hecuation} para $x$, escribiendo:
+	\end{theorem}
+		
+	\begin{proof}[\textbf{Demostración}]
+		 Cuando $a_{22}\neq0$, podemos despejar $x$ de la ecuación $H(x,y,z)=h$, donde $H$ está dada en \eref{eq:hecuation}
 		
 		\begin{equation}
 			\label{eq:xeqn}
 			x=\frac{a_{12}}{a_{22}}y+a_{11}q(z)-\frac{a_{12}a_{21}}{a_{22}}z-\frac{h}{a_{22}}.
 		\end{equation}\smallskip
 		
-		Ssutituyendo la ecuación \eref{eq:xeqn} en la segunda y tercera ecuación de \eref{eq:sistema}, tenemos:
+		\noindent Sutituyendo la expresión de $x$ anterior en la segunda y tercera ecuación de \eref{eq:sistema}, conseguimos
 		
 		\begin{equation}
 			\label{eq:cambyz}
+			\left\{
 			\begin{aligned}
 				&\dot{y}=\alpha_1y-\alpha_2z+a_{11}a_{21}q(z)-\frac{a_{21}h}{a_{22}}, \\[2mm]
 				&\dot{z}=\alpha_3y-\alpha_4z+a_{11}q(z)-\frac{h}{a_{22}}.
 			\end{aligned}
+			\right.
 		\end{equation}
 		
-		con
+	    \noindent con
 		
 		\begin{equation}
 			\label{eq:alphamatriz}
@@ -619,7 +627,7 @@
 			\end{aligned}
 		\end{equation}\smallskip
 		
-		Seguidamente considerando el siguiente cambio de variable
+		\noindent Seguidamente, considerando el siguiente cambio de variable
 		
 		\begin{equation}
 			\label{eq:xytilde}
@@ -629,17 +637,36 @@
 			\end{aligned}
 		\end{equation}\smallskip
 		
-		 el sistema \eref{eq:cambyz} se puede escribir en la forma \eref{eq:sis2ec}-\eref{eq:g1}.
+		 \noindent el sistema \eref{eq:cambyz} se puede escribir en la forma \eref{eq:sis2ec}, con lo que finaliza la demostración del resultado.
 		
-	\end{theorem}
+	\end{proof}
 	
-	\vspace{0.5cm}Una breve explicación de los anteriores teoremas. Siempre que $a_{22}\neq 0$, si elegimos una condición inicial de nuestro sistema que se encuentre dentro de alguna superficie de las que hemos definido en \eref{eq:sh}, y las cuales podemos calcular con la expresión \eref{eq:hecuation} con las condiciones iniciales de $x,y,z$, entonces la solución del sistema siempre estará contenida en dicha superficie. Es decir, mirando las ecuaciones \eref{eq:xytilde}; con $\tilde{x}$ calculamos la $z$, con $\tilde{y}$ podemos despejar y calcular la $y$ (recordemos que $h$ ya la hemos definido con las condiciones iniciales), y finalmente con la ecuación \eref{eq:xeqn} calculamos la $x$ .Hemos reducido un sistema tridimensional a uno bidimensional y conocemos el plano $h$ donde estará contenia la solución del sistema, solución que estamos buscando que sea una órbita periódica.
+	\vspace{0.5cm}Una breve explicación del significado de los anteriores teoremas. Supongamos que $a_{22}\neq 0$ y tomamos una condición inicial $X_0=(x_0,y_0,z_0)$. Esto nos fija la superficie invariante $S_{h_0}$ donde está la órbita del sistema con condición inicial $X_0$. Obviamente el valor de $h_0$ es $h_0=H(x_0,y_0,z_0)$, con $H$ dada en \eref{eq:hecuation}.
 	
-	\vspace{0.5cm}Como dijimos en el Teorema \ref{teorema1}, la función $W(z)$ puede ser discontinua, esto dependerá de las carácterísticas del memristor. Aún así esta posible discontinuidad no nos afectará en nuestro trabajo como se demuestra en la sección 3 de \cite{ponce} donde los autores demuestran como pasar en cualquier caso de un modelo discontinuo a un modelo reducido continuo. Además en el artículo de Chua de 2008, ver \cite{chuaoscillator2008} donde se presenta el circuito que estamos estudiando en este trabajo, los autores presentan una aproximación de lo que podrían ser la gráfica flujo-carga del memristor caracterizada por la ecuación \eref{eq:qfz}-\eref{eq:wz} y la suponen continua.
+	\vspace{0.5cm}A partir del valor $h=h_0$, determinamos la solución $\left( \tilde{x}(t),\tilde{y}(t) \right)$ del sistema \eref{eq:sis2ec} con condición inicial $\tilde{x}(0)=z_0$, $\; \tilde{y}(0)=\alpha_1z_0-\alpha_3y_0+\frac{h_0}{a_{22}}$. La solución $(x(t),y(t),z(t))$ del sistema \eref{eq:sistema} con condición inicial $(x_0,y_0,z_0)$ está dada por:
 	
-	\vspace{0.5cm}Además, nuestro nuevo sistema de dimensioón dos tiene tres zonas como vemos en \eref{eq:sis2ec}-\eref{eq:g1}, sin embargo en este trabajo nos centraremos en dos de ellas, puesto que buscaremos oscilaciones periódicas bizonales. Se hace esta aclaración puesto que parte del trabajo que haremos mas adelante, como la forma canónica de Lienard, nos permitiría hacer el estudio de tres zonas, pero no es nuestro objetivo.
+	\begin{equation}
+		\label{eq:solsis}
+		\scalebox{1.1}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				z(t)&=\tilde{x} \\[3mm]
+				y(t)&= \frac{\alpha_1\tilde{x}(t)+\frac{h_0}{a_{22}}-\tilde{y}(t)}{\alpha_3}\\[3mm]
+				x(t)&=\frac{a_{12}}{a_{22}}\left( \frac{\alpha_1\tilde{x}(t)+\frac{h_0}{a_{22}}-\tilde{y}(t)}{\alpha_3} \right) +a_{11}q(\tilde{x}(t))-\frac{a_{12}a_{21}}{a_{22}}\tilde{x}(t)-\frac{h_0}{a_{22}}
+			\end{aligned}
+			\right.
+			$}
+	\end{equation}\smallskip
 	
+	\begin{comment}
+	\vspace{0.5cm}Una breve explicación del significado de los anteriores teoremas. Supongamos que $a_{22}\neq 0$, si elegimos una condición inicial de nuestro sistema que se encuentre dentro de alguna superficie de las que hemos definido en \eref{eq:sh}, entonces la solución del sistema siempre estará contenida en dicha superficie. Es decir, mirando las ecuaciones \eref{eq:xytilde}; con $\tilde{x}$ calculamos la $z$, con $\tilde{y}$ podemos despejar y calcular la $y$ (recordemos que $h$ ya la hemos definido con las condiciones iniciales), y finalmente con la ecuación \eref{eq:xeqn} calculamos la $x$ .Hemos reducido un sistema tridimensional a uno bidimensional y conocemos el plano a trozos $h$ donde estará contenia la solución del sistema.
+	\end{comment}
 	
+	\begin{comment}
+	\vspace{0.5cm}La función $W(z)$ puede ser discontinua, esto dependerá de las carácterísticas del memristor. Aún así esta posible discontinuidad no nos afectará en nuestro trabajo como se demuestra en la sección 3 de \cite{ponce} donde los autores demuestran como pasar en cualquier caso de un modelo discontinuo a un modelo reducido continuo. Además en el artículo de Chua de 2008, ver \cite{chuaoscillator2008} donde se presenta el circuito que estamos estudiando en este trabajo, los autores presentan una aproximación de lo que podrían ser la gráfica flujo-carga del memristor caracterizada por la ecuación \eref{eq:qfz} y la suponen continua.
+	\end{comment}
+	
+	\vspace{0.5cm}Nuestro nuevo sistema de dimensión dos tiene tres zonas como vemos en \eref{eq:sis2ec}, sin embargo en este trabajo nos centraremos en dos de ellas, puesto que buscaremos oscilaciones periódicas bizonales. Se hace esta aclaración ya que parte del trabajo que haremos más adelante nos permitiría hacer el estudio de tres zonas, pero no es el objetivo de este trabajo.
 
 	
 	\chapter{Sistemas Dinámicos Continuos}
@@ -870,17 +897,17 @@
 			a_{21} & a_{22}\\
 		\end{pmatrix}\rightarrow\left\{
 		\begin{aligned}
-		det(A )&= a_{11}a_{22}-a_{12}a_{21} \\
-		tr(A) &= a_{11}+a_{22}
+		\det(A )&= a_{11}a_{22}-a_{12}a_{21} \\
+		\tr(A) &= a_{11}+a_{22}
 	    \end{aligned}
 		\right.
 	\end{equation}\smallskip
 	
 	\begin{eqnarray}
 		\begin{aligned}
-		P_A(\lambda)=&\lambda^2-tr(A)\lambda+det(A) \nonumber \\[1mm]
-		&\lambda^2-tr(A)\lambda+det(A)=0 \nonumber \\[1mm]
-		\textit{Autovalores}\rightarrow \quad &\lambda=\frac{tr(A)\pm \sqrt{tr(A)^2-4\,det(A)}}{2}
+		P_A(\lambda)=&\lambda^2-\tr(A)\lambda+\det(A) \nonumber \\[1mm]
+		&\lambda^2-\tr(A)\lambda+\det(A)=0 \nonumber \\[1mm]
+		\textit{Autovalores}\rightarrow \quad &\lambda=\frac{\tr(A)\pm \sqrt{\tr(A)^2-4\,\det(A)}}{2}
 	    \end{aligned}
 	\end{eqnarray}
 	
@@ -890,13 +917,13 @@
 	
 	Las curvas solucion tienden al punto crítico. Este caso se da para: 
 	\begin{itemize}
-		\item $\bm{tr(A)<0}$
-		\item $\bm{tr(A)^2-4\,det(A)<0}$
+		\item \textbf{$\tr$}$\bm{(A)<0}$
+		\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
 	\end{itemize}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{estable.png}
+		\includegraphics[width=1\textwidth]{estable.eps}
 		\caption{Foco Asintóticamente Estable visto en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
 		\label{fig:estable}
 	\end{figure}\smallskip
@@ -908,8 +935,8 @@
 	\end{pmatrix*}$
 	
 	\begin{align*}
-		&\bullet\quad tr(A)=-2<0 \\[2mm]
-		&\bullet\quad tr(A)^2-4\,det(A)=4-4(2)<0
+		&\bullet\quad \tr(A)=-2<0 \\[2mm]
+		&\bullet\quad \tr(A)^2-4\, \det(A)=4-4(2)<0
 	\end{align*}
 	
 	\newpage
@@ -918,13 +945,13 @@
 	
 	Las curvas solucion tienden al alejarse del punto crítico. Este caso se da para: 
 	\begin{itemize}
-		\item $\bm{tr(A)>0}$
-		\item $\bm{tr(A)^2-4\,det(A)<0}$
+		\item \textbf{$\tr$}$\bm{(A)>0}$
+		\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
 	\end{itemize}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{inestable.png}
+		\includegraphics[width=1\textwidth]{inestable.eps}
 		\caption{Foco Asintóticamente Inestable visto en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
 		\label{fig:inestable}
 	\end{figure}\smallskip
@@ -936,8 +963,8 @@
 	 \end{pmatrix*}$
 	
 	\begin{align*}
-		&\bullet\quad tr(A)=2>0 \\[2mm]
-		&\bullet\quad tr(A)^2-4\,det(A)=4-4(2)<0
+		&\bullet\quad \tr(A)=2>0 \\[2mm]
+		&\bullet\quad \tr(A)^2-4\, \det(A)=4-4(2)<0
 	\end{align*}
 	
 	\newpage
@@ -946,13 +973,13 @@
     
     Las curvas solucion son concéntricas al punto crítico. Este caso se da para: 
     \begin{itemize}
-    	\item $\bm{tr(A)=0}$
-    	\item $\bm{tr(A)^2-4\,det(A)<0}$
+    	\item \textbf{$\tr$}$\bm{(A)=0}$
+    	\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
     \end{itemize}
     
     \begin{figure}[h]
     	\centering
-    	\includegraphics[width=1\textwidth]{centro.png}
+    	\includegraphics[width=1\textwidth]{centro.eps}
     	\caption{Centro en el plano de fases $xy$ (izquierda) y la variacion de $x$ e $y$ en el tiempo (derecha).}
     	\label{fig:centro}
     \end{figure}\smallskip
@@ -964,8 +991,8 @@
     \end{pmatrix*}$
     
     \begin{align*}
-    	&\bullet\quad tr(A)=1-1=0 \\[2mm]
-    	&\bullet\quad tr(A)^2-4\,det(A)=0-4(1)<0
+    	&\bullet\quad \tr(A)=1-1=0 \\[2mm]
+    	&\bullet\quad \tr(A)^2-4\, \det(A)=0-4(1)<0
     \end{align*}
 	
 	\newpage
@@ -1436,19 +1463,19 @@
 	
 	\chapter{Semiaplicaciones de Poincaré}
 	\label{sec:4}
-	En el estudio de sistemas dinámicos, la \textbf{Aplicación de Poincaré} es muy útil. Se trata de delimitar una superficie o recta (llamada sección de Poincaré), en el espacio de fases de nuestro sistema, de tal manera que las curvas solución de nuestro sistema transpasen dicha sección para poder estudiar así el comportamiento de las trayectorias. Lo interesante de esta aplicación es que lo que nos interesa son los puntos de intersección con la sección de Poincaré, aunque no podemos obviar el comportamiento de la trayectoria y el tiempo para el estudio.\\[0.5cm]
+	En el estudio de sistemas dinámicos, la \textbf{aplicación de Poincaré} es una herramienta de gran utilidad para estudiar el conportamiento de un determinado sistema. Se trata de delimitar una superficie o recta (llamada sección de Poincaré), en el espacio de fases de nuestro sistema, de tal manera que las curvas solución de nuestro sistema transpasen dicha sección para poder estudiar así el comportamiento de las trayectorias. Lo interesante de esta aplicación es que lo que estudiamos son los puntos de intersección con la sección de Poincaré, aunque no podemos obviar el comportamiento de la trayectoria y el tiempo para el estudio.\\[0.5cm]
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{aplipoincare2.jpg}
-		\caption{Punto $y_0$ y su imagen $\tilde{y_0}$ mediante la Aplicación de Poincaré. Esta órbita no es periódica}
+		\caption{Punto $y_0$ y su imagen $\tilde{y_0}$ mediante la aplicación de Poincaré. Esta órbita no es periódica}
 		\label{fig:aplipoincare2}
 	\end{figure}\smallskip
-	
-\noindent Como vemos en la \fref{fig:aplipoincare2} la dinámica de estudio sería; establecer un punto $y_0$ mediente las condiciones iniciales de nuestro sistema, establecer una sección de Poincaré que corte a la curva solución y por último ver como avanza dicha curva en el tiempo esperando a que corte de nuevo a la sección de Poincaré, para que esto ocurra se debe cumplir una serie de condiciones en el sistema que ahora no presentaremos. Finalmente si la órbita vuelve a cortar en el mismo punto $y_0=\tilde{y_0}$ diremos que dicha órbita es periódica. 
+	\textcolor{red}{parrafo entero}
+\noindent Como vemos en la \fref{fig:aplipoincare2} la dinámica de estudio sería establecer un punto $y_0$ mediente las condiciones iniciales de nuestro sistema, establecer una sección de Poincaré que corte a la curva solución y por último ver como avanza dicha curva en el tiempo esperando a que corte de nuevo a la sección de Poincaré, para que esto ocurra se debe cumplir una serie de condiciones en el sistema que ahora no presentaremos. Finalmente si la órbita vuelve a cortar en el mismo punto $y_0=\tilde{y_0}$ diremos que dicha órbita es periódica.
 	\newpage
 	
-	En este trabajo hablaremos de la \textit{\textbf{Semi-Aplicación de Poincarè}}, es decir, analizaremos una de las dos mitades de la orbita. Esto lo haremos ya que como nuestro estudio es de un sistema a trozos \eref{eq:lienardrl}, \eref{eq:lienardrlgr} ya tenemos una separación en la recta $x=0$ la cual usaremos de sección de Poincaré, y como a la izquierda y a la derecha de dicha sección tenemos sistemas diferentes debemos estudiarlos de manera independiente.
+	En este trabajo hablaremos de la \textit{\textbf{semiaplicación de Poincarè}}, es decir, analizaremos una de las dos mitades de la orbita. Esto lo haremos ya que como nuestro estudio es de un sistema a trozos \eref{eq:lienardrl}, ya tenemos una separación en la recta $x=0$ la cual usaremos de sección de Poincaré, y como a la izquierda y a la derecha de dicha sección tenemos sistemas diferentes debemos estudiarlos de manera independiente.
 	
 	\begin{figure}[h]
 		\centering
@@ -1459,7 +1486,7 @@
 	
 	Tendremos un punto de corte $y_0$ de nuestra órbita solución en la sección de Poincarè y buscaremos el siguiente punto de corte $y_1$ mediante la semiaplicación izquierda, finalmente mediante la semiaplicación derecha comprobamos si la órbita vuelve a cortar a la sección de Poincarè en el mismo punto $y_0$ (órbita periódica, ver \fref{fig:poincaLR}) o si no corta en el mismo punto $y_0$ (órbita no periódica).
 	
-	\vspace{0.5cm}Para la semiaplicación de Poincarè consideraremos el sistema \eref{eq:edo2}, que mediante los cambios de variable adeacuados podemos escribir en forma canónica de Lienard como ya hemos visto a lo largo de la Sección \ref{sistrobiz}. En dicha sección se hace para un sistema a trozos, pero para esta parte consideraremos un único sistema, que puede ser el derecho o el izquierdo, eso no nos importa ahora mismo por lo que la nomenclatura que usaremos en esta sección para dicho sistema será:
+	\vspace{0.5cm}Para definir de forma apropiada una semiaplicación de Poincarè, consideraremos el sistema \eref{eq:edo2}, que mediante los cambios de variable adeacuados podemos escribir en forma canónica de Lienard como ya hemos visto a lo largo de la Sección \ref{sistrobiz}. En dicha sección se hace para un sistema a trozos, pero para esta parte consideraremos un único sistema, que puede ser el derecho o el izquierdo, eso no nos importa ahora mismo por lo que la nomenclatura que usaremos en esta sección para dicho sistema será:
 	
 		\begin{equation}
 		\label{eq:lienardsolo}
@@ -1475,42 +1502,39 @@
 	\end{equation}\smallskip
 	\newpage
 	
-	Definiendo la sección de Poincaré como $\varSigma=\left\{(x,y)^T\in \mathbb{R}^2:x=0\right\}$ donde nos referiremos con $\varSigma^L$ a la zona izquierda de la sección y $\varSigma^R$ a la zona derecha de la sección (recordemos que los índices R y L harán alusión a las zonas derecha e izquierda). Si evaluamos la primera ecuación de \eref{eq:lienardsolo} en la sección de Poincarè que hemos definido $\varSigma$ tenemos $\dot{x}|_{\varSigma}=-y$, pudiéndose deducir el sentido de la órbita:
+	Definiendo la sección de Poincaré como $\varSigma=\left\{(x,y)^T\in \mathbb{R}^2:x=0\right\}$ donde nos referiremos con $\varSigma^L$ a la zona izquierda de la sección y $\varSigma^R$ a la zona derecha de la sección (recordemos que los índices $R$ y $L$ harán alusión a las zonas derecha e izquierda). Si evaluamos la primera ecuación de \eref{eq:lienardsolo} en la sección de Poincarè $\varSigma$, tenemos $\dot{x}|_{\varSigma}=-y$, pudiéndose deducir el sentido de la órbita:
 	
 	\begin{itemize}
-		\item La órbita va de $\varSigma^L$ a $\varSigma^R$ para $y<0$
-		\item La órbita va de $\varSigma^R$ a $\varSigma^L$ para $y>0$
+		\item La órbita va de $\varSigma^L$ a $\varSigma^R$ para $y<0$.
+		\item La órbita va de $\varSigma^R$ a $\varSigma^L$ para $y>0$.
 	\end{itemize}
 	
-	Asumiremos $a^2+D^2\neq0$ ya que de no ser así curva solución no cortaría de nuevo a $\varSigma$. Esto se puede deducir estudiando la segunda ecuación del sistema \eref{eq:lienardsolo} para el caso contrario $a=D=0 \longrightarrow \dot{y}=Dx+a=0$.
+	Asumiremos $a^2+D^2\neq0$, ya que de no ser así, curva solución no cortaría de nuevo a $\varSigma$. Esto se puede deducir estudiando la segunda ecuación del sistema \eref{eq:lienardsolo} para el caso contrario $a=D=0 \longrightarrow \dot{y}=Dx+a=0$, y por lo tanto $\dot{y}$ es constante.
 	
 	\vspace{0.5cm}Vamos a centrarnos en la zona izquierda de la sección de Poicaré $\varSigma^L$, la cual se define de la siguiente manera:
 
 	\begin{definicion}
 		\label{def6}
-		Consideraremos el punto $(0,y_0)\in \varSigma$ con $y_0\geq0$ y tomaremos como solución del sistema \eref{eq:lienardsolo} para cada instante de tiempo $\phi(t)=(\phi_1(t),\phi_2(t))$, que para el instante inicial $t=0$ cumple que $\phi(0)=(0,y_0)$. Si existe un valor de tiempo $\tau>0$ para el que se cumple $\phi_1(\tau)=0$ y $\phi_1(t)<0$ para todo $t\in(0,\tau)$ decimos que la imagen de $y_0$ por la semiaplicación izquierda de Poincaré $P_L(y_0)=y_1=\phi_2(\tau)\leq0$. El valor de tiempo $\tau$ se denomina semi-tiempo de vuelo izquierdo.
+		Consideremos el punto $(0,y_0)\in \varSigma$ con $y_0\geq0$, denotaremos por $\phi(t)=(\phi_1(t),\phi_2(t))$ la solución del sistema \eref{eq:lienardsolo}, que para el instante inicial $t=0$ cumple que $\phi(0)=(0,y_0)$. Si existe un valor de tiempo $\tau>0$ para el que se cumple $\phi_1(\tau)=0$ y $\phi_1(t)<0$ para todo $t\in(0,\tau)$, decimos que la imagen de $y_0$ mediante la semiaplicación izquierda de Poincaré $P_L(y_0)=\phi_2(\tau)\leq0$, ver \fref{fig:semiL}. El valor de tiempo $\tau$ se denomina semitiempo de vuelo izquierdo.
 	\end{definicion}
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.6\textwidth]{semiL.jpg}
-		\caption{ Semiaplicación de Poincaré Izquierda}
+		\caption{Semiaplicación de Poincaré Izquierda}
 		\label{fig:semiL}
 	\end{figure}\smallskip
 	\newpage
 	
-	\textit{\textcolor{red}{Añadir $P(0)=0$? no entiendo muy bien esa parte (articulo caracterizacion integral)}}
+	La definción de la semiaplicación de Poincaré derecha puede hacerse a partir de la izquierda ya que el sistema \eref{eq:lienardsolo} no varia sus propiedades cuando se le aplica el cambio de variable $(x,y,a)\longleftrightarrow(-x,-y,-a)$.
 	
 	
-	La definción de la semiaplicación de Poincaré derecha es equivalente a la izquierda ya que el sistema \eref{eq:lienardsolo} no varia sus propiedades cuando se le aplica el cambio de variable $(x,y,a)\longleftrightarrow(-x,-y,-a)$.
-	
-	
-	\vspace{0.5cm} La definición \ref{def6} invita a estudiar la dinámica del sistema mediante integración, este es el método clásico, el cual conlleva una gran cantidad de posibles casos debidos a las particularidades de las matrices características para cada sistema que estudiemos. Casos que deben estudiarse uno a uno y aplicando diferentes herramientas para cada uno de ellos, lo cual se traduce en gran dificultad para el estudio y obtención de aparentemente distintos resultados para el mismo sistema dependiendo de que herramienta matemática usemos para solucionarlo. Para arreglar esta problemática usaremos la caracterización integral de la semiaplicación de Poincaré, la cual presentaremos en la sección \ref{sec41}.
+	\vspace{0.5cm} La Definición \ref{def6} invita a estudiar la dinámica del sistema mediante integración; este es el método clásico, el cual conlleva una gran cantidad de posibles casos debidos a las particularidades de las matrices características para cada sistema que estudiemos. Casos que deben estudiarse uno a uno y aplicando diferentes herramientas para cada uno de ellos, lo cual se traduce en gran dificultad para el estudio y obtención de aparentemente distintos resultados para el mismo sistema dependiendo de qué herramienta matemática usemos para solucionarlo. Para arreglar esta problemática usaremos la caracterización integral de la semiaplicación de Poincaré, la cual presentaremos en la sección \ref{sec41}, y puede verse en \cite{caracterizacion}.
 	\newpage
 	
 	
 	
-	\section{Caracterización integral de la semi-aplicacion de Poincare}
+	\section{Caracterización integral de la semiaplicación de Poincare}
 	\label{sec41}
 	
 	 Hagamos un breve repaso del trabajo que hemos realizado a nuestro sistema.
@@ -1518,37 +1542,37 @@
 
 	 \noindent Primero hemos obtenido las ecuaciones diferenciales del circuito que nos indican como varía su corportamiento en el tiempo, habiendo llegado a un sistema de ecuaciones diferenciales tridimensional lineal a trozos con 3 zonas \eref{eq:sistema}. 
 	
-	\vspace{0.5cm}\noindent Luego, gracias al artículo \cite{ponce}, donde los autores se dan cuenta de que existen superficies invariantes en el sistema, nos proporcionan la forma de calcularlas y los cambios de variable necesarios para poder reducir el sistema tridimensional \eref{eq:sistema} a uno bidimensional (plano) lineal a trozos con tres zonas en forma Canónica Liènard \eref{eq:sis2ec}-\eref{eq:f1}-\eref{eq:g1} con las rectas de separación en $x=\pm1$. 
+	\vspace{0.5cm}\noindent Luego, gracias al artículo \cite{ponce}, donde los autores se dan cuenta de que existen superficies invariantes en el sistema, nos proporcionan la forma de calcularlas y los cambios de variable necesarios para poder reducir el sistema tridimensional \eref{eq:sistema} a uno bidimensional (plano) lineal a trozos con tres zonas en forma Canónica Liènard \eref{eq:sis2ec} con las rectas de separación en $x=\pm1$. 
 	
 	\vspace{0.5cm}\noindent Posteriormente, en la Sección \ref{sec:sislinplanos} hemos visto el analisis de la estabilidad de un sistema plano y hemos introducido el concepto de problema de valor inicial, que es el tipo de problema que vamos a solucionar en nuestro sistema, es decir, dadas unas condiciones iniciales al sistema plano queremos ver como varía en el tiempo su comportamiento y que dicho comportamineto sea una oscilación periódica. 
 	
-	\vspace{0.5cm}\noindent Finalmente, en la Sección \ref{sistrobiz} hemos visto como escribir un sistema plano lineal a trozos con dos zonas, y la recta de separación en $x=0$, en forma Canónica de Liènard \eref{eq:lienardrl}-\eref{eq:lienardrl}. Esto lo hemos hecho por que aunque nuestro sistema tiene tres zonas, nosotros vamos a fijarnos solo en dos de ellas, ya que las oscilaciones que estamos buscando son bizonales, en concreto vamos a quedarnos con las zonas que separan la recta $x=-1$, posteriormente haremos una transalción para que la recta de separación sea la $x=0$, dicha recta es la que usaremos como Sección de Poincaré para el análisis de las Semi-Aplicaciones de Poincaré, lo cual hemos visto al inicio de esta Sección \ref{sec:4}.
+	\vspace{0.5cm}\noindent Finalmente, en la Sección \ref{sistrobiz} hemos visto como escribir un sistema plano lineal a trozos con dos zonas, y la recta de separación en $x=0$, en forma Canónica de Liènard \eref{eq:lienardrl}. Esto lo hemos hecho por que aunque nuestro sistema tiene tres zonas, nosotros vamos a fijarnos solo en dos de ellas, ya que las oscilaciones que estamos buscando son bizonales, en concreto vamos a quedarnos con las zonas que separan la recta $x=-1$, posteriormente haremos una transalción para que la recta de separación sea la $x=0$, dicha recta es la que usaremos como Sección de Poincaré para el análisis de las semiaplicaciones de Poincaré, lo cual hemos visto al inicio de esta Sección \ref{sec:4}.
 	
-	\vspace{0.5cm}\noindent El motivo de transformar nuestro sistema tridimensional \eref{eq:sistema} a uno bidimensional en forma Canónica de Liènard con la recta de separación $x=0$ \eref{eq:lienardrl}-\eref{eq:lienardrl} es por que esto nos permite abstraernos del circuito y utilizar toda un batería de herramientas y análisis matemático que estan desarrolladas para este tipo de sistemas.
+	\vspace{0.5cm}\noindent El motivo de transformar nuestro sistema tridimensional \eref{eq:sistema} a uno bidimensional en forma Canónica de Liènard con la recta de separación $x=0$ \eref{eq:lienardrl} es por que esto nos permite abstraernos del circuito y utilizar toda un batería de herramientas y análisis matemático que estan desarrolladas para este tipo de sistemas.
 	
-	\vspace{0.5cm}\noindent La herramienta matemática mas importante que vamos a usar en nuestro trabajo es la \textbf{Caracterización Integral de la Semi-Aplicación de Poincarè}, desarrollada por Victoriano Carmona et al. \cite{properties}-\cite{caracterizacion}. En los siguientes puntos la vamos a presentar y entenderemos por que nos es tan útil para nuestro estudio.
+	\vspace{0.5cm}\noindent La herramienta matemática mas importante que vamos a usar en nuestro trabajo es la \textbf{Caracterización Integral de la semiaplicación de Poincarè}, desarrollada por Victoriano Carmona et al. en \cite{properties}.
 	\newpage
 	
-	Partiendo de que ya hemos transformado nuestro sistema \eref{eq:sistema} a un sistema tipo \eref{eq:lienardrl}-\eref{eq:lienardrl}, nuestro objetivo es encontrar el punto $y_0$ adecuado que haga que las Semi-Aplicaciones izquierda y derecha sean las mismas para así poder cerrar la órbita. 
+	Partiendo de que ya hemos transformado nuestro sistema \eref{eq:sistema} a un sistema tipo \eref{eq:lienardrl}, nuestro objetivo es encontrar el punto $y_0$ adecuado que haga que las imágenes mediante las semiaplicaciones izquierda y derecha sean las mismas para así poder cerrar la órbita. 
 	
-	\vspace{0.5cm}\noindent Primero vamos a repasar la nomenclatura que se va a usar en este estudio, como se dice en la Definición \ref{def6}, la Semi-Aplicación se define para un tiempo $\tau>0$, esto nos indica el sentido temporal positivo para la Semi-Aplicación, esto es importante por que en la manera clásica de resolución el sentido del tiempo no es trivial. Hay dos tipos de posible estudio, calcular la Semi-Aplicación \textit{hacia delante (forward)} o \textit{hacia detrás (backward)}. El primer paso es hacer un análisis del sentido del flujo como vimos la Definición \ref{def6}, tomemos como ejemplo que la órbita de nuestro sistema va de $\varSigma^R$ a $\varSigma^L$, usualmente la primera Semi-Aplicación (en este caso la izquierda) se calcula con sentido positivo del tiempo $y_1=P_L(y_0)$, ahora las diferencias vienen con el cálculo de la Semi-Aplicación derecha, que puede ser en:
+	\vspace{0.5cm}\noindent Primero vamos a repasar la nomenclatura que se va a usar en este estudio. Como se dice en la Definición \ref{def6}, la semiaplicación se define para un tiempo $\tau>0$, esto nos indica el sentido temporal positivo para la semiaplicación. Hay dos tipos de posible estudio, calcular la semiaplicación con \textit{sentido temporal positivo (forward)} o con \textit{sentido temporal negativo (backward)}. El primer paso es hacer un análisis del sentido del flujo como vimos la Definición \ref{def6}, tomemos como ejemplo que la órbita de nuestro sistema va de $\varSigma^R$ a $\varSigma^L$, usualmente la primera semiaplicación (en este caso la izquierda) se calcula con sentido temporal positivo $y_1=P_L(y_0)$, ahora las diferencias vienen con el cálculo de la semiaplicación derecha, que puede ser en:
 	
 	\begin{itemize}
-		\item Sentido positivo del tiempo $y_B=P_R(y_A)$, ver \fref{fig:aplipoincareLR} y \fref{fig:aplipoincareLRcerrado}
-		\item Sentido negativo del tiempo $y_B=P_R^{-1}(y_A)$, ver \fref{fig:aplipoincareL-R} y \fref{fig:aplipoincareL-Rcerrado}
+		\item Sentido temporal positivo $y_2=P_R(y_1)$, ver \fref{fig:aplipoincareLR} y \fref{fig:aplipoincareLRcerrado}
+		\item Sentido temporal negativo $y_2=P_R^{-1}(y_0)$, ver \fref{fig:aplipoincareL-R} y \fref{fig:aplipoincareL-Rcerrado}
 	\end{itemize}
 	
-	\noindent Esta nomenclatura se mantiene en el uso de la Caracterización Integral para el calculo de la Semi-Aplicación, pero con una particularidad, y es que como veremos mas adelante cuando presentemos su ecuación, la Caracterización Integral no depende del tiempo. Por lo que en nuestro caso el hecho de que usemos el sentido positivo o negativo del tiempo es para indicar desde qué punto estamos cerrando la órbita en la zona derecha, en concreto, nuestra metodología de trabajo será la de la \fref{fig:aplipoincareL-R}, \fref{fig:aplipoincareL-Rcerrado} y será la siguiente:
+	\noindent \textcolor{red}{parrafo entero}Esta nomenclatura se mantiene en el uso de la Caracterización Integral para el calculo de la semiaplicación, pero con una particularidad, y es que como veremos mas adelante cuando presentemos su ecuación, la Caracterización Integral no depende del tiempo. Por lo que en nuestro caso el hecho de que usemos el sentido positivo o negativo del tiempo es para indicar desde qué punto estamos cerrando la órbita en la zona derecha, en concreto, nuestra metodología de trabajo será la de la \fref{fig:aplipoincareL-R}, \fref{fig:aplipoincareL-Rcerrado} y será la siguiente:
 	
 	\begin{enumerate}
 		\item Hacemos el análisis del flujo para conocer el sentido de la órbita, supongamos nuevamente que la órbita de nuestro sistema va de $\varSigma^R$ a $\varSigma^L$.
 		\item Establecemos un punto $y_0$ mediante las condiciones iniciales que corte a la sección de Poincarè $\varSigma$ que hemos establecido en $x=0$.
-		\item Calculamos la Semi-Aplicación izquierda $y_1=P_L(y_0)$ haciendo uso de la Caracterización Integral Izquierda.
-		\item Calculamos la Semi-Aplicación Derecha $y_2=P_R^{-1}(y_0)$ haciendo uso de la Caracterización Integral derecha y comprobamos si se ha cerrado la órbita,es decir, $y_1=y_2$.
-		\item En caso de no cerrarse dicha órbita, elegimos otro punto $y_0$ y repetimos los cálculos de las Semi-Aplicaciones.
+		\item Calculamos la semiaplicación Izquierda $y_1=P_L(y_0)$ haciendo uso de la Caracterización Integral Izquierda.
+		\item Calculamos la semiaplicación Derecha con sentido temporal negativo $y_2=P_R^{-1}(y_0)$ haciendo uso de la Caracterización Integral derecha y comprobamos si se ha cerrado la órbita,es decir, $y_1=y_2$.
+		\item En caso de que las imágenes mediante las semiaplicaciones no sean las mismas $y_1\neq y_2$ (caso de la \fref{fig:aplipoincareL-R}), elegiremos otro punto $y_0$ y repetimos los cálculos de las semiaplicaciones.
 	\end{enumerate}
 	
-	\vspace{0.5cm}Lo siguiente será Presentar la Caracterización Integral, sus propiedades y por último haremos un ejemplo de la metodología anteriormente explicada haciendo uso de MATLAB para los cálculos.
+	\vspace{0.5cm}Lo siguiente será presentar la Caracterización Integral, sus propiedades y por último haremos un ejemplo de la metodología anteriormente explicada haciendo uso de MATLAB para los cálculos.
 	
 	
 	\newpage
@@ -1556,7 +1580,7 @@
 	 \begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{aplipoincareLR.jpg}
-		\caption{Semi-Aplicación izquierda \textit{forward} del punto $y_0$ y Semi-Aplicación derecha \textit{forward} del punto $y_1$ con diferentes valores $y_0$,$y_2$ por lo que no se ha cerrado la órbita.}
+		\caption{Semiaplicación izquierda \textit{forward} del punto $y_0$ y semiaplicación derecha \textit{forward} del punto $y_1$ con diferentes valores $y_0$,$y_2$ por lo que no se ha cerrado la órbita.}
 		\label{fig:aplipoincareLR}
 	\end{figure}\smallskip
 	
@@ -1565,7 +1589,7 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{aplipoincareL-R.jpg}
-		\caption{Semi-Aplicación izquierda \textit{forward} del punto $y_0$ y Semi-Aplicación derecha \textit{backward} del punto $y_0$ con diferentes valores $y_1$,$y_2$ por lo que no se ha cerrado la órbita.}
+		\caption{Semiaplicación izquierda \textit{forward} del punto $y_0$ y semiaplicación derecha \textit{backward} del punto $y_0$ con diferentes valores $y_1$,$y_2$ por lo que no se ha cerrado la órbita.}
 		\label{fig:aplipoincareL-R}
 	\end{figure}\smallskip
 	
@@ -1573,8 +1597,8 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{aplipoincareLRcerrado.jpg}
-		\caption{Semi-Aplicación izquierda \textit{forward} del punto $y_0$ y Semi-Aplicación derecha \textit{forward} del punto $y_1$ con mismos valores $y_0$,$y_2$ por lo que si se ha cerrado la órbita, formándose una órbita periódica.}
+ 		\includegraphics[width=1\textwidth]{aplipoincareLRcerrado.jpg}
+		\caption{Semiaplicación izquierda \textit{forward} del punto $y_0$ y semiaplicación derecha \textit{forward} del punto $y_1$ con mismos valores $y_0$,$y_2$ por lo que si se ha cerrado la órbita, formándose una órbita periódica.}
 		\label{fig:aplipoincareLRcerrado}
 	\end{figure}\smallskip
 	
@@ -1583,15 +1607,13 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{aplipoincareL-Rcerrado.jpg}
-		\caption{Semi-Aplicación izquierda \textit{forward} del punto $y_0$ y Semi-Aplicación derecha \textit{backward} del punto $y_0$ con mismos valores $y_1$,$y_2$ por lo que si se ha cerrado la órbita formándose una órbita periódica.}
+		\caption{Semiaplicación izquierda \textit{forward} del punto $y_0$ y semiaplicación derecha \textit{backward} del punto $y_0$ con mismos valores $y_1$,$y_2$ por lo que si se ha cerrado la órbita formándose una órbita periódica.}
 		\label{fig:aplipoincareL-Rcerrado}
 	\end{figure}\smallskip
 	
 	\newpage 
 		
-	\vspace{0.5cm} Antes de ver las ecuaciones de la Caracterización Integral debemos presentar el \textit{\textbf{Valor Principal de Cauchy}} $\left(PV\right)$, ya que se utiliza en la Caraterización Integral.
-	
-	\vspace{0.5cm}\noindent El valor principal de Cauchy es una herramienta matematica muy usada en análisis complejo y teoria de funciones para definir una integral principal en casos de discontinuidades evitables en el plano complejo. Consideremos un inntervalo $[a,b]$ que contiene al origen y una funcion $f$ continua en $[a,b] \setminus \left\{0\right\}$, el Valor Principal de Cauchy se define como:
+	\vspace{0.5cm} Antes de ver las expresiones de la Caracterización Integral se va a presentar el \textit{\textbf{Valor Principal de Cauchy}}. Se trata de una herramienta matematica muy usada en análisis complejo y teoria de funciones para definir una integral principal en casos de discontinuidades evitables. Consideremos un intervalo $[a,b]$ que contiene al origen y una funcion $f$ continua en $[a,b] \setminus \left\{0\right\}$, el Valor Principal de Cauchy se define como:
 
 	\begin{equation}
 		\scalebox{1.2}{$\displaystyle
@@ -1608,7 +1630,7 @@
 	\begin{equation}
 		\label{eq:caracl}
 		\scalebox{1.2}{$\displaystyle
-		PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy\right\}=\frac{k_L\pi T_L}{D_L\sqrt{aD_L-T_L^2}}
+		PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy\right\}=\frac{k_L\pi T_L}{D_L\sqrt{4D_L-T_L^2}}
 		$}
 	\end{equation}\smallskip
 	
@@ -1616,11 +1638,11 @@
 	\begin{equation}
 		\label{eq:caracr}
 		\scalebox{1.2}{$\displaystyle
-			PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ry^2-aT_Ry+a^2}dy\right\}=\frac{-k_R\pi T_R}{D_L\sqrt{aD_L-T_L^2}}
+			PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ry^2-aT_Ry+a^2}dy\right\}=\frac{-k_R\pi T_R}{D_R\sqrt{4D_R-T_R^2}}
 			$}
 	\end{equation}\smallskip
 	
-	\noindent donde los parámetros $D_L,T_L,D_R,T_R,a$ son los correspondientes al sistema a trozos \eref{eq:lienardrl}-\eref{eq:lienardrlgr}, $y_0$ corresponde al primer punto de corte con la seccion de Poincaré $\varSigma$ e $y_1$ la imagen de $y_0$ mediante la Semi-Aplicación de Poincaré. Como se puede ver en \eref{eq:caracl}-\eref{eq:caracr} el valor principal de cauchy solo lo usaremos en el caso de $a=0$ ya que la integral se vuelve impropia divergente, en el caso de $a\neq0$ el valor principal de cauchy es directamente el valor de la integral. Como dijimos anteriormente el término del tiempo no aparece en las ecuaciones \eref{eq:caracl}-\eref{eq:caracr}, por lo que es una herramienta muy útil para este tipo de estudios. Los parámetros $k_L,k_R$ tomarán los siguientes valores en función del signo de $a$ y de en qué zona estemos de la sección de Poincaré
+	\noindent donde los parámetros $D_L,T_L,D_R,T_R,a$ son los correspondientes al sistema a trozos \eref{eq:lienardrl}, $y_0$ corresponde al primer punto de corte con la seccion de Poincaré $\varSigma$ e $y_1$ la imagen de $y_0$ mediante la semiaplicación de Poincaré. Como se puede ver en \eref{eq:caracl}-\eref{eq:caracr} el valor principal de Cauchy solo lo usaremos en el caso de $a=0$ ya que la integral se vuelve impropia divergente, en el caso de $a\neq0$ el valor principal de Cauchy es directamente el valor de la integral. Como dijimos anteriormente el término del tiempo no aparece en las ecuaciones \eref{eq:caracl}-\eref{eq:caracr}, por lo que es una herramienta muy útil para este tipo de estudios. Los parámetros $k_L,k_R$ tomarán los siguientes valores en función del signo de $a$ y de en qué zona estemos de la sección de Poincaré
 	
 	\vspace{0.5cm}\noindent Zona izquierda:
 	\begin{itemize}
@@ -1637,19 +1659,17 @@
 	\end{itemize}\smallskip
 	\newpage
 	
-	\textit{\textcolor{violet}{Se me olvidó comentarte el jueves que el análisis del punto de quilibrio (que ahora está en el capítulo \ref{borrar}) lo puse en esta zona por que si te das cuenta del codigo de MATLAB pongo los valores de aR y aL para que esté en la zona izquierda, lo vuelvo a traer aqui? o siemplementre se deja así? yo creo que donde está ahora está mejor}}
-	
-	\vspace{0.5cm} Vamos a ver un ejemplo de la Caracterización Integral de la Semi-Aplicación de Poincaré en MATLAB para entender un poco mejor la estrategia de busqueda de la oscilación periódica.
+	\vspace{0.5cm} Vamos a ver un ejemplo de la Caracterización Integral de la semiaplicación de Poincaré en MATLAB para entender un poco mejor la estrategia de busqueda de la oscilación periódica.
 	
 	\vspace{1cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_1_TFE.m}
 	
-	\vspace{0.5cm}\noindent Resultado de ''Ejemplo 1 TFE'':
+	\vspace{0.5cm}\noindent Resultado de ``Ejemplo 1 TFE'':
 	\begin{itemize}
 		\item $y1\_L=-2.8439$
 		\item $y1\_R=-1.3810$
 	\end{itemize}
 	
-	\vspace{1cm}\noindent Función usada en ''Ejemplo 1 TFE'':
+	\vspace{1cm}\noindent Función usada en ``Ejemplo 1 TFE'':
 	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{semipoinca.m}
 	
 	\newpage
@@ -1662,22 +1682,12 @@
 			\label{eq:eje1}
 		\scalebox{1.2}{$\displaystyle
 		\begin{gathered}
-			\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy=\frac{k_L\pi T_L}{D_L\sqrt{aD_L-T_L^2}} \\[2mm]
-			\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy-\frac{k_L\pi T_L}{D_L\sqrt{aD_L-T_L^2}}=0
+			\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy-\frac{k_L\pi T_L}{D_L\sqrt{4D_L-T_L^2}}=0
 		\end{gathered}
 			$}
 	\end{equation}\smallskip
 	
-	\noindent como vemos en \textit{semipoinca} tenemos como parámetros de entrada $k,a,T,D,y_0$ y como parámetro de salida $y_1$, por lo que la ecuación \eref{eq:eje1} se puede reducir a:
-	
-	\begin{equation}
-		\label{eq:eje2}
-		\scalebox{1.2}{$\displaystyle
-				f(y_1)-cte=0
-			$}
-	\end{equation}\smallskip
-	
-	\noindent de manera más genérica aún, el término constante lo podemos considerar dentro de $f(y_1)$ por lo que
+	\noindent como vemos en \textit{semipoinca} tenemos como argumentos de entrada $k,a,T,D,y_0$ y como argumento de salida $y_1$, por lo que la ecuación \eref{eq:eje1} se puede reducir a:
 	
 		\begin{equation}
 		\label{eq:eje3}
@@ -1686,12 +1696,12 @@
 			$}
 	\end{equation}\smallskip
 	
-	\noindent finalmente la ecuación \eref{eq:eje3} ya está en la forma adecuada para resolverla con la función \textit{fzero} de MATLAB, introduciendo como punto inicial $-y_0$. La función \textit{fzero} resuelve de manera numérica una ecuación tipo $f(x)=0$ con $x_0$ como punto inicial.
+	\noindent finalmente la ecuación \eref{eq:eje3} ya está en la forma adecuada para resolverla con la función \textit{fzero} de MATLAB, introduciendo como punto inicial $-y_0$. La función \textit{fzero} resuelve de manera numérica una ecuación tipo $f(x)=0$ a partir de un punto inicial $x_0$ dado.
 	
-	\vspace{0.5cm}\noindent El código de ''Ejemplo 1 TFE'' simplemente describe las características de los sistemas a la izquierda y a la derecha, establece un punto de prueba $y_0=1$ y llama a la función \textit{semipoinca} para calcular las semiaplicaciones derecha e izquierda. Como se ve obtenemos valores diferentes, de hecho la semiaplicación izquierda tiene un valor mas grande que la derecha, gráficamente podría ser perfectamente lo representado en la \fref{fig:aplipoincareLR}.
+	\vspace{0.5cm}\noindent El código de ``Ejemplo 1 TFE'' describe las características de los sistemas a la izquierda y a la derecha, establece un punto de prueba $y_0=1$ y llama a la función \textit{semipoinca} para calcular las semiaplicaciones derecha e izquierda. Como se ve obtenemos valores diferentes, de hecho la semiaplicación izquierda tiene un valor mas grande que la derecha, gráficamente podría ser perfectamente lo representado en la \fref{fig:aplipoincareL-R}.
 	\newpage
 	
-	No hemos conseguido que las imágenes $y_1$ fueran las mismas, por lo que ahora lo que haríamos sería probar con otro punto $y_0$ y volver a comprobar si se cumple que $y_{1L}=y_{1R}$. Obviamente no lo vamos a hacer de manera manual, tenemos suficientes herramientas para hacerlo. Como hemos visto para usar \textit{fzero} necesitamos un punto inicial, sin entrar mucho en detalle de resolución numérica \textit{\textcolor{red}{hablar de como funciona fzero y fsolve y de porque elegir el punto cerca de la solucion es útil?}}, basicamente este punto cuanto más cercano a la solución lo eligamos mas fiable y rápida será dicha solución, por ello vamos a representar de manera gráfica las semiaplicaciones izquierda y derecha para un intervalo de puntos $y_0 \in [0\;\;10]$ y veamos si encontramos un punto de corte que nos indique que para un $y_0$ las imágenes son las mismas
+	Como hemos visto para usar \textit{fzero} necesitamos un punto inicial, sin entrar mucho en detalle de resolución numérica, basicamente este punto cuanto más cercano a la solución lo eligamos mas fiable y rápida será dicha solución, por ello vamos a representar de manera gráfica las semiaplicaciones izquierda y derecha para un intervalo de puntos $y_0 \in [0\;\;10]$ y veamos si existe un punto de corte que nos indique que para un $y_0$ las imágenes son las mismas.
 	
 	\vspace{1cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_2_TFE.m}
 	
@@ -1700,62 +1710,51 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{ejem2_2.jpg}
-		\caption{Gráfica obtenida de las semiapliaciones izquierda y derecha en ''Ejemplo 2 TFE''}
+		\includegraphics[width=1\textwidth]{ejem2_2.eps}
+		\caption{Gráfica obtenida de las semiapliaciones izquierda y derecha en ``Ejemplo 2 TFE''}
 		\label{fig:ejem2_2}
 	\end{figure}\smallskip
 	
-	Como vemos en la \fref{fig:ejem2_2} efectivamente se cortan las gráficas, simplemente pinchando más o menos en el punto de corte vemos que las semiaplicaciones izquierda y derecha tendrán la misma imagen $y_1\approx-6.87734$ cuando $y_0\approx3.66942$.
+	Como vemos en la \fref{fig:ejem2_2} efectivamente se cortan las gráficas, simplemente pinchando más o menos en el punto de corte vemos que las semiaplicaciones izquierda y derecha tendrán la misma imagen $y_1\approx-6.80511$ cuando $y_0\approx3.63636$.
 	\newpage
-	Ya tenemos el punto que estará muy cercano a la solución que buscamos, ahora vamos a calcularla exactamente de manera numérica usando \textit{fsolve} que nos permite solucionar los mismos casos que \textit{fzero} y para más de una variable. Pero primero hay que escribir correctamente la función en MATLAB
+	Ya hemos obtenido un punto que estará muy cercano a la solución que buscamos, ahora vamos a calcularla exactamente de manera numérica usando \textit{fsolve}, pero primero hay que escribir correctamente la función en MATLAB
 	
 		
 	\vspace{1cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_3_TFE.m}
 	
-	\vspace{0.5cm}\noindent Resultado de ''Ejemplo 3 TFE'':
+	\vspace{0.5cm}\noindent Resultado de ``Ejemplo 3 TFE'':
 	\begin{itemize}
-		\item $y1\_L=3.5912$
-		\item $y1\_R=-6.7065$
+		\item $y0\_Solucion=3.5912$
+		\item $y1\_Solucion=-6.7065$
 	\end{itemize}
 	
-	\vspace{1cm}\noindent Funciones usadas en ''Ejemplo 3 TFE'':
+	\vspace{1cm}\noindent Funciones usadas en ``Ejemplo 3 TFE'':
 	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{fsolvepoinca.m}
 	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{semipoincay1y0.m}
 	\newpage
 	
-	Efectivamente como se puede ver en el resultado de ''Ejemplo 3 TFE'' los valores que hemos obtenidos son muy parecidos a los que vimos en la \fref{fig:ejem2_2}. Podemos decir entonces, que para el sistema que hemos estudiado tenemos una oscilación periódica que va desde $y_0=3.5912\;$ hasta $\; y_1=-6.7065$.
+	Efectivamente como se puede ver en el resultado de ``Ejemplo 3 TFE'' los valores que hemos obtenidos son muy parecidos a los que vimos en la \fref{fig:ejem2_2}. Podemos decir entonces, que para el sistema que hemos estudiado tenemos una oscilación periódica que va desde $y_0\simeq3.5912\;$ hasta $\; y_1\simeq-6.7065$.
 
 	
-	\vspace{0.5cm}Los parámetros de entrada de \textit{fsolvepoinca} son las caracteristicas de los sistemas de la derecha y de la izquierda $k,a,T,D$ además de un vector de dos componentes $Y$, este vector contiene el punto inicial, que como vemos en el código de ''Ejemplo 3 TFE'' le hemos asignado el punto de corte que más o menos obtuvimos viendo la gráfica de la \fref{fig:ejem2_2}.
+	\vspace{0.5cm}Los argumentos de entrada de \textit{fsolvepoinca} son los parámetros de los sistemas de la derecha y de la izquierda $k_L,k_R,a_L,a_R,T_L,T_R,D_L,D_R$ además de un vector de dos componentes $Y$, este vector contiene el \textcolor{red}{punto inicial}, que como vemos en el código de ``Ejemplo 3 TFE'' le hemos asignado el punto de corte que más o menos obtuvimos viendo la gráfica de la \fref{fig:ejem2_2}.
 	
-	\vspace{0.5cm}En \textit{semipoincay1y0} queremos evaluar la ecuación \eref{eq:eje1} ya que estamos aportando valor a todos los parámetros $y_0,y_1,k,a,T,D$. Por ello con la función \textit{semipoincay1y0} se está evaluando:
 	
-	\begin{equation}
-		\label{eq:eje4}
-		\scalebox{1.2}{$\displaystyle
-			f(y)=integral - cte
-			$}
-	\end{equation}\smallskip
-	
-	\noindent aportando como punto incial el vector $Y=\left[ y_0 \; y_1 \right]$. 
-	
-	\vspace{0.5cm}La función \textit{fsolve} del código de ''Ejemplo 3 TFE'' buscará el punto, valores $\left(y_0\; y_1\right)$, en que las curvas de las semiaplicaciones derecha e izquierda se cortan.
+	\vspace{0.5cm}La función \textit{fsolve} del código de ``Ejemplo 3 TFE'' buscará el punto $\left(y_0\; y_1\right)$, en que las curvas de las semiaplicaciones derecha e izquierda se cortan.
 	\newpage
-	Finalmente vamos a comprobar con una simulación que el estudio que hemos hecho sea correcto. Para ello hay que reescribir las ecuaciones para introducirlo en el software de MATLAB. Tenemos un sistema a trozos como el \eref{eq:lienardrl}-\eref{eq:lienardrlgr}, el cual podemos escribir de la siguiente manera haciendo uso de los valores absolutos
+	Finalmente vamos a comprobar con una simulación que el estudio que hemos hecho sea correcto. Para ello hay que reescribir las ecuaciones para introducirlo en el software de MATLAB. Tenemos un sistema a trozos como el \eref{eq:lienardrl}, el cual podemos escribir de la siguiente manera haciendo uso de los valores absolutos. También podríamos haber utilizado la función de MATLAB que define funciones a trozos o la función signo.
 	
 	\begin{equation}
 		\label{eq:clejem}
 		\scalebox{1.2}{$\displaystyle
 			\left\{
 			\begin{aligned}
-			\dot{x}&=\frac{1}{2}\left( x\left(T_R+T_L\right)+\mid x\mid \left(T_R-T_L\right)\right)-y
+			\dot{x}&=\frac{1}{2}\left( x\left(T_R+T_L\right)+\mid x\mid \left(T_R-T_L\right)\right)-y,
 				 \\[2mm]
-			\dot{y}&=\frac{1}{2}\left( x\left(D_R+D_L\right)+\mid x\mid \left(D_R-D_L\right)\right)-a
+			\dot{y}&=\frac{1}{2}\left( x\left(D_R+D_L\right)+\mid x\mid \left(D_R-D_L\right)\right)-a,
 			\end{aligned}
 			\right. 
 			$}
 	\end{equation}\smallskip
-	\noindent Con
 	\begin{equation*}
 		T_L=0.3, \qquad T_R=-0.5, \qquad D_L=D_R=1, \qquad a_L=a_R=a=-1.
 	\end{equation*}\smallskip
@@ -1763,7 +1762,7 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{clejemplo.jpg}
-		\caption{Oscilación periódica que hemos calculado previamente con MATLAB}
+		\caption{Oscilación periódica que hemos determinado previamente con MATLAB}
 		\label{fig:clejemplo}
 	\end{figure}\smallskip
 	
@@ -1772,10 +1771,10 @@
 	\chapter{Bifurcación Foco-Centro-Ciclo Límite}
 	La forma de que aparezca una oscilación en un sistema dinámico es mediante bifurcaciones. Las bifurcaciones aparecen cuando variamos de manera progresiva un parámetro del sistema, llamado parámetro de control. Esta variación puede producir una bifurcación debido a la creación o destrucción de un punto de equilibrio (bifurcación Hopf-Like) o cambiando la estabilidad del sistema mediante la variación de la traza $T$, este será nuestro caso. A esta bifurcación producida por la variación de la traza del sistema se le llama \textbf{Foco-Centro-Ciclo Límite}, pero antes de presentarla vamos a hacer el análisis del punto de equilibrio y la estabilidad del sistema que estamos estudiando y veamos el concepto de ciclo-límite para posteriormente ver como generar esta bifurcación en nuestro circuito.
 	
-		\vspace{0.5cm}Para hacer el análisis del punto de equilibrio y de la estabilidad primero vovlamos a recordar el sistema que tenemos. Nosotros estamos estudiando un sistema, dinámico, autónomo, lineal y continuo a trozos bizonal en forma canónica de Lienard, recordar el sistema \eref{eq:lienardrl}-\eref{eq:lienardrlgr}.
+		\vspace{0.5cm}Para hacer el análisis del punto de equilibrio y de la estabilidad primero vovlamos a recordar el sistema que tenemos. Nosotros estamos estudiando un sistema, dinámico, autónomo, lineal y continuo a trozos bizonal en forma canónica de Lienard, recordar el sistema \eref{eq:lienardrl}.
 		
 		\vspace{0.5cm}Podemos obtener los puntos de equilibrio de cada una de las zonas igualando a cero el sistema, por ejemplo para la zona izquierda tenemos:
-		\label{borrar}
+
 		
 		\begin{equation*}
 			\begin{pmatrix*}[r]
@@ -1822,7 +1821,7 @@
 		\begin{eqnarray}
 			\label{eq:eqizq}
 			\begin{aligned}
-				P_{A_L}(\lambda)=&\lambda^2-tr(A_L)\lambda+det(A_L) \\[1mm]
+				P_{A_L}(\lambda)=&\lambda^2-\tr(A_L)\lambda+\det(A_L) \\[1mm]
 				&\lambda^2-T_L\lambda+D_L=0 \\[2mm]
 				\textit{Autovalores}\rightarrow \quad &\lambda=\frac{T_L\pm \sqrt{T_L^2-4\,D_L}}{2}
 			\end{aligned}
@@ -1847,7 +1846,7 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=1\textwidth]{cle.jpg}
+			\includegraphics[width=1\textwidth]{cle.eps}
 			\caption{Ciclo-Límite Estable con sentido horario de giro}
 			\label{fig:cle}
 		\end{figure}\smallskip
@@ -1860,7 +1859,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{cli.jpg}
+		\includegraphics[width=1\textwidth]{cli.eps}
 		\caption{Ciclo-Límite Inestable con sentido horario de giro}
 		\label{fig:cli}
 	\end{figure}\smallskip
@@ -1871,7 +1870,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{clpe.jpg}
+		\includegraphics[width=1\textwidth]{clpe.eps}
 		\caption{Ciclo-Límite Parcialmente Estable con sentido horario de giro}
 		\label{fig:clpe}
 	\end{figure}\smallskip
@@ -1879,30 +1878,72 @@
 	
 	El Ciclo-Límite que más nos interesa es el estable, ya que sin importar donde eligamos las condiciones iniciales siempre tenderemos a la oscilación periódica, además, si nuestro sistema sufre alguna perturbación que lo saque de la oscilación periódica siempre tenderá a reconducirse nuevamente hacia ella.
 	
-	\vspace{0.5cm}El estudio de los Ciclos-Límites historicamente se ha hecho de manera particular para cada sistema, primero hay que estudiar el punto de equilibrio y su estabilidad, hacer el análisis para saber si existe oscilación periódica y finalmente comprobar que dicha oscilación periódica esté aislada, lo cual no es nada sencillo. En nuestro caso no hará falta que hagamos este tipo de estudio gracias a que hemos sido capaces de escribir nuestro sistema \eref{eq:sistema1} de la manera \eref{eq:sis2ec}-\eref{eq:f1}-\eref{eq:g1} y este último en la forma \eref{eq:lienardrl}-\eref{eq:lienardrlgr} por lo que ya tenemos trabajos donde se hace este análisis para sistemas de este tipo y se corrobora la existencia de la bifurcación Foco-Centro-Ciclo Límite en los mismos; ver \cite{ponce}, el Capítulo que inicia en la página 335 de \cite{ciclolimite} y las Secciones 8.1 y 3.6 de \cite{amarillo}, en concreto de este último el Teorema 3.27. En los anteriores trabajos se hace un análisis tradicional del problema, nosotros para ello haremos uso de la Caracterización integral que ya hemos visto, pero vamos a utilizar algunos conceptos que se ven en dichos trabajos, conceptos como la elección de un parámetro de control, puntos de equilibrios virtuales y requisitos que deben tener los parámetros del sistema. Cumpliendo esta serie de requisitos en los parámetros del sistema, los cuales veremos mas adelante, podemos conseguir que se produzca el cambio de estabilidiad Foco Asintóticamente Estable-Centro-Foco Asintóticamente Inestable en el punto de equilibrio del sistema y por ello obteniendo el Ciclo-Límite (ya que se produce la bifurcación Foco-Centro-Ciclo Límite), que será nuestra oscilación periódica.(\textit{\textcolor{red}{podemos saber de antemano la estabilidad del ciclo limite? es estable, pero hay forma de saberlo antes de la experimentacion?}})
+	\vspace{0.5cm}El estudio de los Ciclos-Límites historicamente se ha hecho de manera particular para cada sistema, primero hay que estudiar el punto de equilibrio y su estabilidad, hacer el análisis para saber si existe oscilación periódica y finalmente comprobar que dicha oscilación periódica esté aislada, lo cual no es nada sencillo. En nuestro caso no hará falta que hagamos este tipo de estudio gracias a que hemos sido capaces de escribir nuestro sistema \eref{eq:sistema1} de la manera \eref{eq:sis2ec} y este último en la forma \eref{eq:lienardrl} por lo que ya tenemos trabajos donde se hace este análisis para sistemas de este tipo y se corrobora la existencia de la bifurcación Foco-Centro-Ciclo Límite en los mismos; ver \cite{ponce}, el Capítulo que inicia en la página 335 de \cite{ciclolimite} y las Secciones 8.1 y 3.6 de \cite{amarillo}, en concreto de este último el Teorema 3.27. En los anteriores trabajos se hace un análisis tradicional del problema, nosotros para ello haremos uso de la Caracterización integral que ya hemos visto, pero vamos a utilizar algunos conceptos que se ven en dichos trabajos, conceptos como la elección de un parámetro de bifurcación, puntos de equilibrios virtuales y requisitos que deben tener los parámetros del sistema. Cumpliendo esta serie de requisitos en los parámetros del sistema, los cuales veremos mas adelante, podemos conseguir que se produzca el cambio de estabilidiad Foco Asintóticamente Estable-Centro-Foco Asintóticamente Inestable en el punto de equilibrio del sistema y por ello obteniendo el Ciclo-Límite (ya que se produce la bifurcación Foco-Centro-Ciclo Límite), que será nuestra oscilación periódica.
 	
 	\newpage
 	
-	\vspace{0.5cm}\noindent Vamos a reescribir el Teorema 3.27 de \cite{amarillo} pero adaptando varias cosas a nuestro estudio y a las técnicas de análisis que estamos usando en este trabajo.
+	\vspace{0.5cm}\noindent Vamos a reescribir el Teorema 3.27 de \cite{amarillo} pero adaptando la nomenclatura a la de nuestro estudio
 	
-	\begin{definicion}
-		\label{def:2.7}
-		Considerando el sistema \eref{eq:lienardrl}-\eref{eq:lienardrlgr}, tomando $T_L$ como parámetro de control, lo que significa que lo haremos pasar de $T_L<0 \rightarrow T_L=0 \rightarrow T_L>0$ y cumpliendo una serie de requisitos que veremos en la siguiente lista, la configuración de Centro (para $T_L=0$) para la zona izquierda ($x<0$), da lugar a una oscilación periódica aislada (Ciclo Límite) para $T_LT_R<0$ y $\mid T_L \mid$ lo suficientemente pequeño. En concreto, para $T_R<0$ el Ciclo-Límite bifurca para $T_L>0$ y es estable, mientras que para $T_R>0$ el Ciclo Límite bifurca para $T_L<0$ y es inestable. A continuación veremos las condiciones que debemos cumplir:
-		
-		\textit{\textcolor{red}{la parte de tr y que bifurca del teorema no la entiendo, quiero reescribir mejor esta definicion}}
-		
+	\begin{theorem}
+		\label{teo:5.1}
+		Considerando el sistema \eref{eq:lienardrl}, donde tomamos $T_L$ como parámetro de bifurcación (esto es, suponemos que el resto de parámetros permanecen fijos), elegimos $a<0$ y $D_L>0$. El sistema experimenta una bifurcación Foco-Centro-Ciclo Límite al pasar $T_L$ por el valor cero. Es decir, de la configuración de Centro para $T_L=0$, se produce un Ciclo-Límite (que nace de la órbita periódica del Centro que es tangente a la sección de Poincarè) cuando $T_L T_R<0$ y $\mid T_L \mid$ es lo suficientemente pequeño. El Ciclo-Límite que nace es Asintóticamente Estable si $T_L>0$, ver \fref{fig:cle}, e Inestable cuando $T_L<0$, ver \fref{fig:cli}.
+	\end{theorem}
+	
+	Veamos las condiciones para que se deben cumplir en nuestras ecuaciones y sus consecuencias para que se cumpla el Teorema \ref{teo:5.1} en nuestro sistema \eref{eq:lienardrl}:
 		\begin{itemize}
-			\item $a_R=a_L=a<0$ para que el punto de equilibrio de la zona Izquierda esté contenido en la zona $x<0$, y que el punto de equilibrio de la zona Derecha tambien lo esté (punto de quilibrio virtual), ver \fref{fig:punto}.
-			\item Ya que $a_L<0$ y queremos que el polinomio carácterístico  tenga raices imaginarias, debemos tener $D_L>0$, ver \eref{eq:eqizq} y \eref{eq:eqpointL} \textit{\textcolor{red}{no recuerdo bien el por que de esta condicion, era para que el punto de equilibrio solo puediera ser de tipo foco(inestable, centro, estable)?}} 
+			\item $a_R=a_L=a<0$ para que el punto de equilibrio de la zona Izquierda esté contenido en la zona $x<0$, ver \fref{fig:punto}, y que el posible punto de equilibrio de la zona Derecha tambien lo esté (punto de quilibrio virtual).
+			\item Ya que $a_L<0$ y queremos que el polinomio característico  tenga raices imaginarias para tener una configuración de foco en nuestro punto de equilibrio, debemos tener $D_L>0$, ver \eref{eq:eqizq} y \eref{eq:eqpointL}.
 			\item Como hemos establecido $a_R<0$, el posible punto de equilibrio de la zona Derecha estaría ubicado en la zona $x<0$, ver \eref{eq:eqpointR}, por ello podemos elegir:\begin{itemize}
 				\item No hay punto de equilibrio $\rightarrow D_R=0$ 
 				\item Si hay punto de equilibrio y es virtual $\rightarrow D_R\neq0$ 
 			\end{itemize}
 			\textit{\textcolor{red}{despues de la definicion quiero hablar del rol del punto de equilibrio virtual}}
-			\item Nuestro parámetro de control será $T_L$, por ello lo haremos variar de negativo a positivo haciendolo pasar por cero, $T_L<0 \rightarrow T_L=0 \rightarrow T_L>0$ y siempre para un valor pequeño de $\mid T_L \mid$
-			\item De la Definición \ref{def:2.7} tenemos que $T_LT_R<0$ por ello  $T_R>0$
+			\item Nuestro parámetro de bifurcación será $T_L$, por ello lo haremos variar de negativo a positivo haciendolo pasar por cero, $T_L<0 \rightarrow T_L=0 \rightarrow T_L>0$ y siempre para un valor pequeño de $\mid T_L \mid$. Lo hacemos de esta manera para que el Ciclo-Límite que obtengamos sea Estable y no Inestable
+			\item Tenemos que $T_LT_R<0$ con $T_L>0$, por ello  $T_R>0$.
 		\end{itemize}
-	\end{definicion}
+	
+	\newpage
+	
+	Para la demostración del Teorema \ref{teo:5.1} haremos uso principalmente de la Caracterización Integral de la semiaplicación de Poincaré y del Teorema de la Función Implícita, este último aún no lo hemos presentado.
+	
+	\vspace{0.5cm}\textcolor{red}{HABLAR SOBRE EL TEOREMA DE LA FUNCION IMPLICITA}
+	
+	\newpage
+	
+	Ahora si veamos la demostración del Teorema \ref{teo:5.1}
+	
+	\vspace{0.5cm}\noindent \textbf{Demostración:} Supongamos que nuestro sistema \eref{eq:lienardrl} posee una órbita periódica como la de la \fref{fig:aplipoincareL-Rcerrado}, queremos calcular los puntos $y_0, y_1$ que cierren dicha órbita, para ello haremos uso de la semiaplicación Izquierda y Derecha, \eref{eq:caracl}-\eref{eq:caracr}. Si la órbita es cerrada  y continua podemos formar el sistema \textcolor{red}{enfatizar en lo de la continuidad, cuando hablo de que todo este estudio es para un desarrollo local? al final cuando ya haya usado las series de MacLaurin?}
+	
+	\begin{equation}
+		\label{eq:cierre}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy\right\}&=\frac{k_L\pi T_L}{D_L\sqrt{aD_L-T_L^2}}
+				\\[2mm]
+				PV\left\{\int_{y_1}^{y_0}\frac{-y}{D_Ry^2-aT_Ry+a^2}dy\right\}&=\frac{-k_R\pi T_R}{D_L\sqrt{aD_L-T_L^2}}
+			\end{aligned}
+			\right. 
+			$}
+	\end{equation}\smallskip
+	
+	De las anteriores condiciones tenemos que $a<0$, recordando de la Sección \ref{sec41} que para el caso $a\neq0$ el Valor Principal de Cauchy es la propia integral y los valores de $k_L$ y $k_R$ serían $k_L=2$ y $k_R=0$, podemos escribir el anterior sistema de la siguiente manera
+	
+	\begin{equation}
+		\label{eq:cierre2}
+		\scalebox{1.2}{$\displaystyle
+			\left\{
+			\begin{aligned}
+				\int_{y_1}^{y_0}\frac{-y}{D_Ly^2-aT_Ly+a^2}dy&=cte
+				\\[2mm]
+				\int_{y_1}^{y_0}\frac{-y}{D_Ry^2-aT_Ry+a^2}dy&=0
+			\end{aligned}
+			\right. 
+			$}
+	\end{equation}\smallskip
+	
+	\vspace{0.5cm}\noindent En primera instancia lo que tenemos en el Sistema \eref{eq:cierre2} puede parecer que es un sistema de dos ecuaciones con 2 incógnitas, $y_0$ e $y_1$, ya que el resto de parámetros están fijos. Pero como ya hemos dicho para obtener la bifurcación vamos a ir variando $T_L$, luego realmente tenemos un sistema de dos ecuaciones con tres incógnitas, por lo que nuestro objetivo es tener únicamente dos incógnitas, $y_0$ y $T_L$, para que dado un valor de $T_L$ podamos obtener $y_0$ y con la Caracterización Integral calcular $y_1$ mediante las semiaplicaciones Izquierda y Derecha, que si cumplimos las condiciones del Teorema \ref{teo:5.1} el punto $y_1$ obtenido por las dos semiaplicaciones será el mismo y obteniendo así el Ciclo-Límite.
+	
 	
 	\newpage
 	
@@ -2003,7 +2044,6 @@
 	De este sistema solo nos fijaremos en los sistemas de las zonas Izquierda y Deerecha de la recta de separación $x=-1$, por lo que tenemos
 	
 	
-	
 	\newpage
 	
 	\vspace{0.5cm}Lo segundo es reducir este sistema tridimensional a uno bidimensional en forma canónica de Liènard como vimos en la Sección \ref{sec:2.4}
@@ -2041,8 +2081,6 @@
 		\end{aligned}
 		\right.
 	\end{equation}\smallskip
-	
-	
 	
 	\newpage
 	esto es texto de la siguiente hoja
@@ -2101,22 +2139,4 @@
 	
 	\newpage
 	
-	\begin{comment}
-	\chapter{Introducción}
-	\begin{equation}
-		\label{EcuLambda}
-		y^2=3
-	\end{equation}
-	hola mundo prueba script prueba branch de funcion $f$ \eqref{EcuLambda} en $[2\pi]$
-	\newpage
-	holaaa
-	\newpage
-	asldkakdlkad prueba python para commit cambio
-	\newpage
-	\section{introa}
-	holaaa
-	\newpage
-	\subsection{introb}
-	segundo cambio tercera prueba python siguiente prueba para ver fuente
-	\end{comment}
 \end{document}
