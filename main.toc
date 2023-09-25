@@ -10,7 +10,8 @@
 \contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{27}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Caracterización integral de la semiaplicación de Poincare}{38}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{52}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{65}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{68}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{70}{chapter.8}%
+\contentsline {chapter}{\numberline {5}Bifurcaciones}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análisis del punto de equilibrio}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ciclo-Límite}{57}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Bifurcación Foco-Centro-Ciclo Límite y su\\ cálculo mediante desarrollo en series.}{60}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{68}{chapter.6}%
