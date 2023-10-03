@@ -17,6 +17,7 @@
 \usepackage{bm} % Agrega esta línea en el preámbulo del documento
 \usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage[export]{adjustbox}
 \usepackage{matlab-prettifier}
 \usepackage{empheq}
 \decimalpoint
@@ -138,22 +139,24 @@
 	Contenido del capítulo de introducción. Contenido del capítulo 1.
 	
 	\chapter{Descripción del Circuito}
-	\noindent El circuito que se ha estudiado es un oscilador con resistencia negativa al que se le ha añadido un componente muy interesante y que está siendo muy estudiado en estos últimos tiempos, el memristor, ver \fref{fig:-RLCM}.
+	\noindent El circuito que se examinará es un oscilador que incorpora una resistencia negativa, y se le ha añadido un componente que ha sido objeto de extenso estudio en tiempos recientes, el memristor. A continuación, se presenta el esquema del circuito.
 	
-	\begin{figure}[h]
+	\vspace{0.5cm}\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\textwidth]{-RLCM.png}
+		\includegraphics[width=0.9\textwidth]{-RLCM.png}
 		\caption{Oscilador RLC con R negativa y Memristor.}
 		\label{fig:-RLCM}
 	\end{figure}
 	
-	Como se puede ver no existe una fuente de señal en el circuito y esto se debe a que el análisis hecho busca encontrar una oscilación periódica tan solo proporcionando condiciones iniciales a la bobina y el condensador, esto gracias al comportamiento de la resistencia negativa y del memristor los cuales se especifican mas adelante.
+	\vspace{0.5cm}Como se puede ver en la \fref{fig:-RLCM}, no existe una fuente de señal en el circuito, y esto se debe a que el análisis hecho busca encontrar una oscilación periódica tan solo proporcionando condiciones iniciales a la bobina y el condensador, gracias al comportamiento de la resistencia negativa y del memristor.
 	
 	\vspace{0.5cm}La forma de imponer las condiciones iniciales serían las clásicas, usando fuentes de intensidad en serie y tensión en paralelo con interruptores que se abren en \\$t\,=\,0(s)$ para la bobina y el condensador respectivamente.
 	
 	\newpage
 	\section{Resistencia negativa}
-	\noindent Uno de los componentes del circuito es la resistencia negativa la cual se puede construir con lo que se llama un \emph{Convertidor de Impedancia Negativa (NIC)}. Un NIC es un circuito activo, es decir, en lugar de disipar energía como una resistencia convencional, puede proporcionar energía a un circuito, ver \fref{fig:NIC}. En términos prácticos, un NIC puede ser utilizado para compensar la resistencia de carga de un sistema, mejorar la eficiencia de la transferencia de energía o realizar otras funciones específicas en circuitos eléctricos o electrónicos. En los circuitos osciladores, el NIC desempeña un papel importante en el mantenimiento, estabilización, frecuencia y calidad de la oscilación.
+	
+	\noindent Uno de los componentes clave de este circuito es la resistencia negativa, que puede construirse mediante un \emph{Convertidor de Impedancia Negativa (NIC)}. Un NIC es un dispositivo activo, lo que significa que en lugar de disipar energía como lo haría una resistencia convencional, puede suministrar energía a un circuito, como se ilustra en la \fref{fig:NIC}. En términos prácticos, un NIC se utiliza para una variedad de propósitos en circuitos eléctricos o electrónicos, como la compensación de la resistencia de carga de un sistema, la mejora de la eficiencia en la transferencia de energía y la realización de funciones específicas.
+	En el contexto de circuitos osciladores, el NIC desempeña un papel crucial al mantener, estabilizar y controlar la frecuencia y calidad de la oscilación.
 	 
 	\begin{figure}[h]
 		\centering
@@ -164,7 +167,9 @@
 	
 	\newpage
 	
-	\noindent Una de las maneras de realizarlo es usando un amplificador operacional y 3 resistencias en la configuración que se ve en la \fref{fig:NIC} de esta manera si elegimos las resistencias $R_2=R_3$ la resistencia $R_1$ es la que determinaría el valor de resistencia negativa, esta es la explicación:
+	Una de las maneras de realizarlo es usando un amplificador operacional y 3 resistencias en la configuración que se ve en la \fref{fig:NIC} de esta manera si elegimos las resistencias $R_2=R_3$, la resistencia $R_1$ es la que determinaría el valor de resistencia negativa, esta es la demostración:
+	
+	\vspace{0.5cm}
 	
 	\begin{center}
 	\begin{multicols}{2}
@@ -187,35 +192,35 @@
 	\end{multicols}
 	\end{center}
 	
-	Si observamos la ecuación \eref{eq:NIC1} se puede ver que la tensión $V_S$ cae sobre la resistencia $R_1$ y se puede relacionar con la tensión de salida $V_O$ mediante un divisor de tensión:
+	\noindent Si observamos la ecuación \eref{eq:NIC1}, notamos que la tensión $V_S$ recae sobre la resistencia $R_1$ y se relaciona con la tensión de salida $V_O$ mediante un divisor de tensión:
 	
 	\begin{equation}
 		V_S\,=\,V_O\,\frac{R_1}{R_1 + R_2}\:\longrightarrow\:V_O\,=\,V_S\,\frac{R_1 + R_2}{R_1}.
 		\label{eq:NIC3}
 	\end{equation}\smallskip
 	
-	Teniendo en cuenta la ecuación \eref{eq:NIC2} se puede ver que la intensidad $I(V_S)$ es la misma que pasa por la resistencia $R_3$, por ello se puede deducir:
+	\noindent Dada la ecuación \eref{eq:NIC2}, la corriente $I(V_S)$ es la misma que fluye a través de la resistencia $R_3$, por lo que podemos deducir:
 	
 	\begin{equation}
 		I(V_S)\,=\,\frac{V_S - V_O}{R_3}.
 		\label{eq:NIC4}
 	\end{equation}\smallskip
 	
-	Sustituyendo la ecuación \eref{eq:NIC3} en \eref{eq:NIC4} y trabajando la expresión para obtener la relacion tensión-intensidad llegamos a:
+	\noindent Sustituyendo la ecuación \eref{eq:NIC3} en \eref{eq:NIC4} y trabajando la expresión para obtener la relación entre tensión e intensidad, llegamos a:
 	
 	\begin{equation}
 		I(V_S)\,=V_S\,\frac{-R_2}{R_1 \, R_3}.
 		\label{eq:NIC5}
 	\end{equation}\smallskip
 	
-	Si dividimos la tensión $V_S$ entre la intensidad $I(V_S)$ (ecuación \eref{eq:NIC5}) para obtener la impedancia de entrada del circuito:
+	\noindent Si dividimos la tensión $V_S$ entre la intensidad $I(V_S)$ (ecuación \eref{eq:NIC5}) para obtener la impedancia de entrada del circuito, obtenemos:
 	
 	\begin{equation}
 		\frac{V_S}{I(V_S)}\,=\,Z_{IN}\,=\,\frac{V_S}{V_S\,\frac{-R_2}{R_1 \, R_3}}\,=\,-R_1\,\frac{R_3}{R_2}.
 		\label{eq:NIC6}
 	\end{equation}\smallskip
 	
-	Si elegimos las resistencias $R_3\,=\,R_2$ en la ecuación \eref{eq:NIC6} obtenemos:
+	\noindent Si seleccionamos $R_3 = R_2$ en la ecuación \eref{eq:NIC6}, obtendremos:
 	
 	\begin{equation}
 		Z_{IN}\,=\,-R_1.
@@ -224,14 +229,14 @@
 	
 	\newpage
 	\section{Memristor}
-	\noindent El componente más interesante de este circuito es el Memristor, teorizado por el científico Leon Chua en 1971, ver \cite{chuamissing1971}. Este elemento trata de llenar el vacío que existía en las relaciones entre las cuatro variables básicas en teoría de circuitos: voltaje \textbf{\textit{v}}, intensidad \textbf{\textit{i}}, carga eléctrica \textbf{\textit{q}} y flujo magnético \textit{$\bm{\varphi}$}. En concreto el memristor relaciona la carga eléctrica con el flujo magnético de la siguiente manera, ver \cite{chuaoscillator2008}:
+	\noindent Un componente de gran interés en este circuito es el memristor, cuya teoría fue propuesta por el científico Leon Chua en 1971 (consulta \cite{chuamissing1971}). Este componente busca resolver un antiguo enigma en las relaciones entre las cuatro variables fundamentales en la teoría de circuitos: voltaje (\textbf{\textit{v}}), corriente (\textbf{\textit{i}}), carga eléctrica (\textbf{\textit{q}}) y flujo magnético (\textit{$\bm{\varphi}$}). En particular, el memristor establece una relación entre la carga eléctrica y el flujo magnético de la siguiente manera (ver \cite{chuaoscillator2008}):
 	
 	\begin{equation}
 		\varphi\,=\,\varphi(q), \qquad q\,=\,q(\varphi).
 		\label{eq:flujocarga}
 	\end{equation}\smallskip
 	
-	Sabiendo la relación del voltaje y la intensidad respecto a la carga y al flujo en el tiempo:
+	\noindent Donde la relación del voltaje y la intensidad respecto a la carga y al flujo en el tiempo es la siguiente:
 
 	\begin{equation}
 		v(t)\,=\,\frac{d\varphi}{dt}, \qquad i(t)\,=\,\frac{dq}{dt}.
@@ -243,28 +248,28 @@
 		\label{eq:flujocargaintegral}
 	\end{equation}\smallskip
 	
-	Derivando la ecuación \eref{eq:flujocarga} respecto al tiempo, y aplicando la regla de la cadena:
+	\noindent Derivaremos la ecuación \eref{eq:flujocarga} respecto al tiempo, y aplicando la regla de la cadena:
 	
 	\begin{equation}
 		\frac{d\varphi}{dt}\,=\,\frac{d\varphi(q)\,dq}{dq\,dt}, \qquad \frac{dq}{dt}\,=\,\frac{dq(\varphi)\,d\varphi}{d\varphi\,dt}.
 		\label{eq:vym}
 	\end{equation}\smallskip
 	
-	Sustituyendo las relación de la ecuación \eref{eq:dvdi} en la ecuación \eref{eq:vym}:
+	\vspace{0.5cm}\noindent Luego, se sustituye la relación de \eref{eq:dvdi} en \eref{eq:vym} para obtener las expresiones en \eref{eq:vym2}:
 	
 	\begin{equation}
 		v(t)\,=\,\frac{d\varphi(q)}{dq}i(t), \qquad i(t)\,=\,\frac{dq(\varphi)}{d\varphi}v(t).
 		\label{eq:vym2}
 	\end{equation}\smallskip
 	
-	Las dos relaciones de carga y flujo que quedan en la ecuación \eref{eq:vym2} son los que se denominan \textbf{\textit{Memristancia M(q)}} y \textbf{\textit{Memductancia W($\bm{\varphi}$)}}: 
+	\vspace{0.5cm}\noindent Las dos relaciones resultantes en \eref{eq:vym2} se conocen como la \textbf{\textit{Memristancia M(q)}} y la \textbf{\textit{Memductancia W($\bm{\varphi}$)}}:
 	
 	\begin{equation}
 		M(q)\,=\,\frac{d\varphi(q)}{dq}, \qquad W(\varphi)\,=\,\frac{dq(\varphi)}{d\varphi}.
 		\label{eq:myw}
 	\end{equation}\smallskip
 	
-	Finalmente se presentan dos tipos de expresiones:
+	\vspace{0.5cm}\noindent Por último, se presentan dos expresiones finales que describen el comportamiento del memristor:
 	
 	\begin{equation}
 		\textit{Memristor controlado por carga} \, \rightarrow \, v(t)\,=\,M(q)\,i(t).
@@ -279,118 +284,128 @@
 	
 	\newpage
 	
-	\noindent El segundo acontecimiento más importante en relación al memristor fue en 2008 cuando en los laboratorios de HP se fabricó un componente cuyo comportamiento era muy parecido al funcionamiento que afirmaba Chua, debía de tener el memristor. En un inicio al componente que HP creó en 2005 le dieron el nombre de \textit{Crossbar Latch}, no sería hasta 2008 que se percataron de la similitud de funcionaminto con el memristor de Chua. La construcción es secilla, se trata de dos capas, una de dioxido de titanio puro y otra de dioxido de titanio deficiente de átomos de oxígeno, ambas envueltas por dos electrodos de platino \fref{fig:mem1}.\textit{\textcolor{red}{Repasar este párrafo, la frase de "debía tener..." quitar}}
+	\noindent El segundo acontecimiento de notable relevancia en relación al memristor tuvo lugar en el año 2008, cuando los laboratorios de Hewlett-Packard (HP) lograron fabricar un componente cuyo comportamiento exhibía notables similitudes con las características postuladas por Chua para el memristor. Inicialmente, el componente desarrollado por HP en 2005 había sido denominado como el ``Crossbar Latch". No obstante, no sería sino hasta 2008 que se percataron de la marcada similitud en su funcionamiento con el concepto original de memristor propuesto por Chua. La construcción de este componente resulta elegante en su simplicidad, consistiendo en dos capas superpuestas: una compuesta de dióxido de titanio puro y otra de dióxido de titanio con una deficiencia controlada de átomos de oxígeno, ambas encapsuladas entre dos electrodos de platino. 
 	
-	\begin{figure}[h]
+\vspace{0.5cm}\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.75\textwidth]{mem1.jpg}
-		\caption{Costruccion del memristor de HP. Ver \cite{williams}.}
+		\includegraphics[width=1\textwidth]{mem1.jpg}
+		\caption{Costrucción del memristor de HP. Ver \cite{williams}.}
 		\label{fig:mem1}
 	\end{figure}
 	
-	El óxido de titanio tiene una serie de características que lo hacen un material muy interesante en esta aplicación:
-	\begin{enumerate}
-		\item Resistencia variable: La resistencia eléctrica del dióxido de titanio cuando está dopado puede cambiar en repuesta de la aplicación de una corriente o un campo eléctrico. Lo cual nos permite no tan solo guardar 1 o 0 si no un rango de valores dentro de unos límites de operación (memorias ReRAM).
-		\item No volatilidad: El óxido de titanio puede mantener su estado de resistencia incluso cuando se retira la corriente eléctrica que lo atraviesa. Esto significa que puede retener información y mantener su estado de resistencia sin requerir energía continua.
-		\item Cambios rápidos de resistencia:  Esta propiedad permite operaciones de escritura y lectura rápidas en el memristor, lo que es crucial para su uso en aplicaciones de almacenamiento y procesamiento de datos.
-		\item Baja potencia y tamaño compacto
-	\end{enumerate}
 	\newpage
 	
-	La fórmula que se propone en \cite{HP} para modelar el comportamiento de este dispositivo es:
+	Ahora presentaremos una serie de características del dióxido de titanio que lo convierten en un material altamente atractivo para esta aplicación:
+	
+	\vspace{0.5cm}
+	
+	\begin{enumerate}
+		\item \textbf{Resistencia variable}: Cuando el dióxido de titanio se dopa, su resistencia eléctrica puede cambiar en respuesta a la aplicación de una corriente o un campo eléctrico. Esto permite no solo almacenar los valores binarios típicos (1 o 0), sino también retener una gama de valores dentro de ciertos límites de operación. Este fenómeno se utiliza en las memorias ReRAM (Resistive Random-Access Memory).
+		\item \textbf{No volatilidad}: El dióxido de titanio puede mantener su estado de resistencia incluso cuando se interrumpe la corriente eléctrica que lo atraviesa. Esto significa que puede retener información y mantener su estado de resistencia sin requerir energía continua, lo que es fundamental para la preservación de datos.
+		\item \textbf{Cambios rápidos de resistencia}: Esta propiedad permite realizar operaciones de escritura y lectura de datos de manera rápida en el memristor. La velocidad de acceso es crucial para su implementación en aplicaciones de almacenamiento y procesamiento de datos.
+		\item \textbf{Baja potencia y tamaño compacto}: El uso eficiente de energía es otro punto fuerte del dióxido de titanio, lo que lo hace adecuado para dispositivos que operan con restricciones de potencia. Además, su tamaño compacto facilita su integración en sistemas electrónicos de diversos tamaños y aplicaciones.
+	\end{enumerate}
+	
+	\newpage
+	
+	La fórmula propuesta en \cite{HP} para modelar el comportamiento de este dispositivo se expresa mediante las siguientes ecuaciones:
 	
 	\begin{equation}
 		v(t)\,=\,\left(R_{ON}\,\frac{w(t)}{D}+R_{OFF}\left(1-\frac{w(t)}{D}\right)\right)i(t),
 		\label{eq:hp1}
-	\end{equation}
+	\end{equation}\smallskip
 	
 	\begin{equation}
 		\frac{dw(t)}{dt}\,=\,\mu_V\,\frac{R_{ON}}{D}\,q(t).
 		\label{eq:hp2}
 	\end{equation}\smallskip
 	
-	Integrando la ecuación \eref{eq:hp2} e insertándola en \eref{eq:hp1} teniendo en cuenta que el valor de resistencia  $R_{ON} \ll R_{OFF}$: 
+	\noindent Integrando la ecuación \eref{eq:hp2} e insertándola en \eref{eq:hp1}, teniendo en cuenta que el valor de resistencia $R_{ON} \ll R_{OFF}$, se obtienen las siguientes expresiones:
 	
 	\begin{equation}
 		w(t)\,=\,\mu_V\,\frac{R_{ON}}{D}\,i(t),
 		\label{eq:hp3}
 	\end{equation}\smallskip
+	
 	\begin{equation}
 		M(q)\,=\,R_{OFF}\,\left(1-\,\frac{\mu_V\,R_{ON}}{D^2}\,q(t)\right).
 		\label{eq:hp4}
 	\end{equation}\smallskip
 	
-	\begin{figure}[h]
+	\vspace{1cm}\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{schmem.jpg}
 		\caption{Esquema del memristor de HP. Ver \cite{2021}.}
 		\label{fig:2021}
 	\end{figure}\smallskip
+
+	\vspace{0.5cm}\noindent Las ecuaciones \eref{eq:hp1}-\eref{eq:hp4} describen el comportamiento del memristor de HP, un componente fundamental en esta investigación. El esquema del memristor se muestra en la Figura \ref{fig:2021}.
 	
-	Los parámetros que aparecen en las ecuaciones anteriores y que describen el funcionamiento del componente son:
-	
-	\begin{enumerate}
-		\item $R_{ON}$: Resistencia en el estado ON, valor mínimo. Es constante.
-		\item $R_{OFF}$: Resistencia en el estado OFF, valor máximo. Es constante.
-		\item $\mu_V$: Mobilidad iónica de arrastre promedio. Es constante.
-		\item $w$: Ancho de la zona dopada, no es constante, depende de la excitación.
-		\item $D$: Ancho total de la lamina de oxido de titanio. Es constante.
-	\end{enumerate}
 	\newpage
 	
-	El funcionamiento es el siguiente, entre los dos electrodos de platino tenemos una capa de dióxido de titanio puro $TiO_2$ que actúa como dieléctrico y otra de dióxido de titanio con vacantes de oxígeno $TiO_{2-x}$ que actúa como conductor ya que en estas vacantes están cargadas positivamente (ver \fref{fig:mem1}), ya que al faltar átomos de oxígeno se están perdiendo también sus electrones de valencia asociados, generando así que el compuesto necesite atraer electrones a dichas vacantes para así mantenerse eléctricamente estable.Cuando un voltaje positivo se aplica al electrodo superior las vacantes de oxígeno de la zona dopada se repelen y viajan hacia la zona de óxido de titanio puro, haciendo así que aumente la conductividad hasta que se alcance el valor de $R_{ON}$. Si por el contrario el voltaje aplicado es negativo, las vacantes de oxígeno viajan hacia el elctrodo superior, reduciendo la conductividad hasta $R_{OFF}$.\textit{\textcolor{red}{Repasar este párrafo}}
+	\noindent Los parámetros que intervienen en las ecuaciones \eref{eq:hp1}-\eref{eq:hp4} y que caracterizan el funcionamiento del componente son:
 	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.85\textwidth]{iv_chua.jpg}
-		\caption{Gráfica Tensión-Intensidad del Memristor de Chua ideal para una señal de entrada senoidal con varias frecuencias. Como se puede ver conforme aumenta la frecuencia la gráfica se parece más a la de una resistencia tradicional. Ver \cite{outsiders}}.
-		\label{fig:iv_chua}
-	\end{figure}\smallskip
-	\begin{comment}
+	\begin{enumerate}
+		\item $\bm{R_{ON}}$: Resistencia en el estado ON, que representa el valor mínimo de resistencia y es constante.
+		\item $\bm{R_{OFF}}$: Resistencia en el estado OFF, que corresponde al valor máximo de resistencia y también es constante.
+		\item $\bm{\mu_V}$: Movilidad iónica promedio, una constante que describe la velocidad de movimiento de las partículas iónicas en el dispositivo.
+		\item $\bm{w}$: Ancho de la zona dopada, que no es constante y depende de la excitación eléctrica.
+		\item $\bm{D}$: Ancho total de la lámina de dióxido de titanio, una constante que define las dimensiones físicas del dispositivo.
+	\end{enumerate}
+	
+	\vspace{0.5cm}El funcionamiento del dispositivo es el siguiente: entre los dos electrodos de platino se encuentra una capa de dióxido de titanio puro $TiO_2$, que actúa como dieléctrico, y otra capa de dióxido de titanio con vacantes de oxígeno $TiO_{2-x}$ que funciona como conductor. Las vacantes de oxígeno están cargadas positivamente, ya que la falta de átomos de oxígeno implica la pérdida de sus electrones de valencia asociados, lo que hace que el compuesto necesite atraer electrones hacia estas vacantes para mantenerse eléctricamente estable (ver \fref{fig:mem1}).
+	
+	\vspace{0.5cm}\noindent Cuando se aplica un voltaje positivo al electrodo superior, las vacantes de oxígeno en la zona dopada son repelidas y se desplazan hacia la región de óxido de titanio puro, lo que aumenta la conductividad hasta alcanzar el valor de $R_{ON}$. Por otro lado, si se aplica un voltaje negativo, las vacantes de oxígeno se mueven hacia el electrodo superior, disminuyendo la conductividad hasta llegar a $R_{OFF}$.
+
+	\vspace{1cm} En la siguiente página, presentaremos una gráfica que muestra la respuesta del memristor ante una señal senoidal con diversas frecuencias. Esta respuesta se obtuvo utilizando un modelo de memristor de SPICE, basado en las ecuaciones de HP \eref{eq:hp1}-\eref{eq:hp4} (consulte \cite{biolek}). Se puede comprobar que a medida que aumenta la frecuencia, la gráfica se asemeja cada vez más a la de una resistencia tradicional \cite{outsiders}.
+
+	\newpage
+	
 		\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.5\textwidth]{iv_hp.png}
-		\caption{Gráfica Tensión-Intensidad del Memristor de HP. Ver \cite{HP}.}
-		\label{fig:iv_hp}
+		\includegraphics[width=0.9\textwidth]{iv_chua.jpg}
+		\caption{Gráfica Tensión-Intensidad del Memristor de Chua ideal para una señal de entrada senoidal con varias frecuencias.}
+		\label{fig:iv_chua}
 	\end{figure}\smallskip
-\end{comment}
+	
 	\newpage
 	
 	\section{Variables de estado}
 	\label{sec:23}
-	\noindent En este trabajo hemos hecho un análisis matemático de la bifurcación del circuito oscilador haciendo uso de técnicas de análisis de reciente estudio, pero primero hay que presentar el circuito y transformar sus ecuaciones eléctricas hasta llegar a una forma matemática con la que poder trabajar. Empecemos analizando el circuito.
+	\noindent En este trabajo realizamos un análisis matemático de una bifurcación presente en el circuito oscilador utilizando técnicas de análisis recientes. Sin embargo, antes de adentrarnos en los detalles matemáticos, es fundamental presentar el circuito y transformar sus ecuaciones eléctricas en una forma matemática que nos permita llevar a cabo un análisis exhaustivo. Comenzaremos nuestro análisis al examinar detenidamente el circuito en cuestión.
 	
-	\begin{figure}[h]
+	\vspace{0.5cm}\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.8\textwidth]{circuito.png}
+		\includegraphics[width=0.7\textwidth]{circuito.png}
 		\caption{Magnitudes del circuito.}
 		\label{fig:circuito}
 	\end{figure}\smallskip
 	
-	Aplicanco las leyes de Kirchoff a nuestro circuito, \fref{fig:circuito}, se puede ver que:
+	\vspace{0.5cm}\noindent Se aplican las leyes de Kirchoff al circuito de la \fref{fig:circuito} y se obtienen las siguientes ecuaciones:
 	
 	\begin{equation}
 		i_{LR}\,=\,i_M+i_C,
 		\label{eq:kir1}
-	\end{equation}
+	\end{equation}\smallskip
 	\begin{equation}
 		v_R\,=\,v_L+v_1.
 		\label{eq:kir2}
-	\end{equation}
+	\end{equation}\smallskip
 	
-	Reordenando las anteriores ecuaciones:
+		\vspace{0.5cm}\noindent Reordenando estas ecuaciones, se obtiene:
 	
 	\begin{equation}
 		i_C\,=\,i_{LR}-i_M,
 		\label{eq:kir11}
-	\end{equation}
-	\begin{equation}
+	\end{equation}\smallskip
+	\begin{equation}\smallskip
 		v_L\,=\,v_R-v_1.
 		\label{eq:kir22}
 	\end{equation}
 	
-	Recordando la relación entre la carga y el flujo con la intensidad y la tensión de las ecuaciones \eref{eq:dvdi}, la ecuación del memristor controlado por flujo \eref{eq:fc} y aplicándolo a \eref{eq:kir11} y \eref{eq:kir22} obtenemos:
+	\newpage
 	
+	\noindent Teniendo en cuenta la relación entre la carga y el flujo con la intensidad y la tensión de las ecuaciones \eref{eq:dvdi}, así como la ecuación del memristor controlado por flujo \eref{eq:fc}, y aplicándolas a \eref{eq:kir11} y \eref{eq:kir22}, obtenemos el siguiente sistema de ecuaciones:
 	
 	\begin{eqnarray}
 		C\,\frac{dv_1}{dt}\,&=&\,i_{LR}-W(\varphi)\,v_1 \label{eq:kir111}, \\ [2mm]
@@ -398,9 +413,9 @@
 		\frac{d\varphi}{dt}\,&=&\,v_1. \label{eq:kir333}
 	\end{eqnarray}\smallskip
 	
-	Como se pueden ver las variables de estado elegidas son la intensidad en la resistencia y la bobina \bm{$i_{LR}$}, la tensión en el condensador y el memristor \bm{$v_1$} y el flujo en el memristor \bm{$\varphi$}.
-	\newpage
-	Reordenando las ecuaciones anteriores \eref{eq:kir111}, \eref{eq:kir222} y \eref{eq:kir333} tenemos:
+		\vspace{0.5cm}\noindent En estas ecuaciones, las variables de estado seleccionadas son la intensidad (\bm{$i_{LR}$}) en la resistencia y la bobina, la tensión (\bm{$v_1$}) en el condensador y el memristor, y el flujo (\bm{$\varphi$}) en el memristor.
+	
+	\vspace{0.5cm}\noindent Reordenando las ecuaciones anteriores \eref{eq:kir111}, \eref{eq:kir222} y \eref{eq:kir333}, se obtiene el siguiente sistema:
 	
 	\begin{eqnarray}
 		\frac{dv_1}{dt}\,&=&\,\frac{i_{LR}}{C}-W(\varphi)\,\frac{v_1}{C} \label{eq:sis1}, \\ [2mm]
@@ -408,9 +423,9 @@
 		\frac{d\varphi}{dt}\,&=&\,v_1. \label{eq:sis3}
 	\end{eqnarray}\smallskip
 	
-	Haciendo algunos cambios a las tres anteriores ecuaciones para luego poder trabajar con las ecuaciones obtenemos el siguiente sistema:
+	\vspace{0.5cm}\noindent Haciendo algunos cambios a las tres anteriores ecuaciones para luego poder trabajar con las ecuaciones construimos el siguiente sistema:
     
-	\begin{equation}
+	\vspace{0.5cm}\begin{equation}
 		\label{eq:sistema1}
 		\scalebox{1.2}{$\displaystyle
 			\left\{
@@ -423,12 +438,15 @@
 			$}
 	\end{equation}\smallskip
 	
-	Donde tenemos:
+	\noindent Donde tenemos:
+	
 	\begin{equation*}
 		x\,=\,v_1, \qquad y\,=\,i_{LR}, \qquad z\,=\,\varphi, \qquad \alpha\,=\,\frac{1}{C}, \qquad \beta\,=\,\frac{R}{L}, \qquad \xi\,=\,\frac{1}{L}.
 	\end{equation*}
 	
-	Escribiendo el sistema \eref{eq:sistema1} de una forma más general:
+	\newpage
+	
+	El sistema \eref{eq:sistema1} se puede expresar de una forma más general como sigue:
 	
 	\begin{equation}
 		\label{eq:sistema}
@@ -452,7 +470,7 @@
 	\end{gathered}
 	\end{equation}\smallskip
 	
-	Pero del sistema \eref{eq:sistema} aun tenemos que definir $W(z)$. En \cite{chuaoscillator2008} se asume que el comportamiento del memristor se puede aproximar por una ecuacion linear a trozos monótonamente creciente:
+	\vspace{0.5cm}\noindent Sin embargo, aún necesitamos definir la función $W(z)$ en el sistema \eref{eq:sistema}. En \cite{chuaoscillator2008}, se asume que el comportamiento del memristor se puede aproximar mediante una ecuación lineal a trozos monótonamente creciente:
 	
 	\begin{equation}
 		q(\varphi)\,=\,b\varphi+0.5(a-b)(|\varphi+1|-|\varphi-1|).
@@ -462,10 +480,9 @@
     	$ donde \quad a,b> 0$
     \end{center}
     
-    Derivemos la expresión \eref{eq:qf} (recordando la ecuación \eref{eq:myw}) para obtener $W(z)$:
+    \vspace{0.5cm}\noindent Derivaremos la expresión \eref{eq:qf} (recordando la ecuación \eref{eq:myw}) para obtener $W(z)$:
 
-    
-    \begin{equation}
+   \begin{equation}
     	W(z) = \frac{dq(z)}{dz} =
     	\begin{cases}
     			b,  \quad & z < -1, \\
@@ -473,9 +490,9 @@
     			b,  \quad & z > 1.
     	\end{cases}
     	\label{eq:wz}
-    \end{equation}
+    \end{equation}\smallskip
     
-    Por último vamos a definir dos matrices auxiliares del sistema \eref{eq:sistema} teniendo en cuenta la función $W(z)$ \eref{eq:wz}
+    \noindent Finalmente, definimos dos matrices auxiliares en el sistema \eref{eq:sistema} teniendo en cuenta la función $W(z)$ \eref{eq:wz}
     
     \begin{equation}
     	A_E=\begin{pmatrix*}[c]
@@ -487,7 +504,8 @@
     	\end{pmatrix*}.
     \end{equation}\smallskip
     
-    con sus correspondientes trazas y determinantes:
+    \noindent Con sus correspondientes trazas y determinantes:
+    
     \begin{equation}
     \begin{aligned}
     	t_E &= b \cdot a_{11} + a_{22}\\
@@ -497,23 +515,26 @@
     \end{aligned}
     \end{equation}\smallskip
     
-	Ya tenemos las ecuaciones necesarias para empezar el análisis, pero primero veremos en los siguientes capitulos que técnicas estaremos usando para ello.
+	\noindent Con todas estas definiciones, estamos listos para continuar con el análisis. En los próximos capítulos, se describirán las técnicas utilizadas para estudiar este sistema en detalle.
+	
 	\newpage
+	
 	\section{Superficies invariantes}
 	\label{sec:2.4}
-	\noindent A continuación definimos el concepto de superficie invariante para un sistema dinámico tridimensional. Más adelante veremos que el sistema \eref{eq:sistema} posee unas determinadas superficies invariantes. 
+	
+	\noindent A continuación, definiremos el concepto de superficie invariante para un sistema dinámico tridimensional. Posteriormente, veremos que el sistema \eref{eq:sistema} posee ciertas superficies invariantes.
 	
 	\begin{definicion}
-		Consideremos, el sistema diferencial:
+		Consideremos el sistema diferencial:
 		
 		\begin{equation}
 			\label{eq:sergio}
-			\frac{dX}{dt}=F(X),\qquad X\in \mathbb{R}^3
+			\frac{dX}{dt}=F(X),\qquad X\in \mathbb{R}^3.
 		\end{equation}\smallskip
-		Se dice que una superficie $S\subset \mathbb{R}^3$ es una superficie invariante para el sistema \eref{eq:sergio} si la solución del sistema diferencial $X(t)$ con condición inicial $X(0)=X_0 \; \in S$ satisface que $X(t) \in S$ para todo $t$ y para todo $X_0 \in S$.
+		Se dice que la superficie $S\subset \mathbb{R}^3$ es una superficie invariante para el sistema \eref{eq:sergio} si para cada $X_0 \in S$, la solución del sistema \eref{eq:sergio}, con condición inicial $X(0)=X_0$, pertenece a la superficie $S$ para todo $t$.
 	\end{definicion}\smallskip
 	
-	A modo de ejemplo, en la \fref{fig:esfera} hemos representado una esfera invariante con varias órbitas de un sistema contenida en ella
+	\vspace{0.5cm}A modo de ejemplo, en la \fref{fig:esfera} hemos representado una esfera invariante con varias órbitas de un sistema contenida en ella
 	
 	\begin{figure}[h]
 		\centering
@@ -540,18 +561,16 @@
 		\end{equation}\smallskip
 		
 		\noindent es una superficiente invariante para el sistema \eref{eq:sistema}.
-	\end{theorem}
 		
 		\vspace{0.5cm}\noindent El sistema \eref{eq:sistema} tiene una familia infinita de superficies invariantes en todo $\mathbb{R}^3$, y la dinámica de los mismos es fundamentalmente bidimensional.
+	\end{theorem}
 	
-	\vspace{0.5cm}Como se deduce del Teorema \ref{teorema1} la dinámica del sistema tridimensional \eref{eq:sistema} se puede reducir, aplicando un cambio de variable adecuado, al estudio de un sistema bidimensional.
-	
-	\vspace{0.5cm}\noindent En este trabajo es necesario incluir la prueba de ello porque los cambios de variable nos permitirán obtener la solución periódica en el circuito.
+	\vspace{0.5cm}Como se deduce del Teorema \ref{teorema1} la dinámica del sistema tridimensional \eref{eq:sistema} se puede reducir, aplicando un cambio de variable adecuado, al estudio de un sistema bidimensional. En este trabajo es necesario incluir la prueba de ello porque los cambios de variable nos permitirán obtener la solución periódica en el circuito.
 	
 	\newpage
 	
 	\begin{theorem}[Teorema 2 de \cite{ponce}]
-		Consideremos el sistema \eref{eq:sistema}, con la función $W(z)$ dada en \eref{eq:wz}, y supongamos que $a_{22}\neq 0$. La dinámica del sistema \eref{eq:sistema} es equivalente a la dinámica del sistema lineal a trozos bidimensional
+		Consideremos el sistema \eref{eq:sistema}, con la función $W(z)$ dada en \eref{eq:wz}, y supongamos que $a_{22}\neq 0$. La dinámica del sistema \eref{eq:sistema} restringida a cada superficie invariante $S_h$, dada en \eref{eq:sh}, con $h \in \mathbb{R}$, es equivalente a la dinámica del sistema bidimensional:
 		
 		\begin{equation}
 			\label{eq:sis2ec}
@@ -639,7 +658,7 @@
 		
 	\end{proof}
 	
-	\vspace{0.5cm}Una breve explicación del significado de los anteriores teoremas. Supongamos que $a_{22}\neq 0$ y tomamos una condición inicial $X_0=(x_0,y_0,z_0)$. Esto nos fija la superficie invariante $S_{h_0}$ donde está la órbita del sistema con condición inicial $X_0$. Obviamente el valor de $h_0$ es $h_0=H(x_0,y_0,z_0)$, con $H$ dada en \eref{eq:hecuation}.
+	\vspace{0.5cm}Ahora ofreceremos una breve explicación del significado de los anteriores teoremas. Supongamos que $a_{22}\neq 0$ y tomamos una condición inicial $X_0=(x_0,y_0,z_0)$. Esto fija la superficie invariante $S_{h_0}$ donde está la órbita del sistema con condición inicial $X_0$. Obviamente el valor de $h_0$ es $h_0=H(x_0,y_0,z_0)$, con $H$ dada en \eref{eq:hecuation}.
 	
 	\vspace{0.5cm}A partir del valor $h=h_0$, determinamos la solución $\left( \tilde{x}(t),\tilde{y}(t) \right)$ del sistema \eref{eq:sis2ec} con condición inicial $\tilde{x}(0)=z_0$, $\; \tilde{y}(0)=\alpha_1z_0-\alpha_3y_0+\frac{h_0}{a_{22}}$. La solución $(x(t),y(t),z(t))$ del sistema \eref{eq:sistema} con condición inicial $(x_0,y_0,z_0)$ está dada por:
 	
@@ -668,19 +687,19 @@
 
 	
 	\chapter{Sistemas Dinámicos Continuos}
-	En este capítulo haremos un repaso de sistemas dinámicos continuos lineales a trozos puesto que como hemos visto en el sistema \eref{eq:sistema} hemos reducido nuestro circuito a un sistema de este tipo. Lo que necesitamos ahora es encontrar la o las soluciones de nuestro sistema y estudiar su estabiliad, la base que necesitamos para ello lo veremos en este capítulo.
-	\newpage
+	En este capítulo, realizaremos un repaso de los sistemas dinámicos continuos lineales a trozos, ya que hemos reducido nuestro circuito a un sistema de este tipo con las ecuaciones \eref{eq:sistema}. Ahora, lo que necesitamos es encontrar una o varias soluciones para nuestro sistema y estudiar su estabilidad. Para hacerlo, primero repasaremos los conceptos fundamentales necesarios, que servirán como base posteriormente.
+	
 	\section{Sistemas lineales planos}
 	\label{sec:sislinplanos}
-	En esta sección vamos a analizar los sistemas dinámicos continuos de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circuito de esta forma.
-	Antes que nada hay que definir lo que es un sistema dinámico continuo:
+	En esta sección analizaremos los sistemas dinámicos continuos de 2 ecuaciones lineales de primer orden con coeficientes constantes, ya que posteriormente describiremos nuestro circuito de esta forma.
+	En primera instancia hay que definir lo que es un sistema dinámico continuo:
 	
-	\begin{definicion}
+	\vspace{0.5cm}\begin{definicion}
 		Un sistema dinámico es un conjunto de ecuaciones de cambio que describen la evolución temporal de algún fenómeno, que puede ser de cualquier naturaleza (eléctrico, económico, cinegético...), de manera que el estado presente del sistema viene determinado por los estados anteriores. El estado del sistema queda descrito por sus variables de estado. Cuando la evolución se estudia considerando el tiempo como una variable 
 		continua, decimos que el sistema es continuo y para analizar este tipo de sistemas la regla determinista que lo gobierna es su sistema de ecuaciones diferenciales.
 	\end{definicion}
 	
-	Un sistema de este tipo tiene la siguiente forma:
+	\vspace{0.5cm}\noindent Un sistema de este tipo tiene la siguiente forma:
 	
 	\begin{equation}
 		\label{eq:edo2}
@@ -694,7 +713,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Escribiendo el sistema \eref{eq:edo2} en forma matricial:
+	\vspace{0.5cm}\noindent Escribiremos el sistema \eref{eq:edo2} en forma matricial:
 	
 	\begin{equation}
 		\label{eq:matrxedo2}
@@ -718,16 +737,16 @@
 		$}
 	\end{equation} \smallskip
 	
-	Ecribiendo el sistema \eref{eq:matrxedo2} de forma mas simplificada:
+	\vspace{0.5cm}\noindent Se puede escribir el sistema \eref{eq:matrxedo2} de forma mas simplificada:
 	
 	\begin{equation}
 		\label{eq:sisautonomo}
 		\dot{X}\,=\,AX+B
 	\end{equation}\smallskip
 	
-	Cuando $B=\vec{0}$ el sistema se dice homogéneo. Por el contrario cuando $B\neq\vec{0}$ el sistema se dice no homogéneo. Esto es importante saberlo pues los métodos para solucionar estos tipos de sistemas no son las mismos.
+	Cuando $B=\vec{0}$ el sistema se denomina homogéneo. Por el contrario cuando $B\neq\vec{0}$ el sistema se denomina no homogéneo. Esto es importante saberlo pues los métodos para solucionar estos tipos de sistemas no son las mismos.
 	
-	Tambien hay que tener en cuenta las condiciones iniciales del sistema:
+		\vspace{0.5cm}\noindent Las condiciones iniciales del sistema serán:
 	
 	\begin{equation}
 		\label{eq:ci}
@@ -741,7 +760,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Escribiendo el sistema \eref{eq:ci} en forma matricial:
+	\vspace{0.5cm}\noindent Escribiremos el sistema \eref{eq:ci} en forma matricial:
 	
 	\begin{equation}
 		\label{cimat}
@@ -752,7 +771,7 @@
 		\end{pmatrix}=X_0
 	\end{equation}\smallskip
 	
-	Al conjunto del sistema y a sus condiciones iniciales se les denomina \\ \textbf{\textit{Problema de Valor Inicial (PVI)}}: 
+	\vspace{0.5cm}\noindent Al conjunto del sistema y a sus condiciones iniciales se les denomina \\ \textbf{\textit{Problema de Valor Inicial (PVI)}}: 
 	
 	\begin{equation}
 	\label{eq:pvi}
@@ -766,15 +785,15 @@
 		$}
     \end{equation}\smallskip
 	
-	Lo primero y más importante que se debe hacer con este tipo de problemas es comprobar la existencia y unicidad de sus soluciones.
-	\newpage
+	\vspace{0.5cm}\noindent Lo primero y más importante que se debe hacer con este tipo de problemas es comprobar la existencia y unicidad de sus soluciones.
+	
 	\begin{theorem}\label{thm:interesante}
 		Existencia y unicidad \\[2mm]
 		\textit{Sean $A$ y $B$ continuas en un intervalo $I\subseteq  \mathbb{R}$, que continene el punto $X(t_0)$ entonces el P.V.I. tiene una única solución definida en dicho intervalo $I$ para cualquier vector $X_0 \in \mathbb{R}^2$}. Además, si el P.V.I. tiene coeficientes constantes en $A$ y $B$ la solución está definida en $\mathbb{R}$.
 	\end{theorem}
 	\vspace{4mm}
 	
-	Las soluciones del sistema son el conjunto de puntos \eref{eq:puntos} para cada instante de tiempo que forman una curva en el plano de fases $xy$.
+	\noindent Las soluciones del sistema son un conjunto de puntos $(x,y)$ para cada instante de tiempo que forman una curva en el plano de fases. Dichos puntos son de la forma:
 	\begin{equation}
 		\label{eq:puntos}
 		X(t)=\begin{pmatrix}
@@ -782,8 +801,11 @@
 		\end{pmatrix}
 	\end{equation}\smallskip
 	
-	Ahora lo lógico sería hablar de como resolver este tipo de problemas ya que es nuetsro objetivo, pero no lo vamos a hacer ya que nosotros no usaremos el método tradicional de autovalores y autovectores para ello, vamos a utilizar otra técnica de reciente estudio con la que no hará falta esto, la veremos mas adelante.\\[0.5cm]
-	Por último veamos como obtener y analizar los puntos de equilibrio del Sistema Lienal Plano. Primero escribamos el sistema \eref{eq:edo2} de otra forma para ver los siguientes apartados mejor:
+	\noindent Ahora lo lógico sería hablar de como resolver este tipo de problemas ya que es nuestro objetivo, pero no lo haremos, debido a que no usaremos el método tradicional de autovalores y autovectores. Para ello, vamos a utilizar otra técnica de reciente estudio con la que no hará falta realizar esto, la cual veremos más adelante.
+	
+	\newpage
+	
+	Por último, veamos como obtener y analizar los puntos de equilibrio del Sistema lienal plano. Primero escribamos el sistema \eref{eq:edo2} de otra forma para ver los siguientes apartados mejor:
 	\begin{equation}
 		\label{eq:sv}
 		\scalebox{1.2}{$\displaystyle
@@ -797,7 +819,7 @@
 	\end{equation}\smallskip
 	
 	\begin{definicion}
-		Los puntos $(\overline{x},\overline{y})$ que anulan simultaneamente las funciones $S$ y $V$ del sistema \eref{eq:matrxedo2} se denominan Puntos de Equilibrio o Críticos del sistema:
+		Los puntos $(\overline{x},\overline{y})$ que anulan simultaneamente las funciones $S$ y $V$ del sistema \eref{eq:sv} se denominan Puntos de Equilibrio o Críticos del sistema:
 	\end{definicion}
 
 	\begin{eqnarray}
@@ -833,12 +855,11 @@
 			&A\,\overline{X}=-b
 	\end{eqnarray}\smallskip
 	
-	Si el $det(A)\neq0$ \eref{eq:crit} el sistema posee un único punto de equilibrio, este punto se dice solucion constante del sistema.
-    \\[0.5cm]
-    Veamos esto más en profundiad, primero tenemos que saber que el sistema que tenemos \eref{eq:sv} se denomina \textit{\textbf{Autónomo}} ya que la variable independiente $\bm{t}$ no aparece de manera explícita en los segundos términos.
-    \newpage
-    Ahora lo que haremos es una translación del punto de equilibrio para que esté en el origen $\begin{pmatrix} 0 \\ 0
-    \end{pmatrix}$ en caso de no estarlo:
+	\noindent Si el $det(A)\neq0$ de \eref{eq:crit}, el sistema posee un único punto de equilibrio; este punto se dice solución constante del sistema.
+    
+    \vspace{0.5cm}Antes de continuar con el análisis de los puntos de equilibrio debemos conocer que el sistema \eref{eq:sv} se denomina \textit{\textbf{Autónomo}} ya que la variable independiente del tiempo ($\bm{t}$) no aparece de manera explícita en los segundos términos de las ecuaciones.
+    
+    \vspace{0.5cm}\noindent Lo siguiente será realizar una translación del punto de equilibrio para que esté en el origen $(0\; 0)^T$, en caso de no estarlo. Para ello aplicaremos los siguientes cambios de variable:
     
 	\begin{equation}
 		\label{eq:trans}
@@ -852,7 +873,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Por lo que ahora tenemos:
+	\vspace{0.5cm}\noindent Por lo que ahora tenemos:
 	
 	\begin{equation}
 		\label{eq:trans2}
@@ -865,8 +886,9 @@
 			\right.
 			$}
 	\end{equation}\smallskip
-	Donde el punto $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$ es el punto de equilibrio. \\[0.5cm]
-	Lo que verermos a continuacion es la disposicion de las soluciones al rededor del punto de equilibrio y la estabilidiad o no del mismo. Considerando el sistema autónomo lineal con punto de equilibrio en el origen que hemos obtenido tras el cambio de variable:
+	Donde el punto  $(0\; 0)^T$ es el punto de equilibrio. \\[0.5cm]
+	
+	Lo que veremos a continuación es la disposición de las soluciones en torno al punto de equilibrio, y la estabilidiad o no del mismo. Consideremos el sistema autónomo lineal con punto de equilibrio en el origen que hemos obtenido tras el cambio de variable:
 	
 	\begin{eqnarray}
 		\label{eq:trans3}
@@ -885,8 +907,9 @@
 			&A&
 	\end{eqnarray} \smallskip
 	
-	Como vemos con el cambio de variable no se ha modificado la matriz $A$ que es la que nos dirá todo respecto a la estabilidad del punto crítico, veremos los tres casos que se estudian en este trabajo: Foco Asintóticamente Estable, Foco Asintóticamente Inestable y Centro. Pero hay muchos mas y, por supuesto, combinaciones de todos ellos, lo cual complica estos problemas en gran medida.\\[0.5cm]
-	Para saber la estabilidad de los puntos debemos estudiar el polinomio caracteristico de la matriz $A$:
+	\noindent Como vemos, con el cambio de variable no se ha modificado la matriz $A$ que es la que nos indicará todo respecto a la estabilidad del punto crítico. Veremos los tres casos que se estudian en este trabajo: Foco Asintóticamente Estable, Foco Asintóticamente Inestable y Centro. Pero hay muchos más y, por supuesto, combinaciones de todos ellos, lo cual complica estos problemas en gran medida.
+	
+	\vspace{0.5cm}\noindent Para saber la estabilidad de los puntos de equilibrio debemos estudiar el polinomio característico de la matriz $A$:
 	
 	\begin{equation}
 		\label{eq:equilibrio}
@@ -904,16 +927,16 @@
 	\begin{eqnarray}
 		\begin{aligned}
 		P_A(\lambda)=&\lambda^2-\tr(A)\lambda+\det(A) \nonumber \\[1mm]
-		&\lambda^2-\tr(A)\lambda+\det(A)=0 \nonumber \\[1mm]
+		&\lambda^2-\tr(A)\lambda+\det(A)=0 \nonumber \\[7mm]
 		\textit{Autovalores}\rightarrow \quad &\lambda=\frac{\tr(A)\pm \sqrt{\tr(A)^2-4\,\det(A)}}{2}
 	    \end{aligned}
 	\end{eqnarray}
-	
+
 	\newpage
 
 	{\Large\textbullet\quad Foco Asintóticamente Estable}\\[0.5cm]
 	
-	Las curvas solucion tienden al punto crítico. Este caso se da para: 
+	Las curvas solución tienden al punto crítico. Este caso se da para: 
 	\begin{itemize}
 		\item \textbf{$\tr$}$\bm{(A)<0}$
 		\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
@@ -941,7 +964,7 @@
 	
 	{\Large\textbullet\quad Foco Asintóticamente Inestable}\\[0.5cm]
 	
-	Las curvas solucion tienden al alejarse del punto crítico. Este caso se da para: 
+	Las curvas solución tienden al alejarse del punto crítico. Este caso se da para: 
 	\begin{itemize}
 		\item \textbf{$\tr$}$\bm{(A)>0}$
 		\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
@@ -969,7 +992,7 @@
 	
     {\Large\textbullet\quad Centro}\\[0.5cm]
     
-    Las curvas solucion son concéntricas al punto crítico. Este caso se da para: 
+    Las curvas solución son concéntricas al punto crítico. Este caso se da para: 
     \begin{itemize}
     	\item \textbf{$\tr$}$\bm{(A)=0}$
     	\item \textbf{$\tr$}$\bm{(A)^2-4\, \det(A)<0}$
@@ -996,7 +1019,9 @@
 	\newpage
 	\section{Sistemas lineales a trozos bizonales}
 	\label{sistrobiz}
-	En esta sección vamos a ver como estudiar los sistemas continuos dinámicos lineales a trozos de dos zonas y veremos sus propiedades de cara a la obtención de una órbita periódica y estudiar su amplitud y periodo.\\[0.5cm] También veremos como utilizar las formas canónicas para reducir el número de parámetros que influyen en el sistema y como apoyarnos en dichas formas canónicas y las propiedades que nos portan a la hora de estudiar la oscilacion periódica de nuestro circuito.
+	En esta sección, exploraremos el análisis de sistemas continuos dinámicos lineales divididos en dos regiones, evaluando sus propiedades en relación con la consecución de órbitas periódicas, así como el examen detallado de su amplitud y periodo.
+	
+	\vspace{0.5cm}\noindent También examinaremos el empleo de formas canónicas con el propósito de reducir el conjunto de parámetros que inciden en el sistema, aprovechando estas formas canónicas y las propiedades inherentes a ellas para analizar con mayor profundidad la oscilación periódica en nuestro circuito.
 	
 	\begin{definicion}
 		Un sistema dinámico continuo lineal a trozos plano con dos zonas es un sistema de ecuaciones diferenciales con la siguiente forma:
@@ -1014,17 +1039,18 @@
 			\right.
 			$}
 	\end{equation}\smallskip
-	Donde $x=(x_1,x_2)^T\in \mathbb{R}^2$, las matrices $A_1$ y $A_2$ son reales de orden $2$, además\\ $b_1$, $b_2$, $w$ $\in \mathbb{R}^2$ con $w\neq\vec{0}$ y $\delta \in \mathbb{R}$ y se satisface la condición de continuidad
+	
+	\noindent Donde $x=(x_1,x_2)^T\in \mathbb{R}^2$, las matrices $A_1$ y $A_2$ son reales de orden $2$, además\\ $b_1$, $b_2$, $w$ $\in \mathbb{R}^2$ con $w\neq\vec{0}$ y $\delta \in \mathbb{R}$ y se satisface la condición de continuidad
 	
 	\begin{equation}
 		A_1x+b_1=A_2x+b_2 
 	\end{equation}\smallskip
 	
-	Sobre la recta de separación de las dos zonas:\quad $x^T\cdotp w+\delta = 0$ \\[0.5cm]
+	\noindent Sobre la recta de separación de las dos zonas:\quad $x^T\cdotp w+\delta = 0$ \\[0.5cm]
 	
 	\textbf{\textcolor{red}{EXISTENCIA Y UNICICDAD DE SISTEMA 3.14}}
 
-	Para cada $x^0 \in \mathbb{R}^2$, el problema de valores iniciales \eref{eq:pvi2} tiene una solución única $x(t)$ definida para todo $t$ real.
+	\noindent Para cada $x^0 \in \mathbb{R}^2$, el problema de valores iniciales \eref{eq:pvi2} tiene una solución única $x(t)$ definida para todo $t$ real.
 	
 	\begin{equation}
 		\label{eq:pvi2}
@@ -1038,7 +1064,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	 A continuación veremos la forma canónica mas común para los sistemas bizonales que coloca la recta separación en el eje de ordenadas $x_1=0$.
+	 \noindent A continuación veremos la forma canónica más común para los sistemas bizonales que coloca la recta de separación en el eje de ordenadas $x_1=0$.
 	
 	\begin{definicion}
 		Todo sistema dinámico continuo lineal a trozos plano con dos zonas puede escribirse de la siguiente forma:
@@ -1055,21 +1081,21 @@
 			\right.
 			$}
 	\end{equation}\smallskip
-	\textbf{\textcolor{red}{$S(x)$? pero yo tengo dos variables x1 y x2, es $S(x_1,x_2)$? }}
 	
-	Con $x=(x_1,x_2)^T, c\in \mathbb{R}^2$ y las matrices $B_1$, $B_2$ comparten sus dos últimas columnas por continuidad, esto es:
+	\noindent Con $x=(x_1,x_2)^T, c\in \mathbb{R}^2$ y las matrices $B_1$, $B_2$ comparten sus dos últimas columnas por continuidad, esto es:
 	\begin{equation}
 		B_1-B_2 = \left(B_1-B_2\right)e_1e_1^T 
 	\end{equation}\smallskip
 	
-	\textbf{\textcolor{red}{multiplicado los e?}}
-	
-	Siendo $e_1=(1,0)^T$ el primer vector de la base canónica $\mathbb{R}^2$. Además, por continuidad también, se puede ver que $c_1=c_2=c$.
+	\noindent Siendo $e_1=(1,0)^T$ el primer vector de la base canónica $\mathbb{R}^2$. Además, por continuidad también, se puede ver que $c_1=c_2=c$.
     \end{definicion}\smallskip
 
+\newpage
+
+	\noindent La demostración de la anterior definición se lleva a cabo realizando una simetría para que el vector $w$, normal a la recta $x^T\cdotp w+\delta=0$, se transforme en el vector $e_1=(1,0)^T$. Esto se puede hacer usando matrices de Householder, ver \cite{docvic}.
 	
-	\textbf{Demostración}: Basta con realizar una simetría para que el vector $w$ normal a la recta $x^T\cdotp w+\delta=0$, se transforme en el vector $e_1=(1,0)^T$ se puede hacer usando matrices de Householder \cite{docvic}. Por último con una translación hacemos que la nueva recta de separación $x_1=0$ (ahora vertical) pase por el origen. Por lo que el sistema queda con la forma:
-	\textbf{\textcolor{red}{y que pasa con $\delta$? por que la recta se llama $x_1$, la puedo llamar solo x? menos lio con $\dot{x}_1$. Pero $x^T$ y $w$ son vectores? en lugar de la recta x=0 se podria usar la x=-1?}}
+	\vspace{0.5cm}\noindent Por último, con una translación hacemos que la nueva recta de separación $x_1=0$ (ahora vertical) pase por el origen. Por lo que el sistema queda con la forma:
+	\textbf{\textcolor{red}{y que pasa con $\delta$?}}
 	
 	\begin{equation}
 		\dot{x}=
@@ -1084,22 +1110,23 @@
 			$}
 	\end{equation}\smallskip
 	
-	Con $B_1$ y $B_2$ matrices de orden 2 y $c_1, c_2 \in \mathbb{R}^2$. Nuevamente por continuidad se debe satisfacer:
+	\noindent Con $B_1$ y $B_2$ matrices de orden 2 y $c_1, c_2 \in \mathbb{R}^2$. Nuevamente, por continuidad, se debe satisfacer:
 	
 	\begin{equation}
 		\label{eq:b1b2}
 		B_1x+c_1=B_2x+c_2 \qquad si \quad x_1=0
 	\end{equation}\smallskip
 	
-	Como el punto $(0,0)^T$ está en la recta de separación $x_1=0$, sustituyendo en \eref{eq:b1b2} se tiene que $c_1=c_2$ por lo que:
+	\noindent Como el punto $(0,0)^T$ está en la recta de separación $x_1=0$, sustituyéndolo en \eref{eq:b1b2} se tiene que $c_1=c_2$, por lo que:
 	
 	\begin{equation}
 		B_1x=B_2x \qquad si \quad x_1=0
 	\end{equation}\smallskip
 	
-	Como el vector $(0,1)^T$ está sobre la recta de separación $x_1=0$, se tiene por tanto que las dos últimas columnas de $B_1$ y $B_2$ son iguales, y además no olvidemos que  antes hemos visto que $c_1=c_2=c$.
-	\\ [0.5cm]
-	Se ha reducido bastante el número de parámetros, ahora tenemos 8, 6 de ellos vienen de las matrices $B_1$ y $B_2$ y 2 de $c$. Para seguir reduciendo parámetros tengamos en cuenta que estamos buscando oscilaciones y que no aparecerán en sistemas unidimensionales por lo que el primer término de las segundas columnas de las matrices $B_1$ y $B_2$ no puede ser nulo (condición de observabilidad \cite{onsimplyfing}). Mediante el cambio de variable oportuno lo convertiremos en $(-1)$ aquí lo vemos, en primer lugar escribimos el sistema \eref{eq:lien2} de la siguiente manera:
+	\noindent Como el vector $(0,1)^T$ está sobre la recta de separación $x_1=0$ se tiene por tanto que las dos últimas columnas de $B_1$ y $B_2$ son iguales, sin olvidar que $c_1=c_2=c$.
+
+
+	\vspace{0.5cm}Se ha reducido bastante el número de parámetros, ahora tenemos 8, donde 6 de ellos vienen de las matrices $B_1$, $B_2$ y 2 de $c$. Para seguir reduciendo parámetros tengamos en cuenta que estamos buscando oscilaciones y que no aparecerán en sistemas unidimensionales, por lo que el primer término de las segundas columnas de las matrices $B_1$ y $B_2$ no puede ser nulo (condición de observabilidad, ver \cite{onsimplyfing}). Mediante el cambio de variable oportuno lo convertiremos en $(-1)$. En primer lugar escribimos el sistema \eref{eq:lien2} de la siguiente manera:
 	
 	\begin{equation}
 		\begin{pmatrix*}[r]
@@ -1130,14 +1157,16 @@
 			$}
 	\end{equation}\smallskip
 	
-	Y le aplicamos el cambio de variable (recordando que $b_{12}\neq0$): 
+	\vspace{0.5cm}\noindent Y le aplicamos el cambio de variable (recordando que $b_{12}\neq0$): 
 	
 	\begin{equation}
 		\label{eq:cambio}
 		X_2=-b_{12}\,x_2-c_1\quad \rightarrow \quad x_2=\frac{-X_2-c_1}{b_{12}}
 	\end{equation}\smallskip
 
-	Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-1} aplicando el cambio de variable \eref{eq:cambio}:
+\newpage
+
+	\noindent Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-1} aplicando el cambio de variable \eref{eq:cambio}:
 	
 	\begin{equation}
 		\label{eq:q1}
@@ -1151,7 +1180,7 @@
 	\end{equation}\smallskip
 	
 	
-	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-1}:
+	\vspace{0.5cm}\noindent De forma análoga para $x_1>0$ del sistema \eref{eq:lie-1}:
 	\begin{equation}
 		\label{eq:q2}
 		\scalebox{1.2}{$\displaystyle
@@ -1164,7 +1193,7 @@
 		$}
 	\end{equation}\smallskip
 	
-	Sustituyendo \eref{eq:q1} y \eref{eq:q2} en el sistema \eref{eq:lie-1}, tomando $c_{11}^i=b_{11}^i \: ; \: \\c_{21}^i=-b_{12}b_{21}^i \: ; \: c_{22}=b_{22} \: ; \: d_2=b_{22}c_1-b_{12}c_2$ y renombrando $X_2$ como $x_2$:
+	\vspace{0.5cm}\noindent Sustituyendo \eref{eq:q1} y \eref{eq:q2} en el sistema \eref{eq:lie-1}, tomando $c_{11}^i=b_{11}^i \: , \: \\c_{21}^i=-b_{12}b_{21}^i \: , \: c_{22}=b_{22} \: , \: d_2=b_{22}c_1-b_{12}c_2$ y renombrando $X_2$ como $x_2$:
 	
 	\begin{equation}
 		\begin{pmatrix*}[r]
@@ -1195,11 +1224,14 @@
 			$} 
 	\end{equation}\smallskip
 	
-	Hemos conseguido eliminar otros dos parámetros del sistema, además solo hemos realizado cambios lineales por lo que las matrices características son semejantes, es decir, no hemos variado las características del sistema. Lo que nos queda es ya pasar a la famosa forma canónica de Liénard:
+	\vspace{0.5cm}\noindent Se ha conseguido eliminar otros dos parámetros del sistema, además solo se han realizado cambios lineales por lo que las matrices del sistema son semejantes, es decir, no hemos variado las características del sistema.
 	
+	\vspace{0.5cm}\noindent Lo que resta es pasar a la forma canónica de Liénard, lo cual se verá en el teorema de la siguiente página.
+	
+	\newpage
 	
 	\begin{theorem}\label{t2}
-		Existe un cambio de variable que transforma el sistema \eref{eq:lie-12} en la forma canónica de Liénard, sin modificar la traza y el determinanate de la matriz característica del sistema ya que son invariates algebraicos:
+		Existe un cambio de variable que transforma el sistema \eref{eq:lie-12} en la forma canónica de Liénard, sin modificar la traza y el determinante de la matriz característica del sistema ya que son invariates algebraicos:
 	\end{theorem}
 	
 	\begin{equation}
@@ -1231,15 +1263,15 @@
 			$}
 	\end{equation}\smallskip
 
-	
-	\textbf{Demostración}: Usando el siguiente cambio de variable:
+	\begin{proof}[\textbf{Demostración}]
+	Usando el siguiente cambio de variable:
 	
 	\begin{equation}
 		\label{eq:cambioo}
 		X_2=c_{22}x_1+x_2\quad \rightarrow \quad x_2=X_2-c_{22}x_1
 	\end{equation}\smallskip
 	
-	Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-12} aplicando el cambio de variable \eref{eq:cambioo}:
+	\noindent Para el caso $x_1\leq 0$ del sistema \eref{eq:lie-12} aplicando el cambio de variable \eref{eq:cambioo}:
 	
 		\begin{equation}
 		\label{eq:cambio2}
@@ -1251,7 +1283,8 @@
 		\end{aligned}
 		\end{equation}\smallskip
 	
-	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	\noindent De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	
 	\begin{equation}
 		\label{eq:cambio22}
 		\scalebox{1.2}{$\displaystyle
@@ -1264,7 +1297,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Sustituyendo \eref{eq:cambio2} y \eref{eq:cambio22} en el sistema \eref{eq:lie-12}, tomando $t=c_{11}^1+c_{22} \: ; \:\\ d=c_{22}c_{11}^1+c_{21}^1 \: ; \:  T=c_{11}^2+c_{22} \: ; \: D=c_{22}c_{11}^2+c_{21}^2$ y renombrando $X_2$ como $x_2$:
+ 	\noindent Sustituyendo \eref{eq:cambio2} y \eref{eq:cambio22} en el sistema \eref{eq:lie-12}, tomando $t=c_{11}^1+c_{22} \: , \:\\ d=c_{22}c_{11}^1+c_{21}^1 \: , \:  T=c_{11}^2+c_{22} \: , \: D=c_{22}c_{11}^2+c_{21}^2$ y renombrando $X_2$ como $x_2$:
 	
 	\begin{equation}
 		\begin{pmatrix*}[r]
@@ -1295,16 +1328,20 @@
 			$}
 	\end{equation}\smallskip
 
-	Siendo $t,d,T,D$ las respectivas trazas $(t,T)$ y determinantes $(d,D)$ de las matrices caracteristicas de cada uno de los sitemas a la derecha y a la izquierda de la recta de separación $x_1=0$, que como ya hemos visto, no hemos modificado sus propiedades pues todos los cambios aplicados han sido lineales.\\[0.5cm]
+	\noindent Siendo $t,d,T,D$ las respectivas trazas $(t,T)$ y determinantes $(d,D)$ de las matrices características de cada uno de los sistemas a la derecha y a la izquierda de la recta de separación $x_1=0$, que como ya hemos visto no hemos modificado sus propiedades, pues todos los cambios aplicados han sido lineales.
+	
+\end{proof}
 
-	Por último vamos a ajustar $d_2$. Si $d_2=0$ entonces el sistema ya sería igual que \eref{eq:lienard} pero con el parámetro $a=0$. Si $d_2\neq0$ hay que aplicar el siguiente cambio:
+\newpage
+
+	 Por último ajustaremos el parámetro $d_2$. Si $d_2=0$ entonces el sistema ya sería igual que \eref{eq:lienard} pero con el parámetro $a=0$. Si $d_2\neq0$ hay que aplicar el siguiente cambio:
 	
 	\begin{equation}
 		\label{eq:cambiod2}
 		X_1=\frac{x_1}{|d_2|} \qquad X_2=\frac{x_2}{|d_2|}
 	\end{equation}\smallskip
 	
-	Por lo que $X_1$ tiene el mismo sigo que $x_1$ y la recta de separación sería $X_1=0$.\\[0.5cm]
+	\noindent Por lo que $X_1$ tiene el mismo signo que $x_1$ y la recta de separación sería $X_1=0$.\\[0.5cm]
 	Para el caso $X_1\leq 0$ del sistema \eref{eq:lienard2} aplicando el cambio de variable \eref{eq:cambiod2}:
 	
 	\begin{equation}
@@ -1315,7 +1352,8 @@
 		\end{aligned}
 	\end{equation}\smallskip
 	
-	De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	\noindent De forma análoga para $x_1>0$ del sistema \eref{eq:lie-12}:
+	
 	\begin{equation}
 		\label{eq:q4}
 		\scalebox{1}{$\displaystyle
@@ -1328,7 +1366,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Démonos cuenta que cuando dividimos $d_2$ entre su valor absoluto lo que estamos obteniendo es $-1,1,0$ dependiendo de si $d_2$ es negativo, positivo o cero, por lo que usaremos la funcion signo \textit{sgn}:
+	\noindent Observemos que cuando dividimos $d_2$ entre su valor absoluto lo que estamos obteniendo es $-1,1,0$ dependiendo de si $d_2$ es negativo, positivo o cero, por lo que usaremos la funcion signo \textit{sgn}:
 	
 	\begin{equation}
 		\label{eq:sgn}
@@ -1341,7 +1379,7 @@
 		\right.
 	\end{equation}\smallskip
 	
-	Sustituyendo \eref{eq:q3} y \eref{eq:q4} en el sistema \eref{eq:lienard2}, tomando $a=-sgn(d_2)$ \textcolor{red}{a=-d2 eso esta bien??} y renombrando $X_1$ como $x_1$ y $X_2$ como $x_2$:
+	\noindent Sustituyendo \eref{eq:q3} y \eref{eq:q4} en el sistema \eref{eq:lienard2}, tomando $a=-sgn(d_2)$ \textcolor{red}{a=-d2 eso esta bien??} y renombrando $X_1$ como $x_1$ y $X_2$ como $x_2$:
 	
 	
 	\begin{equation}
@@ -1373,7 +1411,8 @@
 			$}
 	\end{equation}\smallskip
 	
-	Para ubicar de una manera más gráfica lo que tenemos en \eref{eq:lienardfinal}:
+	\noindent Para ubicar de una manera más gráfica lo que tenemos en \eref{eq:lienardfinal}:
+	
 	\begin{equation}
 		\label{eq:lienardfinalgr}
 		\begin{gathered}
@@ -1398,8 +1437,10 @@
 			\end{pmatrix*} \\ x_1=\;0
 		\end{gathered}
 	\end{equation}\smallskip
+	
 	\newpage
-	Podemos darnos cuenta de que las ecuaciones corresponden a las dos zonas izquierda y derecha de la recta de separación $x_1=0$ así que vamos a hacer unos cambios de nombres a las variables del sistema \eref{eq:lienardfinal} simplemente para que los nombres sean un poco mas descriptivos. Finalmente el sistema en la forma canónica de Liènard nos queda de la siguiente manera:
+	
+	\noindent Las ecuaciones corresponden a las dos zonas izquierda y derecha de la recta de separación $x_1=0$, así que haremos unos cambios de nombre a las variables del sistema \eref{eq:lienardfinal} para que los nombres sean un poco más descriptivos. Finalmente, el sistema en la forma canónica de Liènard nos queda de la siguiente manera:
 	
 	\begin{equation}
 		\begin{pmatrix*}[r]
@@ -1430,7 +1471,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	De una manera más gráfica sería:
+	\noindent De una manera más gráfica sería:
 	
 	\begin{equation}
 		\label{eq:lienardrlgr}
@@ -1461,7 +1502,7 @@
 	
 	\chapter{Semiaplicaciones de Poincaré}
 	\label{sec:4}
-	En el estudio de sistemas dinámicos, la \textbf{aplicación de Poincaré} es una herramienta de gran utilidad para estudiar el conportamiento de un determinado sistema. Se trata de delimitar una superficie o recta (llamada sección de Poincaré), en el espacio de fases de nuestro sistema, de tal manera que las curvas solución de nuestro sistema transpasen dicha sección para poder estudiar así el comportamiento de las trayectorias. Lo interesante de esta aplicación es que lo que estudiamos son los puntos de intersección con la sección de Poincaré, aunque no podemos obviar el comportamiento de la trayectoria y el tiempo para el estudio.\\[0.5cm]
+	Dentro del análisis de sistemas dinámicos, la aplicación de Poincaré emerge como una herramienta de gran utilidad para investigar el comportamiento de un sistema específico. Este enfoque implica la definición de una superficie o una recta (conocida como sección de Poincaré) en el espacio de fases de nuestro sistema, de tal modo que las curva solución de  nuestro sistema atraviesen esta sección, permitiéndonos así examinar el comportamiento de las trayectorias. Cabe destacar que esta aplicación se centra en los puntos de corte con la sección de Poincaré, sin dejar de considerar el análisis del comportamiento temporal y las propiedades de las trayectorias para una investigación exhaustiva.
 	
 	\begin{figure}[h]
 		\centering
@@ -1469,11 +1510,12 @@
 		\caption{Punto $y_0$ y su imagen $\tilde{y_0}$ mediante la aplicación de Poincaré. Esta órbita no es periódica}
 		\label{fig:aplipoincare2}
 	\end{figure}\smallskip
-	\textcolor{red}{parrafo entero}
-\noindent Como vemos en la \fref{fig:aplipoincare2} la dinámica de estudio sería establecer un punto inicial $y_0$, definir una sección de Poincaré que corte a la curva solución y por último analizar como avanza dicha curva en el tiempo esperando a que corte de nuevo a la sección de Poincaré. Finalmente si la órbita vuelve a cortar en el mismo punto $y_0=\tilde{y_0}$ diremos que dicha órbita es periódica.
+
+\noindent Como se representa en la \fref{fig:aplipoincare2}, el enfoque de estudio implica una serie de pasos. En primer lugar, se selecciona una sección de Poincaré que corte a la curva solución, posteriormete se elige como punto inicial el punto de corte $y_0$ de dicha curva solución con la sección de Poincaré. Luego, se procede a analizar cómo esta trayectoria evoluciona a lo largo del tiempo y si vuelve a cortar a la sección de Poincaré en un punto $\tilde{y_0}$. En última instancia, si la órbita vuelve a intersectar en el mismo punto, es decir, $y_0=\tilde{y_0}$, podemos concluir que dicha órbita exhibe un comportamiento periódico.
+
 	\newpage
 	
-	En este trabajo hablaremos de la \textit{\textbf{semiaplicación de Poincarè}}, es decir, analizaremos una de las dos mitades de la orbita. Esto lo haremos ya que como nuestro estudio es de un sistema a trozos \eref{eq:lienardrl}, ya tenemos una separación en la recta $x=0$ la cual usaremos de sección de Poincaré, y como a la izquierda y a la derecha de dicha sección tenemos sistemas diferentes debemos estudiarlos de manera independiente.
+	En este estudio, nos enfocaremos en la semiaplicación de Poincarè, lo que significa que examinaremos una de las dos mitades de la órbita. Este enfoque se justifica ya que nuestro sistema \eref{eq:lienardrl} es un sistema a trozos, que ya presenta una división en la línea $x=0$, la cual utilizaremos como nuestra sección de Poincaré. Dado que a izquierda y derecha de esta sección se presentan sistemas distintos, abordaremos su análisis de manera independiente.
 	
 	\begin{figure}[h]
 		\centering
@@ -1482,10 +1524,9 @@
 		\label{fig:poincaLR}
 	\end{figure}\smallskip
 	
-	\textcolor{red}{cambiar parrafo}
-	Tendremos un punto de corte $y_0$ de nuestra órbita solución en la sección de Poincarè y buscaremos el siguiente punto de corte $y_1$ mediante la semiaplicación izquierda, finalmente mediante la semiaplicación derecha comprobamos si la órbita vuelve a cortar a la sección de Poincarè en el mismo punto $y_0$ (órbita periódica, ver \fref{fig:poincaLR}) o si no corta en el mismo punto $y_0$ (órbita no periódica).
+	En este proceso, identificaremos un punto de intersección inicial, denotado como $y_0$, en nuestra órbita solución en la sección de Poincarè. A continuación, procedemos a buscar el siguiente punto de intersección, $y_1$, empleando la semiaplicación izquierda. Posteriormente, mediante la semiaplicación derecha, evaluamos si la órbita vuelve a intersectar la sección de Poincarè en el mismo punto $y_0$ (lo que indicaría una órbita periódica, como se ilustra en la \fref{fig:poincaLR}), o si no lo hace (lo que indicaría una órbita no periódica).
 	
-	\vspace{0.5cm}Para definir de forma apropiada una semiaplicación de Poincarè, consideraremos el sistema \eref{eq:edo2}, que mediante los cambios de variable adeacuados podemos escribir en forma canónica de Lienard como ya hemos visto a lo largo de la Sección \ref{sistrobiz}. En dicha sección se hace para un sistema a trozos, pero para esta parte consideraremos un único sistema, que puede ser el derecho o el izquierdo, por lo que la nomenclatura que usaremos en esta sección para dicho sistema será:
+	\vspace{0.5cm}Para una definición adecuada de la semiaplicación de Poincarè, tomaremos en consideración el sistema \eref{eq:edo2}. Empleando las transformaciones de variable apropiadas, podemos expresarlo en la forma canónica de Liénard, como hemos analizado previamente en la Sección \ref{sistrobiz}. En esta sección, nos enfocaremos en un único sistema, que puede ser el sistema derecho o izquierdo. Por lo tanto, en esta parte de nuestro estudio, utilizaremos la siguiente nomenclatura:
 	
 		\begin{equation}
 		\label{eq:lienardsolo}
@@ -1527,7 +1568,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.6\textwidth]{semiL.jpg}
+		\includegraphics[width=0.55\textwidth]{semiL.jpg}
 		\caption{Semiaplicación de Poincaré Izquierda}
 		\label{fig:semiL}
 	\end{figure}\smallskip
@@ -1550,7 +1591,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.6\textwidth]{semiR.jpg}
+		\includegraphics[width=0.55\textwidth]{semiR.jpg}
 		\caption{Semiaplicación de Poincaré Derecha}
 		\label{fig:semiR}
 	\end{figure}\smallskip
@@ -1569,10 +1610,12 @@
 			$}
 	\end{equation}
 	
-	\vspace{0.5cm} La Definición \ref{def6} invita a estudiar la dinámica del sistema mediante el cálculo explícito de sus soluciones, este es el método clásico, el cual conlleva una gran cantidad de posibles casos debidos a los espectros (conjunto de autovalores) de las matrices de cada sistema. Casos que deben analizarse uno a uno, aplicando diferentes herramientas para cada uno de ellos. Esto se traduce en gran dificultad para el estudio y obtención de aparentemente distintos resultados para el mismo sistema dependiendo de qué herramienta matemática usemos para su análisis. Para evitar esta problemática usaremos la caracterización integral de la semiaplicación de Poincaré, la cual presentaremos en la sección \ref{sec41}, y puede verse en \cite{caracterizacion}.
+	\vspace{0.5cm}La Definición \ref{def6} nos invita a abordar la dinámica del sistema a través del cálculo explícito de sus soluciones, un enfoque clásico que conlleva una multiplicidad de casos debido a los espectros (conjunto de autovalores) de las matrices asociadas a cada sistema. Cada uno de estos casos requiere un análisis individual y la aplicación de diversas herramientas matemáticas específicas. Este enfoque puede dar lugar a una complicación considerable en el estudio y conducir a la obtención de resultados aparentemente divergentes para un mismo sistema, dependiendo de la elección de las herramientas matemáticas empleadas en su análisis.
+	
+	\vspace{0.5cm}\noindent Para evitar esta complejidad, optaremos por la caracterización integral de la semiaplicación de Poincaré, la cual se presenta detalladamente en la sección \ref{sec41} y se encuentra disponible en la referencia \cite{caracterizacion}. Este enfoque nos permitirá abordar el sistema de una manera más coherente y sistemática, evitando las dificultades inherentes a la diversidad de casos que surgen en el enfoque clásico.
 	\newpage
 	
-	\section{Caracterización integral de la semiaplicación de Poincare}
+	\section{Caracterización integral de la semiaplicación de Poincaré}
 	\label{sec41}
 	
 	\vspace{0.5cm} Antes de ver las expresiones de la Caracterización Integral se va a presentar el \textit{\textbf{Valor Principal de Cauchy}} ya que se utiliza en las mismas.
@@ -1593,11 +1636,9 @@
     
 	\noindent En \cite{caracterizacion},\cite{pv} se puede consultar más en profundidad el Valor Principal de Cauchy.
 	
-	\vspace{1cm} En la siguiente página presentaremos las expresiones de la caracterizacion integral izquierda y derecha y algunas propiedades de las mismas.
+	\vspace{1cm} A continuación presentaremos las expresiones de la caracterizacion integral izquierda y derecha y algunas propiedades de las mismas.
 	
-	\newpage
-	
-	\vspace{0.5cm}\noindent \textbf{Caracterización integral de la semiaplicación de Poincaré izquierda:}
+	\vspace{1cm}\noindent \textbf{Caracterización integral de la semiaplicación de Poincaré izquierda:}
 	\begin{equation}
 		\label{eq:caracl}
 		\scalebox{1.2}{$\displaystyle
@@ -1631,6 +1672,7 @@
 	
 	\noindent Siendo $ P_L(\mathcal{D}_L)$ el recorrido de $P_L$.
 	
+		\newpage
 	
 	\vspace{2cm}\noindent \textbf{Caracterización integral de la semiaplicación de Poincaré derecha:}
 	\begin{equation}
@@ -1664,13 +1706,13 @@
 	
 	\noindent Siendo $ P_R(\mathcal{D}_R)$ el recorrido de $P_R$.
 	
-	\vspace{1cm} En las siguientes figuras veremos ejemplos de $P_L$, $P_R$ y $P_R^{-1}$ que forman una órbita periódica (\fref{fig:aplipoincareLRcerrado}, \fref{fig:aplipoincareL-Rcerrado}) o por el contrario no formando dicha órbita periódica (\fref{fig:aplipoincareLR}, \fref{fig:aplipoincareL-R}).
+	\vspace{1cm}\noindent A continuación, en las siguientes páginas, observaremos ejemplos de $P_L$, $P_R$, y $P_R^{-1}$ que dan lugar a una órbita periódica (\fref{fig:aplipoincareLRcerrado}, \fref{fig:aplipoincareL-Rcerrado}) y, por otro lado, ejemplos en los que no se forma una órbita periódica (\fref{fig:aplipoincareLR}, \fref{fig:aplipoincareL-R}).
 	
 	\newpage
 	
 	 \begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{aplipoincareLR.jpg}
+		\includegraphics[width=1.1\textwidth,center]{aplipoincareLR.jpg}
 		\caption{Semiaplicación izquierda del punto $y_0$ y semiaplicación derecha del punto $y_1$ con diferentes valores $y_0$,$y_2$ por lo que no se ha cerrado la órbita.}
 		\label{fig:aplipoincareLR}
 	\end{figure}\smallskip
@@ -1679,16 +1721,16 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{aplipoincareL-R.jpg}
+		\includegraphics[width=1.1\textwidth,center]{aplipoincareL-R.jpg}
 		\caption{Semiaplicación izquierda del punto $y_0$ y semiaplicación inversa derecha del punto $y_0$ con diferentes valores $y_1$,$y_2$ por lo que no se ha cerrado la órbita.}
 		\label{fig:aplipoincareL-R}
-	\end{figure}\smallskip
+	\end{figure}
 	
 	\newpage
 	
 	\begin{figure}[h]
 		\centering
- 		\includegraphics[width=1\textwidth]{aplipoincareLRcerrado.jpg}
+ 		\includegraphics[width=1.1\textwidth,center]{aplipoincareLRcerrado.jpg}
 		\caption{Semiaplicación izquierda del punto $y_0$ y semiaplicación derecha del punto $y_1$ con mismos valores $y_0$,$y_2$ por lo que si se ha cerrado la órbita, formándose una órbita periódica.}
 		\label{fig:aplipoincareLRcerrado}
 	\end{figure}\smallskip
@@ -1697,7 +1739,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{aplipoincareL-Rcerrado.jpg}
+		\includegraphics[width=1.1\textwidth,center]{aplipoincareL-Rcerrado.jpg}
 		\caption{Semiaplicación izquierda del punto $y_0$ y semiaplicación inversa derecha del punto $y_0$ con mismos valores $y_1$,$y_2$ por lo que si se ha cerrado la órbita formándose una órbita periódica.}
 		\label{fig:aplipoincareL-Rcerrado}
 	\end{figure}\smallskip
@@ -1754,7 +1796,7 @@
 	
 	\vspace{0.5cm}\noindent Recordando de los intervalos de dominio \eref{eq:dl}-\eref{eq:dr} que $y_0\geq0$ e $y_1\leq0$, si representamos las curvas de nivel $y_1=P_L(y_0)$ e $y_1=P_R^{-1}(y_0)$ y observamos el cuarto cuadrante veríamos una gráfica como la de la \fref{fig:graficaejemplo}.
 	
-		\begin{figure}[h]
+	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{graficaejemplo.jpg}
 		\caption{Punto de corte entre $y_1=P_L(y_0)$ e $y_1=P_R^{-1}(y_0)$}
@@ -1801,11 +1843,11 @@
 	\vspace{0.5cm}\noindent El código de ``Ejemplo 1'' describe las características de los sistemas a la izquierda y a la derecha, establece un punto de prueba $y_0=1.5$ y llama a la función \textit{semipoinca} para calcular la semiaplicación izquierda y la semiaplicación inversa derecha. Como se ve obtenemos valores diferentes, de hecho la semiaplicación izquierda tiene un valor mayor que la derecha, gráficamente podría ser perfectamente lo representado en la \fref{fig:aplipoincareL-R}.
 	\newpage
 	
-	Como hemos visto para usar \textit{fzero} necesitamos un punto inicial, sin entrar mucho en detalle de resolución numérica, este punto cuanto más cercano a la solución lo eligamos mas fiable y rápida será dicha solución, por ello vamos a representar de manera gráfica las semiaplicaciones izquierda y derecha para un intervalo de puntos $y_0 \in [0\;\;10]$ y veamos si existe un punto de corte que nos indique que para un $y_0$ las imágenes izquierda y derecha son las mismas.
+	Como hemos observado anteriormente, el uso de la función \textit{fzero} requiere un punto inicial, y cuanto más cercano a la solución elijamos este punto, mayor será la velocidad de obtención de la solución y su fiabilidad. Por lo tanto, procederemos a representar de manera gráfica las semiaplicaciones izquierda y derecha en un intervalo de puntos $y_0 \in [0, 10]$ para determinar si existe un punto de intersección que nos indique que, para un valor de $y_0$ dado, las imágenes izquierda y derecha son idénticas.
 	
 	\vspace{1cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_2.m}
 	
-	\vspace{1cm}En este caso usamos \textit{fplot} la cual va evaluando la función continuamente con valores de $y_0$ desde cero hasta diez, se pintará de rojo la semiaplicación izquierda y de azul la semiaplicación derecha 
+	\vspace{1cm}En este caso, empleamos la función \textit{fplot}, que evalúa continuamente la función para diferentes valores de $y_0$, abarcando un rango desde cero hasta diez como hemos definido. La representación gráfica, la cual se presenta en la siguiente página, muestra la semiaplicación izquierda en rojo y la semiaplicación inversa derecha en azul.
 	\newpage
 	
 	\begin{figure}[h]
@@ -1817,8 +1859,8 @@
 	
 	Como vemos en la \fref{fig:ejem2_2} efectivamente se cortan las gráficas, simplemente pinchando más o menos en el punto de corte vemos que las semiaplicaciones izquierda y derecha tendrán la misma imagen $y_1\approx-6.80511$ cuando $y_0\approx3.63636$.
 	\newpage
-	Ya hemos obtenido un punto que estará muy cercano a la solución que buscamos, ahora vamos a calcularla exactamente de manera numérica usando \textit{fsolve}, pero primero hay que escribir correctamente la función en MATLAB
 	
+	Una vez hemos identificado un punto cercano a la solución que buscamos, procederemos a calcularla de manera precisa utilizando \textit{fsolve} en MATLAB. Sin embargo, antes de hacerlo, es importante asegurarse de que la función esté escrita de manera correcta en MATLAB.
 		
 	\vspace{1cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_3.m}
 	
@@ -1830,15 +1872,15 @@
 	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{fsolvepoinca.m}
 	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{semipoincay1y0.m}
 	
-	\vspace{1cm}\noindent Efectivamente como se puede ver en el resultado de ``Ejemplo 3'' los valores que hemos obtenidos son muy parecidos a los que vimos en la \fref{fig:ejem2_2}. Podemos decir entonces, que para el sistema que hemos estudiado tenemos una oscilación periódica que va desde $y_0\simeq3.5912\;$ hasta $\; y_1\simeq-6.7065$.
+	\vspace{1cm}\noindent Efectivamente, como se puede apreciar en los resultados de ``Ejemplo 3'', los valores que hemos obtenido son muy similares a los que se observaron en la \fref{fig:ejem2_2}. Por lo tanto, podemos afirmar que, para el sistema que hemos estudiado, existe una oscilación periódica que se extiende desde aproximadamente $y_0\simeq3.5912$ hasta $y_1\simeq-6.7065$.
 
 	
-	\vspace{0.5cm}Los argumentos de entrada de \textit{fsolvepoinca} son los parámetros de los sistemas de la derecha y de la izquierda $k_L,k_R,a_L,a_R,T_L,T_R,D_L,D_R$ además de un vector de dos componentes $Y$, este vector contiene el \textcolor{red}{punto inicial?}, que como vemos en el código de ``Ejemplo 3'' le hemos asignado el punto de corte que más o menos obtuvimos de la gráfica de la \fref{fig:ejem2_2}.
+	\vspace{0.5cm}Los argumentos de entrada de la función ``fsolvepoinca'' incluyen los parámetros de los sistemas tanto de la derecha como de la izquierda, es decir, $k_L$, $k_R$, $a_L$, $a_R$, $T_L$, $T_R$, $D_L$ y $D_R$. Además, se utiliza un vector de dos componentes $Y$, el cual contiene el \textcolor{red}{punto inicial?}. Como se puede apreciar en el código de ``Ejemplo 3'', asignamos a este vector el punto de corte que aproximadamente obtuvimos a partir de la gráfica en la \fref{fig:ejem2_2}.
 	
 	
-	\vspace{0.5cm}La función \textit{fsolve} del código de ``Ejemplo 3'' buscará el punto $\left(y_0^*\:,\: y_1^*\right)$ en que las curvas de las semiaplicación izquierda y la semiaplicación inversa derecha se cortan.
+	\vspace{0.5cm}La función ``fsolve'' en el código de ``Ejemplo 3'' buscará el punto $\left(y_0^*,\: y_1^*\right)$ en el cual las curvas de la semiaplicación izquierda y la semiaplicación inversa derecha se intersectan.
 	\newpage
-	Finalmente vamos a comprobar con una simulación que el estudio que hemos hecho sea correcto. Para ello hay que reescribir las ecuaciones para introducirlo en el software de MATLAB. Tenemos un sistema a trozos como el \eref{eq:lienardrl}, el cual podemos escribir de la siguiente manera haciendo uso de los valores absolutos. También podríamos haber utilizado la función de MATLAB que define funciones a trozos o la función signo.
+	Por último, para confirmar la validez de nuestro análisis, realizaremos una simulación. Para ello, debemos reformular las ecuaciones de manera que puedan ser implementadas en MATLAB. Tenemos un sistema a trozos similar al \eref{eq:lienardrl}, que podemos expresar de la siguiente manera utilizando valores absolutos. También podríamos haber utilizado la función de MATLAB que define funciones a trozos o la función ``signo''.
 	
 	\begin{equation}
 		\label{eq:clejem}
@@ -1865,16 +1907,18 @@
 	
 	\newpage
 	
-	\chapter{Bifurcaciones}
+	\chapter{Teoría de Bifurcaciones}
 	\label{cap.5}
 	\textcolor{red}{reescribir introduccion hablando de bifurcaciones globales y locales, luego de los dos casos: mover punto de equilibrio y cambiar estabilidad del punto de equilibrio}
-	La forma de que aparezca una oscilación periódica en un sistema dinámico es mediante bifurcaciones. Las bifurcaciones se presentan cuando variamos de manera progresiva uno o varios parámetros del sistema, llamados parámetros de control o de bifurcación. Esta variación puede producir una bifurcación debido a la creación o destrucción de un punto de equilibrio (bifurcación Hopf-Like) o cambiando la estabilidad de algún punto de equilibrio mediante la variación del parámetro de bifurcación, este será nuestro caso. A esta bifurcación producida por la variación de la traza del sistema se le llama \textbf{Foco-Centro-Ciclo Límite}, pero antes de presentarla vamos a hacer el análisis del punto de equilibrio y la estabilidad del sistema que estamos estudiando y veamos el concepto de ciclo-límite para posteriormente ver como generar esta bifurcación en nuestro circuito.
+	La aparición de una oscilación periódica en un sistema dinámico se da a través de lo que se conoce como bifurcaciones. En matemáticas, las bifurcaciones son eventos fundamentales que ocurren cuando variamos de manera gradual uno o varios parámetros del sistema, conocidos como parámetros de control o de bifurcación. Estos cambios pueden desencadenar bifurcaciones de diferentes tipos, incluyendo la creación o destrucción de puntos de equilibrio (bifurcación Hopf-Like) o la alteración de la estabilidad de estos puntos mediante la modificación de los parámetros de bifurcación, que es precisamente lo que abordaremos en este contexto.
+
+	\vspace{0.5cm}\noindent En nuestro caso, nos enfocaremos en una bifurcación denominada "Foco-Centro-Ciclo Límite", la cual es provocada por la variación de la traza del sistema. Sin embargo, antes de presentar esta bifurcación, es crucial llevar a cabo un análisis detallado del punto de equilibrio y la estabilidad del sistema que estamos investigando. Asimismo, exploraremos el concepto de ciclo-límite para luego examinar cómo podemos generar esta bifurcación en nuestro circuito.
 	
 	\newpage
 	
 	\section{Análisis del punto de equilibrio}
 	
-		\vspace{0.5cm}Para hacer el análisis del punto de equilibrio y de la estabilidad primero vovlamos a recordar el sistema que tenemos. Nosotros estamos estudiando el sistema, dinámico, autónomo, lineal y continuo a trozos bizonal en forma canónica de Lienard \eref{eq:lienardrl}.
+		\vspace{0.5cm}Para llevar a cabo el análisis del punto de equilibrio y de su estabilidad, recordemos primero el sistema que estamos estudiando. Se trata de un sistema dinámico, autónomo, lineal y continuo a trozos, específicamente bizonal en su forma canónica de Lienard, tal como se describe en las ecuaciones \eref{eq:lienardrl}.
 		
 		\vspace{0.5cm}Podemos obtener los puntos de equilibrio de cada una de las zonas igualando a cero el sistema, por ejemplo para la zona izquierda tenemos:
 
@@ -1901,24 +1945,18 @@
 			\right. \quad \longrightarrow \left( \overline{x},\overline{y} \right)=\left( \frac{a}{D_L},\frac{aT_L}{D_L} \right) \qquad si \quad D_L\neq0
 		\end{equation}\smallskip
 		
-		Análogamente para la zona derecha tendríamos el punto de equilibrio:
+		\vspace{0.5cm}\noindent Análogamente para la zona derecha tendríamos el punto de equilibrio:
 		
 		\begin{equation}
 			\label{eq:eqpointR}
 			\left( \overline{x},\overline{y} \right)=\left( \frac{a}{D_R},\frac{aT_R}{D_R} \right) \qquad si \quad D_R\neq0
 		\end{equation}\smallskip
 		
-	 	
-		
-		\newpage
-		
-		\vspace{0.5cm} En las siguientes figuras veremos la representación gráfica de las posibles posiciones de los puntos de equilibrio \eref{eq:eqpointL}-\eref{eq:eqpointR} en funcion del signo de $a$
-		
-		\vspace{1cm}
+		\vspace{0.5cm} En las siguientes figuras veremos la representación gráfica de las posibles posiciones de los puntos de equilibrio \eref{eq:eqpointL}-\eref{eq:eqpointR} en función del signo de $a$
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=1\textwidth]{punto.jpg}
+			\includegraphics[width=0.8\textwidth,center]{punto.jpg}
 			\caption{Posición del punto de equilibrio de la zona izquierda dependiendo del signo de $a$.}
 			\label{fig:punto}	
 			\centering
@@ -1927,16 +1965,16 @@
 		\newpage
 		
 		\begin{figure}[h]
-			\includegraphics[width=1\textwidth]{puntoR.jpg}
+			\includegraphics[width=0.8\textwidth,center]{puntoR.jpg}
 			\caption{Posición del punto de equilibrio de la zona derecha dependiendo del signo de $a$.}
 			\label{fig:puntoR}
 		\end{figure}\smallskip
 		
-		\textcolor{red}{Aqui van los puntos de equilibrio virtuales}
+		\textcolor{red}{Aqui hablamos de los puntos de equilibrio virtuales}
 		
 		\newpage
 		
-		\vspace{0.5cm} Una vez obtenido el punto de equilibrio podemos analizar la estabilidad como ya hicimos en \eref{eq:equilibrio}, veámoslo de nuevo con la nueva nomenclatura que hemos elegido. El polinomio característico de la zona izquierda sería:
+		\vspace{0.5cm} Una vez que hemos identificado el punto de equilibrio, podemos proceder a analizar su estabilidad, como ya lo hicimos en \eref{eq:equilibrio}. Ahora, exploremos este análisis nuevamente utilizando la nueva nomenclatura que hemos adoptado. El polinomio característico de la zona izquierda se expresaría de la siguiente manera:
 		
 		\begin{eqnarray}
 			\label{eq:eqizq}
@@ -1947,26 +1985,26 @@
 			\end{aligned}
 		\end{eqnarray}\smallskip
 
-		\vspace{0.5cm}Como se puede comprobar, el polinomio característico \eref{eq:eqizq} es análogo al del sistema \eref{eq:equilibrio} el cual ya analizamos, así que estaremos buscando:
+		\vspace{0.5cm}Como se puede comprobar, el polinomio característico \eref{eq:eqizq} es análogo al del sistema \eref{eq:equilibrio}, el cual ya analizamos, así que estaremos buscando:
 		
-		\begin{itemize}
+		\vspace{0.2cm}\begin{itemize}
 			\item $T_L^2-4\,D_L<0\quad$ por lo que $\quad D_L>0$.
 			\item $T_L<0\quad$ para tener un foco asíntoticamente estable.
 			\item $T_L=0\quad$ para tener un centro.
 			\item $T_L>0\quad$ para tener un foco asíntoticamente inestable.
 		\end{itemize}\smallskip
 		
-		\vspace{0.5cm}Se puede ver que el cambio en la estabilidad del punto de equilibrio lo produce un cambio en la traza, en nuestro caso será la traza izquierda. Este cambio de la traza izquierda en nuestro sistema se traducirá en cambiar fisicamente el valor de algún componente del circuito.
+		\vspace{1cm}Es evidente que un cambio en la estabilidad del punto de equilibrio está directamente relacionado con una modificación en la traza, particularmente en nuestro caso, se refiere a la traza en la zona izquierda. Este ajuste en la traza de nuestro sistema se traducirá en una modificación física del valor de uno o varios componentes del circuito.
+		
+		\vspace{1cm}\section{Ciclo Límite}
+		
+		\vspace{0.5cm}El siguiente concepto crucial que debemos conocer es el de Ciclo-Límite. Un Ciclo-Límite es una solución periódica del sistema que se encuentra aislada, ya sea de manera local o global, del conjunto de otras soluciones periódicas. Al igual que los puntos de equilibrio pueden presentar diferentes niveles de estabilidad, existen varias posibles categorías de estabilidad para un ciclo límite.\\[0.5cm]
 		
 		\newpage
 		
-		\section{Ciclo-Límite}
+		\noindent{\Large\textbullet\quad Ciclo-Límite Asintóticamente Estable}\\[0.5cm]
 		
-		\vspace{0.5cm}El siguiente concepto que debemos conocer es el de \textbf{Ciclo-Límite}. Un Ciclo-Límite es una solución periódica del sistema la cual está aislada, demanera local o global, del resto de soluciones periódicas. Del mismo modo que los puntos de equilibrio pueden tener diferentes estabilidades, hay tres posibles estabilidades para un ciclo límite.\\[0.5cm]
-		
-		{\Large\textbullet\quad Ciclo-Límite Asintóticamente Estable}\\[0.5cm]
-		
-		No importa si elegimos las condiciones iniciales dentro o fuera del Ciclo-Límite, las curvas solución tienden al Ciclo-Límite.
+		Independientemente de si seleccionamos las condiciones iniciales dentro o fuera del Ciclo-Límite, las trayectorias de las soluciones convergen hacia dicho Ciclo-Límite.
 		
 		\begin{figure}[h]
 			\centering
@@ -1974,12 +2012,10 @@
 			\caption{Ciclo-Límite Asintóticamente Estable con sentido horario de giro}
 			\label{fig:cle}
 		\end{figure}\smallskip
-
-	\newpage
 		
-	{\Large\textbullet\quad Ciclo-Límite Asintóticamente Inestable}\\[0.5cm]
+	\vspace{1cm}\noindent{\Large\textbullet\quad Ciclo-Límite Asintóticamente Inestable}\\[0.5cm]
 	
-	Si elegimos las condiciones iniciales dentro del Ciclo-Límite, las curvas solución tienden a cero. Si elegimos las condiciones iniciales fuera del Ciclo-Límite, las curvas solución tienden a infinito.
+	Si optamos por condiciones iniciales dentro del Ciclo-Límite, las trayectorias de las soluciones convergen hacia cero. En cambio, si seleccionamos condiciones iniciales fuera del Ciclo-Límite, las trayectorias de las soluciones tienden hacia el infinito.
 	
 	\begin{figure}[h]
 		\centering
@@ -1988,9 +2024,11 @@
 		\label{fig:cli}
 	\end{figure}\smallskip
 	
-	\vspace{0.5cm}{\Large\textbullet\quad Ciclo-Límite Semi Asintóticamente Estable}\\[0.5cm]
+	\newpage
 	
-	Si elegimos las condiciones iniciales dentro del Ciclo-Límite, las curvas solución tienden a cero. Si elegimos las condiciones iniciales fuera del Ciclo-Límite, las curvas solución tienden al Ciclo-Límite.
+	\vspace{0.5cm}\noindent{\Large\textbullet\quad Ciclo-Límite Semi Asintóticamente Estable}\\[0.5cm]
+	
+	Si elegimos las condiciones iniciales dentro del Ciclo-Límite, las trayectorias de las soluciones convergen hacia cero. En contraste, si elegimos condiciones iniciales fuera del Ciclo-Límite, las trayectorias de las soluciones se dirigen hacia el Ciclo-Límite.
 	
 	\begin{figure}[h]
 		\centering
@@ -1998,15 +2036,14 @@
 		\caption{Ciclo-Límite Semi Asintóticamente Estable con sentido horario de giro}
 		\label{fig:clpe}
 	\end{figure}\smallskip
+	
+	\vspace{0.5cm}\noindent El Ciclo-Límite de mayor interés para nosotros es el estable, dado que, sin importar dónde seleccionemos las condiciones iniciales, siempre convergeremos hacia la oscilación periódica. Además, en caso de que nuestro sistema sufra alguna perturbación que lo aleje de la oscilación periódica, este tiende a regresar y restablecer dicha oscilación.
+	
 	\newpage
 	
-	El Ciclo-Límite que más nos interesa es el estable, ya que sin importar donde eligamos las condiciones iniciales siempre tenderemos a la oscilación periódica, además, si nuestro sistema sufre alguna perturbación que lo saque de la oscilación periódica siempre tenderá a reconducirse nuevamente hacia ella.
+	\section{Bifurcación Foco-Centro-Ciclo Límite y su\\ cálculo mediante desarrollo en series}
 	
-	\newpage
-	
-	\section{Bifurcación Foco-Centro-Ciclo Límite y su\\ cálculo mediante desarrollo en series.}
-	
-	\vspace{0.5cm}El estudio de los Ciclos-Límites historicamente se ha hecho de manera particular para cada sistema, primero hay que estudiar el punto de equilibrio y su estabilidad, hacer el análisis para saber si existe oscilación periódica y finalmente comprobar que dicha oscilación periódica esté aislada, lo cual no es nada sencillo. En nuestro caso no hará falta que hagamos este tipo de estudio gracias a que hemos sido capaces de escribir nuestro sistema \eref{eq:sistema1} de la manera \eref{eq:sis2ec} y este último en la forma \eref{eq:lienardrl} por lo que ya tenemos trabajos donde se hace este análisis para sistemas de este tipo y se corrobora la existencia de la bifurcación Foco-Centro-Ciclo Límite en los mismos, ver: \cite{ponce}, el Capítulo que inicia en la página 335 de \cite{ciclolimite} y las Secciones 8.1 y 3.6 de \cite{amarillo}, en concreto de este último el Teorema 3.27. En los anteriores trabajos se hace un análisis tradicional del problema, nosotros para ello haremos uso de la Caracterización integral que ya hemos visto, pero vamos a utilizar algunos conceptos que se ven en dichos trabajos, conceptos como la elección de un parámetro de bifurcación, puntos de equilibrios virtuales y requisitos que deben tener los parámetros del sistema. Cumpliendo esta serie de requisitos en los parámetros del sistema, los cuales veremos mas adelante, podemos conseguir que se produzca el cambio de estabilidiad Foco Asintóticamente Estable-Centro-Foco Asintóticamente Inestable en el punto de equilibrio del sistema y por ello obteniendo el Ciclo-Límite (ya que se produce la bifurcación Foco-Centro-Ciclo Límite), que será nuestra oscilación periódica.
+	\vspace{0.5cm}El estudio de los Ciclos-Límites ha sido históricamente realizado de manera específica para cada sistema. Por lo general, este proceso implica investigar el punto de equilibrio y su estabilidad, analizar si existe una oscilación periódica y finalmente verificar que esta oscilación periódica esté aislada, lo cual puede ser un desafío. En nuestro caso, no es necesario realizar este tipo de análisis exhaustivo debido a que hemos sido capaces de reformular nuestro sistema \eref{eq:sistema1} en la forma \eref{eq:sis2ec} y, posteriormente, en la forma \eref{eq:lienardrl}. Existen trabajos previos que han abordado el análisis de sistemas similares y han confirmado la existencia de la bifurcación Foco-Centro-Ciclo Límite en tales sistemas. Estos trabajos se pueden consultar en las referencias \cite{ponce}, el Capítulo que comienza en la página 335 de \cite{ciclolimite} y las Secciones 8.1 y 3.6 de \cite{amarillo}, específicamente el Teorema 3.27 de este último. Aunque en esos trabajos se ha realizado un análisis convencional del problema, nosotros aplicaremos la Caracterización Integral que hemos explorado previamente. Además, incorporaremos algunos conceptos que se discuten en esos trabajos, como la selección de un parámetro de bifurcación, puntos de equilibrio virtuales y los requisitos que los parámetros del sistema deben cumplir. Mediante el cumplimiento de estos requisitos en los parámetros del sistema, los cuales se detallarán más adelante, podremos lograr un cambio en la estabilidad del punto de equilibrio, pasando de Foco Asintóticamente Estable a Centro y, finalmente, a Foco Asintóticamente Inestable. Este proceso nos llevará a obtener el Ciclo-Límite, lo que representa nuestra oscilación periódica.
 	
 	\newpage
 	
@@ -2026,7 +2063,7 @@
 				\item Si hay punto de equilibrio y es virtual $\rightarrow D_R\neq0$ 
 			\end{itemize}
 
-			\item Nuestro parámetro de bifurcación será $T_L$, por ello lo haremos variar de negativo a positivo haciendolo pasar por cero, $T_L<0 \rightarrow T_L=0 \rightarrow T_L>0$ y siempre para un valor pequeño de $\mid T_L \mid$. Lo hacemos de esta manera para que el Ciclo-Límite que obtengamos sea Estable y no Inestable
+			\item Nuestro parámetro de bifurcación será $T_L$, por ello lo haremos variar de negativo a positivo haciendolo pasar por cero, $T_L<0 \rightarrow T_L=0 \rightarrow T_L>0$ y siempre para un valor pequeño de $\mid T_L \mid$. Lo hacemos de esta manera para que el Ciclo-Límite que obtengamos sea Estable.
 			\item Tenemos que $T_LT_R<0$ con $T_L>0$, por ello  $T_R<0$.
 		\end{itemize}
 		
@@ -2037,7 +2074,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{foco3.jpg}
+		\includegraphics[width=1.1\textwidth,center]{foco3.jpg}
 		\caption{Foco Asintóticamente Estable con sentido antihorario de giro y con la Sección de Poincaré en $x=-1$}
 		\label{fig:foco3}
 	\end{figure}\smallskip
@@ -2046,7 +2083,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{centro2.jpg}
+		\includegraphics[width=1.1\textwidth,center]{centro2.jpg}
 		\caption{Centro con sentido con sentido antihorario de giro y con la Sección de Poincaré en $x=-1$}
 		\label{fig:centro2}
 	\end{figure}\smallskip
@@ -2055,7 +2092,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{ciclolimite3.jpg}
+		\includegraphics[width=1.1\textwidth,center]{ciclolimite3.jpg}
 		\caption{Ciclo-Límite Asintóticamente Estable con sentido antihorario de giro y con la Sección de Poincaré en $x=-1$}
 		\label{fig:ciclolimite3}
 	\end{figure}\smallskip
@@ -2079,7 +2116,7 @@
 		
 	\end{theorem}
 	
-	\vspace{0.5cm}Ahora veremos la demostración del Teorema \ref{teo:5.1} \textcolor{red}{reescribir, por que realmente no vemos la demostracion completa paso a paso}
+	\vspace{0.5cm}\noindent Ahora veremos la demostración del Teorema \ref{teo:5.1}.
 	\begin{proof}[\textbf{Demostración}]
 		\label{dem5.1}
 	Supongamos que nuestro sistema \eref{eq:lienardrl} posee una órbita periódica como la de la \fref{fig:aplipoincareL-Rcerrado}, queremos calcular los puntos $y_0, y_1$ que cierren dicha órbita, para ello haremos uso de la semiaplicación Izquierda y Derecha, \eref{eq:caracl}-\eref{eq:caracr}. Si la órbita es cerrada  y continua podemos formar el sistema \textcolor{red}{enfatizar en lo de la continuidad, cuando hablo de que todo este estudio es para un desarrollo local? al final cuando ya haya usado los desarrollos en series y el teorema de la funcion implicita?}
@@ -2097,7 +2134,7 @@
 			$}
 	\end{equation}\smallskip
 	
-	Recordemos del Teorema \ref{teo:5.1} que son son constantes en nuestro sistema $D_L,D_R,a,k_L,k_R,T_R$, con $a<0$ por lo que $k_L$ y $k_R$ serían $k_L=2$ y $k_R=0$. Luego, en \eref{eq:cierre} tenemos
+	\vspace{0.5cm}\noindent Recordemos del Teorema \ref{teo:5.1} que son son constantes en nuestro sistema $D_L,D_R,a,k_L,k_R,T_R$, con $a<0$ por lo que $k_L$ y $k_R$ serían $k_L=2$ y $k_R=0$. Luego, en \eref{eq:cierre} tenemos
 	
 	\begin{equation}
 		\label{eq:cierre2}
@@ -2124,6 +2161,8 @@
 			\right. 
 			$}
 	\end{equation}\smallskip
+	
+	\newpage
 	
 	\vspace{0.5cm}\noindent En \eref{eq:cierre3} tenemos un sistema de 2 ecuaciones con 3 incógnitas, por lo que el objetivo será llegar a un sistema de 2 ecuaciones con dos incógnitas, $y_0$ y $T_L$. Para ello primero definiremos $y_1=f_2(y_0)$ y luego $y_0=f_1(T_L)$. Parte de este procedimiento se realiza en \cite{properties}, debido a su extensión y complejidad queda fuera de los márgenes de este trabajo, por ello vamos a exponer los resultados directamente 
 	
@@ -2234,9 +2273,9 @@
 	
 	\vspace{0.5cm} Seguidamente se reordenan los coeficientes del anterior sistema para poder trabajar mas comodamente, llegando al sistema tridimendional \eref{eq:sistema}, con la función $W(z)$ \eref{eq:wz}.
 	
-	\vspace{0.5cm} A continuación, gracias a las superficies invariantes \eref{eq:sh} existentes en el sistema, podemos pasar de estudiar el sistema tridimensional \eref{eq:sistema} a uno equivalente bidimesional trizonal en forma canónica de Lienard \eref{eq:sis2ec}, con las rectas de separación en $x=\pm1$.
+	\vspace{0.5cm} A continuación, gracias a las superficies invariantes \eref{eq:sh} existentes en el sistema, podemos pasar de estudiar el sistema tridimensional \eref{eq:sistema} a uno equivalente bidimesional trizonal en forma canónica de Lienard \eref{eq:sis2ec}, con las rectas de separación en $\tilde{x}=\pm1$.
 	
-	\vspace{0.5cm} De este último sistema trizonal \eref{eq:sis2ec} nos fiajaremos únicamente en dos de sus zonas, ya que la oscilación que se está tratando de obtener es bizonal, por lo que nos fijaremos por ejemplo en las zonas a la izquierda y a la derecha de la recta de separación $x=-1$.
+	\vspace{0.5cm} De este último sistema trizonal \eref{eq:sis2ec} nos fiajaremos únicamente en dos de sus zonas, ya que la oscilación que se está tratando de obtener es bizonal, por lo que nos fijaremos por ejemplo en las zonas a la izquierda y a la derecha de la recta de separación $\tilde{x}=-1$.
 	
 	\begin{equation}
 		\label{eq:sisbiz}
@@ -2471,6 +2510,7 @@
 	A modo de resumen, estos serán los valores elegidos para los parámetros de nuestro sistema \eref{eq:cb3}:
 	
 	\begin{itemize}
+		\label{condiconesh}
 		\item $a=0.2$
 		\item $b=0.01$
 		\item $h=-1$
@@ -2592,42 +2632,193 @@
 	
 	\vspace{1cm}\noindent Hemos obtenido un periodo de $T_P=6.3797$, realmente parecido al obtenido en ``Ejemplo 4'' que era $T_P=6.4072$.
 	
-    \vspace{1cm}En las siguientes páginas veremos algunas gráficas interesantes que podemos obtener con los resultados de ``Ejemplo 6''
+    \vspace{1cm}En las siguientes páginas veremos algunas gráficas interesantes que podemos generar con los resultados obtenidos de ``Ejemplo 6''.
     
     \newpage
     
     	\begin{figure}[h]
     	\centering
-    	\includegraphics[width=1\textwidth]{g1ejem6.eps}
+    	\includegraphics[width=1.2\textwidth,center]{g1ejem6.eps}
     	\caption{Comparación de la representación de la matriz \textbf{xy} de ``Ejemplo 6'' con el cambio de variable aplicado y no aplicado. Los puntos representados corresponden a las dos últimas componentes de \textbf{xE}, nuevamente con cambio de variable aplicado y no aplicado.}
     	\label{fig:g1ejem6}
     \end{figure}\smallskip
+    
+    \vspace{0.5cm}\noindent Se han utilizado las dos últimas componentes de \textbf{xE} en la figura anterior ya que para ese valor de tiempo la órbita solución ya ha alcanzado por completo el Ciclo Límite.
     
     \newpage
     
     \begin{figure}[h]
     	\centering
-    	\includegraphics[width=1\textwidth]{g2ejem6.eps}
+    	\includegraphics[width=1.2\textwidth,center]{g2ejem6.eps}
     	\caption{Comparación de la representación de las componentes de la matriz \textbf{xy} de ``Ejemplo 6'' con respecto al tiempo de estudio \textbf{t} con el cambio de variable aplicado y no aplicado.}
     	\label{fig:g2ejem6}
     \end{figure}\smallskip
-	
 	
 	\newpage
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{g3ejem6.eps}
-		\caption{Comparación de las gráficas de \textbf{y (xy(2))} solución frente al tiempo de estudio \textit{\textbf{t}} y los valores de \textbf{y (xE(2))} para los que se produce el evento de corte con la recta $x=-1$ frente a los instantes de tiempo \textbf{tE} en que se produce el evento. Esta gráfica es muy interesante ya que se ven muy claramente cuales son los puntos de corte $y_0$ e $y_1$ y como medir el periodo de la oscilación}
+		\caption{Comparación de las gráficas de \textbf{y (xy(2))} solución frente al tiempo de estudio \textit{\textbf{t}} y los valores de \textbf{y (xE(2))} para los que se produce el evento de corte con la recta $x=-1$ frente a los instantes de tiempo \textbf{tE} en que se produce el evento.}
 		\label{fig:g3ejem6}
 	\end{figure}\smallskip
 	
+	\vspace{0.5cm}\noindent La gráfica \fref{fig:g3ejem6} resulta especialmente interesante, ya que proporciona una visualización clara de los puntos de intersección $y_0$ e $y_1$, así como de la manera en que se pueden medir tanto el periodo como la amplitud de la oscilación.
+	
+	\vspace{0.5cm}\noindent Las gráficas previamente presentadas se generaron utilizando ``Graficas Ejemplo 6", cuyo código se encuentra detallado en la siguiente página
+	
+	\newpage
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Graficas_Ejemplo_6.m}
+	
+	\newpage
+	
+	El próximo y último paso de este trabajo consistirá en regresar a las ecuaciones originales del circuito \eref{eq:sistema} y verificar de manera efectiva la existencia de dicho Ciclo Límite, con una condición inicial $(x_0,y_0,z_0)$. Para lograrlo, deberemos revertir todas los cambios de variable que hemos aplicado a lo largo del estudio. 
+	
+	\vspace{0.5cm}Si examinamos el sistema \eref{eq:cb3}, es evidente que, dado que el Ciclo Límite es Estable, si seleccionamos el punto inicial $(X_0, Y_0) = (0, 0)$, la solución del sistema tenderá hacia el Ciclo Límite cuando pase el suficiente tiempo, como se muestra en la \fref{fig:g1ejem6}. Por esta razón, hemos optado por tomar el punto $(X_0, Y_0) = (0, 0)$ como punto de partida para el proceso de deshacer las transformaciones y determinar así las condiciones iniciales adecuadas para el circuito.
+	
+	\vspace{0.5cm}\noindent El siguiente paso es deshacer los cambios de variable \eref{eq:cambioo1} y \eref{eq:cambioo2}:
+	
+	\begin{equation}
+		\label{eq:desh1}
+		\begin{gathered}
+			(x_0,y_0)=\left( X_0-1,Y_0-t_c \right) = (0-1,0-t_C) \\[5mm]
+			(x_0,y_0)=(-1,-t_C)
+		\end{gathered}
+	\end{equation}\smallskip
+	
+	De hecho, en este trabajo hacemos referencia a $\tilde{x}$ y $\tilde{y}$ para denotar el sistema bidimensional trizonal correspondiente \eref{eq:sis2ec}. Asimismo, utilizamos $x$ e $y$ para describir el mismo sistema, pero enfocándonos exclusivamente en las regiones derecha e izquierda de la línea de separación $\tilde{x}=-1$, como se observa en el sistema \eref{eq:sisbiz}. De esta manera, podemos identificar directamente el punto:	
+	
+	\begin{equation}
+		\label{eq:desh2}
+		(\tilde{x_0},\tilde{y_0}) = (-1,-t_C)
+	\end{equation}\smallskip
+	
+	En última instancia, debemos proceder a deshacer las transformaciones de variable que se llevaron a cabo para pasar del sistema tridimensional \eref{eq:sistema} al sistema bidimensional \eref{eq:sis2ec}. Esta tarea ya ha sido preparada en las ecuaciones \eref{eq:solsis}, de manera que ahora solo debemos realizar la sustitución de los valores $\tilde{x_0}$, $\tilde{y_0}$ y $h_0$, teniendo en cuenta que previamente se estableció $h = -1$. De este modo, obtendremos:
+	
+\begin{subequations}
+	\label{eq:deshh}
+	\begin{align}
+		z_0&=\tilde{x_0}=-1 \label{eq:desh3} \\[5mm]
+		y_0&= \frac{\alpha_1\tilde{x_0}+\frac{h_0}{a_{22}}-\tilde{y_0}}{\alpha_3} = \frac{\alpha_1(-1)+\frac{(-1)}{a_{22}}-(-t_C)}{\alpha_3} = \frac{-\alpha_1-\frac{1}{a_{22}}+t_C}{\alpha_3} \label{eq:desh4} \\[5mm]
+		x_0&=\frac{a_{12}}{a_{22}}y_0+a_{11}q(\tilde{x_0})-\frac{a_{12}a_{21}}{a_{22}}\tilde{x_0}-\frac{h_0}{a_{22}}\notag\\[3mm] &=\frac{a_{12}}{a_{22}}  \left( \frac{-\alpha_1-\frac{1}{a_{22}}+t_C}{\alpha_3} \right)+a_{11}q(-1)-\frac{a_{12}a_{21}}{a_{22}}(-1)-\frac{-1}{a_{22}}\notag\\[3mm]
+		&=\frac{a_{12}}{a_{22}}  \left( \frac{-\alpha_1-\frac{1}{a_{22}}+t_C}{\alpha_3} \right)+a_{11}q(-1)+\frac{a_{12}a_{21}}{a_{22}}+\frac{1}{a_{22}} \label{eq:desh5}
+	\end{align}
+\end{subequations}
+
+\newpage
+
+	\noindent Los valores anteriores se calcularán haciendo uso del siguiente código
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Condiciones_Iniciales.m}
+	
+	\vspace{1cm}\lstinputlisting[style=Matlab-bw]{condicionesiniciales.m}
+	
+	\newpage
+	
+	\noindent Recordemos que las variables de estado son:
+	
+	\begin{itemize}
+		\item $x(t)$ es la tensión (\bm{$v_1$}) en el condensador y el memristor.
+		\item $y(t)$ es la intensidad (\bm{$i_{LR}$}) en la resistencia y la bobina.
+		\item $z(t)$ es el flujo (\bm{$\varphi$}) en el memristor.
+	\end{itemize}
+	
+	\vspace{0.5cm}\noindent Por lo que aplicando una tensión inicial $v_1=-1.7764\cdotp 10^{-15} \simeq 0 (\text{v})$ y una intensidad inicial $i_{LR}=-0.02=-20(\text{mA})$ aparecerá el ciclo limite estable en el circuito. Vamos a comprobarlo haciendo uso de \textit{ode45} como hicimos en ``Ejemplo 6'' anteriormente.
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Ejemplo_6_Tridimensional.m}
+	
+	\vspace{0.5cm}\noindent Función usada en ``Ejemplo 6 Tridimensional'':
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{sistematridi.m}
+	
+	\newpage
+	
+	\noindent Utilizando el código ``Ejemplo 6 Tridimensional'', obtendremos los valores $x$, $y$, $z$ como resultado del sistema \eref{eq:sistema}. Además, variaremos el valor de $R$ en la función "sistematridi" para que con los siguientes tres valores $R=0.7$, $R=1$ y $R=1.3$, lo que nos permitirá visualizar la bifurcación Foco-Centro-Ciclo Límite, tal como se ha explicado previamente. A continuación, presentaremos el código "Bifurcacion Planos 1", el cual se utiliza para representar en 3D los resultados obtenidos.
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Bifurcacion_Planos_1.m}
+	
+	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{fococir.eps}
+		\caption{Gráfica resultado de ``Bifurcacion Planos 1'' para un valor de $R=0.7$ en ``sistematridi''.}
+		\label{fig:fococircuito}
+	\end{figure}\smallskip
+	
+	\vspace{0.5cm}\noindent En la figura anterior, se aprecia la configuración de Foco Asintóticamente Estable para un valor de $R<1$ en el sistema \eref{eq:sistema}, utilizando las condiciones iniciales previamente calculadas.
+	
+	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{centrocir.eps}
+		\caption{Gráfica resultado de ``Bifurcacion Planos 1'' para un valor de $R=1$ en ``sistematridi''.}
+		\label{fig:centrocircuito}
+	\end{figure}\smallskip
+	
+		\vspace{0.5cm}\noindent En la figura anterior, se observa la configuración de un Centro para un valor de $R=1$ en el sistema \eref{eq:sistema}, utilizando las condiciones iniciales previamente calculadas. Se puede notar que la última órbita es tangente a la superficie de separación, y será precisamente de esta órbita de donde surgirá el Ciclo Límite.
+	
+	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{ciclocir.eps}
+		\caption{Gráfica resultado de ``Bifurcacion Planos 1'' para un valor de $R=1.3$ en ``sistematridi''.}
+		\label{fig:ciclocircuito}
+	\end{figure}\smallskip
+	
+		\vspace{0.5cm}\noindent En la figura anterior, se representa la configuración de un Ciclo Límite Asintóticamente Estable para un valor de $R>1$ en el sistema \eref{eq:sistema}, utilizando las condiciones iniciales previamente calculadas. Se puede observar cómo el Ciclo Límite efectivamente se introduce en la zona adyacente levemente.
+		
+		\newpage
+		
+	Aunque en la \fref{fig:ciclocircuito} no sea muy evidente, las dos partes del Ciclo Límite, tanto a la izquierda como a la derecha del plano de separación, están contenidas en planos distintos. Hemos demostrado previamente que la dinámica del sistema se reduce a un sistema bidimensional, para confirmar esto, basta con resolver la ecuación \eref{eq:hecuation} para $z$ (sustituyendo \eref{eq:qf}):
+		
+		\begin{subequations}
+			\label{eq:funcz}
+			\begin{align}
+				\text{Para}\; z<-1 \quad \rightarrow \quad h_0&=-a_{22}x+a_{12}y-a_{12}a_{21}z_1+a_{11}a_{22}(b(z_1+1)-a)\notag\\[3mm]
+				z_1&=-\frac{h_0+a_{22}x-a_{12}y+a_{11}a_{22}(a-b)}{a_{12}a_{21}-a_{11}a_{22}b} \label{eq:z1} \\[5mm]
+				\text{Para}\; z>-1 \quad \rightarrow \quad h_0&=-a_{22}x+a_{12}y-a_{12}a_{21}z_2+a_{11}a_{22}(az_2)\notag\\[3mm]
+				z_2&=-\frac{h_0+a_{22}x-a_{12}y}{a_{12}a_{21}-a_{11}a_{22}a} \label{eq:z2}
+			\end{align}
+		\end{subequations}
+		
+	\vspace{0.5cm}A continuación, presentaremos el código utilizado para representar ambos planos, lo que nos permitirá observar con mayor claridad que, efectivamente, no son el mismo.
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Bifurcacion_Planos_2.m}
+	
+	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{planoscircuito.eps}
+		\caption{Gráfica resultado de ``Bifurcacion Planos 2''.}
+		\label{fig:planoscircuito}
+	\end{figure}\smallskip
+	
+	\vspace{0.5cm}\noindent Como se puede comprobar en la figura anterior, en el plano rojo por debajo de $z=-1$ se encuentra la porción del Ciclo Límite correspondiente a $z<-1$, mientras que en el plano verde por encima de $z=-1$ se halla la pequeña parte del Ciclo Límite que se extiende hacia la siguiente zona. Por último, presentaremos una figura que compara las tres figuras anteriores (\fref{fig:fococircuito}, \fref{fig:centrocircuito}, \fref{fig:ciclocircuito}) junto con los planos de la \fref{fig:planoscircuito}. Para ello, utilizaremos ``Bifurcacion Planos 3'' para generar las figuras (que se guardarán manualmente con los nombres `foco25.fig', `centro25.fig' y `ciclo25.fig'), y posteriormente las combinaremos utilizando ``Bifurcacion Combinar Planos''.
+	\newpage
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Bifurcacion_Planos_3.m}
+	
+	\newpage
+	
+	\vspace{0.5cm}\lstinputlisting[style=Matlab-editor]{Bifurcacion_Combinar_Planos.m}
+	
+	\newpage
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1.3\textwidth,center]{3planoscircuito.eps}
+		\caption{Gráfica resultado de ``Bifurcacion Combinar Planos''.}
+		\label{fig:3planoscircuito}
+	\end{figure}\smallskip
+	
+	\newpage
+	
 	\chapter*{Conclusiones}
 	Contenido del capítulo de conclusiones.
-	\vspace{5cm}
-	\begin{equation}
-		Dopado \quad No 
-	\end{equation}
 	
 	\newpage
 	
@@ -2671,6 +2862,8 @@
 		\bibitem{amarillo} Ponce, Enrique \& Ros, Javier \& Vela, Elísabet. (2022). Bifurcations in Continuous Piecewise Linear Differential Systems: Applications to Low-Dimensional Electronic Oscillators. 10.1007/978-3-031-21135-5. 
 		
 		\bibitem{pv} Bachmann, K.-.-H. (1977), Henrici, P., Applied and Computational Complex Analysis, Bd. I, 682 S., New York-London-Sydney-Toronto. John Wiley \& sons. 1974. £ 13,50 .. Z. angew. Math. Mech., 57: 352-352. https://doi.org/10.1002/zamm.19770570622
+		
+		\bibitem{biolek} Biolek, Zdenek \& Biolek, Dalibor \& V, Biolkova. (2009). SPICE Model of Memristor with Nonlinear Dopant Drift. Radioengineering. 18. 
 		
 	\end{thebibliography}
 	

@@ -3,15 +3,15 @@
 \contentsline {chapter}{\numberline {2}Descripción del Circuito}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Resistencia negativa}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Memristor}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Variables de estado}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Superficies invariantes}{15}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Sistemas Dinámicos Continuos}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sistemas lineales planos}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{27}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Caracterización integral de la semiaplicación de Poincare}{38}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Bifurcaciones}{52}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Análisis del punto de equilibrio}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ciclo-Límite}{57}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Bifurcación Foco-Centro-Ciclo Límite y su\\ cálculo mediante desarrollo en series.}{60}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{68}{chapter.6}%
+\contentsline {section}{\numberline {2.3}Variables de estado}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Superficies invariantes}{17}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Sistemas Dinámicos Continuos}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sistemas lineales planos}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{28}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Caracterización integral de la semiaplicación de Poincaré}{39}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Teoría de Bifurcaciones}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análisis del punto de equilibrio}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ciclo Límite}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Bifurcación Foco-Centro-Ciclo Límite y su\\ cálculo mediante desarrollo en series}{59}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{67}{chapter.6}%
