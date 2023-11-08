@@ -1,15 +1,19 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}Introducción}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Descripción del Circuito}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Resistencia negativa}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Memristor}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Variables de estado}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Superficies invariantes}{9}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Sistemas Lineales a Trozos Bizonales}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Sistemas lineales planos}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Sistemas lineales a trozos bizonales}{12}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Semiaplicaciones de Poincaré}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Bifurcación Foco-Centro-Ciclo Límite}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Oscilación Peródica en el circuito}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}TÍTULO CAPÍTULO 7}{19}{chapter.7}%
-\contentsline {chapter}{\numberline {8}TÍTULO CAPÍTULO 8}{21}{chapter.8}%
+\contentsline {chapter}{Introducción}{3}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Descripción del Circuito}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Resistencia negativa}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Memristor}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Variables de estado}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Superficies invariantes}{14}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Sistemas Dinámicos Continuos}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sistemas lineales planos}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sistemas lineales a trozos bizonales}{24}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Semiaplicaciones de Poincaré}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Caracterización integral de la semiaplicación de Poincaré}{33}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Bifurcación Foco-Centro-Ciclo Límite}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Análisis del punto de equilibrio}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ciclo Límite}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Bifurcación foco-centro-ciclo límite y su determinación a partir de la carterización integral de la semiaplicación de Poincaré}{52}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Oscilación Peródica estable en el circuito}{60}{chapter.5}%
+\contentsline {chapter}{Conclusiones}{95}{chapter*.48}%
+\contentsline {chapter}{Bibliografía}{96}{chapter*.49}%
