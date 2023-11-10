@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  9 NOV 2023 00:24
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  3 OCT 2023 12:00
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.1)  9 NOV 2023 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,11 +480,8 @@ Package: empheq 2017/03/31 v2.15 Emphasizing equations
 )
 \c@theorem=\count316
 \c@definicion=\count317
-<<<<<<< HEAD
 \c@proposicion=\count318
 \c@comentario=\count319
-=======
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
@@ -505,13 +498,8 @@ Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@hangindent=\dimen272
 Package caption Info: Standard document class detected.
 )
-<<<<<<< HEAD
 \c@caption@flags=\count320
 \c@continuedfloat=\count321
-=======
-\c@caption@flags=\count318
-\c@continuedfloat=\count319
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package caption Info: listings package is loaded.
 )
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
@@ -562,7 +550,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-<<<<<<< HEAD
 \c@section@level=\count322
 )
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
@@ -572,17 +559,6 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \@linkdim=\dimen273
 \Hy@linkcounter=\count324
 \Hy@pagecounter=\count325
-=======
-\c@section@level=\count320
-)
-(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count321
-)
-\@linkdim=\dimen273
-\Hy@linkcounter=\count322
-\Hy@pagecounter=\count323
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
@@ -592,11 +568,7 @@ Now handling font encoding PD1 ...
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-<<<<<<< HEAD
 \Hy@SavedSpaceFactor=\count326
-=======
-\Hy@SavedSpaceFactor=\count324
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
@@ -610,11 +582,7 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-<<<<<<< HEAD
 \c@Hy@tempcnt=\count327
-=======
-\c@Hy@tempcnt=\count325
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
@@ -630,11 +598,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-<<<<<<< HEAD
 \Fld@menulength=\count328
-=======
-\Fld@menulength=\count326
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 \Field@Width=\dimen275
 \Fld@charsize=\dimen276
 Package hyperref Info: Hyper figures OFF on input line 6051.
@@ -648,15 +612,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-<<<<<<< HEAD
 \Hy@abspage=\count329
 \c@Item=\count330
 \c@Hfootnote=\count331
-=======
-\Hy@abspage=\count327
-\c@Item=\count328
-\c@Hfootnote=\count329
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -668,13 +626,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-<<<<<<< HEAD
 \Fld@listcount=\count332
 \c@bookmark@seq@number=\count333
-=======
-\Fld@listcount=\count330
-\c@bookmark@seq@number=\count331
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilechec
 k.sty
@@ -689,11 +642,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip75
 )
-<<<<<<< HEAD
 Package hyperref Info: Option `colorlinks' set `true' on input line 42.
-=======
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
  (C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
@@ -734,13 +683,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip102
 \cftfigindent=\skip103
 \cftfignumwidth=\skip104
-<<<<<<< HEAD
 \c@lofdepth=\count334
 \c@lotdepth=\count335
-=======
-\c@lofdepth=\count332
-\c@lotdepth=\count333
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 \cftbeforelottitleskip=\skip105
 \cftafterlottitleskip=\skip106
 \cftbeforetabskip=\skip107
@@ -765,7 +709,6 @@ LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `main.aux'.
 
-<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
@@ -798,40 +741,6 @@ LaTeX Info: Redefining \% on input line 72.
 \MPscratchDim=\dimen283
 \MPnumerator=\count340
 \makeMPintoPDFobject=\count341
-=======
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen282
-\scratchbox=\box109
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen283
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 \everyMPtoPDFconversion=\toks38
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -875,43 +784,26 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<<<<<<< HEAD
 \c@lstlisting=\count342
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 72.
-=======
-\c@lstlisting=\count340
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 71.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<<<<<<< HEAD
 LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
-=======
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-<<<<<<< HEAD
 LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
-=======
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<<<<<<< HEAD
 <b.png, id=75, 657.45625pt x 602.25pt>
 File: b.png Graphic file (type png)
 <use b.png>
@@ -921,17 +813,6 @@ Package pdftex.def Info: b.png  used on input line 77.
 File: a.png Graphic file (type png)
 <use a.png>
 Package pdftex.def Info: a.png  used on input line 86.
-=======
-<b.png, id=67, 657.45625pt x 602.25pt>
-File: b.png Graphic file (type png)
-<use b.png>
-Package pdftex.def Info: b.png  used on input line 76.
-(pdftex.def)             Requested size: 85.35826pt x 78.18497pt.
-<a.png, id=69, 208.1376pt x 190.7928pt>
-File: a.png Graphic file (type png)
-<use a.png>
-Package pdftex.def Info: a.png  used on input line 85.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 (pdftex.def)             Requested size: 85.35826pt x 78.24591pt.
  [1
 
@@ -941,7 +822,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-<<<<<<< HEAD
 l.114 	\newpage
                 [1
 
@@ -952,21 +832,6 @@ been already used, duplicate ignored
                    \relax 
 l.140 \newpage
                [1] (main.toc
-=======
-l.112 	\newpage
-                [1
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
-
-[2] (main.toc
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -976,7 +841,6 @@ LaTeX Info: Redefining \% on input line 1.
  [2] [3
 
 ]
-<<<<<<< HEAD
 Cap\'{\i }tulo 1.
 <-RLCM.png, id=134, 731.73375pt x 411.78844pt>
 File: -RLCM.png Graphic file (type png)
@@ -993,24 +857,6 @@ Package pdftex.def Info: NIC_B.jpg  used on input line 185.
 (pdftex.def)             Requested size: 277.41176pt x 486.69177pt.
 LaTeX Info: Redefining \. on input line 190.
 LaTeX Info: Redefining \% on input line 190.
-=======
-Cap\'{\i }tulo 2.
-<-RLCM.png, id=113, 731.73375pt x 411.78844pt>
-File: -RLCM.png Graphic file (type png)
-<use -RLCM.png>
-Package pdftex.def Info: -RLCM.png  used on input line 146.
-(pdftex.def)             Requested size: 384.1096pt x 216.16074pt.
-[5
-
- <./-RLCM.png>]
-<NIC_B.jpg, id=124, 682.55pt x 1197.47375pt>
-File: NIC_B.jpg Graphic file (type jpg)
-<use NIC_B.jpg>
-Package pdftex.def Info: NIC_B.jpg  used on input line 163.
-(pdftex.def)             Requested size: 277.41176pt x 486.69177pt.
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1020,40 +866,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [5 <./NIC_B.jpg>]
 <demotracion_NIC.png, id=152, 642.90187pt x 443.40656pt>
 File: demotracion_NIC.png Graphic file (type png)
 <use demotracion_NIC.png>
 Package pdftex.def Info: demotracion_NIC.png  used on input line 199.
 (pdftex.def)             Requested size: 208.39568pt x 143.72653pt.
-=======
-[6 <./NIC_B.jpg>]
-<demotracion_NIC.png, id=132, 642.90187pt x 443.40656pt>
-File: demotracion_NIC.png Graphic file (type png)
-<use demotracion_NIC.png>
-Package pdftex.def Info: demotracion_NIC.png  used on input line 177.
-(pdftex.def)             Requested size: 208.39568pt x 143.72653pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 178.
-See the caption package documentation for explanation.
-
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[7 <./demotracion_NIC.png>]
-LaTeX Info: Redefining \. on input line 285.
-LaTeX Info: Redefining \% on input line 285.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -1069,7 +887,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-<<<<<<< HEAD
 
 [6 <./demotracion_NIC.png>]
 
@@ -1114,17 +931,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8 <./mem1.jpg>]
 LaTeX Info: Redefining \. on input line 355.
 LaTeX Info: Redefining \% on input line 355.
-=======
-
-[8]
-<mem1.jpg, id=182, 144.54pt x 128.3997pt>
-File: mem1.jpg Graphic file (type jpg)
-<use mem1.jpg>
-Package pdftex.def Info: mem1.jpg  used on input line 291.
-(pdftex.def)             Requested size: 426.79135pt x 379.15395pt.
-LaTeX Info: Redefining \. on input line 296.
-LaTeX Info: Redefining \% on input line 296.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1134,7 +940,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [9]
 <schmem.jpg, id=228, 1145.78062pt x 407.27156pt>
 File: schmem.jpg Graphic file (type jpg)
@@ -1143,11 +948,6 @@ Package pdftex.def Info: schmem.jpg  used on input line 359.
 (pdftex.def)             Requested size: 426.79135pt x 151.70728pt.
 LaTeX Info: Redefining \. on input line 380.
 LaTeX Info: Redefining \% on input line 380.
-=======
-[9 <./mem1.jpg>]
-LaTeX Info: Redefining \. on input line 309.
-LaTeX Info: Redefining \% on input line 309.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1157,7 +957,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [10 <./schmem.jpg>]
 <iv_chua.jpg, id=250, 682.83105pt x 838.45245pt>
 File: iv_chua.jpg Graphic file (type jpg)
@@ -1171,16 +970,6 @@ Package pdftex.def Info: circuito.png  used on input line 399.
 (pdftex.def)             Requested size: 384.1096pt x 219.11774pt.
 LaTeX Info: Redefining \. on input line 402.
 LaTeX Info: Redefining \% on input line 402.
-=======
-[10]
-<schmem.jpg, id=202, 1145.78062pt x 407.27156pt>
-File: schmem.jpg Graphic file (type jpg)
-<use schmem.jpg>
-Package pdftex.def Info: schmem.jpg  used on input line 337.
-(pdftex.def)             Requested size: 426.79135pt x 151.70728pt.
-LaTeX Info: Redefining \. on input line 344.
-LaTeX Info: Redefining \% on input line 344.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1189,16 +978,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-<<<<<<< HEAD
 
 [11 <./iv_chua.jpg>]
 LaTeX Info: Redefining \. on input line 432.
 LaTeX Info: Redefining \% on input line 432.
-=======
-
-[11 <./schmem.jpg>]
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1207,25 +990,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[12]
-<iv_chua.jpg, id=239, 682.83105pt x 838.45245pt>
-File: iv_chua.jpg Graphic file (type jpg)
-<use iv_chua.jpg>
-Package pdftex.def Info: iv_chua.jpg  used on input line 366.
-(pdftex.def)             Requested size: 384.1096pt x 471.65393pt.
-LaTeX Info: Redefining \. on input line 371.
-LaTeX Info: Redefining \% on input line 371.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-<<<<<<< HEAD
 
 [12 <./circuito.png>]
 LaTeX Info: Redefining \. on input line 490.
@@ -1262,17 +1026,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [14]
 LaTeX Info: Redefining \. on input line 582.
 LaTeX Info: Redefining \% on input line 582.
-=======
-
-[13 <./iv_chua.jpg>]
-<circuito.png, id=245, 651.93562pt x 371.88937pt>
-File: circuito.png Graphic file (type png)
-<use circuito.png>
-Package pdftex.def Info: circuito.png  used on input line 379.
-(pdftex.def)             Requested size: 298.75264pt x 170.42429pt.
-LaTeX Info: Redefining \. on input line 406.
-LaTeX Info: Redefining \% on input line 406.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1281,16 +1034,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-<<<<<<< HEAD
 
 [15 <./esfera.jpg>]
 LaTeX Info: Redefining \. on input line 663.
 LaTeX Info: Redefining \% on input line 663.
-=======
-
-[14 <./circuito.png>]
-LaTeX Info: Redefining \. on input line 447.
-LaTeX Info: Redefining \% on input line 447.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1299,46 +1046,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[15]
-LaTeX Info: Redefining \. on input line 520.
-LaTeX Info: Redefining \% on input line 520.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[16]
-<esfera.jpg, id=293, 922.44624pt x 706.64pt>
-File: esfera.jpg Graphic file (type jpg)
-<use esfera.jpg>
-Package pdftex.def Info: esfera.jpg  used on input line 541.
-(pdftex.def)             Requested size: 426.79135pt x 326.94527pt.
-LaTeX Info: Redefining \. on input line 545.
-LaTeX Info: Redefining \% on input line 545.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-<<<<<<< HEAD
 
 [16] Excluding 'comment' comment. Excluding 'comment' comment.
 LaTeX Info: Redefining \. on input line 728.
 LaTeX Info: Redefining \% on input line 728.
-=======
-
-[17 <./esfera.jpg>]
-LaTeX Info: Redefining \. on input line 570.
-LaTeX Info: Redefining \% on input line 570.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1348,20 +1059,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-[18]
-LaTeX Info: Redefining \. on input line 656.
-LaTeX Info: Redefining \% on input line 656.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-<<<<<<< HEAD
 [17]
 Cap\'{\i }tulo 2.
 [18
@@ -1381,11 +1078,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [19] Excluding 'comment' comment.
 LaTeX Info: Redefining \. on input line 965.
 LaTeX Info: Redefining \% on input line 965.
-=======
-[19] Excluding 'comment' comment. Excluding 'comment' comment.
-LaTeX Info: Redefining \. on input line 689.
-LaTeX Info: Redefining \% on input line 689.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1396,7 +1088,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [20]
-<<<<<<< HEAD
 Package epstopdf Info: Source file: <estable.eps>
 (epstopdf)                    date: 2023-09-13 22:58:37
 (epstopdf)                    size: 316198 bytes
@@ -1550,8 +1241,8 @@ File: poincaLR.jpg Graphic file (type jpg)
 <use poincaLR.jpg>
 Package pdftex.def Info: poincaLR.jpg  used on input line 1585.
 (pdftex.def)             Requested size: 384.1096pt x 284.23859pt.
-LaTeX Info: Redefining \. on input line 1609.
-LaTeX Info: Redefining \% on input line 1609.
+LaTeX Info: Redefining \. on input line 1611.
+LaTeX Info: Redefining \% on input line 1611.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1562,8 +1253,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [29 <./poincaLR.jpg>]
-LaTeX Info: Redefining \. on input line 1629.
-LaTeX Info: Redefining \% on input line 1629.
+LaTeX Info: Redefining \. on input line 1638.
+LaTeX Info: Redefining \% on input line 1638.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1577,10 +1268,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <semiL.jpg, id=550, 537.00626pt x 762.85pt>
 File: semiL.jpg Graphic file (type jpg)
 <use semiL.jpg>
-Package pdftex.def Info: semiL.jpg  used on input line 1636.
+Package pdftex.def Info: semiL.jpg  used on input line 1645.
 (pdftex.def)             Requested size: 234.73654pt x 333.45505pt.
-LaTeX Info: Redefining \. on input line 1643.
-LaTeX Info: Redefining \% on input line 1643.
+LaTeX Info: Redefining \. on input line 1652.
+LaTeX Info: Redefining \% on input line 1652.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1594,10 +1285,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <semiR.jpg, id=557, 534.99875pt x 779.91376pt>
 File: semiR.jpg Graphic file (type jpg)
 <use semiR.jpg>
-Package pdftex.def Info: semiR.jpg  used on input line 1647.
+Package pdftex.def Info: semiR.jpg  used on input line 1656.
 (pdftex.def)             Requested size: 234.73654pt x 342.19917pt.
-LaTeX Info: Redefining \. on input line 1657.
-LaTeX Info: Redefining \% on input line 1657.
+LaTeX Info: Redefining \. on input line 1666.
+LaTeX Info: Redefining \% on input line 1666.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1608,8 +1299,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [32 <./semiR.jpg>]
-LaTeX Info: Redefining \. on input line 1722.
-LaTeX Info: Redefining \% on input line 1722.
+LaTeX Info: Redefining \. on input line 1730.
+LaTeX Info: Redefining \% on input line 1730.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1620,8 +1311,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [33]
-LaTeX Info: Redefining \. on input line 1765.
-LaTeX Info: Redefining \% on input line 1765.
+LaTeX Info: Redefining \. on input line 1773.
+LaTeX Info: Redefining \% on input line 1773.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1635,10 +1326,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <aplipoincareLR.jpg, id=588, 847.165pt x 886.31125pt>
 File: aplipoincareLR.jpg Graphic file (type jpg)
 <use aplipoincareLR.jpg>
-Package pdftex.def Info: aplipoincareLR.jpg  used on input line 1769.
+Package pdftex.def Info: aplipoincareLR.jpg  used on input line 1777.
 (pdftex.def)             Requested size: 469.47308pt x 491.16475pt.
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
+LaTeX Info: Redefining \. on input line 1782.
+LaTeX Info: Redefining \% on input line 1782.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1652,10 +1343,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <aplipoincareL-R.jpg, id=594, 846.16125pt x 874.26625pt>
 File: aplipoincareL-R.jpg Graphic file (type jpg)
 <use aplipoincareL-R.jpg>
-Package pdftex.def Info: aplipoincareL-R.jpg  used on input line 1778.
+Package pdftex.def Info: aplipoincareL-R.jpg  used on input line 1786.
 (pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1783.
-LaTeX Info: Redefining \% on input line 1783.
+LaTeX Info: Redefining \. on input line 1791.
+LaTeX Info: Redefining \% on input line 1791.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1669,10 +1360,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <aplipoincareLRcerrado.jpg, id=599, 846.16125pt x 874.26625pt>
 File: aplipoincareLRcerrado.jpg Graphic file (type jpg)
 <use aplipoincareLRcerrado.jpg>
-Package pdftex.def Info: aplipoincareLRcerrado.jpg  used on input line 1787.
+Package pdftex.def Info: aplipoincareLRcerrado.jpg  used on input line 1795.
 (pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1792.
-LaTeX Info: Redefining \% on input line 1792.
+LaTeX Info: Redefining \. on input line 1800.
+LaTeX Info: Redefining \% on input line 1800.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1686,10 +1377,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <aplipoincareL-Rcerrado.jpg, id=604, 846.16125pt x 874.26625pt>
 File: aplipoincareL-Rcerrado.jpg Graphic file (type jpg)
 <use aplipoincareL-Rcerrado.jpg>
-Package pdftex.def Info: aplipoincareL-Rcerrado.jpg  used on input line 1796.
+Package pdftex.def Info: aplipoincareL-Rcerrado.jpg  used on input line 1804.
 (pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1801.
-LaTeX Info: Redefining \% on input line 1801.
+LaTeX Info: Redefining \. on input line 1809.
+LaTeX Info: Redefining \% on input line 1809.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1703,10 +1394,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <graficaejemplo.jpg, id=611, 953.5625pt x 792.9625pt>
 File: graficaejemplo.jpg Graphic file (type jpg)
 <use graficaejemplo.jpg>
-Package pdftex.def Info: graficaejemplo.jpg  used on input line 1849.
+Package pdftex.def Info: graficaejemplo.jpg  used on input line 1852.
 (pdftex.def)             Requested size: 341.43437pt x 283.92963pt.
-LaTeX Info: Redefining \. on input line 1854.
-LaTeX Info: Redefining \% on input line 1854.
+LaTeX Info: Redefining \. on input line 1857.
+LaTeX Info: Redefining \% on input line 1857.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1718,10 +1409,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39 <./graficaejemplo.jpg>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1858.
+nput line 1861.
  (Ejemplo_1.m) (cwejem1.m) (semipoinca.m)
-LaTeX Info: Redefining \. on input line 1865.
-LaTeX Info: Redefining \% on input line 1865.
+LaTeX Info: Redefining \. on input line 1868.
+LaTeX Info: Redefining \% on input line 1868.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1732,8 +1423,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [40]
-LaTeX Info: Redefining \. on input line 1892.
-LaTeX Info: Redefining \% on input line 1892.
+LaTeX Info: Redefining \. on input line 1895.
+LaTeX Info: Redefining \% on input line 1895.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1749,8 +1440,8 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
  (C:\Program Files\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
-LaTeX Info: Redefining \. on input line 1899.
-LaTeX Info: Redefining \% on input line 1899.
+LaTeX Info: Redefining \. on input line 1902.
+LaTeX Info: Redefining \% on input line 1902.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1769,7 +1460,7 @@ Package epstopdf Info: Source file: <g1ejem2.eps>
 (epstopdf)                    size: 10339 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=g1ejem2-eps-converte
 d-to.pdf g1ejem2.eps>
-(epstopdf)             \includegraphics on input line 1903.
+(epstopdf)             \includegraphics on input line 1906.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1778,11 +1469,11 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 <g1ejem2-eps-converted-to.pdf, id=694, 613.29124pt x 481.8pt>
 File: g1ejem2-eps-converted-to.pdf Graphic file (type pdf)
 <use g1ejem2-eps-converted-to.pdf>
-Package pdftex.def Info: g1ejem2-eps-converted-to.pdf  used on input line 1903.
+Package pdftex.def Info: g1ejem2-eps-converted-to.pdf  used on input line 1906.
 
 (pdftex.def)             Requested size: 426.79135pt x 335.28745pt.
-LaTeX Info: Redefining \. on input line 1909.
-LaTeX Info: Redefining \% on input line 1909.
+LaTeX Info: Redefining \. on input line 1912.
+LaTeX Info: Redefining \% on input line 1912.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -1795,8 +1486,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 5.
 )
-LaTeX Info: Redefining \. on input line 1917.
-LaTeX Info: Redefining \% on input line 1917.
+LaTeX Info: Redefining \. on input line 1920.
+LaTeX Info: Redefining \% on input line 1920.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1807,8 +1498,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [44] (fsolvepoinca.m) (semipoincay1y0.m)
-LaTeX Info: Redefining \. on input line 1930.
-LaTeX Info: Redefining \% on input line 1930.
+LaTeX Info: Redefining \. on input line 1933.
+LaTeX Info: Redefining \% on input line 1933.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1822,10 +1513,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <clejemplo.jpg, id=767, 808.9422pt x 556.479pt>
 File: clejemplo.jpg Graphic file (type jpg)
 <use clejemplo.jpg>
-Package pdftex.def Info: clejemplo.jpg  used on input line 1951.
+Package pdftex.def Info: clejemplo.jpg  used on input line 1954.
 (pdftex.def)             Requested size: 426.79135pt x 293.59087pt.
-LaTeX Info: Redefining \. on input line 1958.
-LaTeX Info: Redefining \% on input line 1958.
+LaTeX Info: Redefining \. on input line 1961.
+LaTeX Info: Redefining \% on input line 1961.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1843,23 +1534,15 @@ Cap\'{\i }tulo 4.
 <punto.jpg, id=786, 1028.84375pt x 713.66624pt>
 File: punto.jpg Graphic file (type jpg)
 <use punto.jpg>
-Package pdftex.def Info: punto.jpg  used on input line 2010.
+Package pdftex.def Info: punto.jpg  used on input line 2013.
 (pdftex.def)             Requested size: 298.75264pt x 207.23015pt.
 <puntoR.jpg, id=787, 1028.84375pt x 713.66624pt>
 File: puntoR.jpg Graphic file (type jpg)
 <use puntoR.jpg>
-Package pdftex.def Info: puntoR.jpg  used on input line 2017.
+Package pdftex.def Info: puntoR.jpg  used on input line 2020.
 (pdftex.def)             Requested size: 298.75264pt x 207.23015pt.
-LaTeX Info: Redefining \. on input line 2022.
-LaTeX Info: Redefining \% on input line 2022.
-=======
-Cap\'{\i }tulo 3.
-[21
-
-]
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2025.
+LaTeX Info: Redefining \% on input line 2025.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1869,30 +1552,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [48 <./punto.jpg> <./puntoR.jpg>]
-LaTeX Info: Redefining \. on input line 2039.
-LaTeX Info: Redefining \% on input line 2039.
-=======
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 888--890
-
- []
-
-LaTeX Info: Redefining \. on input line 892.
-LaTeX Info: Redefining \% on input line 892.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[23]
-LaTeX Info: Redefining \. on input line 935.
-LaTeX Info: Redefining \% on input line 935.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2042.
+LaTeX Info: Redefining \% on input line 2042.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1902,549 +1564,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [49]
-=======
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 937--938
-
- []
-
-Package epstopdf Info: Source file: <estable.eps>
-(epstopdf)                    date: 2023-09-13 22:58:37
-(epstopdf)                    size: 316198 bytes
-(epstopdf)             Output file: <estable-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-13 23:25:37
-(epstopdf)                    size: 103873 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=estable-eps-converte
-d-to.pdf estable.eps>
-(epstopdf)             \includegraphics on input line 947.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./estable-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<estable-eps-converted-to.pdf, id=394, 821.0675pt x 378.41376pt>
-File: estable-eps-converted-to.pdf Graphic file (type pdf)
-<use estable-eps-converted-to.pdf>
-Package pdftex.def Info: estable-eps-converted-to.pdf  used on input line 947.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 963.
-LaTeX Info: Redefining \% on input line 963.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[25 <./estable-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 965--966
-
- []
-
-Package epstopdf Info: Source file: <inestable.eps>
-(epstopdf)                    date: 2023-09-13 22:59:41
-(epstopdf)                    size: 288047 bytes
-(epstopdf)             Output file: <inestable-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-13 22:59:51
-(epstopdf)                    size: 93269 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=inestable-eps-conver
-ted-to.pdf inestable.eps>
-(epstopdf)             \includegraphics on input line 975.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./inestable-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<inestable-eps-converted-to.pdf, id=408, 821.0675pt x 378.41376pt>
-File: inestable-eps-converted-to.pdf Graphic file (type pdf)
-<use inestable-eps-converted-to.pdf>
-Package pdftex.def Info: inestable-eps-converted-to.pdf  used on input line 975
-.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 991.
-LaTeX Info: Redefining \% on input line 991.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[26 <./inestable-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 993--994
-
- []
-
-Package epstopdf Info: Source file: <centro.eps>
-(epstopdf)                    date: 2023-09-13 23:00:50
-(epstopdf)                    size: 366337 bytes
-(epstopdf)             Output file: <centro-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-13 23:25:38
-(epstopdf)                    size: 128605 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=centro-eps-converted
--to.pdf centro.eps>
-(epstopdf)             \includegraphics on input line 1003.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./centro-eps-converted-to.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<centro-eps-converted-to.pdf, id=420, 821.0675pt x 378.41376pt>
-File: centro-eps-converted-to.pdf Graphic file (type pdf)
-<use centro-eps-converted-to.pdf>
-Package pdftex.def Info: centro-eps-converted-to.pdf  used on input line 1003.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 1019.
-LaTeX Info: Redefining \% on input line 1019.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[27 <./centro-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
-
- []
-
-LaTeX Info: Redefining \. on input line 1093.
-LaTeX Info: Redefining \% on input line 1093.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[28]
-LaTeX Info: Redefining \. on input line 1167.
-LaTeX Info: Redefining \% on input line 1167.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[29]
-LaTeX Info: Redefining \. on input line 1231.
-LaTeX Info: Redefining \% on input line 1231.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[30]
-Overfull \hbox (11.53699pt too wide) detected at line 1264
-[][][][] \OT1/cmr/m/n/12 = []
- []
-
-LaTeX Info: Redefining \. on input line 1335.
-LaTeX Info: Redefining \% on input line 1335.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[31]
-LaTeX Info: Redefining \. on input line 1441.
-LaTeX Info: Redefining \% on input line 1441.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[32]
-LaTeX Info: Redefining \. on input line 1501.
-LaTeX Info: Redefining \% on input line 1501.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[33]
-Cap\'{\i }tulo 4.
-<aplipoincare2.jpg, id=515, 527.9725pt x 467.7475pt>
-File: aplipoincare2.jpg Graphic file (type jpg)
-<use aplipoincare2.jpg>
-Package pdftex.def Info: aplipoincare2.jpg  used on input line 1509.
-(pdftex.def)             Requested size: 341.43437pt x 302.48347pt.
-[34
-
- <./aplipoincare2.jpg>]
-<poincaLR.jpg, id=523, 1204.5pt x 891.33pt>
-File: poincaLR.jpg Graphic file (type jpg)
-<use poincaLR.jpg>
-Package pdftex.def Info: poincaLR.jpg  used on input line 1522.
-(pdftex.def)             Requested size: 384.1096pt x 284.23859pt.
-LaTeX Info: Redefining \. on input line 1543.
-LaTeX Info: Redefining \% on input line 1543.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[35 <./poincaLR.jpg>]
-LaTeX Info: Redefining \. on input line 1564.
-LaTeX Info: Redefining \% on input line 1564.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[36]
-<semiL.jpg, id=546, 537.00626pt x 762.85pt>
-File: semiL.jpg Graphic file (type jpg)
-<use semiL.jpg>
-Package pdftex.def Info: semiL.jpg  used on input line 1571.
-(pdftex.def)             Requested size: 234.73654pt x 333.45505pt.
-LaTeX Info: Redefining \. on input line 1590.
-LaTeX Info: Redefining \% on input line 1590.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[37 <./semiL.jpg>]
-<semiR.jpg, id=555, 534.99875pt x 779.91376pt>
-File: semiR.jpg Graphic file (type jpg)
-<use semiR.jpg>
-Package pdftex.def Info: semiR.jpg  used on input line 1594.
-(pdftex.def)             Requested size: 234.73654pt x 342.19917pt.
-LaTeX Info: Redefining \. on input line 1616.
-LaTeX Info: Redefining \% on input line 1616.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[38 <./semiR.jpg>]
-LaTeX Info: Redefining \. on input line 1675.
-LaTeX Info: Redefining \% on input line 1675.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[39]
-LaTeX Info: Redefining \. on input line 1711.
-LaTeX Info: Redefining \% on input line 1711.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[40]
-<aplipoincareLR.jpg, id=587, 847.165pt x 886.31125pt>
-File: aplipoincareLR.jpg Graphic file (type jpg)
-<use aplipoincareLR.jpg>
-Package pdftex.def Info: aplipoincareLR.jpg  used on input line 1715.
-(pdftex.def)             Requested size: 469.47308pt x 491.16475pt.
-LaTeX Info: Redefining \. on input line 1720.
-LaTeX Info: Redefining \% on input line 1720.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[41 <./aplipoincareLR.jpg>]
-<aplipoincareL-R.jpg, id=592, 846.16125pt x 874.26625pt>
-File: aplipoincareL-R.jpg Graphic file (type jpg)
-<use aplipoincareL-R.jpg>
-Package pdftex.def Info: aplipoincareL-R.jpg  used on input line 1724.
-(pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1729.
-LaTeX Info: Redefining \% on input line 1729.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[42 <./aplipoincareL-R.jpg>]
-<aplipoincareLRcerrado.jpg, id=598, 846.16125pt x 874.26625pt>
-File: aplipoincareLRcerrado.jpg Graphic file (type jpg)
-<use aplipoincareLRcerrado.jpg>
-Package pdftex.def Info: aplipoincareLRcerrado.jpg  used on input line 1733.
-(pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1738.
-LaTeX Info: Redefining \% on input line 1738.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[43 <./aplipoincareLRcerrado.jpg>]
-<aplipoincareL-Rcerrado.jpg, id=603, 846.16125pt x 874.26625pt>
-File: aplipoincareL-Rcerrado.jpg Graphic file (type jpg)
-<use aplipoincareL-Rcerrado.jpg>
-Package pdftex.def Info: aplipoincareL-Rcerrado.jpg  used on input line 1742.
-(pdftex.def)             Requested size: 469.47308pt x 485.06343pt.
-LaTeX Info: Redefining \. on input line 1747.
-LaTeX Info: Redefining \% on input line 1747.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[44 <./aplipoincareL-Rcerrado.jpg>]
-<graficaejemplo.jpg, id=611, 953.5625pt x 792.9625pt>
-File: graficaejemplo.jpg Graphic file (type jpg)
-<use graficaejemplo.jpg>
-Package pdftex.def Info: graficaejemplo.jpg  used on input line 1801.
-(pdftex.def)             Requested size: 341.43437pt x 283.92963pt.
-LaTeX Info: Redefining \. on input line 1806.
-LaTeX Info: Redefining \% on input line 1806.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[45 <./graficaejemplo.jpg>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1810.
- (Ejemplo_1.m) (cwejem1.m) (semipoinca.m)
-LaTeX Info: Redefining \. on input line 1817.
-LaTeX Info: Redefining \% on input line 1817.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[46]
-LaTeX Info: Redefining \. on input line 1844.
-LaTeX Info: Redefining \% on input line 1844.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[47] (Ejemplo_2.m
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-7.
- (C:\Program Files\MiKTeX\tex/latex/base\ts1cmtt.fd
-File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-))
-LaTeX Info: Redefining \. on input line 1851.
-LaTeX Info: Redefining \% on input line 1851.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[48]
-Package epstopdf Info: Source file: <g1ejem2.eps>
-(epstopdf)                    date: 2023-09-22 17:45:39
-(epstopdf)                    size: 27829 bytes
-(epstopdf)             Output file: <g1ejem2-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-22 17:45:56
-(epstopdf)                    size: 10339 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=g1ejem2-eps-converte
-d-to.pdf g1ejem2.eps>
-(epstopdf)             \includegraphics on input line 1855.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./g1ejem2-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<g1ejem2-eps-converted-to.pdf, id=690, 613.29124pt x 481.8pt>
-File: g1ejem2-eps-converted-to.pdf Graphic file (type pdf)
-<use g1ejem2-eps-converted-to.pdf>
-Package pdftex.def Info: g1ejem2-eps-converted-to.pdf  used on input line 1855.
-
-(pdftex.def)             Requested size: 426.79135pt x 335.28745pt.
-LaTeX Info: Redefining \. on input line 1861.
-LaTeX Info: Redefining \% on input line 1861.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[49 <./g1ejem2-eps-converted-to.pdf>] (Ejemplo_3.m) (cwejem3.m
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 5.
-)
-LaTeX Info: Redefining \. on input line 1869.
-LaTeX Info: Redefining \% on input line 1869.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[50] (fsolvepoinca.m) (semipoincay1y0.m)
-LaTeX Info: Redefining \. on input line 1882.
-LaTeX Info: Redefining \% on input line 1882.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[51]
-<clejemplo.jpg, id=764, 808.9422pt x 556.479pt>
-File: clejemplo.jpg Graphic file (type jpg)
-<use clejemplo.jpg>
-Package pdftex.def Info: clejemplo.jpg  used on input line 1903.
-(pdftex.def)             Requested size: 426.79135pt x 293.59087pt.
-LaTeX Info: Redefining \. on input line 1908.
-LaTeX Info: Redefining \% on input line 1908.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[52 <./clejemplo.jpg>]
-Cap\'{\i }tulo 5.
-[53
-
-]
-<punto.jpg, id=778, 1004.75375pt x 732.7375pt>
-File: punto.jpg Graphic file (type jpg)
-<use punto.jpg>
-Package pdftex.def Info: punto.jpg  used on input line 1959.
-(pdftex.def)             Requested size: 341.43437pt x 248.99329pt.
-LaTeX Info: Redefining \. on input line 1965.
-LaTeX Info: Redefining \% on input line 1965.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[54 <./punto.jpg>]
-<puntoR.jpg, id=787, 989.6975pt x 710.655pt>
-File: puntoR.jpg Graphic file (type jpg)
-<use puntoR.jpg>
-Package pdftex.def Info: puntoR.jpg  used on input line 1968.
-(pdftex.def)             Requested size: 341.43437pt x 245.16539pt.
-LaTeX Info: Redefining \. on input line 1975.
-LaTeX Info: Redefining \% on input line 1975.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[55 <./puntoR.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2001--2002
-
- []
-
-LaTeX Info: Redefining \. on input line 2003.
-LaTeX Info: Redefining \% on input line 2003.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 2005--2006
-
- []
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <cle.eps>
 (epstopdf)                    date: 2023-09-14 00:00:32
 (epstopdf)                    size: 461034 bytes
@@ -2453,34 +1573,17 @@ Package epstopdf Info: Source file: <cle.eps>
 (epstopdf)                    size: 169560 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=cle-eps-converted-to
 .pdf cle.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2047.
-=======
-(epstopdf)             \includegraphics on input line 2011.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2050.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./cle-eps-converted-to.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
 <cle-eps-converted-to.pdf, id=799, 821.0675pt x 378.41376pt>
 File: cle-eps-converted-to.pdf Graphic file (type pdf)
 <use cle-eps-converted-to.pdf>
-Package pdftex.def Info: cle-eps-converted-to.pdf  used on input line 2047.
+Package pdftex.def Info: cle-eps-converted-to.pdf  used on input line 2050.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-=======
-<cle-eps-converted-to.pdf, id=802, 821.0675pt x 378.41376pt>
-File: cle-eps-converted-to.pdf Graphic file (type pdf)
-<use cle-eps-converted-to.pdf>
-Package pdftex.def Info: cle-eps-converted-to.pdf  used on input line 2011.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2016--2017
-
- []
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <cli.eps>
 (epstopdf)                    date: 2023-09-14 00:01:48
 (epstopdf)                    size: 300750 bytes
@@ -2489,33 +1592,19 @@ Package epstopdf Info: Source file: <cli.eps>
 (epstopdf)                    size: 102526 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=cli-eps-converted-to
 .pdf cli.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2058.
-=======
-(epstopdf)             \includegraphics on input line 2022.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2061.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./cli-eps-converted-to.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
 <cli-eps-converted-to.pdf, id=800, 821.0675pt x 378.41376pt>
 File: cli-eps-converted-to.pdf Graphic file (type pdf)
 <use cli-eps-converted-to.pdf>
-Package pdftex.def Info: cli-eps-converted-to.pdf  used on input line 2058.
+Package pdftex.def Info: cli-eps-converted-to.pdf  used on input line 2061.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2063.
-LaTeX Info: Redefining \% on input line 2063.
-=======
-<cli-eps-converted-to.pdf, id=803, 821.0675pt x 378.41376pt>
-File: cli-eps-converted-to.pdf Graphic file (type pdf)
-<use cli-eps-converted-to.pdf>
-Package pdftex.def Info: cli-eps-converted-to.pdf  used on input line 2022.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2027.
-LaTeX Info: Redefining \% on input line 2027.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2066.
+LaTeX Info: Redefining \% on input line 2066.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2524,15 +1613,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [50 <./cle-eps-converted-to.pdf> <./cli-eps-converted-to.pdf>]
-=======
-[57 <./cle-eps-converted-to.pdf> <./cli-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2029--2030
-
- []
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <clpe.eps>
 (epstopdf)                    date: 2023-09-14 00:03:15
 (epstopdf)                    size: 382542 bytes
@@ -2541,33 +1622,19 @@ Package epstopdf Info: Source file: <clpe.eps>
 (epstopdf)                    size: 138090 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=clpe-eps-converted-t
 o.pdf clpe.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2071.
-=======
-(epstopdf)             \includegraphics on input line 2035.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2074.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./clpe-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
 <clpe-eps-converted-to.pdf, id=817, 821.0675pt x 378.41376pt>
 File: clpe-eps-converted-to.pdf Graphic file (type pdf)
 <use clpe-eps-converted-to.pdf>
-Package pdftex.def Info: clpe-eps-converted-to.pdf  used on input line 2071.
+Package pdftex.def Info: clpe-eps-converted-to.pdf  used on input line 2074.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2082.
-LaTeX Info: Redefining \% on input line 2082.
-=======
-<clpe-eps-converted-to.pdf, id=820, 821.0675pt x 378.41376pt>
-File: clpe-eps-converted-to.pdf Graphic file (type pdf)
-<use clpe-eps-converted-to.pdf>
-Package pdftex.def Info: clpe-eps-converted-to.pdf  used on input line 2035.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2042.
-LaTeX Info: Redefining \% on input line 2042.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2085.
+LaTeX Info: Redefining \% on input line 2085.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2576,23 +1643,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [51 <./clpe-eps-converted-to.pdf>] Excluding 'comment' comment.
-Overfull \hbox (11.96826pt too wide) detected at line 2102
-[][][]\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 = [] + [] [] \OML/cmm/m/it/12 :
+Overfull \hbox (6.70444pt too wide) detected at line 2105
+[][][]\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 = [] + [] []
  []
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 2113.
+(amsmath)                trying to recover with `aligned' on input line 2116.
 
 
-Overfull \hbox (1.52376pt too wide) detected at line 2114
+Overfull \hbox (1.52376pt too wide) detected at line 2117
 [][][][]
  []
 
-LaTeX Info: Redefining \. on input line 2117.
-LaTeX Info: Redefining \% on input line 2117.
+LaTeX Info: Redefining \. on input line 2120.
+LaTeX Info: Redefining \% on input line 2120.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2602,8 +1668,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [52] Excluding 'comment' comment.
-LaTeX Info: Redefining \. on input line 2137.
-LaTeX Info: Redefining \% on input line 2137.
+LaTeX Info: Redefining \. on input line 2140.
+LaTeX Info: Redefining \% on input line 2140.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2617,10 +1683,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <foco3x=0.jpg, id=857, 1204.5pt x 1003.75pt>
 File: foco3x=0.jpg Graphic file (type jpg)
 <use foco3x=0.jpg>
-Package pdftex.def Info: foco3x=0.jpg  used on input line 2141.
+Package pdftex.def Info: foco3x=0.jpg  used on input line 2144.
 (pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2146.
-LaTeX Info: Redefining \% on input line 2146.
+LaTeX Info: Redefining \. on input line 2149.
+LaTeX Info: Redefining \% on input line 2149.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2634,10 +1700,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <centro2x=0.jpg, id=863, 1204.5pt x 1003.75pt>
 File: centro2x=0.jpg Graphic file (type jpg)
 <use centro2x=0.jpg>
-Package pdftex.def Info: centro2x=0.jpg  used on input line 2150.
+Package pdftex.def Info: centro2x=0.jpg  used on input line 2153.
 (pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2155.
-LaTeX Info: Redefining \% on input line 2155.
+LaTeX Info: Redefining \. on input line 2158.
+LaTeX Info: Redefining \% on input line 2158.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2651,10 +1717,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <ciclolimite3x=0_v2.jpg, id=868, 1204.5pt x 1003.75pt>
 File: ciclolimite3x=0_v2.jpg Graphic file (type jpg)
 <use ciclolimite3x=0_v2.jpg>
-Package pdftex.def Info: ciclolimite3x=0_v2.jpg  used on input line 2159.
+Package pdftex.def Info: ciclolimite3x=0_v2.jpg  used on input line 2162.
 (pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2164.
-LaTeX Info: Redefining \% on input line 2164.
+LaTeX Info: Redefining \. on input line 2167.
+LaTeX Info: Redefining \% on input line 2167.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2665,8 +1731,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [56 <./ciclolimite3x=0_v2.jpg>] Excluding 'comment' comment.
-LaTeX Info: Redefining \. on input line 2255.
-LaTeX Info: Redefining \% on input line 2255.
+LaTeX Info: Redefining \. on input line 2258.
+LaTeX Info: Redefining \% on input line 2258.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2676,9 +1742,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-[57] Excluding 'comment' comment.
-LaTeX Info: Redefining \. on input line 2341.
-LaTeX Info: Redefining \% on input line 2341.
+[57]
+Overfull \hbox (5.16301pt too wide) in paragraph at lines 2293--2294
+\OT1/cmr/m/n/12 Realizando una in-ver-si^^Son de la se-rie an-te-rior po-de-mos
+ fi-nal-men-te de-fi-nir $\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/
+12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 )$: 
+ []
+
+Excluding 'comment' comment.
+LaTeX Info: Redefining \. on input line 2344.
+LaTeX Info: Redefining \% on input line 2344.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2689,18 +1762,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [58] Excluding 'comment' comment.
-LaTeX Info: Redefining \. on input line 2387.
-LaTeX Info: Redefining \% on input line 2387.
+LaTeX Info: Redefining \. on input line 2390.
+LaTeX Info: Redefining \% on input line 2390.
 
-=======
-[58 <./clpe-eps-converted-to.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 2044.
-
-LaTeX Info: Redefining \. on input line 2048.
-LaTeX Info: Redefining \% on input line 2048.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2710,17 +1774,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [59]
-<<<<<<< HEAD
 Cap\'{\i }tulo 5.
 [60
 
 ]
-Overfull \hbox (20.6246pt too wide) detected at line 2518
+Overfull \hbox (20.6246pt too wide) detected at line 2521
 [][][][][]
  []
 
-LaTeX Info: Redefining \. on input line 2520.
-LaTeX Info: Redefining \% on input line 2520.
+LaTeX Info: Redefining \. on input line 2523.
+LaTeX Info: Redefining \% on input line 2523.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2730,8 +1793,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [61]
-LaTeX Info: Redefining \. on input line 2537.
-LaTeX Info: Redefining \% on input line 2537.
+LaTeX Info: Redefining \. on input line 2540.
+LaTeX Info: Redefining \% on input line 2540.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2742,8 +1805,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [62]
-LaTeX Info: Redefining \. on input line 2587.
-LaTeX Info: Redefining \% on input line 2587.
+LaTeX Info: Redefining \. on input line 2590.
+LaTeX Info: Redefining \% on input line 2590.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2754,82 +1817,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [63]
-LaTeX Info: Redefining \. on input line 2640.
-LaTeX Info: Redefining \% on input line 2640.
+LaTeX Info: Redefining \. on input line 2643.
+LaTeX Info: Redefining \% on input line 2643.
 
-=======
-LaTeX Info: Redefining \. on input line 2073.
-LaTeX Info: Redefining \% on input line 2073.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[60]
-<foco3.jpg, id=862, 1204.5pt x 1003.75pt>
-File: foco3.jpg Graphic file (type jpg)
-<use foco3.jpg>
-Package pdftex.def Info: foco3.jpg  used on input line 2077.
-(pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2082.
-LaTeX Info: Redefining \% on input line 2082.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[61 <./foco3.jpg>]
-<centro2.jpg, id=868, 1204.5pt x 1003.75pt>
-File: centro2.jpg Graphic file (type jpg)
-<use centro2.jpg>
-Package pdftex.def Info: centro2.jpg  used on input line 2086.
-(pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2091.
-LaTeX Info: Redefining \% on input line 2091.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[62 <./centro2.jpg>]
-<ciclolimite3.jpg, id=873, 1204.5pt x 1003.75pt>
-File: ciclolimite3.jpg Graphic file (type jpg)
-<use ciclolimite3.jpg>
-Package pdftex.def Info: ciclolimite3.jpg  used on input line 2095.
-(pdftex.def)             Requested size: 469.47308pt x 391.23119pt.
-LaTeX Info: Redefining \. on input line 2100.
-LaTeX Info: Redefining \% on input line 2100.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[63 <./ciclolimite3.jpg>]
-Overfull \hbox (38.09192pt too wide) in paragraph at lines 2137--2138
-\OT1/cmr/m/n/12 Recordemos del Teo-re-ma [][]5.1[][] que son son cons-tan-tes e
-n nues-tro sis-te-ma $\OML/cmm/m/it/12 D[]; D[]; a; k[]; k[]; T[]$\OT1/cmr/m/n/
-12 ,
- []
-
-LaTeX Info: Redefining \. on input line 2165.
-LaTeX Info: Redefining \% on input line 2165.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2839,13 +1829,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [64]
-<<<<<<< HEAD
-LaTeX Info: Redefining \. on input line 2686.
-LaTeX Info: Redefining \% on input line 2686.
-=======
-LaTeX Info: Redefining \. on input line 2215.
-LaTeX Info: Redefining \% on input line 2215.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2687.
+LaTeX Info: Redefining \% on input line 2687.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2856,13 +1841,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [65]
-<<<<<<< HEAD
-LaTeX Info: Redefining \. on input line 2687.
-LaTeX Info: Redefining \% on input line 2687.
-=======
-LaTeX Info: Redefining \. on input line 2260.
-LaTeX Info: Redefining \% on input line 2260.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2688.
+LaTeX Info: Redefining \% on input line 2688.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2872,24 +1852,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [66] (Ejemplo_4.m
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
 
-=======
-[66]
-Cap\'{\i }tulo 6.
-[67
-
-]
-Overfull \hbox (20.6246pt too wide) detected at line 2386
-[][][][][]
- []
-
-LaTeX Info: Redefining \. on input line 2388.
-LaTeX Info: Redefining \% on input line 2388.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -2898,10 +1864,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [67])
-LaTeX Info: Redefining \. on input line 2691.
-LaTeX Info: Redefining \% on input line 2691.
+LaTeX Info: Redefining \. on input line 2692.
+LaTeX Info: Redefining \% on input line 2692.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2912,13 +1877,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [68] (cwejem4.m)
-LaTeX Info: Redefining \. on input line 2695.
-LaTeX Info: Redefining \% on input line 2695.
-=======
-[68]
-LaTeX Info: Redefining \. on input line 2405.
-LaTeX Info: Redefining \% on input line 2405.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2696.
+LaTeX Info: Redefining \% on input line 2696.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2929,7 +1889,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [69]
-<<<<<<< HEAD
 Package epstopdf Info: Source file: <ejem4amplitud.eps>
 (epstopdf)                    date: 2023-11-08 20:10:09
 (epstopdf)                    size: 58303 bytes
@@ -2938,27 +1897,21 @@ Package epstopdf Info: Source file: <ejem4amplitud.eps>
 (epstopdf)                    size: 14382 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=ejem4amplitud-eps-co
 nverted-to.pdf ejem4amplitud.eps>
-(epstopdf)             \includegraphics on input line 2699.
+(epstopdf)             \includegraphics on input line 2700.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./ejem4amplitud-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<ejem4amplitud-eps-converted-to.pdf, id=1120, 592.2125pt x 712.6625pt>
+<ejem4amplitud-eps-converted-to.pdf, id=1121, 592.2125pt x 712.6625pt>
 File: ejem4amplitud-eps-converted-to.pdf Graphic file (type pdf)
 <use ejem4amplitud-eps-converted-to.pdf>
 Package pdftex.def Info: ejem4amplitud-eps-converted-to.pdf  used on input line
- 2699.
+ 2700.
 (pdftex.def)             Requested size: 426.79135pt x 513.60596pt.
-LaTeX Info: Redefining \. on input line 2706.
-LaTeX Info: Redefining \% on input line 2706.
+LaTeX Info: Redefining \. on input line 2707.
+LaTeX Info: Redefining \% on input line 2707.
 
-=======
-LaTeX Info: Redefining \. on input line 2455.
-LaTeX Info: Redefining \% on input line 2455.
-
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -2966,15 +1919,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [70 <./ejem4amplitud-eps-converted-to.pdf>] (Ejemplo_5.m)
-LaTeX Info: Redefining \. on input line 2713.
-LaTeX Info: Redefining \% on input line 2713.
-=======
-[70]
-LaTeX Info: Redefining \. on input line 2508.
-LaTeX Info: Redefining \% on input line 2508.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2714.
+LaTeX Info: Redefining \% on input line 2714.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2985,7 +1932,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [71]
-<<<<<<< HEAD
 Package epstopdf Info: Source file: <ejem5nuevo.eps>
 (epstopdf)                    date: 2023-11-08 20:36:36
 (epstopdf)                    size: 25021 bytes
@@ -2994,27 +1940,21 @@ Package epstopdf Info: Source file: <ejem5nuevo.eps>
 (epstopdf)                    size: 7331 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=ejem5nuevo-eps-conve
 rted-to.pdf ejem5nuevo.eps>
-(epstopdf)             \includegraphics on input line 2717.
+(epstopdf)             \includegraphics on input line 2718.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./ejem5nuevo-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<ejem5nuevo-eps-converted-to.pdf, id=1168, 550.055pt x 507.8975pt>
+<ejem5nuevo-eps-converted-to.pdf, id=1167, 550.055pt x 507.8975pt>
 File: ejem5nuevo-eps-converted-to.pdf Graphic file (type pdf)
 <use ejem5nuevo-eps-converted-to.pdf>
 Package pdftex.def Info: ejem5nuevo-eps-converted-to.pdf  used on input line 27
-17.
+18.
 (pdftex.def)             Requested size: 426.79135pt x 394.097pt.
-LaTeX Info: Redefining \. on input line 2724.
-LaTeX Info: Redefining \% on input line 2724.
+LaTeX Info: Redefining \. on input line 2725.
+LaTeX Info: Redefining \% on input line 2725.
 
-=======
-LaTeX Info: Redefining \. on input line 2528.
-LaTeX Info: Redefining \% on input line 2528.
-
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3022,113 +1962,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [72 <./ejem5nuevo-eps-converted-to.pdf>]
-=======
-[72] (Ejemplo_4.m)
-LaTeX Info: Redefining \. on input line 2532.
-LaTeX Info: Redefining \% on input line 2532.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[73] (cwejem4.m)
-LaTeX Info: Redefining \. on input line 2538.
-LaTeX Info: Redefining \% on input line 2538.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[74]
-Package epstopdf Info: Source file: <ejem4.eps>
-(epstopdf)                    date: 2023-09-22 16:34:22
-(epstopdf)                    size: 44641 bytes
-(epstopdf)             Output file: <ejem4-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-22 16:34:27
-(epstopdf)                    size: 12284 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=ejem4-eps-converted-
-to.pdf ejem4.eps>
-(epstopdf)             \includegraphics on input line 2542.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./ejem4-eps-converted-to.pdf): PDF inclusion
-: found PDF version <1.7>, but at most version <1.5> allowed
-<ejem4-eps-converted-to.pdf, id=1083, 520.94624pt x 610.28pt>
-File: ejem4-eps-converted-to.pdf Graphic file (type pdf)
-<use ejem4-eps-converted-to.pdf>
-Package pdftex.def Info: ejem4-eps-converted-to.pdf  used on input line 2542.
-(pdftex.def)             Requested size: 426.79135pt x 499.98586pt.
-LaTeX Info: Redefining \. on input line 2549.
-LaTeX Info: Redefining \% on input line 2549.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[75 <./ejem4-eps-converted-to.pdf>] (Ejemplo_5.m)
-LaTeX Info: Redefining \. on input line 2553.
-LaTeX Info: Redefining \% on input line 2553.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[76]
-Package epstopdf Info: Source file: <ry1ry0.eps>
-(epstopdf)                    date: 2023-09-22 16:39:11
-(epstopdf)                    size: 21374 bytes
-(epstopdf)             Output file: <ry1ry0-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-22 16:39:18
-(epstopdf)                    size: 6296 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=ry1ry0-eps-converted
--to.pdf ry1ry0.eps>
-(epstopdf)             \includegraphics on input line 2557.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./ry1ry0-eps-converted-to.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<ry1ry0-eps-converted-to.pdf, id=1129, 498.86375pt x 487.8225pt>
-File: ry1ry0-eps-converted-to.pdf Graphic file (type pdf)
-<use ry1ry0-eps-converted-to.pdf>
-Package pdftex.def Info: ry1ry0-eps-converted-to.pdf  used on input line 2557.
-(pdftex.def)             Requested size: 426.79135pt x 417.36053pt.
-LaTeX Info: Redefining \. on input line 2564.
-LaTeX Info: Redefining \% on input line 2564.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[77 <./ry1ry0-eps-converted-to.pdf>]
-Overfull \hbox (1.80882pt too wide) in paragraph at lines 2581--2582
-[]\OT1/cmr/m/n/12 Siendo $\OML/cmm/m/it/12 t[]; t[]; d[]; d[]$ \OT1/cmr/m/n/12 
-los vis-tos en [][][]\OT1/cmr/m/it/12 (6.7[])[][][]\OT1/cmr/m/n/12 , los cua-le
-s en si-guien-te c^^Sodi-go en MATLAB
- []
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <r0.7.eps>
 (epstopdf)                    date: 2023-09-22 11:47:04
 (epstopdf)                    size: 444821 bytes
@@ -3137,27 +1971,16 @@ Package epstopdf Info: Source file: <r0.7.eps>
 (epstopdf)                    size: 163517 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=r0.7-eps-converted-t
 o.pdf r0.7.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2745.
-=======
-(epstopdf)             \includegraphics on input line 2585.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2746.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./r0.7-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<r0.7-eps-converted-to.pdf, id=1189, 821.0675pt x 378.41376pt>
+<r0.7-eps-converted-to.pdf, id=1186, 821.0675pt x 378.41376pt>
 File: r0.7-eps-converted-to.pdf Graphic file (type pdf)
 <use r0.7-eps-converted-to.pdf>
-Package pdftex.def Info: r0.7-eps-converted-to.pdf  used on input line 2745.
-=======
-<r0.7-eps-converted-to.pdf, id=1144, 821.0675pt x 378.41376pt>
-File: r0.7-eps-converted-to.pdf Graphic file (type pdf)
-<use r0.7-eps-converted-to.pdf>
-Package pdftex.def Info: r0.7-eps-converted-to.pdf  used on input line 2585.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+Package pdftex.def Info: r0.7-eps-converted-to.pdf  used on input line 2746.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
 Package epstopdf Info: Source file: <r1.eps>
 (epstopdf)                    date: 2023-09-22 11:47:22
@@ -3167,33 +1990,19 @@ Package epstopdf Info: Source file: <r1.eps>
 (epstopdf)                    size: 271475 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=r1-eps-converted-to.
 pdf r1.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2751.
-=======
-(epstopdf)             \includegraphics on input line 2591.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2752.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./r1-eps-converted-to.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<r1-eps-converted-to.pdf, id=1190, 821.0675pt x 378.41376pt>
+<r1-eps-converted-to.pdf, id=1187, 821.0675pt x 378.41376pt>
 File: r1-eps-converted-to.pdf Graphic file (type pdf)
 <use r1-eps-converted-to.pdf>
-Package pdftex.def Info: r1-eps-converted-to.pdf  used on input line 2751.
+Package pdftex.def Info: r1-eps-converted-to.pdf  used on input line 2752.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2756.
-LaTeX Info: Redefining \% on input line 2756.
-=======
-<r1-eps-converted-to.pdf, id=1145, 821.0675pt x 378.41376pt>
-File: r1-eps-converted-to.pdf Graphic file (type pdf)
-<use r1-eps-converted-to.pdf>
-Package pdftex.def Info: r1-eps-converted-to.pdf  used on input line 2591.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2596.
-LaTeX Info: Redefining \% on input line 2596.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2757.
+LaTeX Info: Redefining \% on input line 2757.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3202,11 +2011,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [73 <./r0.7-eps-converted-to.pdf> <./r1-eps-converted-to.pdf>]
-=======
-[78 <./r0.7-eps-converted-to.pdf> <./r1-eps-converted-to.pdf>]
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <r1.3.eps>
 (epstopdf)                    date: 2023-09-22 11:47:36
 (epstopdf)                    size: 587953 bytes
@@ -3215,33 +2020,19 @@ Package epstopdf Info: Source file: <r1.3.eps>
 (epstopdf)                    size: 220022 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=r1.3-eps-converted-t
 o.pdf r1.3.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2760.
-=======
-(epstopdf)             \includegraphics on input line 2600.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2761.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./r1.3-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<r1.3-eps-converted-to.pdf, id=1208, 821.0675pt x 378.41376pt>
+<r1.3-eps-converted-to.pdf, id=1205, 821.0675pt x 378.41376pt>
 File: r1.3-eps-converted-to.pdf Graphic file (type pdf)
 <use r1.3-eps-converted-to.pdf>
-Package pdftex.def Info: r1.3-eps-converted-to.pdf  used on input line 2760.
+Package pdftex.def Info: r1.3-eps-converted-to.pdf  used on input line 2761.
 (pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2769.
-LaTeX Info: Redefining \% on input line 2769.
-=======
-<r1.3-eps-converted-to.pdf, id=1164, 821.0675pt x 378.41376pt>
-File: r1.3-eps-converted-to.pdf Graphic file (type pdf)
-<use r1.3-eps-converted-to.pdf>
-Package pdftex.def Info: r1.3-eps-converted-to.pdf  used on input line 2600.
-(pdftex.def)             Requested size: 426.79135pt x 196.69543pt.
-LaTeX Info: Redefining \. on input line 2609.
-LaTeX Info: Redefining \% on input line 2609.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2770.
+LaTeX Info: Redefining \% on input line 2770.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3250,15 +2041,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [74 <./r1.3-eps-converted-to.pdf>] (Ejemplo_6.m) (sistema.m) (EF.m)
-LaTeX Info: Redefining \. on input line 2777.
-LaTeX Info: Redefining \% on input line 2777.
-=======
-[79 <./r1.3-eps-converted-to.pdf>] (Ejemplo_6.m) (sistema.m) (EF.m)
-LaTeX Info: Redefining \. on input line 2617.
-LaTeX Info: Redefining \% on input line 2617.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2778.
+LaTeX Info: Redefining \% on input line 2778.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3268,15 +2053,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [75] (cw1ejem6.m) (cw1ejem6_2.m
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
-=======
-[80] (cw1ejem6.m)
-LaTeX Info: Redefining \. on input line 2627.
-LaTeX Info: Redefining \% on input line 2627.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3286,10 +2065,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [76])
-LaTeX Info: Redefining \. on input line 2789.
-LaTeX Info: Redefining \% on input line 2789.
+LaTeX Info: Redefining \. on input line 2790.
+LaTeX Info: Redefining \% on input line 2790.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3300,8 +2078,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [77] (cw2ejem6.m)
-LaTeX Info: Redefining \. on input line 2799.
-LaTeX Info: Redefining \% on input line 2799.
+LaTeX Info: Redefining \. on input line 2800.
+LaTeX Info: Redefining \% on input line 2800.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3320,20 +2098,20 @@ Package epstopdf Info: Source file: <g1ejem6tiempo.eps>
 (epstopdf)                    size: 83083 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=g1ejem6tiempo-eps-co
 nverted-to.pdf g1ejem6tiempo.eps>
-(epstopdf)             \includegraphics on input line 2803.
+(epstopdf)             \includegraphics on input line 2804.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./g1ejem6tiempo-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<g1ejem6tiempo-eps-converted-to.pdf, id=1363, 813.0375pt x 712.6625pt>
+<g1ejem6tiempo-eps-converted-to.pdf, id=1360, 813.0375pt x 712.6625pt>
 File: g1ejem6tiempo-eps-converted-to.pdf Graphic file (type pdf)
 <use g1ejem6tiempo-eps-converted-to.pdf>
 Package pdftex.def Info: g1ejem6tiempo-eps-converted-to.pdf  used on input line
- 2803.
+ 2804.
 (pdftex.def)             Requested size: 512.14832pt x 448.93626pt.
-LaTeX Info: Redefining \. on input line 2810.
-LaTeX Info: Redefining \% on input line 2810.
+LaTeX Info: Redefining \. on input line 2811.
+LaTeX Info: Redefining \% on input line 2811.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3351,20 +2129,20 @@ Package epstopdf Info: Source file: <g2ejem6tiempo.eps>
 (epstopdf)                    size: 136911 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=g2ejem6tiempo-eps-co
 nverted-to.pdf g2ejem6tiempo.eps>
-(epstopdf)             \includegraphics on input line 2814.
+(epstopdf)             \includegraphics on input line 2815.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./g2ejem6tiempo-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<g2ejem6tiempo-eps-converted-to.pdf, id=1381, 579.16376pt x 507.8975pt>
+<g2ejem6tiempo-eps-converted-to.pdf, id=1378, 579.16376pt x 507.8975pt>
 File: g2ejem6tiempo-eps-converted-to.pdf Graphic file (type pdf)
 <use g2ejem6tiempo-eps-converted-to.pdf>
 Package pdftex.def Info: g2ejem6tiempo-eps-converted-to.pdf  used on input line
- 2814.
+ 2815.
 (pdftex.def)             Requested size: 512.14832pt x 449.15216pt.
-LaTeX Info: Redefining \. on input line 2819.
-LaTeX Info: Redefining \% on input line 2819.
+LaTeX Info: Redefining \. on input line 2820.
+LaTeX Info: Redefining \% on input line 2820.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3382,20 +2160,20 @@ Package epstopdf Info: Source file: <g3ejem6tiempo.eps>
 (epstopdf)                    size: 44293 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=g3ejem6tiempo-eps-co
 nverted-to.pdf g3ejem6tiempo.eps>
-(epstopdf)             \includegraphics on input line 2823.
+(epstopdf)             \includegraphics on input line 2824.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./g3ejem6tiempo-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<g3ejem6tiempo-eps-converted-to.pdf, id=1399, 540.0175pt x 435.6275pt>
+<g3ejem6tiempo-eps-converted-to.pdf, id=1396, 540.0175pt x 435.6275pt>
 File: g3ejem6tiempo-eps-converted-to.pdf Graphic file (type pdf)
 <use g3ejem6tiempo-eps-converted-to.pdf>
 Package pdftex.def Info: g3ejem6tiempo-eps-converted-to.pdf  used on input line
- 2823.
+ 2824.
 (pdftex.def)             Requested size: 469.47308pt x 378.72697pt.
-LaTeX Info: Redefining \. on input line 2832.
-LaTeX Info: Redefining \% on input line 2832.
+LaTeX Info: Redefining \. on input line 2833.
+LaTeX Info: Redefining \% on input line 2833.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3405,13 +2183,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [81 <./g3ejem6tiempo-eps-converted-to.pdf>] (Graficas_Ejemplo_6.m)
-LaTeX Info: Redefining \. on input line 2836.
-LaTeX Info: Redefining \% on input line 2836.
-=======
-[81] (cw2ejem6.m)
-LaTeX Info: Redefining \. on input line 2637.
-LaTeX Info: Redefining \% on input line 2637.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2837.
+LaTeX Info: Redefining \% on input line 2837.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3422,36 +2195,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [82]
-<<<<<<< HEAD
-LaTeX Info: Redefining \. on input line 2872.
-LaTeX Info: Redefining \% on input line 2872.
+LaTeX Info: Redefining \. on input line 2873.
+LaTeX Info: Redefining \% on input line 2873.
 
 
-=======
-Package epstopdf Info: Source file: <g1ejem6.eps>
-(epstopdf)                    date: 2023-09-22 16:48:18
-(epstopdf)                    size: 106522 bytes
-(epstopdf)             Output file: <g1ejem6-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-22 16:48:22
-(epstopdf)                    size: 16451 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=g1ejem6-eps-converte
-d-to.pdf g1ejem6.eps>
-(epstopdf)             \includegraphics on input line 2641.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./g1ejem6-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<g1ejem6-eps-converted-to.pdf, id=1268, 914.41624pt x 712.6625pt>
-File: g1ejem6-eps-converted-to.pdf Graphic file (type pdf)
-<use g1ejem6-eps-converted-to.pdf>
-Package pdftex.def Info: g1ejem6-eps-converted-to.pdf  used on input line 2641.
-
-(pdftex.def)             Requested size: 512.14832pt x 399.1644pt.
-LaTeX Info: Redefining \. on input line 2648.
-LaTeX Info: Redefining \% on input line 2648.
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3459,38 +2206,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [83] (Condiciones_Iniciales.m) (condicionesiniciales.m)
-LaTeX Info: Redefining \. on input line 2880.
-LaTeX Info: Redefining \% on input line 2880.
+LaTeX Info: Redefining \. on input line 2881.
+LaTeX Info: Redefining \% on input line 2881.
 
 
-=======
-[83 <./g1ejem6-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <g2ejem6.eps>
-(epstopdf)                    date: 2023-09-22 16:49:51
-(epstopdf)                    size: 47506 bytes
-(epstopdf)             Output file: <g2ejem6-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-22 16:51:08
-(epstopdf)                    size: 14415 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=g2ejem6-eps-converte
-d-to.pdf g2ejem6.eps>
-(epstopdf)             \includegraphics on input line 2652.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./g2ejem6-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<g2ejem6-eps-converted-to.pdf, id=1282, 724.7075pt x 595.22375pt>
-File: g2ejem6-eps-converted-to.pdf Graphic file (type pdf)
-<use g2ejem6-eps-converted-to.pdf>
-Package pdftex.def Info: g2ejem6-eps-converted-to.pdf  used on input line 2652.
-
-(pdftex.def)             Requested size: 512.14832pt x 420.65004pt.
-LaTeX Info: Redefining \. on input line 2657.
-LaTeX Info: Redefining \% on input line 2657.
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3498,38 +2218,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [84] (Ejemplo_6_Tridimensional.m) (sistematridi.m)
-LaTeX Info: Redefining \. on input line 2896.
-LaTeX Info: Redefining \% on input line 2896.
+LaTeX Info: Redefining \. on input line 2897.
+LaTeX Info: Redefining \% on input line 2897.
 
 
-=======
-[84 <./g2ejem6-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <g3ejem6.eps>
-(epstopdf)                    date: 2023-10-02 21:26:54
-(epstopdf)                    size: 33920 bytes
-(epstopdf)             Output file: <g3ejem6-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-02 21:27:01
-(epstopdf)                    size: 12463 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=g3ejem6-eps-converte
-d-to.pdf g3ejem6.eps>
-(epstopdf)             \includegraphics on input line 2661.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./g3ejem6-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<g3ejem6-eps-converted-to.pdf, id=1297, 685.56125pt x 574.145pt>
-File: g3ejem6-eps-converted-to.pdf Graphic file (type pdf)
-<use g3ejem6-eps-converted-to.pdf>
-Package pdftex.def Info: g3ejem6-eps-converted-to.pdf  used on input line 2661.
-
-(pdftex.def)             Requested size: 426.79135pt x 357.43802pt.
-LaTeX Info: Redefining \. on input line 2670.
-LaTeX Info: Redefining \% on input line 2670.
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3537,15 +2230,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [85] (Bifurcacion_Planos_1.m)
-LaTeX Info: Redefining \. on input line 2902.
-LaTeX Info: Redefining \% on input line 2902.
-=======
-[85 <./g3ejem6-eps-converted-to.pdf>] (Graficas_Ejemplo_6.m)
-LaTeX Info: Redefining \. on input line 2674.
-LaTeX Info: Redefining \% on input line 2674.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2903.
+LaTeX Info: Redefining \% on input line 2903.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3556,7 +2243,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [86]
-<<<<<<< HEAD
 Package epstopdf Info: Source file: <fococir.eps>
 (epstopdf)                    date: 2023-10-02 19:51:45
 (epstopdf)                    size: 126137 bytes
@@ -3565,27 +2251,21 @@ Package epstopdf Info: Source file: <fococir.eps>
 (epstopdf)                    size: 107990 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=fococir-eps-converte
 d-to.pdf fococir.eps>
-(epstopdf)             \includegraphics on input line 2906.
+(epstopdf)             \includegraphics on input line 2907.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./fococir-eps-converted-to.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<fococir-eps-converted-to.pdf, id=1603, 903.375pt x 742.775pt>
+<fococir-eps-converted-to.pdf, id=1600, 903.375pt x 742.775pt>
 File: fococir-eps-converted-to.pdf Graphic file (type pdf)
 <use fococir-eps-converted-to.pdf>
-Package pdftex.def Info: fococir-eps-converted-to.pdf  used on input line 2906.
+Package pdftex.def Info: fococir-eps-converted-to.pdf  used on input line 2907.
 
 (pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2913.
-LaTeX Info: Redefining \% on input line 2913.
+LaTeX Info: Redefining \. on input line 2914.
+LaTeX Info: Redefining \% on input line 2914.
 
-=======
-LaTeX Info: Redefining \. on input line 2709.
-LaTeX Info: Redefining \% on input line 2709.
-
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3593,7 +2273,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [87 <./fococir-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <centrocir.eps>
 (epstopdf)                    date: 2023-10-02 19:52:47
@@ -3603,28 +2282,21 @@ Package epstopdf Info: Source file: <centrocir.eps>
 (epstopdf)                    size: 87868 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=centrocir-eps-conver
 ted-to.pdf centrocir.eps>
-(epstopdf)             \includegraphics on input line 2917.
+(epstopdf)             \includegraphics on input line 2918.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./centrocir-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<centrocir-eps-converted-to.pdf, id=1617, 903.375pt x 742.775pt>
+<centrocir-eps-converted-to.pdf, id=1614, 903.375pt x 742.775pt>
 File: centrocir-eps-converted-to.pdf Graphic file (type pdf)
 <use centrocir-eps-converted-to.pdf>
 Package pdftex.def Info: centrocir-eps-converted-to.pdf  used on input line 291
-7.
+8.
 (pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2924.
-LaTeX Info: Redefining \% on input line 2924.
+LaTeX Info: Redefining \. on input line 2925.
+LaTeX Info: Redefining \% on input line 2925.
 
-=======
-[87] (Condiciones_Iniciales.m) (condicionesiniciales.m)
-LaTeX Info: Redefining \. on input line 2717.
-LaTeX Info: Redefining \% on input line 2717.
-
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3632,7 +2304,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [88 <./centrocir-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <ciclocir.eps>
 (epstopdf)                    date: 2023-10-02 19:53:12
@@ -3642,28 +2313,21 @@ Package epstopdf Info: Source file: <ciclocir.eps>
 (epstopdf)                    size: 91635 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=ciclocir-eps-convert
 ed-to.pdf ciclocir.eps>
-(epstopdf)             \includegraphics on input line 2928.
+(epstopdf)             \includegraphics on input line 2929.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./ciclocir-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<ciclocir-eps-converted-to.pdf, id=1631, 903.375pt x 742.775pt>
+<ciclocir-eps-converted-to.pdf, id=1628, 903.375pt x 742.775pt>
 File: ciclocir-eps-converted-to.pdf Graphic file (type pdf)
 <use ciclocir-eps-converted-to.pdf>
-Package pdftex.def Info: ciclocir-eps-converted-to.pdf  used on input line 2928
+Package pdftex.def Info: ciclocir-eps-converted-to.pdf  used on input line 2929
 .
 (pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2935.
-LaTeX Info: Redefining \% on input line 2935.
+LaTeX Info: Redefining \. on input line 2936.
+LaTeX Info: Redefining \% on input line 2936.
 
-=======
-[88] (Ejemplo_6_Tridimensional.m) (sistematridi.m)
-LaTeX Info: Redefining \. on input line 2734.
-LaTeX Info: Redefining \% on input line 2734.
-
-
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.56668pt}.
@@ -3671,15 +2335,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [89 <./ciclocir-eps-converted-to.pdf>] (Bifurcacion_Planos_2.m)
-LaTeX Info: Redefining \. on input line 2953.
-LaTeX Info: Redefining \% on input line 2953.
-=======
-[89] (Bifurcacion_Planos_1.m)
-LaTeX Info: Redefining \. on input line 2740.
-LaTeX Info: Redefining \% on input line 2740.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2954.
+LaTeX Info: Redefining \% on input line 2954.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3690,114 +2348,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [90]
-<<<<<<< HEAD
-=======
-Package epstopdf Info: Source file: <fococir.eps>
-(epstopdf)                    date: 2023-10-02 19:51:45
-(epstopdf)                    size: 126137 bytes
-(epstopdf)             Output file: <fococir-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-02 19:51:56
-(epstopdf)                    size: 107990 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=fococir-eps-converte
-d-to.pdf fococir.eps>
-(epstopdf)             \includegraphics on input line 2744.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./fococir-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<fococir-eps-converted-to.pdf, id=1500, 903.375pt x 742.775pt>
-File: fococir-eps-converted-to.pdf Graphic file (type pdf)
-<use fococir-eps-converted-to.pdf>
-Package pdftex.def Info: fococir-eps-converted-to.pdf  used on input line 2744.
-
-(pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2751.
-LaTeX Info: Redefining \% on input line 2751.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[91 <./fococir-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <centrocir.eps>
-(epstopdf)                    date: 2023-10-02 19:52:47
-(epstopdf)                    size: 99126 bytes
-(epstopdf)             Output file: <centrocir-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-02 19:52:59
-(epstopdf)                    size: 87868 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=centrocir-eps-conver
-ted-to.pdf centrocir.eps>
-(epstopdf)             \includegraphics on input line 2755.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./centrocir-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<centrocir-eps-converted-to.pdf, id=1513, 903.375pt x 742.775pt>
-File: centrocir-eps-converted-to.pdf Graphic file (type pdf)
-<use centrocir-eps-converted-to.pdf>
-Package pdftex.def Info: centrocir-eps-converted-to.pdf  used on input line 275
-5.
-(pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2762.
-LaTeX Info: Redefining \% on input line 2762.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[92 <./centrocir-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <ciclocir.eps>
-(epstopdf)                    date: 2023-10-02 19:53:12
-(epstopdf)                    size: 104134 bytes
-(epstopdf)             Output file: <ciclocir-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-02 19:54:08
-(epstopdf)                    size: 91635 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=ciclocir-eps-convert
-ed-to.pdf ciclocir.eps>
-(epstopdf)             \includegraphics on input line 2766.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./ciclocir-eps-converted-to.pdf): PDF inclus
-ion: found PDF version <1.7>, but at most version <1.5> allowed
-<ciclocir-eps-converted-to.pdf, id=1526, 903.375pt x 742.775pt>
-File: ciclocir-eps-converted-to.pdf Graphic file (type pdf)
-<use ciclocir-eps-converted-to.pdf>
-Package pdftex.def Info: ciclocir-eps-converted-to.pdf  used on input line 2766
-.
-(pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2773.
-LaTeX Info: Redefining \% on input line 2773.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[93 <./ciclocir-eps-converted-to.pdf>] (Bifurcacion_Planos_2.m)
-LaTeX Info: Redefining \. on input line 2791.
-LaTeX Info: Redefining \% on input line 2791.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[94]
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 Package epstopdf Info: Source file: <planoscircuito.eps>
 (epstopdf)                    date: 2023-10-02 20:26:48
 (epstopdf)                    size: 112926 bytes
@@ -3806,35 +2356,20 @@ Package epstopdf Info: Source file: <planoscircuito.eps>
 (epstopdf)                    size: 166518 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=planoscircuito-eps-c
 onverted-to.pdf planoscircuito.eps>
-<<<<<<< HEAD
-(epstopdf)             \includegraphics on input line 2957.
-=======
-(epstopdf)             \includegraphics on input line 2795.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+(epstopdf)             \includegraphics on input line 2958.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./planoscircuito-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<planoscircuito-eps-converted-to.pdf, id=1678, 903.375pt x 742.775pt>
+<planoscircuito-eps-converted-to.pdf, id=1675, 903.375pt x 742.775pt>
 File: planoscircuito-eps-converted-to.pdf Graphic file (type pdf)
 <use planoscircuito-eps-converted-to.pdf>
 Package pdftex.def Info: planoscircuito-eps-converted-to.pdf  used on input lin
-e 2957.
+e 2958.
 (pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2963.
-LaTeX Info: Redefining \% on input line 2963.
-=======
-<planoscircuito-eps-converted-to.pdf, id=1571, 903.375pt x 742.775pt>
-File: planoscircuito-eps-converted-to.pdf Graphic file (type pdf)
-<use planoscircuito-eps-converted-to.pdf>
-Package pdftex.def Info: planoscircuito-eps-converted-to.pdf  used on input lin
-e 2795.
-(pdftex.def)             Requested size: 426.79135pt x 350.91771pt.
-LaTeX Info: Redefining \. on input line 2801.
-LaTeX Info: Redefining \% on input line 2801.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2964.
+LaTeX Info: Redefining \% on input line 2964.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3843,15 +2378,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [91 <./planoscircuito-eps-converted-to.pdf>] (Bifurcacion_Planos_3.m)
-LaTeX Info: Redefining \. on input line 2967.
-LaTeX Info: Redefining \% on input line 2967.
-=======
-[95 <./planoscircuito-eps-converted-to.pdf>] (Bifurcacion_Planos_3.m)
-LaTeX Info: Redefining \. on input line 2805.
-LaTeX Info: Redefining \% on input line 2805.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 2968.
+LaTeX Info: Redefining \% on input line 2968.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3861,10 +2390,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [92] (Bifurcacion_Combinar_Planos.m)
-LaTeX Info: Redefining \. on input line 2971.
-LaTeX Info: Redefining \% on input line 2971.
+LaTeX Info: Redefining \. on input line 2972.
+LaTeX Info: Redefining \% on input line 2972.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3883,20 +2411,20 @@ Package epstopdf Info: Source file: <3planoscircuito.eps>
 (epstopdf)                    size: 119244 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=3planoscircuito-eps-
 converted-to.pdf 3planoscircuito.eps>
-(epstopdf)             \includegraphics on input line 2975.
+(epstopdf)             \includegraphics on input line 2976.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./3planoscircuito-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3planoscircuito-eps-converted-to.pdf, id=1780, 1433.355pt x 742.775pt>
+<3planoscircuito-eps-converted-to.pdf, id=1777, 1433.355pt x 742.775pt>
 File: 3planoscircuito-eps-converted-to.pdf Graphic file (type pdf)
 <use 3planoscircuito-eps-converted-to.pdf>
 Package pdftex.def Info: 3planoscircuito-eps-converted-to.pdf  used on input li
-ne 2975.
+ne 2976.
 (pdftex.def)             Requested size: 554.83005pt x 287.51631pt.
-LaTeX Info: Redefining \. on input line 2982.
-LaTeX Info: Redefining \% on input line 2982.
+LaTeX Info: Redefining \. on input line 2983.
+LaTeX Info: Redefining \% on input line 2983.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3910,13 +2438,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ] [96
 
 ]
-LaTeX Info: Redefining \. on input line 3051.
-LaTeX Info: Redefining \% on input line 3051.
-=======
-[96] (Bifurcacion_Combinar_Planos.m)
-LaTeX Info: Redefining \. on input line 2809.
-LaTeX Info: Redefining \% on input line 2809.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 3052.
+LaTeX Info: Redefining \% on input line 3052.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3927,38 +2450,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
 [97]
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 3055--3057
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3058
 \OT1/cmr/m/n/12 URL: [][]https://es.mathworks.com/matlabcentral/fileexchange/91
 705-phase-
  []
 
-LaTeX Info: Redefining \. on input line 3062.
-LaTeX Info: Redefining \% on input line 3062.
-=======
-Package epstopdf Info: Source file: <3planoscircuito.eps>
-(epstopdf)                    date: 2023-10-02 20:47:09
-(epstopdf)                    size: 135617 bytes
-(epstopdf)             Output file: <3planoscircuito-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-02 20:47:28
-(epstopdf)                    size: 119244 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=3planoscircuito-eps-
-converted-to.pdf 3planoscircuito.eps>
-(epstopdf)             \includegraphics on input line 2813.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./3planoscircuito-eps-converted-to.pdf): PDF
- inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3planoscircuito-eps-converted-to.pdf, id=1673, 1433.355pt x 742.775pt>
-File: 3planoscircuito-eps-converted-to.pdf Graphic file (type pdf)
-<use 3planoscircuito-eps-converted-to.pdf>
-Package pdftex.def Info: 3planoscircuito-eps-converted-to.pdf  used on input li
-ne 2813.
-(pdftex.def)             Requested size: 554.83005pt x 287.51631pt.
-LaTeX Info: Redefining \. on input line 2818.
-LaTeX Info: Redefining \% on input line 2818.
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
+LaTeX Info: Redefining \. on input line 3065.
+LaTeX Info: Redefining \% on input line 3065.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.56668pt, for example:
@@ -3967,49 +2465,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
 
-<<<<<<< HEAD
 [98] (main.aux
-=======
-[98 <./3planoscircuito-eps-converted-to.pdf>] [99
-
-]
-Underfull \hbox (badness 1728) in paragraph at lines 2857--2859
-[]\OT1/cmr/m/n/12 Victoriano Car-mo-na, Fer-nan-do Fern^^Sandez-S^^Sanchez, In-
-te-gral cha-rac-te-ri-za-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 2857--2859
-\OT1/cmr/m/n/12 tial Equa-tions, Vo-lu-me 305, 2021, Pa-ges 319-346, ISSN 0022-
-0396, doi:
- []
-
-[100
-
-]
-Underfull \hbox (badness 2205) in paragraph at lines 2864--2865
-\OT1/cmr/m/n/12 plex Analy-sis, Bd. I, 682 S., New York-London-Sydney-Toronto. 
-John
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 2864--2865
-\OT1/cmr/m/n/12 Wi-ley & sons. 1974. \TS1/cmr/m/n/12 £ \OT1/cmr/m/n/12 13,50 ..
- Z. an-gew. Math. Mech., 57: 352-352.
- []
-
-LaTeX Info: Redefining \. on input line 2870.
-LaTeX Info: Redefining \% on input line 2870.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.56668pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.56668pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.56668pt}.
-
-[101] (main.aux
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
@@ -4018,12 +2474,11 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-16>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: BAF303A803BFA026E6241BA71901F8B7;3868.
+(rerunfilecheck)             Checksum: 6061C4E64BBF01EF1627A5FD240B2285;3891.
  ) 
 Here is how much of TeX's memory you used:
- 21028 strings out of 476037
- 335343 string characters out of 5789655
+ 21029 strings out of 476037
+ 336178 string characters out of 5789655
  2254763 words of memory out of 5000000
  40469 multiletter control sequences out of 15000+600000
  526467 words of font info for 79 fonts, out of 8000000 for 9000
@@ -4050,49 +2505,9 @@ type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX/fonts/type1/public
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (100 pages, 10592621 bytes).
+Output written on main.pdf (100 pages, 10591251 bytes).
 PDF statistics:
- 2120 PDF objects out of 2487 (max. 8388607)
- 930 named destinations out of 1000 (max. 500000)
+ 2119 PDF objects out of 2487 (max. 8388607)
+ 931 named destinations out of 1000 (max. 500000)
  370 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-(rerunfilecheck)             Checksum: 3C5D744BF8FE11CBCFC04C36B2EE8C4B;3276.
- ) 
-Here is how much of TeX's memory you used:
- 20923 strings out of 476037
- 333425 string characters out of 5789655
- 2252763 words of memory out of 5000000
- 40436 multiletter control sequences out of 15000+600000
- 526467 words of font info for 79 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 79i,19n,120p,1809b,1726s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\tctt1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcrm1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib1
-0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsl12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
-iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (102 pages, 10390954 bytes).
-PDF statistics:
- 1982 PDF objects out of 2073 (max. 8388607)
- 861 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 7c2896b3f0ec067e6bd6bc152f1ea4418376f4b2
 
